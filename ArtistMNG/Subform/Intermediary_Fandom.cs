@@ -118,7 +118,16 @@ namespace ArtistMNG.Subform
         void LoadDesign()
         {
             this.Icon = ImageFile.SetWindowIcon("AMlogo.ico");
-          
+            switch(frmApp.currentTable)
+            {
+                case DatabaseTable.Artist:
+                    this.Text = "Nghệ sĩ (Fandom)";
+                    break;
+                case DatabaseTable.Group:
+                    this.Text = "Nhóm (Fandom)";
+                    break;
+            }
+            
             //database
             DatagridViewStyle.DarkStyle(dataGridView_DatabaseFandom);
             DatagridViewStyle.MinimumWidth(dataGridView_DatabaseFandom, 100);

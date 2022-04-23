@@ -95,7 +95,7 @@ namespace ArtistMNG.Subform
         {
             try
             {
-                pictureBox_Image.LoadAsync(tx_ImageURL.Text);
+                pictureBox_Image.Load(tx_ImageURL.Text);
             }
             catch
             {
@@ -170,7 +170,21 @@ namespace ArtistMNG.Subform
                     return;
                 }    
             }
+
             ModelArtist.Instance.ArtistImage_Add.Add(modelImage);
+
+            bool artistImageIsContains = false;
+            for (int i = 0; i < frmApp.artistImage.Count; i++)
+            {
+                if (frmApp.artistImage[i] == modelImage.ImageURL)
+                {
+                    artistImageIsContains = true;
+                }
+            }
+            if (!artistImageIsContains)
+            {
+                frmApp.artistImage.Add(modelImage.ImageURL);
+            }
             dataGridView_TargetImage.Rows.Add(0, tx_ImageURL.Text, txImageDescription.Text);
         }
 

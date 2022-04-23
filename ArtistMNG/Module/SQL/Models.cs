@@ -107,7 +107,19 @@ namespace ArtistMNG.Module.SQL
     }
     public class ModelSong
     {
+        int songID;
+        string songName;
+        DateTime releaseDay;
+        string genre;
+        string producer;
+        string description;
 
+        public int SongID { get => songID; set => songID = value; }
+        public string SongName { get => songName; set => songName = value; }
+        public DateTime ReleaseDay { get => releaseDay; set => releaseDay = value; }
+        public string Genre { get => genre; set => genre = value; }
+        public string Producer { get => producer; set => producer = value; }
+        public string Description { get => description; set => description = value; }
     }
     public class ModelAlbum
     {

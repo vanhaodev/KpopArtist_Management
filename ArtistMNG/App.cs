@@ -566,6 +566,22 @@ namespace ArtistMNG
             switch (currentTable)
             {
                 case DatabaseTable.Artist:
+                    ModelArtist.Instance.ArtistID = 0;
+                    ModelArtist.Instance.StageName = txArtist_StageName.Text;
+                    ModelArtist.Instance.StageName = txArtist_RealName.Text;
+                    ModelArtist.Instance.BirthDay = dateTimePickerArtist_Birthday.Value;
+                    ModelArtist.Instance.BirthPlace = txArtist_BirthPlace.Text;
+                    ModelArtist.Instance.DebutDay = dateTimePickerArtist_Debutday.Value;
+                    ModelArtist.Instance.Description = txArtist_Description.Text;
+                    break;
+            }
+        }
+
+        private void btnApplyUpdate_Click(object sender, EventArgs e)
+        {
+            switch (currentTable)
+            {
+                case DatabaseTable.Artist:
                     ModelArtist.Instance.ArtistID = Convert.ToInt32(txArtist_ID.Text);
                     ModelArtist.Instance.StageName = txArtist_StageName.Text;
                     ModelArtist.Instance.StageName = txArtist_RealName.Text;
@@ -573,26 +589,24 @@ namespace ArtistMNG
                     ModelArtist.Instance.BirthPlace = txArtist_BirthPlace.Text;
                     ModelArtist.Instance.DebutDay = dateTimePickerArtist_Debutday.Value;
                     ModelArtist.Instance.Description = txArtist_Description.Text;
-                    //if(labelArtist_Fandom.Text.Length > 0)
-                    //{
-                    //    ModelArtist.Instance.FandomID = DatabaseManager.ShowDataQuery($"SELECT FandomID FROM [Fandom] WHERE Name = {labelArtist_Fandom.Text}").Rows[0].Field<int>("FandomID");
-                    //}    
-                    //else
-                    //{
-                    //    ModelArtist.Instance.FandomID = 0;
-                    //}    
                     break;
             }
         }
 
-        private void btnApplyUpdate_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnApplyDelete_Click(object sender, EventArgs e)
         {
-
+            switch (currentTable)
+            {
+                case DatabaseTable.Artist:
+                    ModelArtist.Instance.ArtistID = Convert.ToInt32(txArtist_ID.Text);
+                    ModelArtist.Instance.StageName = txArtist_StageName.Text;
+                    ModelArtist.Instance.StageName = txArtist_RealName.Text;
+                    ModelArtist.Instance.BirthDay = dateTimePickerArtist_Birthday.Value;
+                    ModelArtist.Instance.BirthPlace = txArtist_BirthPlace.Text;
+                    ModelArtist.Instance.DebutDay = dateTimePickerArtist_Debutday.Value;
+                    ModelArtist.Instance.Description = txArtist_Description.Text;
+                    break;
+            }
         }
         /*
         ID
@@ -820,8 +834,17 @@ namespace ArtistMNG
                 btnArtist_NextImage.Font = new Font("Roboto", 6, FontStyle.Bold);
                 btnArtist_NextImage.Text = "Không có ảnh";
             }
-            
+
+            //ADD to list
+            ModelArtist.Instance.ArtistID = Convert.ToInt32(txArtist_ID.Text);
+            ModelArtist.Instance.StageName = txArtist_StageName.Text;
+            ModelArtist.Instance.StageName = txArtist_RealName.Text;
+            ModelArtist.Instance.BirthDay = dateTimePickerArtist_Birthday.Value;
+            ModelArtist.Instance.BirthPlace = txArtist_BirthPlace.Text;
+            ModelArtist.Instance.DebutDay = dateTimePickerArtist_Debutday.Value;
+            ModelArtist.Instance.Description = txArtist_Description.Text;
         }
+
         int nextImageIndex = 1;
         public static List<string> artistImage = new List<string>();
         private void btnArtist_NextImage_Click(object sender, EventArgs e)
