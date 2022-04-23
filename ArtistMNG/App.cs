@@ -89,6 +89,9 @@ namespace ArtistMNG
 
         void LoadDesign()
         {
+            this.Icon = ImageFile.SetWindowIcon("AMlogo.ico");
+            string versionName = "1.0";
+            this.Text = $"Artist Managenment {versionName}";
 
             btnApplyAdd.Enabled = true;
             btnApplyDelete.Enabled = false;
@@ -149,6 +152,19 @@ namespace ArtistMNG
 
             #endregion
 
+
+            //Group Form
+            dataGridViewArtist_Group.Columns.Add("GroupID", "ID");
+            dataGridViewArtist_Group.Columns.Add("GroupName", "Tên");
+            dataGridViewArtist_Group.Columns.Add("DebutDay", "Ngày debut");
+            dataGridViewArtist_Group.Columns.Add("FandomID", "Fandom");
+            dataGridViewArtist_Group.Columns.Add("Description", "Mô tả");
+
+            //label in artist
+            labelArtist_Fandom.MaximumSize = new Size(panel_ArtistInforFandom.Width - (panel_ArtistInforFandom.Width*10/100), 0);
+            labelArtist_Fandom.AutoSize = true;
+            labelArtist_Label.MaximumSize = new Size(panel_ArtistInforLabel.Width - (panel_ArtistInforLabel.Width * 10 / 100), 0);
+            labelArtist_Label.AutoSize = true;
 
         }
 
@@ -226,6 +242,11 @@ namespace ArtistMNG
                         break;
                 }
             }
+            //label in artist
+            labelArtist_Fandom.MaximumSize = new Size(panel_ArtistInforFandom.Width - (panel_ArtistInforFandom.Width * 10 / 100), 0);
+            labelArtist_Fandom.AutoSize = true;
+            labelArtist_Label.MaximumSize = new Size(panel_ArtistInforLabel.Width - (panel_ArtistInforLabel.Width * 10 / 100), 0);
+            labelArtist_Label.AutoSize = true;
             tableSizeAuto = ratio;
         }
 
@@ -309,7 +330,7 @@ namespace ArtistMNG
         /// <summary>
         /// Bảng hiện tại đang tương tác.
         /// </summary>
-        DatabaseTable currentTable;
+        public static DatabaseTable currentTable;
         /// <summary>
         /// Nếu đây là insert mới thì khi mở các bảng trung gian như Image sẽ không gửi ArtistID hoặc GroupID. (Tạo mới nên không thể biết ID).
         /// </summary>
@@ -720,10 +741,48 @@ namespace ArtistMNG
             //pictureBox_ArtistImage.Load("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEil4D-R6UJwpdgvxU3Dpj9h3JBUUxF0JCQe0LSNY7TXpoAlw8tqboq3YGUYcx7fZDRYCkeZLKuwDb61OF8fdr1l3MLX9thcjsNZR4dg5R3reDT62oql9LPw7Qso1D8QbQ555bspp3eIJDvo8mtWg9ZNxOZRS8lsV9F4RpSgc2MlWXX3BUnJmWotA5vN/w213-h320/Gdragon.jpg");
 
             //DataTable group = DatabaseManager.ShowDataStoredProcedure("Artist_GetGroup", datas[0].Rows[dataGridView_Data.SelectedRows[0].Index].Field<int>("ArtistID").ToString());
-            dataGridViewArtist_Group.DataSource = DatabaseManager.ShowDataStoredProcedure("Artist_GetGroup", datas[0].Rows[dataGridView_Data.SelectedRows[0].Index].Field<int>("ArtistID").ToString());
+            var group = DatabaseManager.ShowDataStoredProcedure("Artist_GetGroup", datas[0].Rows[dataGridView_Data.SelectedRows[0].Index].Field<int>("ArtistID").ToString());
+            dataGridViewArtist_Group.Rows.Clear();
+            for(int i = 0; i < group.Rows.Count; i++)
+            {
+                if(dataGridViewArtist_Group.Rows.Count < 1 && group.Rows[i].Field<int>(0) > 0)
+                {
+                    dataGridViewArtist_Group.Rows.Add(
+                                group.Rows[i].Field<int>(0),
+                                group.Rows[i].Field<string>(1),
+                                group.Rows[i].Field<DateTime>(2),
+                                group.Rows[i].Field<int>(3),
+                                group.Rows[i].Field<string>(4)
+                            );
+                }
+                else
+                {
+                    for (int j = 0; j < dataGridViewArtist_Group.Rows.Count; j++)
+                    {
+                        bool isContains = false;
+                        if (group.Rows[i].Field<int>(0) == (int)dataGridViewArtist_Group.Rows[j].Cells[0].Value)
+                        {
+                            isContains = true;
+                        }
+                        if (!isContains)
+                        {
+                            dataGridViewArtist_Group.Rows.Add(
+                                group.Rows[i].Field<int>(0),
+                                group.Rows[i].Field<string>(1),
+                                group.Rows[i].Field<DateTime>(2),
+                                group.Rows[i].Field<int>(3),
+                                group.Rows[i].Field<string>(4)
+                            );
+                        }
+                    }
+                }
+            }    
 
+            var fandom = DatabaseManager.ShowDataStoredProcedure("Artist_GetFandom", dataGridView_Data.SelectedRows[0].Cells[0].Value.ToString());
+            labelArtist_Fandom.Text = $"ID: {fandom.Rows[0].Field<int>(0)}\n" +
+                $"Tên: {fandom.Rows[0].Field<string>(1)}\n" +
+                $"Mô tả: {fandom.Rows[0].Field<string>(2)}";
 
-            labelArtist_Fandom.Text = DatabaseManager.ShowDataStoredProcedure("Artist_GetFandom", datas[0].Rows[dataGridView_Data.SelectedRows[0].Index].Field<int>("FandomID").ToString()).Rows[0].Field<string>("Name");
             dataGridViewArtist_Song.DataSource = DatabaseManager.ShowDataStoredProcedure("Artist_GetSong", datas[0].Rows[dataGridView_Data.SelectedRows[0].Index].Field<int>("ArtistID").ToString());
             dataGridViewArtist_Album.DataSource = DatabaseManager.ShowDataStoredProcedure("Artist_GetAlbum", datas[0].Rows[dataGridView_Data.SelectedRows[0].Index].Field<int>("ArtistID").ToString());
 
@@ -761,8 +820,7 @@ namespace ArtistMNG
                 btnArtist_NextImage.Font = new Font("Roboto", 6, FontStyle.Bold);
                 btnArtist_NextImage.Text = "Không có ảnh";
             }
-
-
+            
         }
         int nextImageIndex = 1;
         public static List<string> artistImage = new List<string>();
@@ -794,7 +852,7 @@ namespace ArtistMNG
         private void buttonArtist_EditGroup_Click(object sender, EventArgs e)
         {
             Intermediary_Group intermediary_Group = new Intermediary_Group(artistID);
-            intermediary_Group.Closed += (s, args) => ReloadArtistImage();
+            intermediary_Group.Closed += (s, args) => RealoadArtistGroup();
             intermediary_Group.Show();
         }
 
@@ -849,6 +907,56 @@ namespace ArtistMNG
                 btnArtist_NextImage.Text = $"Ảnh";
                 pictureBox_ArtistImage.Image = ImageFile.SetIconFromFolder("unknow_ArtistImage.png");
             }
+        }
+        void RealoadArtistGroup()
+        {          
+            for (int i = 0; i < ModelArtist.Instance.ArtistGroup_Add.Count; i++)
+            {                  
+                if(dataGridViewArtist_Group.Rows.Count < 1)
+                {
+                    dataGridViewArtist_Group.Rows.Add(
+                            ModelArtist.Instance.ArtistGroup_Add[i].GroupID,
+                            ModelArtist.Instance.ArtistGroup_Add[i].GroupName,
+                            ModelArtist.Instance.ArtistGroup_Add[i].DebutDay,
+                            ModelArtist.Instance.ArtistGroup_Add[i].FandomID,
+                            ModelArtist.Instance.ArtistGroup_Add[i].Description
+                        );
+                }  
+                else
+                {
+                    bool isContains = false;
+                    for (int j = 0; j < dataGridViewArtist_Group.Rows.Count; j++)
+                    {
+                        
+                        if (ModelArtist.Instance.ArtistGroup_Add[i].GroupID == (int)dataGridViewArtist_Group.Rows[j].Cells[0].Value)
+                        {
+                            isContains = true;
+                        }
+                          
+                    }
+                    if (!isContains)
+                    {
+                        dataGridViewArtist_Group.Rows.Add(
+                            ModelArtist.Instance.ArtistGroup_Add[i].GroupID,
+                            ModelArtist.Instance.ArtistGroup_Add[i].GroupName,
+                            ModelArtist.Instance.ArtistGroup_Add[i].DebutDay,
+                            ModelArtist.Instance.ArtistGroup_Add[i].FandomID,
+                            ModelArtist.Instance.ArtistGroup_Add[i].Description
+                        );
+                    }
+                }    
+            }
+            for (int i = 0; i < ModelArtist.Instance.ArtistGroup_Delete.Count; i++)
+            {
+                for (int j = 0; j < dataGridViewArtist_Group.Rows.Count; j++)
+                {
+                    if (ModelArtist.Instance.ArtistGroup_Delete[i].GroupID == (int)dataGridViewArtist_Group.Rows[j].Cells[0].Value)
+                    {
+                        dataGridViewArtist_Group.Rows.RemoveAt(j);
+                    }
+                }
+
+            }        
         }
         void RealoadArtistFandom()
         {

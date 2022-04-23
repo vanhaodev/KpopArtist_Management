@@ -30,7 +30,8 @@ namespace ArtistMNG.Subform
         private void InitializeComponent()
         {
             this.panel_Workspace = new System.Windows.Forms.Panel();
-            this.btnAddImageFromDbToArtist = new System.Windows.Forms.Button();
+            this.pictureBox_GroupImage = new System.Windows.Forms.PictureBox();
+            this.btnAddGroupFromDbToArtist = new System.Windows.Forms.Button();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
             this.label1 = new System.Windows.Forms.Label();
             this.btnSearchDatabaseImage = new System.Windows.Forms.Button();
@@ -45,20 +46,19 @@ namespace ArtistMNG.Subform
             this.btnApplyDelete = new System.Windows.Forms.Button();
             this.btnApplyEdit = new System.Windows.Forms.Button();
             this.btnApplyAdd = new System.Windows.Forms.Button();
-            this.pictureBox_GroupImage = new System.Windows.Forms.PictureBox();
             this.panel_Workspace.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_GroupImage)).BeginInit();
             this.groupBox6.SuspendLayout();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_TargetGroup)).BeginInit();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_DatabaseGroup)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_GroupImage)).BeginInit();
             this.SuspendLayout();
             // 
             // panel_Workspace
             // 
             this.panel_Workspace.Controls.Add(this.pictureBox_GroupImage);
-            this.panel_Workspace.Controls.Add(this.btnAddImageFromDbToArtist);
+            this.panel_Workspace.Controls.Add(this.btnAddGroupFromDbToArtist);
             this.panel_Workspace.Controls.Add(this.groupBox6);
             this.panel_Workspace.Controls.Add(this.groupBox3);
             this.panel_Workspace.Controls.Add(this.groupBox2);
@@ -67,19 +67,28 @@ namespace ArtistMNG.Subform
             this.panel_Workspace.Size = new System.Drawing.Size(857, 535);
             this.panel_Workspace.TabIndex = 0;
             // 
-            // btnAddImageFromDbToArtist
+            // pictureBox_GroupImage
             // 
-            this.btnAddImageFromDbToArtist.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(64)))), ((int)(((byte)(66)))));
-            this.btnAddImageFromDbToArtist.FlatAppearance.BorderSize = 0;
-            this.btnAddImageFromDbToArtist.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAddImageFromDbToArtist.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold);
-            this.btnAddImageFromDbToArtist.ForeColor = System.Drawing.Color.White;
-            this.btnAddImageFromDbToArtist.Location = new System.Drawing.Point(407, 24);
-            this.btnAddImageFromDbToArtist.Name = "btnAddImageFromDbToArtist";
-            this.btnAddImageFromDbToArtist.Size = new System.Drawing.Size(39, 39);
-            this.btnAddImageFromDbToArtist.TabIndex = 8;
-            this.btnAddImageFromDbToArtist.Text = "<<";
-            this.btnAddImageFromDbToArtist.UseVisualStyleBackColor = false;
+            this.pictureBox_GroupImage.Location = new System.Drawing.Point(452, 367);
+            this.pictureBox_GroupImage.Name = "pictureBox_GroupImage";
+            this.pictureBox_GroupImage.Size = new System.Drawing.Size(165, 165);
+            this.pictureBox_GroupImage.TabIndex = 2;
+            this.pictureBox_GroupImage.TabStop = false;
+            // 
+            // btnAddGroupFromDbToArtist
+            // 
+            this.btnAddGroupFromDbToArtist.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(64)))), ((int)(((byte)(66)))));
+            this.btnAddGroupFromDbToArtist.FlatAppearance.BorderSize = 0;
+            this.btnAddGroupFromDbToArtist.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAddGroupFromDbToArtist.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold);
+            this.btnAddGroupFromDbToArtist.ForeColor = System.Drawing.Color.White;
+            this.btnAddGroupFromDbToArtist.Location = new System.Drawing.Point(407, 24);
+            this.btnAddGroupFromDbToArtist.Name = "btnAddGroupFromDbToArtist";
+            this.btnAddGroupFromDbToArtist.Size = new System.Drawing.Size(39, 39);
+            this.btnAddGroupFromDbToArtist.TabIndex = 8;
+            this.btnAddGroupFromDbToArtist.Text = "<<";
+            this.btnAddGroupFromDbToArtist.UseVisualStyleBackColor = false;
+            this.btnAddGroupFromDbToArtist.Click += new System.EventHandler(this.btnAddGroupFromDbToArtist_Click);
             // 
             // groupBox6
             // 
@@ -233,6 +242,7 @@ namespace ArtistMNG.Subform
             this.btnNewRow.TabStop = false;
             this.btnNewRow.Text = "Mới";
             this.btnNewRow.UseVisualStyleBackColor = false;
+            this.btnNewRow.Visible = false;
             // 
             // btnApplyDelete
             // 
@@ -249,6 +259,7 @@ namespace ArtistMNG.Subform
             this.btnApplyDelete.TabStop = false;
             this.btnApplyDelete.Text = "Xóa";
             this.btnApplyDelete.UseVisualStyleBackColor = false;
+            this.btnApplyDelete.Click += new System.EventHandler(this.btnApplyDelete_Click);
             // 
             // btnApplyEdit
             // 
@@ -265,6 +276,7 @@ namespace ArtistMNG.Subform
             this.btnApplyEdit.TabStop = false;
             this.btnApplyEdit.Text = "Cập nhật";
             this.btnApplyEdit.UseVisualStyleBackColor = false;
+            this.btnApplyEdit.Visible = false;
             // 
             // btnApplyAdd
             // 
@@ -281,14 +293,7 @@ namespace ArtistMNG.Subform
             this.btnApplyAdd.TabStop = false;
             this.btnApplyAdd.Text = "Thêm";
             this.btnApplyAdd.UseVisualStyleBackColor = false;
-            // 
-            // pictureBox_GroupImage
-            // 
-            this.pictureBox_GroupImage.Location = new System.Drawing.Point(452, 367);
-            this.pictureBox_GroupImage.Name = "pictureBox_GroupImage";
-            this.pictureBox_GroupImage.Size = new System.Drawing.Size(165, 165);
-            this.pictureBox_GroupImage.TabIndex = 2;
-            this.pictureBox_GroupImage.TabStop = false;
+            this.btnApplyAdd.Visible = false;
             // 
             // Intermediary_Group
             // 
@@ -308,13 +313,13 @@ namespace ArtistMNG.Subform
             this.Text = "Intermediary_Image";
             this.Load += new System.EventHandler(this.Intermediary_Group_Load);
             this.panel_Workspace.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_GroupImage)).EndInit();
             this.groupBox6.ResumeLayout(false);
             this.groupBox6.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_TargetGroup)).EndInit();
             this.groupBox2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_DatabaseGroup)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_GroupImage)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -336,7 +341,7 @@ namespace ArtistMNG.Subform
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnSearchDatabaseImage;
         private System.Windows.Forms.TextBox txValueSearchDatabaseImage;
-        private System.Windows.Forms.Button btnAddImageFromDbToArtist;
+        private System.Windows.Forms.Button btnAddGroupFromDbToArtist;
         private System.Windows.Forms.PictureBox pictureBox_GroupImage;
     }
 }

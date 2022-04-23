@@ -23,7 +23,7 @@ namespace ArtistMNG.Subform
         }
         void LoadDesign()
         {
-           
+            this.Icon = ImageFile.SetWindowIcon("AMlogo.ico");
         }
 
     }

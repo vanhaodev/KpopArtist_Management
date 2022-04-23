@@ -94,13 +94,13 @@ namespace ArtistMNG.Module.SQL
     public class ModelGroup
     {
         int groupID;
-        int groupName;
+        string groupName;
         DateTime debutDay;
         int fandomID;
         string description;
 
         public int GroupID { get => groupID; set => groupID = value; }
-        public int GroupName { get => groupName; set => groupName = value; }
+        public string GroupName { get => groupName; set => groupName = value; }
         public DateTime DebutDay { get => debutDay; set => debutDay = value; }
         public int FandomID { get => fandomID; set => fandomID = value; }
         public string Description { get => description; set => description = value; }

@@ -117,9 +117,15 @@ namespace ArtistMNG.Subform
 
         void LoadDesign()
         {
+            this.Icon = ImageFile.SetWindowIcon("AMlogo.ico");
+          
             //database
             DatagridViewStyle.DarkStyle(dataGridView_DatabaseFandom);
             DatagridViewStyle.MinimumWidth(dataGridView_DatabaseFandom, 100);
+
+            //Label set size
+            label_selectedFandomInfor.MaximumSize = new Size(groupBox_CurrentFandomInfor.Width - (groupBox_CurrentFandomInfor.Width * 10 / 100), 0);
+            label_selectedFandomInfor.AutoSize = true;
         }
 
     }

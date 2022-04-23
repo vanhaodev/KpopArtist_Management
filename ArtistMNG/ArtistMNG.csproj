@@ -32,6 +32,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>AMlogo.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -141,6 +144,7 @@
     <None Include="Resources\20210813104725-cce5.jpeg" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AMlogo.ico" />
     <Content Include="Assets\Icon\password_eye_hide.png" />
     <Content Include="Assets\Icon\password_eye_show.png" />
     <Content Include="Assets\Image\blackpink.jpg" />

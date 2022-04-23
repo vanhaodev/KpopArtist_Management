@@ -36,6 +36,9 @@ namespace ArtistMNG
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
@@ -43,9 +46,6 @@ namespace ArtistMNG
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel_MainWorkSpace = new System.Windows.Forms.Panel();
             this.btnNewRow = new System.Windows.Forms.Button();
             this.panel_ArtistManager = new System.Windows.Forms.Panel();
@@ -94,6 +94,7 @@ namespace ArtistMNG
             this.labelArtist_Fandom = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.panel_ArtistInforGroup = new System.Windows.Forms.Panel();
+            this.dataGridViewArtist_Group = new System.Windows.Forms.DataGridView();
             this.buttonArtist_EditGroup = new System.Windows.Forms.Button();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.buttonArtist_EditSong = new System.Windows.Forms.Button();
@@ -142,7 +143,6 @@ namespace ArtistMNG
             this.pictureBox_LoadingGIF = new System.Windows.Forms.PictureBox();
             this.label_AppStatus = new System.Windows.Forms.Label();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            this.dataGridViewArtist_Group = new System.Windows.Forms.DataGridView();
             this.panel_MainWorkSpace.SuspendLayout();
             this.panel_ArtistManager.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_ArtistImageLoadingGIF)).BeginInit();
@@ -173,6 +173,7 @@ namespace ArtistMNG
             this.panel_ArtistInforFandom.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.panel_ArtistInforGroup.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewArtist_Group)).BeginInit();
             this.groupBox5.SuspendLayout();
             this.panel_ArtistInforSong.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewArtist_Song)).BeginInit();
@@ -190,7 +191,6 @@ namespace ArtistMNG
             this.panel_UserInfor.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBo_userAvatarMin)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_LoadingGIF)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewArtist_Group)).BeginInit();
             this.SuspendLayout();
             // 
             // panel_MainWorkSpace
@@ -266,7 +266,7 @@ namespace ArtistMNG
             // 
             this.pictureBox_ArtistImageLoadingGIF.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.pictureBox_ArtistImageLoadingGIF.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.pictureBox_ArtistImageLoadingGIF.Location = new System.Drawing.Point(73, 3956);
+            this.pictureBox_ArtistImageLoadingGIF.Location = new System.Drawing.Point(73, 7967);
             this.pictureBox_ArtistImageLoadingGIF.Name = "pictureBox_ArtistImageLoadingGIF";
             this.pictureBox_ArtistImageLoadingGIF.Size = new System.Drawing.Size(43, 45);
             this.pictureBox_ArtistImageLoadingGIF.TabIndex = 18;
@@ -328,7 +328,7 @@ namespace ArtistMNG
             this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.AutoScroll = true;
-            this.panel1.Location = new System.Drawing.Point(24, 2053);
+            this.panel1.Location = new System.Drawing.Point(20, 2178);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(6, 413);
             this.panel1.TabIndex = 5;
@@ -575,7 +575,7 @@ namespace ArtistMNG
             this.groupBox8.Controls.Add(this.panel_ArtistInforSNS);
             this.groupBox8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox8.ForeColor = System.Drawing.Color.White;
-            this.groupBox8.Location = new System.Drawing.Point(10, 1743);
+            this.groupBox8.Location = new System.Drawing.Point(10, 1883);
             this.groupBox8.Name = "groupBox8";
             this.groupBox8.Size = new System.Drawing.Size(461, 227);
             this.groupBox8.TabIndex = 11;
@@ -656,7 +656,7 @@ namespace ArtistMNG
             this.groupBox7.Controls.Add(this.panel_ArtistInforLabel);
             this.groupBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox7.ForeColor = System.Drawing.Color.White;
-            this.groupBox7.Location = new System.Drawing.Point(10, 1532);
+            this.groupBox7.Location = new System.Drawing.Point(10, 1672);
             this.groupBox7.Name = "groupBox7";
             this.groupBox7.Size = new System.Drawing.Size(461, 205);
             this.groupBox7.TabIndex = 10;
@@ -718,7 +718,7 @@ namespace ArtistMNG
             this.groupBox6.Controls.Add(this.panel_ArtistInforAlbum);
             this.groupBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox6.ForeColor = System.Drawing.Color.White;
-            this.groupBox6.Location = new System.Drawing.Point(10, 1216);
+            this.groupBox6.Location = new System.Drawing.Point(10, 1356);
             this.groupBox6.Name = "groupBox6";
             this.groupBox6.Size = new System.Drawing.Size(461, 310);
             this.groupBox6.TabIndex = 9;
@@ -795,12 +795,13 @@ namespace ArtistMNG
             // 
             this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox1.Controls.Add(this.buttonArtist_EditFandom);
             this.groupBox1.Controls.Add(this.panel_ArtistInforFandom);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.ForeColor = System.Drawing.Color.White;
             this.groupBox1.Location = new System.Drawing.Point(10, 752);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(461, 100);
+            this.groupBox1.Size = new System.Drawing.Size(461, 240);
             this.groupBox1.TabIndex = 6;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Fandom";
@@ -810,11 +811,10 @@ namespace ArtistMNG
             this.panel_ArtistInforFandom.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel_ArtistInforFandom.AutoScroll = true;
-            this.panel_ArtistInforFandom.Controls.Add(this.buttonArtist_EditFandom);
             this.panel_ArtistInforFandom.Controls.Add(this.labelArtist_Fandom);
             this.panel_ArtistInforFandom.Location = new System.Drawing.Point(3, 23);
             this.panel_ArtistInforFandom.Name = "panel_ArtistInforFandom";
-            this.panel_ArtistInforFandom.Size = new System.Drawing.Size(452, 74);
+            this.panel_ArtistInforFandom.Size = new System.Drawing.Size(452, 169);
             this.panel_ArtistInforFandom.TabIndex = 2;
             // 
             // buttonArtist_EditFandom
@@ -825,7 +825,7 @@ namespace ArtistMNG
             this.buttonArtist_EditFandom.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonArtist_EditFandom.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonArtist_EditFandom.ForeColor = System.Drawing.Color.White;
-            this.buttonArtist_EditFandom.Location = new System.Drawing.Point(365, 35);
+            this.buttonArtist_EditFandom.Location = new System.Drawing.Point(372, 198);
             this.buttonArtist_EditFandom.Name = "buttonArtist_EditFandom";
             this.buttonArtist_EditFandom.Size = new System.Drawing.Size(83, 36);
             this.buttonArtist_EditFandom.TabIndex = 16;
@@ -869,6 +869,44 @@ namespace ArtistMNG
             this.panel_ArtistInforGroup.Size = new System.Drawing.Size(452, 156);
             this.panel_ArtistInforGroup.TabIndex = 2;
             // 
+            // dataGridViewArtist_Group
+            // 
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.dataGridViewArtist_Group.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
+            this.dataGridViewArtist_Group.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dataGridViewArtist_Group.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridViewArtist_Group.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(55)))), ((int)(((byte)(59)))));
+            this.dataGridViewArtist_Group.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dataGridViewArtist_Group.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.InfoText;
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewArtist_Group.DefaultCellStyle = dataGridViewCellStyle8;
+            this.dataGridViewArtist_Group.GridColor = System.Drawing.SystemColors.ControlText;
+            this.dataGridViewArtist_Group.Location = new System.Drawing.Point(3, 3);
+            this.dataGridViewArtist_Group.Name = "dataGridViewArtist_Group";
+            this.dataGridViewArtist_Group.ReadOnly = true;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle9.BackColor = System.Drawing.SystemColors.GrayText;
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle9.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewArtist_Group.RowHeadersDefaultCellStyle = dataGridViewCellStyle9;
+            this.dataGridViewArtist_Group.RowHeadersWidth = 51;
+            this.dataGridViewArtist_Group.RowTemplate.Height = 24;
+            this.dataGridViewArtist_Group.Size = new System.Drawing.Size(444, 108);
+            this.dataGridViewArtist_Group.TabIndex = 3;
+            // 
             // buttonArtist_EditGroup
             // 
             this.buttonArtist_EditGroup.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
@@ -894,7 +932,7 @@ namespace ArtistMNG
             this.groupBox5.Controls.Add(this.panel_ArtistInforSong);
             this.groupBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox5.ForeColor = System.Drawing.Color.White;
-            this.groupBox5.Location = new System.Drawing.Point(10, 858);
+            this.groupBox5.Location = new System.Drawing.Point(10, 998);
             this.groupBox5.Name = "groupBox5";
             this.groupBox5.Size = new System.Drawing.Size(461, 352);
             this.groupBox5.TabIndex = 8;
@@ -1486,44 +1524,6 @@ namespace ArtistMNG
             this.backgroundWorker1.DoWork += new System.ComponentModel.DoWorkEventHandler(this.backgroundWorker1_DoWork);
             this.backgroundWorker1.RunWorkerCompleted += new System.ComponentModel.RunWorkerCompletedEventHandler(this.backgroundWorker1_RunWorkerCompleted);
             // 
-            // dataGridViewArtist_Group
-            // 
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.dataGridViewArtist_Group.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
-            this.dataGridViewArtist_Group.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.dataGridViewArtist_Group.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridViewArtist_Group.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(55)))), ((int)(((byte)(59)))));
-            this.dataGridViewArtist_Group.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dataGridViewArtist_Group.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.InfoText;
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridViewArtist_Group.DefaultCellStyle = dataGridViewCellStyle8;
-            this.dataGridViewArtist_Group.GridColor = System.Drawing.SystemColors.ControlText;
-            this.dataGridViewArtist_Group.Location = new System.Drawing.Point(3, 3);
-            this.dataGridViewArtist_Group.Name = "dataGridViewArtist_Group";
-            this.dataGridViewArtist_Group.ReadOnly = true;
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle9.BackColor = System.Drawing.SystemColors.GrayText;
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle9.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewArtist_Group.RowHeadersDefaultCellStyle = dataGridViewCellStyle9;
-            this.dataGridViewArtist_Group.RowHeadersWidth = 51;
-            this.dataGridViewArtist_Group.RowTemplate.Height = 24;
-            this.dataGridViewArtist_Group.Size = new System.Drawing.Size(444, 108);
-            this.dataGridViewArtist_Group.TabIndex = 3;
-            // 
             // frmApp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
@@ -1578,6 +1578,7 @@ namespace ArtistMNG
             this.panel_ArtistInforFandom.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.panel_ArtistInforGroup.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewArtist_Group)).EndInit();
             this.groupBox5.ResumeLayout(false);
             this.panel_ArtistInforSong.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewArtist_Song)).EndInit();
@@ -1603,7 +1604,6 @@ namespace ArtistMNG
             this.panel_UserInfor.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBo_userAvatarMin)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_LoadingGIF)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewArtist_Group)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -358,6 +358,13 @@ namespace ArtistMNG.Subform
                 {
                     frmApp.artistImage.Add(modelImage.ImageURL);
                 }
+                for(int i = 0; i < ModelArtist.Instance.ArtistImage_Delete.Count; i++)
+                {
+                    if(ModelArtist.Instance.ArtistImage_Delete[i].ImageURL == modelImage.ImageURL)
+                    {
+                        ModelArtist.Instance.ArtistImage_Delete.RemoveAt(i);
+                    }
+                }
             }   
             else
             {
@@ -368,6 +375,25 @@ namespace ArtistMNG.Subform
 
         void LoadDesign()
         {
+            this.Icon = ImageFile.SetWindowIcon("AMlogo.ico");
+            switch(frmApp.currentTable)
+            {
+                case DatabaseTable.Artist:
+                    this.Text = "Nghệ sĩ (Ảnh)";
+                    break;
+                case DatabaseTable.Group:
+                    this.Text = "Nhóm (Ảnh)";
+                    break;
+                case DatabaseTable.Song:
+                    this.Text = "Bài hát (Ảnh)";
+                    break;
+                case DatabaseTable.Album:
+                    this.Text = "Album (Ảnh)";
+                    break;
+                case DatabaseTable.Label:
+                    this.Text = "Công ty (Ảnh)";
+                    break;
+            }
             btnApplyAdd.Enabled = true;
             btnApplyDelete.Enabled = false;
             btnApplyEdit.Enabled = false;

@@ -13,5 +13,9 @@ namespace ArtistMNG.Module.ImageFile
         {
             return Image.FromFile(System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Assets", "Icon", fileName));
         }
+        public static Icon SetWindowIcon(string fileName)
+        {
+            return Icon.ExtractAssociatedIcon(System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Assets", "Icon", fileName));
+        }
     }
 }
