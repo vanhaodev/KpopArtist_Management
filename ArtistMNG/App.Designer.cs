@@ -89,8 +89,8 @@ namespace ArtistMNG
             this.panel_ArtistInforAlbum = new System.Windows.Forms.Panel();
             this.dataGridViewArtist_Album = new System.Windows.Forms.DataGridView();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.panel_ArtistInforFandom = new System.Windows.Forms.Panel();
             this.buttonArtist_EditFandom = new System.Windows.Forms.Button();
+            this.panel_ArtistInforFandom = new System.Windows.Forms.Panel();
             this.labelArtist_Fandom = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.panel_ArtistInforGroup = new System.Windows.Forms.Panel();
@@ -266,7 +266,7 @@ namespace ArtistMNG
             // 
             this.pictureBox_ArtistImageLoadingGIF.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.pictureBox_ArtistImageLoadingGIF.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.pictureBox_ArtistImageLoadingGIF.Location = new System.Drawing.Point(73, 7967);
+            this.pictureBox_ArtistImageLoadingGIF.Location = new System.Drawing.Point(73, 12675);
             this.pictureBox_ArtistImageLoadingGIF.Name = "pictureBox_ArtistImageLoadingGIF";
             this.pictureBox_ArtistImageLoadingGIF.Size = new System.Drawing.Size(43, 45);
             this.pictureBox_ArtistImageLoadingGIF.TabIndex = 18;
@@ -328,9 +328,9 @@ namespace ArtistMNG
             this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.AutoScroll = true;
-            this.panel1.Location = new System.Drawing.Point(20, 2178);
+            this.panel1.Location = new System.Drawing.Point(31, 2464);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(6, 413);
+            this.panel1.Size = new System.Drawing.Size(86, 413);
             this.panel1.TabIndex = 5;
             // 
             // groupBox3
@@ -575,7 +575,7 @@ namespace ArtistMNG
             this.groupBox8.Controls.Add(this.panel_ArtistInforSNS);
             this.groupBox8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox8.ForeColor = System.Drawing.Color.White;
-            this.groupBox8.Location = new System.Drawing.Point(10, 1883);
+            this.groupBox8.Location = new System.Drawing.Point(10, 2057);
             this.groupBox8.Name = "groupBox8";
             this.groupBox8.Size = new System.Drawing.Size(461, 227);
             this.groupBox8.TabIndex = 11;
@@ -656,7 +656,7 @@ namespace ArtistMNG
             this.groupBox7.Controls.Add(this.panel_ArtistInforLabel);
             this.groupBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox7.ForeColor = System.Drawing.Color.White;
-            this.groupBox7.Location = new System.Drawing.Point(10, 1672);
+            this.groupBox7.Location = new System.Drawing.Point(10, 1846);
             this.groupBox7.Name = "groupBox7";
             this.groupBox7.Size = new System.Drawing.Size(461, 205);
             this.groupBox7.TabIndex = 10;
@@ -718,7 +718,7 @@ namespace ArtistMNG
             this.groupBox6.Controls.Add(this.panel_ArtistInforAlbum);
             this.groupBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox6.ForeColor = System.Drawing.Color.White;
-            this.groupBox6.Location = new System.Drawing.Point(10, 1356);
+            this.groupBox6.Location = new System.Drawing.Point(10, 1530);
             this.groupBox6.Name = "groupBox6";
             this.groupBox6.Size = new System.Drawing.Size(461, 310);
             this.groupBox6.TabIndex = 9;
@@ -799,23 +799,12 @@ namespace ArtistMNG
             this.groupBox1.Controls.Add(this.panel_ArtistInforFandom);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.ForeColor = System.Drawing.Color.White;
-            this.groupBox1.Location = new System.Drawing.Point(10, 752);
+            this.groupBox1.Location = new System.Drawing.Point(10, 926);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(461, 240);
             this.groupBox1.TabIndex = 6;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Fandom";
-            // 
-            // panel_ArtistInforFandom
-            // 
-            this.panel_ArtistInforFandom.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel_ArtistInforFandom.AutoScroll = true;
-            this.panel_ArtistInforFandom.Controls.Add(this.labelArtist_Fandom);
-            this.panel_ArtistInforFandom.Location = new System.Drawing.Point(3, 23);
-            this.panel_ArtistInforFandom.Name = "panel_ArtistInforFandom";
-            this.panel_ArtistInforFandom.Size = new System.Drawing.Size(452, 169);
-            this.panel_ArtistInforFandom.TabIndex = 2;
             // 
             // buttonArtist_EditFandom
             // 
@@ -834,6 +823,17 @@ namespace ArtistMNG
             this.buttonArtist_EditFandom.UseVisualStyleBackColor = false;
             this.buttonArtist_EditFandom.Click += new System.EventHandler(this.buttonArtist_EditFandom_Click);
             // 
+            // panel_ArtistInforFandom
+            // 
+            this.panel_ArtistInforFandom.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel_ArtistInforFandom.AutoScroll = true;
+            this.panel_ArtistInforFandom.Controls.Add(this.labelArtist_Fandom);
+            this.panel_ArtistInforFandom.Location = new System.Drawing.Point(3, 23);
+            this.panel_ArtistInforFandom.Name = "panel_ArtistInforFandom";
+            this.panel_ArtistInforFandom.Size = new System.Drawing.Size(452, 169);
+            this.panel_ArtistInforFandom.TabIndex = 2;
+            // 
             // labelArtist_Fandom
             // 
             this.labelArtist_Fandom.AutoSize = true;
@@ -850,7 +850,7 @@ namespace ArtistMNG
             this.groupBox2.Controls.Add(this.panel_ArtistInforGroup);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.ForeColor = System.Drawing.Color.White;
-            this.groupBox2.Location = new System.Drawing.Point(10, 561);
+            this.groupBox2.Location = new System.Drawing.Point(10, 735);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(461, 185);
             this.groupBox2.TabIndex = 7;
@@ -932,7 +932,7 @@ namespace ArtistMNG
             this.groupBox5.Controls.Add(this.panel_ArtistInforSong);
             this.groupBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox5.ForeColor = System.Drawing.Color.White;
-            this.groupBox5.Location = new System.Drawing.Point(10, 998);
+            this.groupBox5.Location = new System.Drawing.Point(10, 1172);
             this.groupBox5.Name = "groupBox5";
             this.groupBox5.Size = new System.Drawing.Size(461, 352);
             this.groupBox5.TabIndex = 8;
@@ -1014,7 +1014,7 @@ namespace ArtistMNG
             this.groupBox4.ForeColor = System.Drawing.Color.White;
             this.groupBox4.Location = new System.Drawing.Point(10, 357);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(461, 198);
+            this.groupBox4.Size = new System.Drawing.Size(461, 372);
             this.groupBox4.TabIndex = 8;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Mô tả";
@@ -1027,7 +1027,7 @@ namespace ArtistMNG
             this.panel_ArtistInforDescription.Controls.Add(this.txArtist_Description);
             this.panel_ArtistInforDescription.Location = new System.Drawing.Point(6, 26);
             this.panel_ArtistInforDescription.Name = "panel_ArtistInforDescription";
-            this.panel_ArtistInforDescription.Size = new System.Drawing.Size(449, 166);
+            this.panel_ArtistInforDescription.Size = new System.Drawing.Size(449, 340);
             this.panel_ArtistInforDescription.TabIndex = 4;
             // 
             // txArtist_Description
@@ -1039,7 +1039,7 @@ namespace ArtistMNG
             this.txArtist_Description.Multiline = true;
             this.txArtist_Description.Name = "txArtist_Description";
             this.txArtist_Description.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txArtist_Description.Size = new System.Drawing.Size(442, 160);
+            this.txArtist_Description.Size = new System.Drawing.Size(442, 334);
             this.txArtist_Description.TabIndex = 1;
             // 
             // panel_DataContent

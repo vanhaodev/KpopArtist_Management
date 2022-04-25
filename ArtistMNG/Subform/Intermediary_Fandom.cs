@@ -1,4 +1,5 @@
 ﻿using ArtistMNG.Module;
+using ArtistMNG.Module.ControlStyle;
 using ArtistMNG.Module.ImageFile;
 using ArtistMNG.Module.SQL;
 using System;
@@ -15,12 +16,9 @@ namespace ArtistMNG.Subform
 {
     public partial class Intermediary_Fandom : Form
     {
-        int artistID, groupID;
-        public Intermediary_Fandom(int artistID, int groupID)
+        public Intermediary_Fandom()
         {
             InitializeComponent();
-            this.artistID = artistID;
-            this.groupID = groupID;
             LoadDesign();
         }
 
@@ -42,33 +40,33 @@ namespace ArtistMNG.Subform
         void loadGridView()
         {
             DataTable targetFandom = new DataTable();
-            
-            
-            if (artistID > 0)
+            //QueryData.Instance.Artist
+
+            if (QueryData.Instance.Artist.ArtistID > 0)
             {              
-                if(ModelArtist.Instance.Fandom.FandomID != 0)
+                if(QueryData.Instance.Artist.Fandom.FandomID != 0)
                 {
-                    targetFandom = DatabaseManager.ShowDataQuery($"SELECT * FROM [Fandom] WHERE FandomID = {ModelArtist.Instance.Fandom.FandomID}");
+                    targetFandom = DatabaseManager.ShowDataQuery($"SELECT * FROM [Fandom] WHERE FandomID = {QueryData.Instance.Artist.Fandom.FandomID}");
                 }    
                 else
                 {
                     targetFandom = DatabaseManager.ShowDataQuery(
                     $"SELECT _Fandom.* FROM [Fandom] _Fandom " +
                     $"LEFT JOIN [Artist] _Artist ON _Artist.FandomID = _Fandom.FandomID " +
-                    $"WHERE _Artist.ArtistID = {artistID}"
+                    $"WHERE _Artist.ArtistID = {QueryData.Instance.Artist.ArtistID}"
                     );
                 }    
 
             }
-            else if (groupID > 0)
+            else if (QueryData.Instance.Group.GroupID > 0)
             {
-                targetFandom = DatabaseManager.ShowDataStoredProcedure("Group_GetFandom", groupID.ToString());               
+                targetFandom = DatabaseManager.ShowDataStoredProcedure("Group_GetFandom", QueryData.Instance.Group.GroupID.ToString());               
             }
-            else if(artistID == 0 && groupID == 0)
+            else if(QueryData.Instance.Artist.ArtistID == 0 && QueryData.Instance.Group.GroupID == 0)
             {
-                if (ModelArtist.Instance.Fandom != null && ModelArtist.Instance.Fandom.FandomID != 0)
+                if (QueryData.Instance.Artist.Fandom != null && QueryData.Instance.Artist.Fandom.FandomID != 0)
                 {
-                    targetFandom = DatabaseManager.ShowDataQuery($"SELECT * FROM [Fandom] WHERE FandomID = {ModelArtist.Instance.Fandom.FandomID}");
+                    targetFandom = DatabaseManager.ShowDataQuery($"SELECT * FROM [Fandom] WHERE FandomID = {QueryData.Instance.Artist.Fandom.FandomID}");
                 }
             }    
 
@@ -83,9 +81,9 @@ namespace ArtistMNG.Subform
                     $"ID: {targetFandom.Rows[0][0]}\n" +
                     $"Tên: {targetFandom.Rows[0][1]}\n" +
                     $"Mô tả: {targetFandom.Rows[0][2]}";
-                ModelArtist.Instance.Fandom.FandomID = (int)targetFandom.Rows[0][0];
-                ModelArtist.Instance.Fandom.FandomName = targetFandom.Rows[0][1].ToString();
-                ModelArtist.Instance.Fandom.Description = targetFandom.Rows[0][2].ToString();
+                QueryData.Instance.Artist.Fandom.FandomID = (int)targetFandom.Rows[0][0];
+                QueryData.Instance.Artist.Fandom.FandomName = targetFandom.Rows[0][1].ToString();
+                QueryData.Instance.Artist.Fandom.Description = targetFandom.Rows[0][2].ToString();
             }
 
             
@@ -104,21 +102,30 @@ namespace ArtistMNG.Subform
                     $"Tên: {dataGridView_DatabaseFandom.SelectedRows[0].Cells[1].Value}\n" +
                     $"Mô tả: {dataGridView_DatabaseFandom.SelectedRows[0].Cells[2].Value}";
 
-            ModelArtist.Instance.Fandom.FandomID = (int)dataGridView_DatabaseFandom.SelectedRows[0].Cells[0].Value;
-            ModelArtist.Instance.Fandom.FandomName = dataGridView_DatabaseFandom.SelectedRows[0].Cells[1].Value.ToString();
-            ModelArtist.Instance.Fandom.Description = dataGridView_DatabaseFandom.SelectedRows[0].Cells[2].Value.ToString();
+            QueryData.Instance.Artist.Fandom.FandomID = (int)dataGridView_DatabaseFandom.SelectedRows[0].Cells[0].Value;
+            QueryData.Instance.Artist.Fandom.FandomName = dataGridView_DatabaseFandom.SelectedRows[0].Cells[1].Value.ToString();
+            QueryData.Instance.Artist.Fandom.Description = dataGridView_DatabaseFandom.SelectedRows[0].Cells[2].Value.ToString();
         }
 
         private void btnClearFandom_Click(object sender, EventArgs e)
         {
             label_selectedFandomInfor.Text = "Không có fandom";
-            ModelArtist.Instance.Fandom = new ModelFandom();
+            QueryData.Instance.Artist.Fandom = new ModelFandom();
         }
 
         void LoadDesign()
         {
             this.Icon = ImageFile.SetWindowIcon("AMlogo.ico");
-          
+            switch(frmApp.currentTable)
+            {
+                case DatabaseTable.Artist:
+                    this.Text = "Nghệ sĩ (Fandom)";
+                    break;
+                case DatabaseTable.Group:
+                    this.Text = "Nhóm (Fandom)";
+                    break;
+            }
+            
             //database
             DatagridViewStyle.DarkStyle(dataGridView_DatabaseFandom);
             DatagridViewStyle.MinimumWidth(dataGridView_DatabaseFandom, 100);
@@ -126,6 +133,13 @@ namespace ArtistMNG.Subform
             //Label set size
             label_selectedFandomInfor.MaximumSize = new Size(groupBox_CurrentFandomInfor.Width - (groupBox_CurrentFandomInfor.Width * 10 / 100), 0);
             label_selectedFandomInfor.AutoSize = true;
+            groupBox2.Paint += PaintBorderlessGroupBox;
+            groupBox6.Paint += PaintBorderlessGroupBox;
+
+        }
+        void PaintBorderlessGroupBox(object sender, PaintEventArgs e)
+        {
+            GroupBoxStyle.PaintBorderlessGroupBox(sender, e, this);
         }
 
     }

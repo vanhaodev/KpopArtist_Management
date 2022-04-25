@@ -1,4 +1,5 @@
-﻿using ArtistMNG.Module.ImageFile;
+﻿using ArtistMNG.Module.ControlStyle;
+using ArtistMNG.Module.ImageFile;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -25,6 +26,9 @@ namespace ArtistMNG.Subform
         {
             this.Icon = ImageFile.SetWindowIcon("AMlogo.ico");
         }
-
+        void PaintBorderlessGroupBox(object sender, PaintEventArgs e)
+        {
+            GroupBoxStyle.PaintBorderlessGroupBox(sender, e, this);
+        }
     }
 }
