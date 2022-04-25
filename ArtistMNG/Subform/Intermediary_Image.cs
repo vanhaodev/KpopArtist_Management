@@ -1,4 +1,5 @@
 ﻿using ArtistMNG.Module;
+using ArtistMNG.Module.ControlStyle;
 using ArtistMNG.Module.ImageFile;
 using ArtistMNG.Module.SQL;
 using System;
@@ -15,15 +16,11 @@ namespace ArtistMNG.Subform
 {
     public partial class Intermediary_Image : Form
     {
-        int artistID, groupID;
         bool isCreateNewRow;
 
-        public Intermediary_Image(int artistID, int groupID)
+        public Intermediary_Image()
         {
             InitializeComponent();
-            this.artistID = artistID;
-            this.groupID = groupID;
-            MessageBox.Show($"Artist: {artistID}\nGroup: {groupID}");
             LoadDesign();
         }
 
@@ -47,43 +44,43 @@ namespace ArtistMNG.Subform
             {
                 dataGridView_DatabaseImage.Rows.Add(databaseImage.Rows[i][0], databaseImage.Rows[i][1], databaseImage.Rows[i][2]);
             }
-            if (artistID > 0)
+            if (QueryData.Instance.Artist.ArtistID > 0)
             {
-                var targetImage = DatabaseManager.ShowDataStoredProcedure("Artist_GetImage", artistID.ToString());
+                var targetImage = DatabaseManager.ShowDataStoredProcedure("Artist_GetImage", QueryData.Instance.Artist.ArtistID.ToString());
                 for (int i = 0; i < targetImage.Rows.Count; i++)
                 {
                     dataGridView_TargetImage.Rows.Add(targetImage.Rows[i][0], targetImage.Rows[i][1], targetImage.Rows[i][2]);
                 }                  
 
                 //set delete  
-                for(int i = 0; i < ModelArtist.Instance.ArtistImage_Delete.Count; i++)
+                for(int i = 0; i < QueryData.Instance.Artist.ArtistImage_Delete.Count; i++)
                 {
                     for (int j = dataGridView_TargetImage.Rows.Count - 1; j >= 0; j--)
                     {
-                        if (ModelArtist.Instance.ArtistImage_Delete[i].ImageID == (int)dataGridView_TargetImage.Rows[j].Cells[0].Value)
+                        if (QueryData.Instance.Artist.ArtistImage_Delete[i].ImageID == (int)dataGridView_TargetImage.Rows[j].Cells[0].Value)
                         {
                             dataGridView_TargetImage.Rows.RemoveAt(j);
                         }
                     }    
                 }    
             }
-            else if (groupID > 0)
+            else if (QueryData.Instance.Group.GroupID > 0)
             {
-                var targetImage = DatabaseManager.ShowDataStoredProcedure("Group_GetImage", groupID.ToString());
+                var targetImage = DatabaseManager.ShowDataStoredProcedure("Group_GetImage", QueryData.Instance.Group.GroupID.ToString());
                 for (int i = 0; i < targetImage.Rows.Count; i++)
                 {
                     dataGridView_TargetImage.Rows.Add(targetImage.Rows[i][0], targetImage.Rows[i][1], targetImage.Rows[i][2]);
                 }
             }
 
-            if(groupID == 0) //group id là 0 thì gọi artist data
+            if(QueryData.Instance.Group.GroupID == 0) //group id là 0 thì gọi artist data
             {
-                for (int i = 0; i < ModelArtist.Instance.ArtistImage_Add.Count; i++)
+                for (int i = 0; i < QueryData.Instance.Artist.ArtistImage_Add.Count; i++)
                 {
-                    dataGridView_TargetImage.Rows.Add(ModelArtist.Instance.ArtistImage_Add[i].ImageID, ModelArtist.Instance.ArtistImage_Add[i].ImageURL, ModelArtist.Instance.ArtistImage_Add[i].Description);
+                    dataGridView_TargetImage.Rows.Add(QueryData.Instance.Artist.ArtistImage_Add[i].ImageID, QueryData.Instance.Artist.ArtistImage_Add[i].ImageURL, QueryData.Instance.Artist.ArtistImage_Add[i].Description);
                 }
             }
-            else if (artistID == 0) //arttis id là 0 thì gọi group data
+            else if (QueryData.Instance.Group.GroupID == 0) //arttis id là 0 thì gọi group data
             {
                 
             }
@@ -171,7 +168,7 @@ namespace ArtistMNG.Subform
                 }    
             }
 
-            ModelArtist.Instance.ArtistImage_Add.Add(modelImage);
+            QueryData.Instance.Artist.ArtistImage_Add.Add(modelImage);
 
             bool artistImageIsContains = false;
             for (int i = 0; i < frmApp.artistImage.Count; i++)
@@ -202,27 +199,27 @@ namespace ArtistMNG.Subform
             }
 
           
-            if (artistID == 0 && groupID == 0)
+            if (QueryData.Instance.Artist.ArtistID == 0 && QueryData.Instance.Group.GroupID == 0)
             {               
-                for(int i = 0; i < ModelArtist.Instance.ArtistImage_Add.Count; i++)
+                for(int i = 0; i < QueryData.Instance.Artist.ArtistImage_Add.Count; i++)
                 {
-                    if(ModelArtist.Instance.ArtistImage_Add[i].ImageURL == dataGridView_TargetImage.SelectedRows[0].Cells[1].Value.ToString())
+                    if(QueryData.Instance.Artist.ArtistImage_Add[i].ImageURL == dataGridView_TargetImage.SelectedRows[0].Cells[1].Value.ToString())
                     {
-                        ModelArtist.Instance.ArtistImage_Add[i].ImageURL = tx_ImageURL.Text;
-                        ModelArtist.Instance.ArtistImage_Add[i].Description = txImageDescription.Text;
+                        QueryData.Instance.Artist.ArtistImage_Add[i].ImageURL = tx_ImageURL.Text;
+                        QueryData.Instance.Artist.ArtistImage_Add[i].Description = txImageDescription.Text;
                         break;
                     }    
                 }    
             }    
-            else if(artistID > 0)
+            else if(QueryData.Instance.Artist.ArtistID > 0)
             {
                 bool isContains = false;
-                for (int i = 0; i < ModelArtist.Instance.ArtistImage_Update.Count; i++)
+                for (int i = 0; i < QueryData.Instance.Artist.ArtistImage_Update.Count; i++)
                 {
-                    if (ModelArtist.Instance.ArtistImage_Update[i].ImageID == (int)dataGridView_TargetImage.SelectedRows[0].Cells[0].Value)
+                    if (QueryData.Instance.Artist.ArtistImage_Update[i].ImageID == (int)dataGridView_TargetImage.SelectedRows[0].Cells[0].Value)
                     {
-                        ModelArtist.Instance.ArtistImage_Update[i].ImageURL = tx_ImageURL.Text;
-                        ModelArtist.Instance.ArtistImage_Update[i].Description = txImageDescription.Text;
+                        QueryData.Instance.Artist.ArtistImage_Update[i].ImageURL = tx_ImageURL.Text;
+                        QueryData.Instance.Artist.ArtistImage_Update[i].Description = txImageDescription.Text;
                         isContains = true;
                         break;
                     }
@@ -233,10 +230,10 @@ namespace ArtistMNG.Subform
                     modelImage.ImageID = (int)dataGridView_TargetImage.SelectedRows[0].Cells[1].Value;
                     modelImage.ImageURL = tx_ImageURL.Text;
                     modelImage.Description = txImageDescription.Text;
-                    ModelArtist.Instance.ArtistImage_Update.Add(modelImage);
+                    QueryData.Instance.Artist.ArtistImage_Update.Add(modelImage);
                 }    
             }   
-            else if(groupID > 0)
+            else if(QueryData.Instance.Group.GroupID > 0)
             {
 
             }
@@ -257,34 +254,34 @@ namespace ArtistMNG.Subform
                 return;
             }
             string selectedUrl = dataGridView_TargetImage.SelectedRows[0].Cells[1].Value.ToString();
-            if (artistID == 0 && groupID == 0)
+            if (QueryData.Instance.Artist.ArtistID == 0 && QueryData.Instance.Group.GroupID == 0)
             {
                 //do nothing    
             }    
-            else if (artistID > 0)
+            else if (QueryData.Instance.Artist.ArtistID > 0)
             {
                 ModelImage modelImage = new ModelImage();
                 modelImage.ImageID = (int)dataGridView_TargetImage.SelectedRows[0].Cells[0].Value;
                 modelImage.ImageURL = dataGridView_TargetImage.SelectedRows[0].Cells[1].Value.ToString();
                 modelImage.Description = dataGridView_TargetImage.SelectedRows[0].Cells[2].Value.ToString();
 
-                if (ModelArtist.Instance.ArtistImage_Add.Count < 1)
+                if (QueryData.Instance.Artist.ArtistImage_Add.Count < 1)
                 {
-                    MessageBox.Show($"ModelArtist.Instance.ArtistImage_Add.Count {ModelArtist.Instance.ArtistImage_Add.Count}");
-                    ModelArtist.Instance.ArtistImage_Delete.Add(modelImage);
+                    MessageBox.Show($"QueryData.Instance.Artist.ArtistImage_Add.Count {QueryData.Instance.Artist.ArtistImage_Add.Count}");
+                    QueryData.Instance.Artist.ArtistImage_Delete.Add(modelImage);
                 }
-                for (int i = 0; i < ModelArtist.Instance.ArtistImage_Add.Count; i++)
+                for (int i = 0; i < QueryData.Instance.Artist.ArtistImage_Add.Count; i++)
                 {
-                    if (ModelArtist.Instance.ArtistImage_Add[i].ImageURL == modelImage.ImageURL)
+                    if (QueryData.Instance.Artist.ArtistImage_Add[i].ImageURL == modelImage.ImageURL)
                     {
-                        ModelArtist.Instance.ArtistImage_Add.RemoveAt(i);                            
+                        QueryData.Instance.Artist.ArtistImage_Add.RemoveAt(i);                            
                     }
                     else
                     {
                         bool isContains = false;
-                        for (int j = 0; j < ModelArtist.Instance.ArtistImage_Delete.Count; j++)
+                        for (int j = 0; j < QueryData.Instance.Artist.ArtistImage_Delete.Count; j++)
                         {
-                            if (ModelArtist.Instance.ArtistImage_Delete[j].ImageURL == modelImage.ImageURL)
+                            if (QueryData.Instance.Artist.ArtistImage_Delete[j].ImageURL == modelImage.ImageURL)
                             {
                                 isContains = true;
                             }
@@ -292,28 +289,28 @@ namespace ArtistMNG.Subform
 
                         if (!isContains)
                         {
-                            ModelArtist.Instance.ArtistImage_Delete.Add(modelImage);
+                            QueryData.Instance.Artist.ArtistImage_Delete.Add(modelImage);
                         }
                     }
                 }
 
             }
-            else if (groupID > 0)
+            else if (QueryData.Instance.Group.GroupID > 0)
             {
 
             }
-            if(groupID == 0)
+            if(QueryData.Instance.Group.GroupID == 0)
             {
                 
             }   
-            if(artistID == 0)
+            if(QueryData.Instance.Artist.ArtistID == 0)
             {
                 //set delete  
-                for (int i = 0; i < ModelArtist.Instance.ArtistImage_Add.Count; i++)
+                for (int i = 0; i < QueryData.Instance.Artist.ArtistImage_Add.Count; i++)
                 {
-                    if (ModelArtist.Instance.ArtistImage_Add[i].ImageURL == dataGridView_TargetImage.SelectedRows[0].Cells[1].Value.ToString())
+                    if (QueryData.Instance.Artist.ArtistImage_Add[i].ImageURL == dataGridView_TargetImage.SelectedRows[0].Cells[1].Value.ToString())
                     {
-                        ModelArtist.Instance.ArtistImage_Add.RemoveAt(i);
+                        QueryData.Instance.Artist.ArtistImage_Add.RemoveAt(i);
                     }
                 }   
             }
@@ -343,9 +340,9 @@ namespace ArtistMNG.Subform
                     isContains = true;
                 }                    
             }    
-            for(int j = 0; j < ModelArtist.Instance.ArtistImage_Add.Count; j++)
+            for(int i = 0; i < QueryData.Instance.Artist.ArtistImage_Add.Count; i++)
             {
-                if(ModelArtist.Instance.ArtistImage_Add[0].ImageID == (int)dataGridView_DatabaseImage.SelectedRows[0].Cells[0].Value)
+                if(QueryData.Instance.Artist.ArtistImage_Add[i].ImageID == (int)dataGridView_DatabaseImage.SelectedRows[0].Cells[0].Value)
                 {
                     isContains = true;
                 }    
@@ -357,7 +354,7 @@ namespace ArtistMNG.Subform
                 modelImage.ImageID = (int)dataGridView_DatabaseImage.SelectedRows[0].Cells[0].Value;
                 modelImage.ImageURL = dataGridView_DatabaseImage.SelectedRows[0].Cells[1].Value.ToString();
                 modelImage.Description = dataGridView_DatabaseImage.SelectedRows[0].Cells[2].Value.ToString();
-                ModelArtist.Instance.ArtistImage_Add.Add(modelImage);
+                QueryData.Instance.Artist.ArtistImage_Add.Add(modelImage);
                 dataGridView_TargetImage.Rows.Add(dataGridView_DatabaseImage.SelectedRows[0].Cells[0].Value, dataGridView_DatabaseImage.SelectedRows[0].Cells[1].Value, dataGridView_DatabaseImage.SelectedRows[0].Cells[2].Value);
 
                 bool artistImageIsContains = false;
@@ -372,11 +369,11 @@ namespace ArtistMNG.Subform
                 {
                     frmApp.artistImage.Add(modelImage.ImageURL);
                 }
-                for(int i = 0; i < ModelArtist.Instance.ArtistImage_Delete.Count; i++)
+                for(int i = 0; i < QueryData.Instance.Artist.ArtistImage_Delete.Count; i++)
                 {
-                    if(ModelArtist.Instance.ArtistImage_Delete[i].ImageURL == modelImage.ImageURL)
+                    if(QueryData.Instance.Artist.ArtistImage_Delete[i].ImageURL == modelImage.ImageURL)
                     {
-                        ModelArtist.Instance.ArtistImage_Delete.RemoveAt(i);
+                        QueryData.Instance.Artist.ArtistImage_Delete.RemoveAt(i);
                     }
                 }
             }   
@@ -384,7 +381,7 @@ namespace ArtistMNG.Subform
             {
                 MessageBox.Show("Đã tồn tại dữ liệu tương tự!");
             }
-            MessageBox.Show($"ModelArtist.Instance.ArtistImage_Add.Count {ModelArtist.Instance.ArtistImage_Add.Count}");
+            MessageBox.Show($"QueryData.Instance.Artist.ArtistImage_Add.Count {QueryData.Instance.Artist.ArtistImage_Add.Count}");
         }
 
         void LoadDesign()
@@ -422,7 +419,17 @@ namespace ArtistMNG.Subform
 
             pictureBox_Image.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox_DatabaseImage.SizeMode = PictureBoxSizeMode.Zoom;
+            groupBox1.Paint += PaintBorderlessGroupBox;
+            groupBox2.Paint += PaintBorderlessGroupBox;
+            groupBox3.Paint += PaintBorderlessGroupBox;
+            groupBox4.Paint += PaintBorderlessGroupBox;
+            groupBox5.Paint += PaintBorderlessGroupBox;
+            groupBox6.Paint += PaintBorderlessGroupBox;
             
+        }
+        void PaintBorderlessGroupBox(object sender, PaintEventArgs e)
+        {
+            GroupBoxStyle.PaintBorderlessGroupBox(sender, e, this);
         }
 
     }

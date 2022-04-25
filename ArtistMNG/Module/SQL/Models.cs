@@ -8,20 +8,6 @@ namespace ArtistMNG.Module.SQL
 {
     public class ModelArtist
     {
-        private ModelArtist() { }
-        private static ModelArtist instance = null;
-        public static ModelArtist Instance
-        {
-            get
-            {
-                if (instance == null)
-                {
-                    instance = new ModelArtist();
-                }
-                return instance;
-            }
-        }
-
         int artistID;
         string stageName;
         string realName;
@@ -83,28 +69,44 @@ namespace ArtistMNG.Module.SQL
         public List<ModelLabel> ArtistLabel_Delete { get => artistLabel_Delete; set => artistLabel_Delete = value; }
         public List<ModelSNS> ArtistSNS_Delete { get => artistSNS_Delete; set => artistSNS_Delete = value; }
         public List<ModelSong> ArtistSong_Delete { get => artistSong_Delete; set => artistSong_Delete = value; }
-        
-
-        public void Clear()
-        {
-            instance = new ModelArtist();
-        }
-        //
     }
+
     public class ModelGroup
     {
         int groupID;
         string groupName;
         DateTime debutDay;
-        int fandomID;
+        ModelFandom fandom = new ModelFandom();
         string description;
 
         public int GroupID { get => groupID; set => groupID = value; }
         public string GroupName { get => groupName; set => groupName = value; }
         public DateTime DebutDay { get => debutDay; set => debutDay = value; }
-        public int FandomID { get => fandomID; set => fandomID = value; }
+        public ModelFandom Fandom { get => fandom; set => fandom = value; }
         public string Description { get => description; set => description = value; }
+
+        List<ModelImage> artistImage_Add = new List<ModelImage>();
+        List<ModelLabel> artistLabel_Add = new List<ModelLabel>();
+        List<ModelSNS> artistSNS_Add = new List<ModelSNS>();
+
+        List<ModelImage> artistImage_Update = new List<ModelImage>();
+        List<ModelLabel> artistLabel_Update = new List<ModelLabel>();
+        List<ModelSNS> artistSNS_Update = new List<ModelSNS>();
+
+        List<ModelImage> artistImage_Delete = new List<ModelImage>();
+        List<ModelLabel> artistLabel_Delete = new List<ModelLabel>();
+        List<ModelSNS> artistSNS_Delete = new List<ModelSNS>();
+        public List<ModelImage> ArtistImage_Add { get => artistImage_Add; set => artistImage_Add = value; }
+        public List<ModelLabel> ArtistLabel_Add { get => artistLabel_Add; set => artistLabel_Add = value; }
+        public List<ModelSNS> ArtistSNS_Add { get => artistSNS_Add; set => artistSNS_Add = value; }
+        public List<ModelImage> ArtistImage_Update { get => artistImage_Update; set => artistImage_Update = value; }
+        public List<ModelLabel> ArtistLabel_Update { get => artistLabel_Update; set => artistLabel_Update = value; }
+        public List<ModelSNS> ArtistSNS_Update { get => artistSNS_Update; set => artistSNS_Update = value; }
+        public List<ModelImage> ArtistImage_Delete { get => artistImage_Delete; set => artistImage_Delete = value; }
+        public List<ModelLabel> ArtistLabel_Delete { get => artistLabel_Delete; set => artistLabel_Delete = value; }
+        public List<ModelSNS> ArtistSNS_Delete { get => artistSNS_Delete; set => artistSNS_Delete = value; }
     }
+  
     public class ModelSong
     {
         int songID;
@@ -123,11 +125,31 @@ namespace ArtistMNG.Module.SQL
     }
     public class ModelAlbum
     {
+        int albumID;
+        string albumName;
+        DateTime releaseDay;
+        string description;
 
+        public int AlbumID { get => albumID; set => albumID = value; }
+        public string AlbumName { get => albumName; set => albumName = value; }
+        public DateTime ReleaseDay { get => releaseDay; set => releaseDay = value; }
+        public string Description { get => description; set => description = value; }
     }
     public class ModelLabel
     {
+        int labelID;
+        string labelName;
+        string founder;
+        DateTime founded;
+        string location;
+        string description;
 
+        public int LabelID { get => labelID; set => labelID = value; }
+        public string LabelName { get => labelName; set => labelName = value; }
+        public string Founder { get => founder; set => founder = value; }
+        public DateTime Founded { get => founded; set => founded = value; }
+        public string Location { get => location; set => location = value; }
+        public string Description { get => description; set => description = value; }
     }
     public class ModelImage
     {

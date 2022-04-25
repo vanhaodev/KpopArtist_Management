@@ -12,6 +12,7 @@
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
     <PublishUrl>publish\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
@@ -24,7 +25,6 @@
     <MapFileExtensions>true</MapFileExtensions>
     <ApplicationRevision>0</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
-    <IsWebBootstrapper>false</IsWebBootstrapper>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
@@ -76,14 +76,16 @@
     <Compile Include="Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
-    <Compile Include="Module\ColorTable.cs" />
-    <Compile Include="Module\DatagridViewStyle.cs" />
+    <Compile Include="Module\ControlStyle\ColorTable.cs" />
+    <Compile Include="Module\ControlStyle\DatagridViewStyle.cs" />
+    <Compile Include="Module\ControlStyle\GroupBoxStyle.cs" />
     <Compile Include="Module\FormLoad.cs" />
     <Compile Include="Module\ImageFile\ImageFile.cs" />
     <Compile Include="Module\SaveManager.cs" />
     <Compile Include="Module\SQL\DatabaseEnum.cs" />
     <Compile Include="Module\SQL\DatabaseManager.cs" />
     <Compile Include="Module\SQL\Models.cs" />
+    <Compile Include="Module\SQL\QueryData.cs" />
     <Compile Include="Module\SQL\UserManager.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

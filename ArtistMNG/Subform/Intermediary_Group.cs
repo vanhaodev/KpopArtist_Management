@@ -1,4 +1,5 @@
 ﻿using ArtistMNG.Module;
+using ArtistMNG.Module.ControlStyle;
 using ArtistMNG.Module.ImageFile;
 using ArtistMNG.Module.SQL;
 using System;
@@ -15,11 +16,10 @@ namespace ArtistMNG.Subform
 {
     public partial class Intermediary_Group : Form
     {
-        int artistID;
-        public Intermediary_Group(int artistID)
+
+        public Intermediary_Group()
         {
             InitializeComponent();
-            this.artistID = artistID;
             LoadDesign();
         }
         void LoadDesign()
@@ -40,8 +40,13 @@ namespace ArtistMNG.Subform
 
             pictureBox_GroupImage.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox_GroupImage.SizeMode = PictureBoxSizeMode.Zoom;
-
-            
+            groupBox2.Paint += PaintBorderlessGroupBox;
+            groupBox3.Paint += PaintBorderlessGroupBox;
+            groupBox6.Paint += PaintBorderlessGroupBox;
+        }
+        void PaintBorderlessGroupBox(object sender, PaintEventArgs e)
+        {
+            GroupBoxStyle.PaintBorderlessGroupBox(sender, e, this);
         }
 
         private void Intermediary_Group_Load(object sender, EventArgs e)
@@ -67,9 +72,9 @@ namespace ArtistMNG.Subform
             {
                 dataGridView_DatabaseGroup.Rows.Add(databaseImage.Rows[i][0], databaseImage.Rows[i][1], databaseImage.Rows[i][2], databaseImage.Rows[i][3], databaseImage.Rows[i][4]);
             }
-            if (artistID > 0)
+            if (QueryData.Instance.Artist.ArtistID > 0)
             {
-                var targetGroup = DatabaseManager.ShowDataStoredProcedure("Artist_GetGroup", artistID.ToString());
+                var targetGroup = DatabaseManager.ShowDataStoredProcedure("Artist_GetGroup", QueryData.Instance.Artist.ArtistID.ToString());
                 for (int i = 0; i < targetGroup.Rows.Count; i++)
                 {
                     if(targetGroup.Rows[0].Field<int>(0) != 0)
@@ -79,28 +84,28 @@ namespace ArtistMNG.Subform
                 }
 
                 //set delete  
-                for (int i = 0; i < ModelArtist.Instance.ArtistGroup_Delete.Count; i++)
+                for (int i = 0; i < QueryData.Instance.Artist.ArtistGroup_Delete.Count; i++)
                 {
                     for (int j = dataGridView_TargetGroup.Rows.Count - 1; j >= 0; j--)
                     {
-                        if (ModelArtist.Instance.ArtistGroup_Delete[i].GroupID == (int)dataGridView_TargetGroup.Rows[j].Cells[0].Value)
+                        if (QueryData.Instance.Artist.ArtistGroup_Delete[i].GroupID == (int)dataGridView_TargetGroup.Rows[j].Cells[0].Value)
                         {
                             dataGridView_TargetGroup.Rows.RemoveAt(j);
                         }
                     }
                 }
             }
-            for (int i = 0; i < ModelArtist.Instance.ArtistGroup_Add.Count; i++)
+            for (int i = 0; i < QueryData.Instance.Artist.ArtistGroup_Add.Count; i++)
             {
                 dataGridView_TargetGroup.Rows.Add(
-                    ModelArtist.Instance.ArtistGroup_Add[i].GroupID, 
-                    ModelArtist.Instance.ArtistGroup_Add[i].GroupName, 
-                    ModelArtist.Instance.ArtistGroup_Add[i].DebutDay,
-                    ModelArtist.Instance.ArtistGroup_Add[i].FandomID,
-                    ModelArtist.Instance.ArtistGroup_Add[i].Description);
+                    QueryData.Instance.Artist.ArtistGroup_Add[i].GroupID, 
+                    QueryData.Instance.Artist.ArtistGroup_Add[i].GroupName, 
+                    QueryData.Instance.Artist.ArtistGroup_Add[i].DebutDay,
+                    QueryData.Instance.Artist.ArtistGroup_Add[i].Fandom.FandomID,
+                    QueryData.Instance.Artist.ArtistGroup_Add[i].Description);
             }
 
-            if (artistID == 0) //arttis id là 0 thì gọi group data
+            if (QueryData.Instance.Artist.ArtistID == 0) //arttis id là 0 thì gọi group data
             {
 
             }
@@ -123,24 +128,41 @@ namespace ArtistMNG.Subform
                     isContains = true;
                 }
             }
-            for (int j = 0; j < ModelArtist.Instance.ArtistGroup_Add.Count; j++)
+            for (int i = 0; i < QueryData.Instance.Artist.ArtistGroup_Add.Count; i++)
             {
-                if (ModelArtist.Instance.ArtistGroup_Add[0].GroupID == (int)dataGridView_DatabaseGroup.SelectedRows[0].Cells[0].Value)
+                if (QueryData.Instance.Artist.ArtistGroup_Add[i].GroupID == (int)dataGridView_DatabaseGroup.SelectedRows[0].Cells[0].Value)
                 {
                     isContains = true;
                 }
             }
-
+            
             if (!isContains)
             {
                 ModelGroup modelGroup = new ModelGroup();
                 modelGroup.GroupID = (int)dataGridView_DatabaseGroup.SelectedRows[0].Cells[0].Value;
                 modelGroup.GroupName = dataGridView_DatabaseGroup.SelectedRows[0].Cells[1].Value.ToString();
                 modelGroup.DebutDay = (DateTime)dataGridView_DatabaseGroup.SelectedRows[0].Cells[2].Value;
-                modelGroup.FandomID = (int)dataGridView_DatabaseGroup.SelectedRows[0].Cells[3].Value;
+                modelGroup.Fandom.FandomID = (int)dataGridView_DatabaseGroup.SelectedRows[0].Cells[3].Value;
                 modelGroup.Description = dataGridView_DatabaseGroup.SelectedRows[0].Cells[4].Value.ToString();
 
-                ModelArtist.Instance.ArtistGroup_Add.Add(modelGroup);
+                if(QueryData.Instance.Artist.ArtistGroup_Delete.Count == 0)
+                {
+                    QueryData.Instance.Artist.ArtistGroup_Add.Add(modelGroup);
+                }    
+                for (int i = 0; i < QueryData.Instance.Artist.ArtistGroup_Delete.Count; i++)
+                {
+                    if (QueryData.Instance.Artist.ArtistGroup_Delete[i].GroupID == (int)dataGridView_DatabaseGroup.SelectedRows[0].Cells[0].Value)
+                    {
+                        QueryData.Instance.Artist.ArtistGroup_Delete.RemoveAt(i);
+
+                    }
+                    else
+                    {
+                        QueryData.Instance.Artist.ArtistGroup_Add.Add(modelGroup);
+                        MessageBox.Show(modelGroup.GroupName);
+                    }    
+                }
+                
                 dataGridView_TargetGroup.Rows.Add(
                     dataGridView_DatabaseGroup.SelectedRows[0].Cells[0].Value, 
                     dataGridView_DatabaseGroup.SelectedRows[0].Cells[1].Value, 
@@ -148,13 +170,7 @@ namespace ArtistMNG.Subform
                     dataGridView_DatabaseGroup.SelectedRows[0].Cells[3].Value, 
                     dataGridView_DatabaseGroup.SelectedRows[0].Cells[4].Value
                     );
-                for (int i = 0; i < ModelArtist.Instance.ArtistGroup_Delete.Count; i++)
-                {
-                    if (ModelArtist.Instance.ArtistGroup_Delete[i].GroupID == modelGroup.GroupID)
-                    {
-                        ModelArtist.Instance.ArtistGroup_Delete.RemoveAt(i);
-                    }
-                }
+                
             }
             else
             {
@@ -175,36 +191,35 @@ namespace ArtistMNG.Subform
                 return;
             }
             string selectedUrl = dataGridView_TargetGroup.SelectedRows[0].Cells[1].Value.ToString();
-            if (artistID == 0)
+            if (QueryData.Instance.Artist.ArtistID == 0)
             {
                 //do nothing    
             }
-            else if (artistID > 0)
+            else if (QueryData.Instance.Artist.ArtistID > 0)
             {
                 ModelGroup modelGroup = new ModelGroup();
                 modelGroup.GroupID = (int)dataGridView_TargetGroup.SelectedRows[0].Cells[0].Value;
                 modelGroup.GroupName = dataGridView_TargetGroup.SelectedRows[0].Cells[1].Value.ToString();
                 modelGroup.DebutDay = (DateTime)dataGridView_TargetGroup.SelectedRows[0].Cells[2].Value;
-                modelGroup.FandomID = (int)dataGridView_TargetGroup.SelectedRows[0].Cells[3].Value;
+                modelGroup.Fandom.FandomID = (int)dataGridView_TargetGroup.SelectedRows[0].Cells[3].Value;
                 modelGroup.Description = dataGridView_TargetGroup.SelectedRows[0].Cells[4].Value.ToString();
 
-                if (ModelArtist.Instance.ArtistGroup_Add.Count < 1)
+                if (QueryData.Instance.Artist.ArtistGroup_Add.Count < 1)
                 {
-                    //MessageBox.Show($"ModelArtist.Instance.ArtistImage_Add.Count {ModelArtist.Instance.ArtistImage_Add.Count}");
-                    ModelArtist.Instance.ArtistGroup_Delete.Add(modelGroup);
+                    QueryData.Instance.Artist.ArtistGroup_Delete.Add(modelGroup);
                 }
-                for (int i = 0; i < ModelArtist.Instance.ArtistGroup_Add.Count; i++)
+                for (int i = 0; i < QueryData.Instance.Artist.ArtistGroup_Add.Count; i++)
                 {
-                    if (ModelArtist.Instance.ArtistGroup_Add[i].GroupID == modelGroup.GroupID)
+                    if (QueryData.Instance.Artist.ArtistGroup_Add[i].GroupID == modelGroup.GroupID)
                     {
-                        ModelArtist.Instance.ArtistGroup_Add.RemoveAt(i);
+                        QueryData.Instance.Artist.ArtistGroup_Add.RemoveAt(i);
                     }
                     else
                     {
                         bool isContains = false;
-                        for (int j = 0; j < ModelArtist.Instance.ArtistGroup_Delete.Count; j++)
+                        for (int j = 0; j < QueryData.Instance.Artist.ArtistGroup_Delete.Count; j++)
                         {
-                            if (ModelArtist.Instance.ArtistGroup_Delete[j].GroupID == modelGroup.GroupID)
+                            if (QueryData.Instance.Artist.ArtistGroup_Delete[j].GroupID == modelGroup.GroupID)
                             {
                                 isContains = true;
                             }
@@ -212,21 +227,21 @@ namespace ArtistMNG.Subform
 
                         if (!isContains)
                         {
-                            ModelArtist.Instance.ArtistGroup_Delete.Add(modelGroup);
+                            QueryData.Instance.Artist.ArtistGroup_Delete.Add(modelGroup);
                         }
                     }
                 }
 
             }
             
-            if (artistID == 0)
+            if (QueryData.Instance.Artist.ArtistID == 0)
             {
                 //set delete  
-                for (int i = 0; i < ModelArtist.Instance.ArtistGroup_Add.Count; i++)
+                for (int i = 0; i < QueryData.Instance.Artist.ArtistGroup_Add.Count; i++)
                 {
-                    if (ModelArtist.Instance.ArtistGroup_Add[i].GroupID == (int)dataGridView_TargetGroup.SelectedRows[0].Cells[0].Value)
+                    if (QueryData.Instance.Artist.ArtistGroup_Add[i].GroupID == (int)dataGridView_TargetGroup.SelectedRows[0].Cells[0].Value)
                     {
-                        ModelArtist.Instance.ArtistGroup_Add.RemoveAt(i);
+                        QueryData.Instance.Artist.ArtistGroup_Add.RemoveAt(i);
                     }
                 }
             }

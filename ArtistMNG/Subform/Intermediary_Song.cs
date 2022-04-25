@@ -1,4 +1,5 @@
 ﻿using ArtistMNG.Module;
+using ArtistMNG.Module.ControlStyle;
 using ArtistMNG.Module.ImageFile;
 using ArtistMNG.Module.SQL;
 using System;
@@ -40,9 +41,15 @@ namespace ArtistMNG.Subform
             pictureBox_GroupImage.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox_GroupImage.SizeMode = PictureBoxSizeMode.Zoom;
 
+            groupBox2.Paint += PaintBorderlessGroupBox;
+            groupBox3.Paint += PaintBorderlessGroupBox;
+            groupBox6.Paint += PaintBorderlessGroupBox;
             
         }
-
+        void PaintBorderlessGroupBox(object sender, PaintEventArgs e)
+        {
+            GroupBoxStyle.PaintBorderlessGroupBox(sender, e, this);
+        }
         private void Intermediary_Group_Load(object sender, EventArgs e)
         {
             dataGridView_TargetSong.Columns.Add("SongID", "ID");
@@ -74,9 +81,9 @@ namespace ArtistMNG.Subform
                     databaseImage.Rows[i][4], 
                     databaseImage.Rows[i][5]);
             }
-            if (ModelArtist.Instance.ArtistID > 0)
+            if (QueryData.Instance.Artist.ArtistID > 0)
             {
-                var targetGroup = DatabaseManager.ShowDataStoredProcedure("Artist_GetSong", ModelArtist.Instance.ArtistID.ToString());
+                var targetGroup = DatabaseManager.ShowDataStoredProcedure("Artist_GetSong", QueryData.Instance.Artist.ArtistID.ToString());
                 for (int i = 0; i < targetGroup.Rows.Count; i++)
                 {
                     if(targetGroup.Rows[0].Field<int>(0) != 0)
@@ -92,28 +99,29 @@ namespace ArtistMNG.Subform
                 }
 
                 //set delete  
-                for (int i = 0; i < ModelArtist.Instance.ArtistSong_Delete.Count; i++)
+                for (int i = 0; i < QueryData.Instance.Artist.ArtistSong_Delete.Count; i++)
                 {
                     for (int j = dataGridView_TargetSong.Rows.Count - 1; j >= 0; j--)
                     {
-                        if (ModelArtist.Instance.ArtistGroup_Delete[i].GroupID == (int)dataGridView_TargetSong.Rows[j].Cells[0].Value)
+                        if (QueryData.Instance.Artist.ArtistSong_Delete[i].SongID == (int)dataGridView_TargetSong.Rows[j].Cells[0].Value)
                         {
                             dataGridView_TargetSong.Rows.RemoveAt(j);
                         }
                     }
                 }
             }
-            for (int i = 0; i < ModelArtist.Instance.ArtistGroup_Add.Count; i++)
+            for (int i = 0; i < QueryData.Instance.Artist.ArtistSong_Add.Count; i++)
             {
                 dataGridView_TargetSong.Rows.Add(
-                    ModelArtist.Instance.ArtistGroup_Add[i].GroupID, 
-                    ModelArtist.Instance.ArtistGroup_Add[i].GroupName, 
-                    ModelArtist.Instance.ArtistGroup_Add[i].DebutDay,
-                    ModelArtist.Instance.ArtistGroup_Add[i].FandomID,
-                    ModelArtist.Instance.ArtistGroup_Add[i].Description);
+                    QueryData.Instance.Artist.ArtistSong_Add[i].SongID, 
+                    QueryData.Instance.Artist.ArtistSong_Add[i].SongName, 
+                    QueryData.Instance.Artist.ArtistSong_Add[i].ReleaseDay,
+                    QueryData.Instance.Artist.ArtistSong_Add[i].Genre,
+                    QueryData.Instance.Artist.ArtistSong_Add[i].Producer,
+                    QueryData.Instance.Artist.ArtistSong_Add[i].Description);
             }
 
-            if (ModelArtist.Instance.ArtistID == 0) //arttis id là 0 thì gọi group data
+            if (QueryData.Instance.Artist.ArtistID == 0) //arttis id là 0 thì gọi group data
             {
 
             }
@@ -136,9 +144,9 @@ namespace ArtistMNG.Subform
                     isContains = true;
                 }
             }
-            for (int j = 0; j < ModelArtist.Instance.ArtistGroup_Add.Count; j++)
+            for (int i = 0; i < QueryData.Instance.Artist.ArtistSong_Add.Count; i++)
             {
-                if (ModelArtist.Instance.ArtistGroup_Add[0].GroupID == (int)dataGridView_DatabaseSong.SelectedRows[0].Cells[0].Value)
+                if (QueryData.Instance.Artist.ArtistSong_Add[i].SongID == (int)dataGridView_DatabaseSong.SelectedRows[0].Cells[0].Value)
                 {
                     isContains = true;
                 }
@@ -146,28 +154,39 @@ namespace ArtistMNG.Subform
 
             if (!isContains)
             {
-                ModelGroup modelGroup = new ModelGroup();
-                modelGroup.GroupID = (int)dataGridView_DatabaseSong.SelectedRows[0].Cells[0].Value;
-                modelGroup.GroupName = dataGridView_DatabaseSong.SelectedRows[0].Cells[1].Value.ToString();
-                modelGroup.DebutDay = (DateTime)dataGridView_DatabaseSong.SelectedRows[0].Cells[2].Value;
-                modelGroup.FandomID = (int)dataGridView_DatabaseSong.SelectedRows[0].Cells[3].Value;
-                modelGroup.Description = dataGridView_DatabaseSong.SelectedRows[0].Cells[4].Value.ToString();
+                ModelSong modelSong = new ModelSong();
+                modelSong.SongID = (int)dataGridView_DatabaseSong.SelectedRows[0].Cells[0].Value;
+                modelSong.SongName = dataGridView_DatabaseSong.SelectedRows[0].Cells[1].Value.ToString();
+                modelSong.ReleaseDay = (DateTime)dataGridView_DatabaseSong.SelectedRows[0].Cells[2].Value;
+                modelSong.Genre = dataGridView_DatabaseSong.SelectedRows[0].Cells[3].Value.ToString();
+                modelSong.Producer = dataGridView_DatabaseSong.SelectedRows[0].Cells[4].Value.ToString();
+                modelSong.Description = dataGridView_DatabaseSong.SelectedRows[0].Cells[5].Value.ToString();
 
-                ModelArtist.Instance.ArtistGroup_Add.Add(modelGroup);
+                if(QueryData.Instance.Artist.ArtistSong_Delete.Count == 0)
+                {
+                    QueryData.Instance.Artist.ArtistSong_Add.Add(modelSong);
+                }    
+                for (int i = 0; i < QueryData.Instance.Artist.ArtistSong_Delete.Count; i++)
+                {
+                    if (QueryData.Instance.Artist.ArtistSong_Delete[i].SongID == modelSong.SongID)
+                    {
+                        QueryData.Instance.Artist.ArtistSong_Delete.RemoveAt(i);
+                    }
+                    else
+                    {
+                        QueryData.Instance.Artist.ArtistSong_Add.Add(modelSong);
+                    }    
+                }
+                
                 dataGridView_TargetSong.Rows.Add(
                     dataGridView_DatabaseSong.SelectedRows[0].Cells[0].Value, 
                     dataGridView_DatabaseSong.SelectedRows[0].Cells[1].Value, 
                     dataGridView_DatabaseSong.SelectedRows[0].Cells[2].Value, 
                     dataGridView_DatabaseSong.SelectedRows[0].Cells[3].Value, 
-                    dataGridView_DatabaseSong.SelectedRows[0].Cells[4].Value
+                    dataGridView_DatabaseSong.SelectedRows[0].Cells[4].Value,
+                    dataGridView_DatabaseSong.SelectedRows[0].Cells[5].Value
                     );
-                for (int i = 0; i < ModelArtist.Instance.ArtistGroup_Delete.Count; i++)
-                {
-                    if (ModelArtist.Instance.ArtistGroup_Delete[i].GroupID == modelGroup.GroupID)
-                    {
-                        ModelArtist.Instance.ArtistGroup_Delete.RemoveAt(i);
-                    }
-                }
+                
             }
             else
             {
@@ -179,7 +198,7 @@ namespace ArtistMNG.Subform
         {
             if (dataGridView_TargetSong.SelectedRows.Count < 1 || dataGridView_TargetSong.SelectedRows.Count > 1)
             {
-                MessageBox.Show("Chọn 1 hàng để xóa!");
+                MessageBox.Show("Chọn 1 hàng để xóa! " + QueryData.Instance.Artist.ArtistID);
                 return;
             }
             DialogResult dialogResult = MessageBox.Show("Bạn thật sự muốn xóa?", "Xóa", MessageBoxButtons.YesNo);
@@ -187,37 +206,37 @@ namespace ArtistMNG.Subform
             {
                 return;
             }
-            string selectedUrl = dataGridView_TargetSong.SelectedRows[0].Cells[1].Value.ToString();
-            if (ModelArtist.Instance.ArtistID == 0)
+
+            if (QueryData.Instance.Artist.ArtistID == 0)
             {
                 //do nothing    
             }
-            else if (ModelArtist.Instance.ArtistID > 0)
+            else if (QueryData.Instance.Artist.ArtistID > 0)
             {
-                ModelGroup modelGroup = new ModelGroup();
-                modelGroup.GroupID = (int)dataGridView_TargetSong.SelectedRows[0].Cells[0].Value;
-                modelGroup.GroupName = dataGridView_TargetSong.SelectedRows[0].Cells[1].Value.ToString();
-                modelGroup.DebutDay = (DateTime)dataGridView_TargetSong.SelectedRows[0].Cells[2].Value;
-                modelGroup.FandomID = (int)dataGridView_TargetSong.SelectedRows[0].Cells[3].Value;
-                modelGroup.Description = dataGridView_TargetSong.SelectedRows[0].Cells[4].Value.ToString();
+                ModelSong modelSong = new ModelSong();
+                modelSong.SongID = (int)dataGridView_TargetSong.SelectedRows[0].Cells[0].Value;
+                modelSong.SongName = dataGridView_TargetSong.SelectedRows[0].Cells[1].Value.ToString();
+                modelSong.ReleaseDay = (DateTime)dataGridView_TargetSong.SelectedRows[0].Cells[2].Value;
+                modelSong.Genre = dataGridView_TargetSong.SelectedRows[0].Cells[3].Value.ToString();
+                modelSong.Producer = dataGridView_TargetSong.SelectedRows[0].Cells[4].Value.ToString();
+                modelSong.Description = dataGridView_TargetSong.SelectedRows[0].Cells[5].Value.ToString();
 
-                if (ModelArtist.Instance.ArtistGroup_Add.Count < 1)
+                if (QueryData.Instance.Artist.ArtistSong_Add.Count < 1)
                 {
-                    //MessageBox.Show($"ModelArtist.Instance.ArtistImage_Add.Count {ModelArtist.Instance.ArtistImage_Add.Count}");
-                    ModelArtist.Instance.ArtistGroup_Delete.Add(modelGroup);
+                    QueryData.Instance.Artist.ArtistSong_Delete.Add(modelSong);
                 }
-                for (int i = 0; i < ModelArtist.Instance.ArtistGroup_Add.Count; i++)
+                for (int i = 0; i < QueryData.Instance.Artist.ArtistSong_Add.Count; i++)
                 {
-                    if (ModelArtist.Instance.ArtistGroup_Add[i].GroupID == modelGroup.GroupID)
+                    if (QueryData.Instance.Artist.ArtistSong_Add[i].SongID == modelSong.SongID)
                     {
-                        ModelArtist.Instance.ArtistGroup_Add.RemoveAt(i);
+                        QueryData.Instance.Artist.ArtistSong_Add.RemoveAt(i);
                     }
                     else
                     {
                         bool isContains = false;
-                        for (int j = 0; j < ModelArtist.Instance.ArtistGroup_Delete.Count; j++)
+                        for (int j = 0; j < QueryData.Instance.Artist.ArtistGroup_Delete.Count; j++)
                         {
-                            if (ModelArtist.Instance.ArtistGroup_Delete[j].GroupID == modelGroup.GroupID)
+                            if (QueryData.Instance.Artist.ArtistSong_Delete[j].SongID == modelSong.SongID)
                             {
                                 isContains = true;
                             }
@@ -225,21 +244,21 @@ namespace ArtistMNG.Subform
 
                         if (!isContains)
                         {
-                            ModelArtist.Instance.ArtistGroup_Delete.Add(modelGroup);
+                            QueryData.Instance.Artist.ArtistSong_Delete.Add(modelSong);
                         }
                     }
                 }
 
             }
             
-            if (ModelArtist.Instance.ArtistID == 0)
+            if (QueryData.Instance.Artist.ArtistID == 0)
             {
                 //set delete  
-                for (int i = 0; i < ModelArtist.Instance.ArtistGroup_Add.Count; i++)
+                for (int i = 0; i < QueryData.Instance.Artist.ArtistSong_Add.Count; i++)
                 {
-                    if (ModelArtist.Instance.ArtistGroup_Add[i].GroupID == (int)dataGridView_TargetSong.SelectedRows[0].Cells[0].Value)
+                    if (QueryData.Instance.Artist.ArtistSong_Add[i].SongID == (int)dataGridView_TargetSong.SelectedRows[0].Cells[0].Value)
                     {
-                        ModelArtist.Instance.ArtistGroup_Add.RemoveAt(i);
+                        QueryData.Instance.Artist.ArtistSong_Add.RemoveAt(i);
                     }
                 }
             }
