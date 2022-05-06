@@ -79,9 +79,12 @@
     <Compile Include="Module\ControlStyle\ColorTable.cs" />
     <Compile Include="Module\ControlStyle\DatagridViewStyle.cs" />
     <Compile Include="Module\ControlStyle\GroupBoxStyle.cs" />
+    <Compile Include="Module\ControlStyle\TimerType.cs" />
     <Compile Include="Module\FormLoad.cs" />
     <Compile Include="Module\ImageFile\ImageFile.cs" />
     <Compile Include="Module\SaveManager.cs" />
+    <Compile Include="Module\SQL\CUD\ArtistCUD.cs" />
+    <Compile Include="Module\SQL\CUD\GroupCUD.cs" />
     <Compile Include="Module\SQL\DatabaseEnum.cs" />
     <Compile Include="Module\SQL\DatabaseManager.cs" />
     <Compile Include="Module\SQL\Models.cs" />
@@ -89,6 +92,12 @@
     <Compile Include="Module\SQL\UserManager.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Subform\Intermediary_Label.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Subform\Intermediary_Label.Designer.cs">
+      <DependentUpon>Intermediary_Label.cs</DependentUpon>
+    </Compile>
     <Compile Include="Subform\Intermediary_Fandom.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -119,6 +128,12 @@
     <Compile Include="Subform\Intermediary_Image.Designer.cs">
       <DependentUpon>Intermediary_Image.cs</DependentUpon>
     </Compile>
+    <Compile Include="Subform\Trash\TemplateAppbyNVH2001.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Subform\Trash\TemplateAppbyNVH2001.Designer.cs">
+      <DependentUpon>TemplateAppbyNVH2001.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="App.resx">
       <DependentUpon>App.cs</DependentUpon>
     </EmbeddedResource>
@@ -135,6 +150,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Subform\Intermediary_Label.resx">
+      <DependentUpon>Intermediary_Label.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Subform\Intermediary_Fandom.resx">
       <DependentUpon>Intermediary_Fandom.cs</DependentUpon>
     </EmbeddedResource>
@@ -149,6 +167,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Subform\Intermediary_Image.resx">
       <DependentUpon>Intermediary_Image.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Subform\Trash\TemplateAppbyNVH2001.resx">
+      <DependentUpon>TemplateAppbyNVH2001.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -178,6 +199,7 @@
     <Content Include="Assets\Image\itzy.jpg" />
     <Content Include="Assets\Image\nmixx.jpg" />
     <Content Include="Assets\Image\straykids.png" />
+    <Content Include="Module\SQL\CUD\Tip.txt" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">

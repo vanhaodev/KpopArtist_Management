@@ -43,7 +43,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 namespace ArtistMNG
 {
-    public partial class frmApp : Form
+    public partial class TemplateAppbyNVH2001 : Form
     {
         #region DESIGN
         ///DESIGN
@@ -137,12 +137,10 @@ namespace ArtistMNG
             panel_DataContent.MinimumSize = new Size(200, 200);
             panel_DataContent.MaximumSize = new Size(this.Width - 150, panel_DataContent.Height);
 
-            #region Artist and Group Manage
+            #region Artist Manage
             panel_ArtistManager.MinimumSize = new Size(200, 200);
             panel_ArtistManager.MaximumSize = new Size(this.Width - 150, panel_ArtistManager.Height);
-            panel_GroupManager.MinimumSize = new Size(200, 200);
-            panel_GroupManager.MaximumSize = new Size(this.Width - 150, panel_GroupManager.Height);
-            //=======================ARTIST======================
+
             //group
             DatagridViewStyle.DarkStyle(dataGridViewArtist_Group);
 
@@ -151,18 +149,11 @@ namespace ArtistMNG
 
             //Album
             DatagridViewStyle.DarkStyle(dataGridViewArtist_Album);
-            //-----------------------------------------------------
-            //=======================GROUP======================
-            ////Song       
-            DatagridViewStyle.DarkStyle(dataGridViewGroup_Song);
 
-            //Album
-            DatagridViewStyle.DarkStyle(dataGridViewGroup_Album);
-            //-----------------------------------------------------
+
             //Timepicker
             dateTimePickerArtist_Birthday.CustomFormat = "dd-MM-yyyy";
             dateTimePickerArtist_Debutday.CustomFormat = "dd-MM-yyyy";
-            dateTimePickerGroup_Debutday.CustomFormat = "dd-MM-yyyy";
             #endregion
 
 
@@ -181,31 +172,15 @@ namespace ArtistMNG
             dataGridViewArtist_Song.Columns.Add("Description", "Mô tả");
             //ArtistAlbum datagrid
             dataGridViewArtist_Album.Columns.Add("AlbumID", "ID");
-            dataGridViewArtist_Album.Columns.Add("Name", "Tên");
+            dataGridViewArtist_Album.Columns.Add("Name", "Tê,");
             dataGridViewArtist_Album.Columns.Add("Release", "Phát hành");
             dataGridViewArtist_Album.Columns.Add("Description", "Mô tả");
-            //GroupSong datagrid
-            dataGridViewGroup_Song.Columns.Add("SongID", "ID");
-            dataGridViewGroup_Song.Columns.Add("Name", "Tên");
-            dataGridViewGroup_Song.Columns.Add("ReleaseDay", "Phát hành");
-            dataGridViewGroup_Song.Columns.Add("Genre", "Thể loại");
-            dataGridViewGroup_Song.Columns.Add("Producer", "Producer");
-            dataGridViewGroup_Song.Columns.Add("Description", "Mô tả");
-            //GroupAlbum datagrid
-            dataGridViewGroup_Album.Columns.Add("AlbumID", "ID");
-            dataGridViewGroup_Album.Columns.Add("Name", "Tên");
-            dataGridViewGroup_Album.Columns.Add("Release", "Phát hành");
-            dataGridViewGroup_Album.Columns.Add("Description", "Mô tả");
-            //label in artist 
+
+            //label in artist
             labelArtist_Fandom.MaximumSize = new Size(panel_ArtistInforFandom.Width - (panel_ArtistInforFandom.Width*10/100), 0);
             labelArtist_Fandom.AutoSize = true;
             labelArtist_Label.MaximumSize = new Size(panel_ArtistInforLabel.Width - (panel_ArtistInforLabel.Width * 10 / 100), 0);
             labelArtist_Label.AutoSize = true;
-            //label in group
-            labelGroup_Fandom.MaximumSize = new Size(panel_GroupInforFandom.Width - (panel_GroupInforFandom.Width * 10 / 100), 0);
-            labelGroup_Fandom.AutoSize = true;
-            labelGroup_Label.MaximumSize = new Size(panel_GroupInforLabel.Width - (panel_GroupInforLabel.Width * 10 / 100), 0);
-            labelGroup_Label.AutoSize = true;
 
             groupBox1.Paint += PaintBorderlessGroupBox;
             groupBox2.Paint += PaintBorderlessGroupBox;
@@ -224,17 +199,6 @@ namespace ArtistMNG
             groupBox13.Paint += PaintBorderlessGroupBox;
             groupBox14.Paint += PaintBorderlessGroupBox;
 
-            //groupbox in Group
-            groupBox_GroupID.Paint += PaintBorderlessGroupBox;
-            groupBox_GroupName.Paint += PaintBorderlessGroupBox;
-            groupBox_GroupDebutday.Paint += PaintBorderlessGroupBox;
-            groupBox_GroupDescription.Paint += PaintBorderlessGroupBox;
-            groupBox_GroupFandom.Paint += PaintBorderlessGroupBox;
-            groupBox_GroupSong.Paint += PaintBorderlessGroupBox;
-            groupBox_GroupAlbum.Paint += PaintBorderlessGroupBox;
-            groupBox_GroupLabel.Paint += PaintBorderlessGroupBox;
-            groupBox_GroupSNS.Paint += PaintBorderlessGroupBox;
-            groupBox_GroupID.Visible = false;
             //dataGridView_Data.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
             //dataGridViewArtist_Album.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
 
@@ -258,25 +222,7 @@ namespace ArtistMNG
             pictureBox_Artist_Spotify.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox_Artist_Website.Image = ImageFile.SetIconFromFolder("website.png");
             pictureBox_Artist_Website.SizeMode = PictureBoxSizeMode.Zoom;
-            //Group SNS
-            pictureBox_Group_Youtube.Image = ImageFile.SetIconFromFolder("youtube.png");
-            pictureBox_Group_Youtube.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox_Group_Instagram.Image = ImageFile.SetIconFromFolder("instagram.png");
-            pictureBox_Group_Instagram.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox_Group_Facebook.Image = ImageFile.SetIconFromFolder("facebook.png");
-            pictureBox_Group_Facebook.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox_Group_Twitter.Image = ImageFile.SetIconFromFolder("twitter.png");
-            pictureBox_Group_Twitter.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox_Group_Tiktok.Image = ImageFile.SetIconFromFolder("tiktok.png");
-            pictureBox_Group_Tiktok.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox_Group_Vlive.Image = ImageFile.SetIconFromFolder("vlive.png");
-            pictureBox_Group_Vlive.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox_Group_AppleMusic.Image = ImageFile.SetIconFromFolder("applemusic.png");
-            pictureBox_Group_AppleMusic.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox_Group_Spotify.Image = ImageFile.SetIconFromFolder("spotify.png");
-            pictureBox_Group_Spotify.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox_Group_Website.Image = ImageFile.SetIconFromFolder("website.png");
-            pictureBox_Group_Website.SizeMode = PictureBoxSizeMode.Zoom;
+
 
 
         }
@@ -364,11 +310,6 @@ namespace ArtistMNG
             labelArtist_Fandom.AutoSize = true;
             labelArtist_Label.MaximumSize = new Size(panel_ArtistInforLabel.Width - (panel_ArtistInforLabel.Width * 10 / 100), 0);
             labelArtist_Label.AutoSize = true;
-            //label in group
-            labelGroup_Fandom.MaximumSize = new Size(panel_GroupInforFandom.Width - (panel_GroupInforFandom.Width * 10 / 100), 0);
-            labelGroup_Fandom.AutoSize = true;
-            labelGroup_Label.MaximumSize = new Size(panel_GroupInforLabel.Width - (panel_GroupInforLabel.Width * 10 / 100), 0);
-            labelGroup_Label.AutoSize = true;
             tableSizeAuto = ratio;
         }
 
@@ -404,17 +345,15 @@ namespace ArtistMNG
             }    
             
             selectedRowFirstIndex = dataGridView_Data.SelectedRows[0].Index;
-            
+            artistID = (int)dataGridView_Data.SelectedRows[0].Cells[0].Value;
 
             QueryData.Instance.Clear();
             switch (currentTable)
             {
                 case DatabaseTable.Artist:
-                    artistID = (int)dataGridView_Data.SelectedRows[0].Cells[0].Value;
                     Artist_ChooseRowToEdit();
                     break;
                 case DatabaseTable.Group:
-                    groupID = (int)dataGridView_Data.SelectedRows[0].Cells[0].Value;
                     Group_ChooseRowToEdit();
                     break;
                 case DatabaseTable.Song:
@@ -484,11 +423,7 @@ namespace ArtistMNG
         ///ID hiện tại của Nghệ sĩ đang tương tác
         ///</summary>
         int artistID = 0;
-        ///<summary>
-        ///ID hiện tại của nhóm đang tương tác
-        ///</summary>
-        int groupID = 0;
-        public frmApp(string userName, string fullName)
+        public TemplateAppbyNVH2001(string userName, string fullName)
         {
             InitializeComponent();
             this.fullName = fullName;
@@ -588,41 +523,35 @@ namespace ArtistMNG
 
         private void MenuStrip_ShowArtistTable_Click(object sender, EventArgs e)
         {
-            ClearDataFiled();
             ShowData(DatabaseTable.Artist);
         }
 
         private void MenuStrip_ShowGroupTable_Click(object sender, EventArgs e)
         {
-            ClearDataFiled();
             ShowData(DatabaseTable.Group);
         }
 
         private void MenuStrip_ShowSongTable_Click(object sender, EventArgs e)
         {
-            ClearDataFiled();
             ShowData(DatabaseTable.Song);
         }
 
         private void MenuStrip_ShowAlbumTable_Click(object sender, EventArgs e)
         {
-            ClearDataFiled();
             ShowData(DatabaseTable.Album);
         }
 
         private void MenuStrip_ShowLabelTable_Click(object sender, EventArgs e)
         {
-            ClearDataFiled();
             ShowData(DatabaseTable.Label);
         }
         private void MenuStrip_ShowFandomTable_Click(object sender, EventArgs e)
         {
-            ClearDataFiled();
             ShowData(DatabaseTable.Fandom);
         }
         void ShowData(DatabaseTable databaseTable)
         {
-            ClearDataFiled();
+            QueryData.Instance.Clear();
             panel_ArtistManager.Visible = false;
             panel_GroupManager.Visible = false;
             panel_SongManager.Visible = false;
@@ -632,11 +561,8 @@ namespace ArtistMNG
 
             switch (databaseTable)
             {
-
                 case DatabaseTable.Artist:
                     dataGridView_Data.DataSource = DatabaseManager.ShowDataStoredProcedure("Artist_Basic_Infor");
-                    //dataGridView_Data.Columns[3].DefaultCellStyle.Format = "dd/MM/yyyy";
-                    //dataGridView_Data.Columns[5].DefaultCellStyle.Format = "dd/MM/yyyy";
                     currentTable = DatabaseTable.Artist;
                     panel_ArtistManager.Visible = true;
                     break;
@@ -851,10 +777,10 @@ namespace ArtistMNG
                 MessageBox.Show("Phải điền đầy đủ nghệ danh và tên thật!");
                 return false;
             }
-            if (!Regex.IsMatch(txArtist_Height.Text, @"^[0-9]*(?:\,[0-9]*)?$")
-                || !Regex.IsMatch(txArtist_Weight.Text, @"^[0-9]*(?:\,[0-9]*)?$"))
+            if (!Regex.IsMatch(txArtist_Height.Text, @"^[0-9]*(?:\.[0-9]*)?$")
+                || !Regex.IsMatch(txArtist_Weight.Text, @"^[0-9]*(?:\.[0-9]*)?$"))
             {
-                MessageBox.Show("Chiều cao và cân nặng phải là số nguyên hoặc số thực!\nĐối với chiều cao là mét (vd: '1,77') và cân nặng là kg (vd: '49')");
+                MessageBox.Show("Chiều cao và cân nặng phải là số nguyên hoặc số thực! (vd: 1.77)");
                 return false;
             }
             QueryData.Instance.Artist.ArtistID = Convert.ToInt32(txArtist_ID.Text);
@@ -869,7 +795,7 @@ namespace ArtistMNG
 
             QueryData.Instance.Artist.Sns.Youtube = tx_Artist_YoutubeURL.Text;
             QueryData.Instance.Artist.Sns.Instagram = tx_Artist_InstagramURL.Text;
-            QueryData.Instance.Artist.Sns.Facebook = tx_Artist_FacebookURL.Text;
+            QueryData.Instance.Artist.Sns.Facebook = tx_Artist_FacebookUrl.Text;
             QueryData.Instance.Artist.Sns.Twitter = tx_Artist_TwitterURL.Text;
             QueryData.Instance.Artist.Sns.Tiktok = tx_Artist_TiktokURL.Text;
             QueryData.Instance.Artist.Sns.Vlive = tx_Artist_VliveURL.Text;
@@ -890,61 +816,55 @@ namespace ArtistMNG
             btnApplyAdd.Enabled = true;
             btnApplyDelete.Enabled = false;
             btnApplyEdit.Enabled = false;
-            //================CLEAR ARTIST==========
-            groupBox_ArtistID.Visible = false;
-            txArtist_ID.Text = "0";
-            txArtist_StageName.Text = string.Empty;
-            txArtist_RealName.Text = string.Empty;
-            txArtist_BirthPlace.Text = string.Empty;
-            txArtist_Description.Text = string.Empty;
-            txArtist_Height.Text = string.Empty;
-            txArtist_Weight.Text = string.Empty;
-
-            labelArtist_Fandom.Text = string.Empty;
-
-            labelArtist_Label.Text = string.Empty;
-
-            artistImage.Clear();
-            pictureBox_ArtistImage.Image = null;
-            btnArtist_NextImage.Text = "Ảnh 0/0";
-            pictureBox_ArtistImage.Image = ImageFile.SetIconFromFolder("unknow_ArtistImage.png");
-
-            dataGridViewArtist_Group.Rows.Clear();
-            dataGridViewArtist_Song.Rows.Clear();
-            dataGridViewArtist_Album.Rows.Clear();
-
-            dateTimePickerArtist_Birthday.Value = DateTime.Now;
-            dateTimePickerArtist_Debutday.Value = DateTime.Now;
-
-            foreach (Control c in groupBox_Artist_SNS.Controls)
+            switch (currentTable)
             {
-                if (c is TextBox)
-                {
-                    ((TextBox)c).Clear();
-                }
-            }
-            //================CLEAR GROUP===================
-            groupBox_GroupID.Visible = false;
-            txGroup_ID.Text = "0";
-            txGroup_Name.Text = string.Empty;
-            txGroup_Description.Text = string.Empty;
+                case DatabaseTable.Artist:
+                    groupBox_ArtistID.Visible = false;
+                    txArtist_ID.Text = "0";
+                    txArtist_StageName.Text = string.Empty;
+                    txArtist_RealName.Text = string.Empty;
+                    txArtist_BirthPlace.Text = string.Empty;
+                    txArtist_Description.Text = string.Empty;
+                    txArtist_Height.Text = string.Empty;
+                    txArtist_Weight.Text = string.Empty;
 
-            //clear debutday
-            dateTimePickerGroup_Debutday.Value = DateTime.Now;
+                    labelArtist_Fandom.Text = string.Empty;
+                    
+                    labelArtist_Label.Text = string.Empty;
 
-            //Clear label & fandom
-            labelGroup_Fandom.Text = string.Empty;
-            labelGroup_Label.Text = string.Empty;
+                    artistImage.Clear();
+                    pictureBox_ArtistImage.Image = null;
+                    btnArtist_NextImage.Text = "Ảnh 0/0";
+                    pictureBox_ArtistImage.Image = ImageFile.SetIconFromFolder("unknow_ArtistImage.png");
 
-            //clear song & album
-            dataGridViewGroup_Song.Rows.Clear();
-            dataGridViewGroup_Album.Rows.Clear();
-            foreach (Control c in groupBox_GroupSNS.Controls)
-            {
-                if (c is TextBox)
-                {
-                    ((TextBox)c).Clear();
-                }
+                    dataGridViewArtist_Group.Rows.Clear();
+                    dataGridViewArtist_Song.Rows.Clear();
+                    dataGridViewArtist_Album.Rows.Clear();
+
+                    dateTimePickerArtist_Birthday.Value = DateTime.Now;
+                    dateTimePickerArtist_Debutday.Value = DateTime.Now;
+
+                    foreach (Control c in groupBox_Artist_SNS.Controls)
+                    {
+                        if (c is TextBox)
+                        {
+                            ((TextBox)c).Clear();
+                        }   
+                    }
+
+                    break;
+                case DatabaseTable.Group:
+
+                    break;
+                case DatabaseTable.Song:
+
+                    break;
+                case DatabaseTable.Album:
+
+                    break;
+                case DatabaseTable.Label:
+
+                    break;
             }
         }
         /// <summary>
@@ -1017,7 +937,7 @@ namespace ArtistMNG
 
             try
             {
-                txArtist_Height.Text = Convert.ToDecimal(datas[0].Rows[selectedRowFirstIndex].Field<double>("Height")).ToString("0.00");
+                txArtist_Height.Text = Convert.ToDecimal(datas[0].Rows[selectedRowFirstIndex].Field<double>("Height")).ToString();
             }
             catch
             {
@@ -1025,7 +945,7 @@ namespace ArtistMNG
             }
             try
             {
-                txArtist_Weight.Text = Convert.ToDecimal(datas[0].Rows[selectedRowFirstIndex].Field<double>("Weight")).ToString("0.00");
+                txArtist_Weight.Text = Convert.ToDecimal(datas[0].Rows[selectedRowFirstIndex].Field<double>("Weight")).ToString();
             }
             catch
             {
@@ -1033,20 +953,27 @@ namespace ArtistMNG
             }
 
 
-            int fandomID = DatabaseManager.ShowDataQuery($"SELECT * FROM [Artist] WHERE ArtistID = {dataGridView_Data.Rows[selectedRowFirstIndex].Cells[0].Value.ToString()}").Rows[0].Field<int>("FandomID");
-
-            DataTable fandom = DatabaseManager.ShowDataQuery($"SELECT * FROM [Fandom] WHERE FandomID = {fandomID.ToString()}");
-            if (fandom.Rows.Count > 0)
+            if(dataGridView_Data.SelectedRows.Count == 1)
             {
-                labelArtist_Fandom.Text = $"ID: {fandom.Rows[0].Field<int>(0)}\n" +
-                $"Tên: {fandom.Rows[0].Field<string>(1)}\n\n" +
-                $"{fandom.Rows[0].Field<string>(2)}";
+                int fandomID = DatabaseManager.ShowDataQuery($"SELECT * FROM [Artist] WHERE ArtistID = {dataGridView_Data.Rows[selectedRowFirstIndex].Cells[0].Value.ToString()}").Rows[0].Field<int>("FandomID");
+
+                DataTable fandom = DatabaseManager.ShowDataStoredProcedure("Artist_GetFandom", fandomID.ToString());
+                if (fandom.Rows.Count > 0)
+                {
+                    labelArtist_Fandom.Text = $"ID: {fandom.Rows[0].Field<int>(0)}\n" +
+                    $"Tên: {fandom.Rows[0].Field<string>(1)}\n\n" +
+                    $"{fandom.Rows[0].Field<string>(2)}";
+                }
+                else
+                {
+                    labelArtist_Fandom.Text = "Không có";
+                }
             }
             else
             {
                 labelArtist_Fandom.Text = "Không có";
             }
-            
+            //dataGridViewArtist_Album.DataSource = DatabaseManager.ShowDataStoredProcedure("Artist_GetAlbum", datas[0].Rows[dataGridView_Data.SelectedRows[0].Index].Field<int>("ArtistID").ToString());
 
 
             //LABEL
@@ -1137,7 +1064,7 @@ namespace ArtistMNG
 
                 tx_Artist_YoutubeURL.Text = sns.Rows[0].Field<string>("youtube");
                 tx_Artist_InstagramURL.Text = sns.Rows[0].Field<string>("instagram");
-                tx_Artist_FacebookURL.Text = sns.Rows[0].Field<string>("facebook");
+                tx_Artist_FacebookUrl.Text = sns.Rows[0].Field<string>("facebook");
                 tx_Artist_TwitterURL.Text = sns.Rows[0].Field<string>("twitter");
                 tx_Artist_TiktokURL.Text = sns.Rows[0].Field<string>("tiktok");
                 tx_Artist_VliveURL.Text = sns.Rows[0].Field<string>("vlive");
@@ -1149,7 +1076,7 @@ namespace ArtistMNG
             {
                 tx_Artist_YoutubeURL.Text = string.Empty;
                 tx_Artist_InstagramURL.Text = string.Empty;
-                tx_Artist_FacebookURL.Text = string.Empty;
+                tx_Artist_FacebookUrl.Text = string.Empty;
                 tx_Artist_TwitterURL.Text = string.Empty;
                 tx_Artist_TiktokURL.Text = string.Empty;
                 tx_Artist_VliveURL.Text = string.Empty;
@@ -1166,11 +1093,10 @@ namespace ArtistMNG
             QueryData.Instance.Artist.BirthPlace = txArtist_BirthPlace.Text;
             QueryData.Instance.Artist.DebutDay = dateTimePickerArtist_Debutday.Value;
             QueryData.Instance.Artist.Description = txArtist_Description.Text;
-            QueryData.Instance.Artist.Fandom.FandomID = fandom.Rows[0].Field<int>(0);
 
             QueryData.Instance.Artist.Sns.Youtube = tx_Artist_YoutubeURL.Text;
             QueryData.Instance.Artist.Sns.Instagram = tx_Artist_InstagramURL.Text;
-            QueryData.Instance.Artist.Sns.Facebook = tx_Artist_FacebookURL.Text;
+            QueryData.Instance.Artist.Sns.Facebook = tx_Artist_FacebookUrl.Text;
             QueryData.Instance.Artist.Sns.Twitter = tx_Artist_TwitterURL.Text;
             QueryData.Instance.Artist.Sns.Tiktok = tx_Artist_TiktokURL.Text;
             QueryData.Instance.Artist.Sns.Vlive = tx_Artist_VliveURL.Text;
@@ -1266,184 +1192,6 @@ namespace ArtistMNG
                 }
             }
         }
-        //====================================================
-        void Group_ChooseRowToEdit()
-        {
-            groupBox_GroupID.Visible = true;
-            datas[1] = DatabaseManager.ShowDataQuery("SELECT * FROM [Group] WHERE IsActivate = 1");
-
-            txGroup_ID.Text = datas[1].Rows[selectedRowFirstIndex].Field<int>("GroupID").ToString();
-            txGroup_Name.Text = datas[1].Rows[selectedRowFirstIndex].Field<string>("Name").ToString();
-            dateTimePickerGroup_Debutday.Value = datas[1].Rows[selectedRowFirstIndex].Field<DateTime>("DebutDay");
-            txGroup_Description.Text = datas[1].Rows[selectedRowFirstIndex].Field<string>("Description").ToString();
-
-            //Fandom
-            int fandomID = DatabaseManager.ShowDataQuery($"SELECT * FROM [Group] WHERE GroupID = {dataGridView_Data.Rows[selectedRowFirstIndex].Cells[0].Value.ToString()}").Rows[0].Field<int>("FandomID");
-
-            DataTable fandom = DatabaseManager.ShowDataQuery($"SELECT * FROM [Fandom] WHERE FandomID = {fandomID.ToString()}");
-            if (fandom.Rows.Count > 0)
-            {
-                labelGroup_Fandom.Text = $"ID: {fandom.Rows[0].Field<int>(0)}\n" +
-                $"Tên: {fandom.Rows[0].Field<string>(1)}\n\n" +
-                $"{fandom.Rows[0].Field<string>(2)}";
-            }
-            else
-            {
-                labelGroup_Fandom.Text = "Không có";
-            }
-
-            //LABEL
-            DataTable label = null;
-            try
-            {
-                int labelID = DatabaseManager.ShowDataQuery($"SELECT LabelID FROM [Group] WHERE GroupID = {datas[1].Rows[selectedRowFirstIndex].Field<int>("GroupID")}").Rows[0].Field<int>(0);
-
-                label = DatabaseManager.ShowDataQuery($"SELECT * FROM [Label] WHERE LabelID = {labelID}");
-
-                if (label.Rows[0].Field<int>(0) != 0)
-                {
-                    labelGroup_Label.Text = $"ID: {label.Rows[0].Field<int>("LabelID")}\nTên: {label.Rows[0].Field<string>("Name")}\n" +
-                        $"Thành lập bởi: {label.Rows[0].Field<string>("Founder")}\n" +
-                        $"Ngày thành lập: {TimerType.VietnamTimeType((DateTime)label.Rows[0].Field<DateTime>("Founded"))}\n" +
-                        $"Địa điểm: {label.Rows[0].Field<string>("Location")}\n\n" +
-                        $"{label.Rows[0].Field<string>("Description")}";
-
-                    QueryData.Instance.Group.Label.LabelID = label.Rows[0].Field<int>("LabelID");
-                    QueryData.Instance.Group.Label.LabelName = label.Rows[0].Field<string>("Name");
-                    QueryData.Instance.Group.Label.Founder = label.Rows[0].Field<string>("Founder");
-                    QueryData.Instance.Group.Label.Founded = (DateTime)label.Rows[0].Field<DateTime>("Founded");
-                    QueryData.Instance.Group.Label.Location = label.Rows[0].Field<string>("Location");
-                    QueryData.Instance.Group.Label.Description = label.Rows[0].Field<string>("Description");
-                }
-                else
-                {
-                    labelGroup_Label.Text = "Không có";
-                    QueryData.Instance.Group.Label.LabelID = 0;
-                    QueryData.Instance.Group.Label.LabelName = string.Empty;
-                    QueryData.Instance.Group.Label.Founder = string.Empty;
-                    QueryData.Instance.Group.Label.Founded = DateTime.Now;
-                    QueryData.Instance.Group.Label.Location = string.Empty;
-                    QueryData.Instance.Group.Label.Description = string.Empty;
-                }
-            }
-            catch(Exception e)
-            {
-                Console.WriteLine(e);
-                labelGroup_Label.Text = "Không có";
-                QueryData.Instance.Group.Label.LabelID = 0;
-                QueryData.Instance.Group.Label.LabelName = string.Empty;
-                QueryData.Instance.Group.Label.Founder = string.Empty;
-                QueryData.Instance.Group.Label.Founded = DateTime.Now;
-                QueryData.Instance.Group.Label.Location = string.Empty;
-                QueryData.Instance.Group.Label.Description = string.Empty;
-            }
-
-            //SNS
-            DataTable sns = null;
-            try
-            {
-                int snsID = DatabaseManager.ShowDataQuery($"SELECT SnsID FROM [Group] WHERE GroupID = {datas[1].Rows[selectedRowFirstIndex].Field<int>("GroupID")}").Rows[0].Field<int>(0);
-                sns = DatabaseManager.ShowDataQuery($"SELECT * FROM [SNS] WHERE SnsID = {snsID}");
-
-                tx_Group_YoutubeURL.Text = sns.Rows[0].Field<string>("youtube");
-                tx_Group_InstagramURL.Text = sns.Rows[0].Field<string>("instagram");
-                tx_Group_FacebookURL.Text = sns.Rows[0].Field<string>("facebook");
-                tx_Group_TwitterURL.Text = sns.Rows[0].Field<string>("twitter");
-                tx_Group_TiktokURL.Text = sns.Rows[0].Field<string>("tiktok");
-                tx_Group_VliveURL.Text = sns.Rows[0].Field<string>("vlive");
-                tx_Group_AppleMusicURL.Text = sns.Rows[0].Field<string>("applemusic");
-                tx_Group_SpotifyURL.Text = sns.Rows[0].Field<string>("spotify");
-                tx_Group_WebsiteURL.Text = sns.Rows[0].Field<string>("website");
-            }
-            catch
-            {
-                tx_Group_YoutubeURL.Text = string.Empty;
-                tx_Group_InstagramURL.Text = string.Empty;
-                tx_Group_FacebookURL.Text = string.Empty;
-                tx_Group_TwitterURL.Text = string.Empty;
-                tx_Group_TiktokURL.Text = string.Empty;
-                tx_Group_VliveURL.Text = string.Empty;
-                tx_Group_AppleMusicURL.Text = string.Empty;
-                tx_Group_SpotifyURL.Text = string.Empty;
-                tx_Group_WebsiteURL.Text = string.Empty;
-            }
-
-            //ADD to list
-            QueryData.Instance.Group.GroupID = Convert.ToInt32(txGroup_ID.Text);
-            QueryData.Instance.Group.GroupName = txGroup_Name.Text;
-            QueryData.Instance.Group.DebutDay = dateTimePickerGroup_Debutday.Value;
-            QueryData.Instance.Group.Description = txGroup_Description.Text;
-            QueryData.Instance.Group.Fandom.FandomID = fandom.Rows[0].Field<int>(0);
-
-            QueryData.Instance.Group.Sns.Youtube = tx_Group_YoutubeURL.Text;
-            QueryData.Instance.Group.Sns.Instagram = tx_Group_InstagramURL.Text;
-            QueryData.Instance.Group.Sns.Facebook = tx_Group_FacebookURL.Text;
-            QueryData.Instance.Group.Sns.Twitter = tx_Group_TwitterURL.Text;
-            QueryData.Instance.Group.Sns.Tiktok = tx_Group_TiktokURL.Text;
-            QueryData.Instance.Group.Sns.Vlive = tx_Group_VliveURL.Text;
-            QueryData.Instance.Group.Sns.AppleMusic = tx_Group_AppleMusicURL.Text;
-            QueryData.Instance.Group.Sns.Spotify = tx_Group_SpotifyURL.Text;
-            QueryData.Instance.Group.Sns.Website = tx_Group_WebsiteURL.Text;
-
-            GetGroupSong();
-            GetGroupAlbum();
-        }
-        void GetGroupSong()
-        {
-            var song = DatabaseManager.ShowDataStoredProcedure("Group_GetSong", QueryData.Instance.Group.GroupID.ToString());
-            dataGridViewGroup_Song.Rows.Clear();
-            for (int i = 0; i < song.Rows.Count; i++)
-            {
-                bool isContains = false;
-                for (int j = 0; j < dataGridViewGroup_Song.Rows.Count; j++)
-                {
-
-                    if (song.Rows[i].Field<int>(0) == (int)dataGridViewGroup_Song.Rows[j].Cells[0].Value)
-                    {
-                        isContains = true;
-                    }
-
-                }
-                if (!isContains && song.Rows[i].Field<int>(0) != 0)
-                {
-                    dataGridViewGroup_Song.Rows.Add(
-                        song.Rows[i].Field<int>(0),
-                        song.Rows[i].Field<string>(1),
-                        song.Rows[i].Field<DateTime>(2),
-                        song.Rows[i].Field<string>(3),
-                        song.Rows[i].Field<string>(4),
-                        song.Rows[i].Field<string>(5)
-                    );
-                }
-            }
-        }
-        void GetGroupAlbum()
-        {
-            var album = DatabaseManager.ShowDataStoredProcedure("Group_GetAlbum", QueryData.Instance.Group.GroupID.ToString());
-            dataGridViewGroup_Album.Rows.Clear();
-            for (int i = 0; i < album.Rows.Count; i++)
-            {
-                bool isContains = false;
-                for (int j = 0; j < dataGridViewGroup_Album.Rows.Count; j++)
-                {
-
-                    if (album.Rows[i].Field<int>(0) == (int)dataGridViewGroup_Album.Rows[j].Cells[0].Value)
-                    {
-                        isContains = true;
-                    }
-
-                }
-                if (!isContains && album.Rows[i].Field<int>(0) != 0)
-                {
-                    dataGridViewGroup_Album.Rows.Add(
-                        album.Rows[i].Field<int>(0),
-                        album.Rows[i].Field<string>(1),
-                        album.Rows[i].Field<DateTime>(2),
-                        album.Rows[i].Field<string>(3)
-                    );
-                }
-            }
-        }
         int nextImageIndex = 1;
         public static List<string> artistImage = new List<string>();
         private void btnArtist_NextImage_Click(object sender, EventArgs e)
@@ -1465,7 +1213,6 @@ namespace ArtistMNG
             }
 
         }
-        //=====================ARTIST BTN===============================
         private void btnArtist_EditImage_Click(object sender, EventArgs e)
         {
             Intermediary_Image intermediary_Image = new Intermediary_Image();
@@ -1504,7 +1251,7 @@ namespace ArtistMNG
             intermediary_Label.Closed += (s, args) => RealoadArtistLabel();
             intermediary_Label.Show();
         }
-        
+
         void ReloadArtistImage()
         {
             nextImageIndex = 0;
@@ -1655,106 +1402,13 @@ namespace ArtistMNG
             }
         }
         //=========================GROUP==========================\\
-        //=========================GROUP BTN==========================
-        private void btnGroup_EditFandom_Click(object sender, EventArgs e)
+        void Group_ChooseRowToEdit()
         {
-            Intermediary_Fandom intermediary_Fandom = new Intermediary_Fandom();
-            intermediary_Fandom.Closed += (s, args) => RealoadGroupFandom();
-            intermediary_Fandom.Show();
-        }
 
-        private void btnGroup_EditSong_Click(object sender, EventArgs e)
-        {
-            Intermediary_Song intermediary_Song = new Intermediary_Song();
-            intermediary_Song.Closed += (s, args) => RealoadGroupSong();
-            intermediary_Song.Show();
-        }
-
-        private void btnGroup_EditAlbum_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("Album sẽ tự được thêm vào hoặc xóa đi theo ràng buộc của bài hát thuộc album.");
-        }
-
-        private void btnGroup_EditLabel_Click(object sender, EventArgs e)
-        {
-            Intermediary_Label intermediary_Label = new Intermediary_Label();
-            intermediary_Label.Closed += (s, args) => RealoadGroupLabel();
-            intermediary_Label.Show();
-        }
-        void RealoadGroupFandom()
-        {
-            if (QueryData.Instance.Group.Fandom.FandomID != 0)
-            {
-                labelGroup_Fandom.Text =
-                $"ID: {QueryData.Instance.Group.Fandom.FandomID}\n" +
-                    $"Tên: {QueryData.Instance.Group.Fandom.FandomName}\n\n" +
-                    $"{QueryData.Instance.Group.Fandom.Description}";
-            }
-            else
-            {
-                labelGroup_Fandom.Text = "Không có fandom";
-            }
-        }
-        void RealoadGroupSong()
-        {
-            dataGridViewGroup_Song.Rows.Clear();
-            GetGroupSong();
-            for (int i = 0; i < QueryData.Instance.Group.GroupSong_Add.Count; i++)
-            {
-                bool isContains = false;
-                for (int j = 0; j < dataGridViewGroup_Song.Rows.Count; j++)
-                {
-
-                    if (QueryData.Instance.Group.GroupSong_Add[i].SongID == (int)dataGridViewGroup_Song.Rows[j].Cells[0].Value)
-                    {
-                        isContains = true;
-                    }
-
-                }
-                if (!isContains)
-                {
-                    dataGridViewGroup_Song.Rows.Add(
-                        QueryData.Instance.Group.GroupSong_Add[i].SongID,
-                        QueryData.Instance.Group.GroupSong_Add[i].SongName,
-                        QueryData.Instance.Group.GroupSong_Add[i].ReleaseDay,
-                        QueryData.Instance.Group.GroupSong_Add[i].Genre,
-                        QueryData.Instance.Group.GroupSong_Add[i].Producer,
-                        QueryData.Instance.Group.GroupSong_Add[i].Description
-                    );
-                }
-            }
-            MessageBox.Show(QueryData.Instance.Group.GroupSong_Delete.Count.ToString());
-            for (int i = 0; i < QueryData.Instance.Group.GroupSong_Delete.Count; i++)
-            {
-                for (int j = 0; j < dataGridViewGroup_Song.Rows.Count; j++)
-                {
-                    if (QueryData.Instance.Group.GroupSong_Delete[i].SongID == (int)dataGridViewGroup_Song.Rows[j].Cells[0].Value)
-                    {
-                        dataGridViewGroup_Song.Rows.RemoveAt(j);
-                    }
-                }
-            }
-        }
-        void RealoadGroupLabel()
-        {
-            if (QueryData.Instance.Artist.Label.LabelID != 0)
-            {
-                labelArtist_Label.Text =
-                $"ID: {QueryData.Instance.Artist.Label.LabelID}\n" +
-                    $"Tên: {QueryData.Instance.Artist.Label.LabelName}\n" +
-                    $"Người t.lập: {QueryData.Instance.Artist.Label.Founder}\n" +
-                    $"Ngày lập: {TimerType.VietnamTimeType((DateTime)QueryData.Instance.Artist.Label.Founded)}\n" +
-                    $"Địa điểm: {QueryData.Instance.Artist.Label.Location}\n\n" +
-                    $"{QueryData.Instance.Artist.Label.Description}";
-            }
-            else
-            {
-                labelArtist_Label.Text = "Không có công ty";
-            }
         }
         void Song_ChooseRowToEdit()
         {
-            
+
         }
         void Album_ChooseRowToEdit()
         {
@@ -1787,7 +1441,7 @@ namespace ArtistMNG
 
         }
 
-        
+    
 
         private void backgroundWorker1_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
         {

@@ -57,7 +57,7 @@ namespace ArtistMNG.Subform
             this.panel_Workspace.Controls.Add(this.groupBox2);
             this.panel_Workspace.Location = new System.Drawing.Point(12, 44);
             this.panel_Workspace.Name = "panel_Workspace";
-            this.panel_Workspace.Size = new System.Drawing.Size(857, 535);
+            this.panel_Workspace.Size = new System.Drawing.Size(1132, 723);
             this.panel_Workspace.TabIndex = 0;
             // 
             // btnClearFandom
@@ -68,23 +68,24 @@ namespace ArtistMNG.Subform
             this.btnClearFandom.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnClearFandom.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnClearFandom.ForeColor = System.Drawing.Color.White;
-            this.btnClearFandom.Location = new System.Drawing.Point(4, 285);
+            this.btnClearFandom.Location = new System.Drawing.Point(4, 503);
             this.btnClearFandom.Name = "btnClearFandom";
-            this.btnClearFandom.Size = new System.Drawing.Size(173, 40);
+            this.btnClearFandom.Size = new System.Drawing.Size(535, 40);
             this.btnClearFandom.TabIndex = 24;
             this.btnClearFandom.TabStop = false;
-            this.btnClearFandom.Text = "Không có fandom";
+            this.btnClearFandom.Text = "Không chọn fandom";
             this.btnClearFandom.UseVisualStyleBackColor = false;
             this.btnClearFandom.Click += new System.EventHandler(this.btnClearFandom_Click);
             // 
             // btnAddFandomFromDbToArtist
             // 
+            this.btnAddFandomFromDbToArtist.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnAddFandomFromDbToArtist.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(64)))), ((int)(((byte)(66)))));
             this.btnAddFandomFromDbToArtist.FlatAppearance.BorderSize = 0;
             this.btnAddFandomFromDbToArtist.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAddFandomFromDbToArtist.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold);
             this.btnAddFandomFromDbToArtist.ForeColor = System.Drawing.Color.White;
-            this.btnAddFandomFromDbToArtist.Location = new System.Drawing.Point(407, 24);
+            this.btnAddFandomFromDbToArtist.Location = new System.Drawing.Point(545, 24);
             this.btnAddFandomFromDbToArtist.Name = "btnAddFandomFromDbToArtist";
             this.btnAddFandomFromDbToArtist.Size = new System.Drawing.Size(39, 39);
             this.btnAddFandomFromDbToArtist.TabIndex = 8;
@@ -100,9 +101,9 @@ namespace ArtistMNG.Subform
             this.groupBox6.Controls.Add(this.cbxSearchDatabaseFandomType);
             this.groupBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
             this.groupBox6.ForeColor = System.Drawing.Color.White;
-            this.groupBox6.Location = new System.Drawing.Point(4, 361);
+            this.groupBox6.Location = new System.Drawing.Point(4, 549);
             this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Size = new System.Drawing.Size(397, 171);
+            this.groupBox6.Size = new System.Drawing.Size(535, 171);
             this.groupBox6.TabIndex = 7;
             this.groupBox6.TabStop = false;
             this.groupBox6.Text = "Tìm kiếm trong database";
@@ -124,19 +125,20 @@ namespace ArtistMNG.Subform
             this.btnSearchDatabaseFandom.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSearchDatabaseFandom.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSearchDatabaseFandom.ForeColor = System.Drawing.Color.White;
-            this.btnSearchDatabaseFandom.Location = new System.Drawing.Point(268, 125);
+            this.btnSearchDatabaseFandom.Location = new System.Drawing.Point(406, 125);
             this.btnSearchDatabaseFandom.Name = "btnSearchDatabaseFandom";
             this.btnSearchDatabaseFandom.Size = new System.Drawing.Size(123, 40);
             this.btnSearchDatabaseFandom.TabIndex = 23;
             this.btnSearchDatabaseFandom.TabStop = false;
             this.btnSearchDatabaseFandom.Text = "Tìm";
             this.btnSearchDatabaseFandom.UseVisualStyleBackColor = false;
+            this.btnSearchDatabaseFandom.Click += new System.EventHandler(this.btnSearchDatabaseFandom_Click);
             // 
             // txValueSearchDatabaseFandom
             // 
             this.txValueSearchDatabaseFandom.Location = new System.Drawing.Point(6, 92);
             this.txValueSearchDatabaseFandom.Name = "txValueSearchDatabaseFandom";
-            this.txValueSearchDatabaseFandom.Size = new System.Drawing.Size(385, 24);
+            this.txValueSearchDatabaseFandom.Size = new System.Drawing.Size(523, 24);
             this.txValueSearchDatabaseFandom.TabIndex = 1;
             // 
             // cbxSearchDatabaseFandomType
@@ -145,12 +147,14 @@ namespace ArtistMNG.Subform
             this.cbxSearchDatabaseFandomType.FormattingEnabled = true;
             this.cbxSearchDatabaseFandomType.Items.AddRange(new object[] {
             "Tất cả",
-            "Id fandom",
-            "Tên fandom"});
+            "Id",
+            "Tên ",
+            "Mô tả"});
             this.cbxSearchDatabaseFandomType.Location = new System.Drawing.Point(6, 55);
             this.cbxSearchDatabaseFandomType.Name = "cbxSearchDatabaseFandomType";
-            this.cbxSearchDatabaseFandomType.Size = new System.Drawing.Size(385, 26);
+            this.cbxSearchDatabaseFandomType.Size = new System.Drawing.Size(523, 26);
             this.cbxSearchDatabaseFandomType.TabIndex = 0;
+            this.cbxSearchDatabaseFandomType.SelectedIndexChanged += new System.EventHandler(this.cbxSearchDatabaseFandomType_SelectedIndexChanged);
             // 
             // groupBox_CurrentFandomInfor
             // 
@@ -159,7 +163,7 @@ namespace ArtistMNG.Subform
             this.groupBox_CurrentFandomInfor.ForeColor = System.Drawing.Color.White;
             this.groupBox_CurrentFandomInfor.Location = new System.Drawing.Point(4, 3);
             this.groupBox_CurrentFandomInfor.Name = "groupBox_CurrentFandomInfor";
-            this.groupBox_CurrentFandomInfor.Size = new System.Drawing.Size(397, 276);
+            this.groupBox_CurrentFandomInfor.Size = new System.Drawing.Size(535, 494);
             this.groupBox_CurrentFandomInfor.TabIndex = 4;
             this.groupBox_CurrentFandomInfor.TabStop = false;
             this.groupBox_CurrentFandomInfor.Text = "Fandom hiện tại";
@@ -179,9 +183,9 @@ namespace ArtistMNG.Subform
             this.groupBox2.Controls.Add(this.dataGridView_DatabaseFandom);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
             this.groupBox2.ForeColor = System.Drawing.Color.White;
-            this.groupBox2.Location = new System.Drawing.Point(452, 3);
+            this.groupBox2.Location = new System.Drawing.Point(590, 3);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(402, 529);
+            this.groupBox2.Size = new System.Drawing.Size(539, 717);
             this.groupBox2.TabIndex = 3;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Fandom trong database";
@@ -197,7 +201,7 @@ namespace ArtistMNG.Subform
             this.dataGridView_DatabaseFandom.Name = "dataGridView_DatabaseFandom";
             this.dataGridView_DatabaseFandom.RowHeadersWidth = 51;
             this.dataGridView_DatabaseFandom.RowTemplate.Height = 24;
-            this.dataGridView_DatabaseFandom.Size = new System.Drawing.Size(390, 502);
+            this.dataGridView_DatabaseFandom.Size = new System.Drawing.Size(527, 690);
             this.dataGridView_DatabaseFandom.TabIndex = 1;
             // 
             // Intermediary_Fandom
@@ -205,9 +209,11 @@ namespace ArtistMNG.Subform
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(42)))), ((int)(((byte)(46)))));
-            this.ClientSize = new System.Drawing.Size(881, 585);
+            this.ClientSize = new System.Drawing.Size(1156, 779);
             this.Controls.Add(this.panel_Workspace);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
+            this.MaximumSize = new System.Drawing.Size(1174, 826);
+            this.MinimumSize = new System.Drawing.Size(1174, 826);
             this.Name = "Intermediary_Fandom";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Intermediary_Image";

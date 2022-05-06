@@ -1,0 +1,2 @@
+﻿DECLARE @LastID int = (SELECT count(*) FROM Fandom)
+DBCC CHECKIDENT (Fandom, RESEED, @LastID)

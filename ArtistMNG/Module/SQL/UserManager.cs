@@ -19,7 +19,7 @@ namespace ArtistMNG.Module.SQL
             SqlConnection con = new SqlConnection();
             //gọi chuỗi kết nối ở file App.config bằng thuộc tính ConnectionString
             //con.ConnectionString = @"Server=NVH2001\VANHAODEV;Database=Artist;User Id=nvh2001;Password=nvh2001;";
-            con.ConnectionString = @"Server=34.142.169.129;Database=Artist;User ID=sqlserver;Password=nvh2001;";
+            con.ConnectionString = DatabaseManager.connectString;
             try
             {
                 //khỏi tạo instance của class SqlCommand

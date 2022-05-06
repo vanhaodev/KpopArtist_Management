@@ -202,10 +202,12 @@ namespace ArtistMNG
             fullName = user.Item3;
             panel_Loading.Visible = true;
             panel_Login.Visible = false;
+
+            
             FormLoad.isLoaded = false;
             loadingTime.Tick += new EventHandler(OpenForm);
 
-            loadingTime.Interval = 1;
+            loadingTime.Interval = 2000;
             loadingTime.Start();
             
         }

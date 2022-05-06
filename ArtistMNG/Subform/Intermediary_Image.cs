@@ -9,6 +9,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -84,7 +85,7 @@ namespace ArtistMNG.Subform
             {
                 
             }
-
+            cbxSearchDatabaseImageType.SelectedIndex = 1;
 
         }
 
@@ -154,6 +155,16 @@ namespace ArtistMNG.Subform
         }
         private void btnApplyAdd_Click(object sender, EventArgs e)
         {
+            try
+            {
+                pictureBox_Image.Load(tx_ImageURL.Text);
+            }
+            catch
+            {
+                MessageBox.Show("Ảnh không hợp lệ!");
+                return;
+            }
+
             ModelImage modelImage = new ModelImage();
             modelImage.ImageID = 0;
             modelImage.ImageURL = tx_ImageURL.Text;
@@ -432,5 +443,54 @@ namespace ArtistMNG.Subform
             GroupBoxStyle.PaintBorderlessGroupBox(sender, e, this);
         }
 
+        private void btnSearchDatabaseImage_Click(object sender, EventArgs e)
+        {
+            if (txValueSearchDatabaseImage.Text.Length < 1 || cbxSearchDatabaseImageType.SelectedIndex == 0)
+            {
+                return;
+            }
+            DataTable database = null;
+            switch (cbxSearchDatabaseImageType.SelectedIndex)
+            {
+                case 1:
+                    if (Regex.IsMatch(txValueSearchDatabaseImage.Text, @"^\d$")) //Regex only số
+                    {
+                        database = DatabaseManager.ShowDataQuery($"SELECT * FROM [Image] WHERE ImageID = {txValueSearchDatabaseImage.Text}");
+                    }
+                    else
+                    {
+                        MessageBox.Show("ID chỉ tồn tại số nguyên!");
+                        return;
+                    }
+
+                    break;
+                case 2:
+                    database = DatabaseManager.ShowDataQuery($"SELECT * FROM [Image] WHERE Description LIKE '%{txValueSearchDatabaseImage.Text}%'");
+                    break;
+            }
+            ResultSearch(database);
+        }
+
+        private void cbxSearchDatabaseImageType_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cbxSearchDatabaseImageType.SelectedIndex == 0)
+            {
+                ResultSearch(DatabaseManager.ShowDataQuery("SELECT * FROM [Image]"));
+            }
+        }
+        void ResultSearch(DataTable database)
+        {
+            if (database != null)
+            {
+                dataGridView_DatabaseImage.Rows.Clear();
+                for (int i = 0; i < database.Rows.Count; i++)
+                {
+                    dataGridView_DatabaseImage.Rows.Add(
+                        database.Rows[i][0],
+                        database.Rows[i][1],
+                        database.Rows[i][2]);
+                }
+            }
+        }
     }
 }

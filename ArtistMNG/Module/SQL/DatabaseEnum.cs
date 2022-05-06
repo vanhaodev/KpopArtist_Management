@@ -10,8 +10,8 @@ namespace ArtistMNG.Module.SQL
     {
         None = 0, Artist, Group, Song, Album, Label, Image, SNS, Fandom
     }
-    public enum DatabeExecuteState
+    public enum DatabaseExecuteState
     {
-        None = 0, Select, Insert, Update, Delete
+        None = 0, Select, Insert, Update, Hide, Delete
     }
 }

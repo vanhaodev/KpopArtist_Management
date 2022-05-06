@@ -298,7 +298,7 @@ namespace ArtistMNG.Subform
             this.btnNewRow.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnNewRow.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNewRow.ForeColor = System.Drawing.Color.White;
-            this.btnNewRow.Location = new System.Drawing.Point(359, 585);
+            this.btnNewRow.Location = new System.Drawing.Point(634, 732);
             this.btnNewRow.Name = "btnNewRow";
             this.btnNewRow.Size = new System.Drawing.Size(123, 40);
             this.btnNewRow.TabIndex = 22;
@@ -314,7 +314,7 @@ namespace ArtistMNG.Subform
             this.btnApplyDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnApplyDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnApplyDelete.ForeColor = System.Drawing.Color.White;
-            this.btnApplyDelete.Location = new System.Drawing.Point(746, 585);
+            this.btnApplyDelete.Location = new System.Drawing.Point(1021, 732);
             this.btnApplyDelete.Name = "btnApplyDelete";
             this.btnApplyDelete.Size = new System.Drawing.Size(123, 40);
             this.btnApplyDelete.TabIndex = 21;
@@ -330,7 +330,7 @@ namespace ArtistMNG.Subform
             this.btnApplyEdit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnApplyEdit.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnApplyEdit.ForeColor = System.Drawing.Color.White;
-            this.btnApplyEdit.Location = new System.Drawing.Point(617, 585);
+            this.btnApplyEdit.Location = new System.Drawing.Point(892, 732);
             this.btnApplyEdit.Name = "btnApplyEdit";
             this.btnApplyEdit.Size = new System.Drawing.Size(123, 40);
             this.btnApplyEdit.TabIndex = 20;
@@ -346,7 +346,7 @@ namespace ArtistMNG.Subform
             this.btnApplyAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnApplyAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnApplyAdd.ForeColor = System.Drawing.Color.White;
-            this.btnApplyAdd.Location = new System.Drawing.Point(488, 585);
+            this.btnApplyAdd.Location = new System.Drawing.Point(763, 732);
             this.btnApplyAdd.Name = "btnApplyAdd";
             this.btnApplyAdd.Size = new System.Drawing.Size(123, 40);
             this.btnApplyAdd.TabIndex = 19;
@@ -359,7 +359,7 @@ namespace ArtistMNG.Subform
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(42)))), ((int)(((byte)(46)))));
-            this.ClientSize = new System.Drawing.Size(881, 632);
+            this.ClientSize = new System.Drawing.Size(1156, 779);
             this.Controls.Add(this.btnCheckImage);
             this.Controls.Add(this.btnNewRow);
             this.Controls.Add(this.btnApplyDelete);
