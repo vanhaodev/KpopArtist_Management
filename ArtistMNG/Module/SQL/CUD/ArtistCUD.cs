@@ -21,6 +21,7 @@ namespace ArtistMNG.Module.SQL.CUD
                     cmd.CommandType = CommandType.StoredProcedure;
                     cmd.Parameters.Add("@StageName", SqlDbType.NVarChar).Value = QueryData.Instance.Artist.StageName;
                     cmd.Parameters.Add("@RealName", SqlDbType.NVarChar).Value = QueryData.Instance.Artist.RealName;
+                    cmd.Parameters.Add("@Gender", SqlDbType.Bit).Value = QueryData.Instance.Artist.Gender;
                     cmd.Parameters.Add("@BirthDay", SqlDbType.Date).Value = QueryData.Instance.Artist.BirthDay != null ? QueryData.Instance.Artist.BirthDay : DateTime.Now;
                     cmd.Parameters.Add("@BirthPlace", SqlDbType.NVarChar).Value = QueryData.Instance.Artist.BirthPlace;
                     cmd.Parameters.Add("@DebutDay", SqlDbType.Date).Value = QueryData.Instance.Artist.DebutDay != null ? QueryData.Instance.Artist.DebutDay : DateTime.Now;
@@ -151,24 +152,17 @@ namespace ArtistMNG.Module.SQL.CUD
                     cmd.Parameters.Add("@ArtistID", SqlDbType.Int).Value = QueryData.Instance.Artist.ArtistID;
                     cmd.Parameters.Add("@StageName", SqlDbType.NVarChar).Value = QueryData.Instance.Artist.StageName;
                     cmd.Parameters.Add("@RealName", SqlDbType.NVarChar).Value = QueryData.Instance.Artist.RealName;
+                    cmd.Parameters.Add("@Gender", SqlDbType.Bit).Value = QueryData.Instance.Artist.Gender;
                     cmd.Parameters.Add("@BirthDay", SqlDbType.Date).Value = QueryData.Instance.Artist.BirthDay != null ? QueryData.Instance.Artist.BirthDay : DateTime.Now;
                     cmd.Parameters.Add("@BirthPlace", SqlDbType.NVarChar).Value = QueryData.Instance.Artist.BirthPlace;
                     cmd.Parameters.Add("@DebutDay", SqlDbType.Date).Value = QueryData.Instance.Artist.DebutDay != null ? QueryData.Instance.Artist.DebutDay : DateTime.Now;
-
                     cmd.Parameters.Add("@Description", SqlDbType.NVarChar).Value = QueryData.Instance.Artist.Description;
-
                     cmd.Parameters.Add("@FandomID", SqlDbType.Int).Value = QueryData.Instance.Artist.Fandom.FandomID > 0 ? QueryData.Instance.Artist.Fandom.FandomID : 0;
-
                     cmd.Parameters.Add("@Height", SqlDbType.Float).Value = QueryData.Instance.Artist.Height;
-
                     cmd.Parameters.Add("@Weight", SqlDbType.Float).Value = QueryData.Instance.Artist.Weight;
-
                     cmd.Parameters.Add("@LabelID", SqlDbType.Int).Value = QueryData.Instance.Artist.Label.LabelID > 0 ? QueryData.Instance.Artist.Label.LabelID : 0;
-
                     con.Open();
-
                     cmd.ExecuteNonQuery();
-
                     if (con.State == System.Data.ConnectionState.Open)
                     {
                         con.Close();
@@ -292,6 +286,29 @@ namespace ArtistMNG.Module.SQL.CUD
                         {
                             con.Close();
                         }
+                    }
+                }
+                //EDIT SNS
+                using (SqlCommand cmd = new SqlCommand("Artist_UpdateSNS", con))
+                {
+                    con.Open();
+                    cmd.CommandType = CommandType.StoredProcedure;
+
+                    cmd.Parameters.Add("@ArtistID", SqlDbType.Int).Value = QueryData.Instance.Artist.ArtistID;
+                    cmd.Parameters.Add("@Youtube", SqlDbType.NVarChar).Value = QueryData.Instance.Artist.Sns.Youtube;
+                    cmd.Parameters.Add("@Instagram", SqlDbType.NVarChar).Value = QueryData.Instance.Artist.Sns.Instagram;
+                    cmd.Parameters.Add("@Facebook", SqlDbType.NVarChar).Value = QueryData.Instance.Artist.Sns.Facebook;
+                    cmd.Parameters.Add("@Twitter", SqlDbType.NVarChar).Value = QueryData.Instance.Artist.Sns.Twitter;
+                    cmd.Parameters.Add("@Tiktok", SqlDbType.NVarChar).Value = QueryData.Instance.Artist.Sns.Tiktok;
+                    cmd.Parameters.Add("@Vlive", SqlDbType.NVarChar).Value = QueryData.Instance.Artist.Sns.Vlive;
+                    cmd.Parameters.Add("@AppleMusic", SqlDbType.NVarChar).Value = QueryData.Instance.Artist.Sns.AppleMusic;
+                    cmd.Parameters.Add("@Spotify", SqlDbType.NVarChar).Value = QueryData.Instance.Artist.Sns.Spotify;
+                    cmd.Parameters.Add("@Website", SqlDbType.NVarChar).Value = QueryData.Instance.Artist.Sns.Website;
+
+                    cmd.ExecuteNonQuery();
+                    if (con.State == System.Data.ConnectionState.Open)
+                    {
+                        con.Close();
                     }
                 }
                 return true;

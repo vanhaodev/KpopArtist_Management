@@ -28,7 +28,15 @@ namespace ArtistMNG.Module.SQL
 
         ModelArtist artist = new ModelArtist();
         ModelGroup group = new ModelGroup();
+        ModelSong song = new ModelSong();
+        ModelAlbum album = new ModelAlbum();
+        ModelFandom fandom = new ModelFandom();
+        ModelLabel label = new ModelLabel();
         public ModelArtist Artist { get => artist; set => artist = value; }
         public ModelGroup Group { get => group; set => group = value; }
+        public ModelSong Song { get => song; set => song = value; }
+        public ModelAlbum Album { get => album; set => album = value; }
+        public ModelFandom Fandom { get => fandom; set => fandom = value; }
+        public ModelLabel Label { get => label; set => label = value; }
     }
 }

@@ -11,6 +11,7 @@ namespace ArtistMNG.Module.SQL
         int artistID = 0;
         string stageName;
         string realName;
+        int gender;
         DateTime birthDay;
         string birthPlace;
         DateTime debutDay;
@@ -39,6 +40,7 @@ namespace ArtistMNG.Module.SQL
         public int ArtistID { get => artistID; set => artistID = value; }
         public string StageName { get => stageName; set => stageName = value; }
         public string RealName { get => realName; set => realName = value; }
+        public int Gender { get => gender; set => gender = value; }
         public DateTime BirthDay { get => birthDay; set => birthDay = value; }
         public string BirthPlace { get => birthPlace; set => birthPlace = value; }
         public DateTime DebutDay { get => debutDay; set => debutDay = value; }
