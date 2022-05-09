@@ -13,7 +13,10 @@ namespace ArtistMNG.Module.SQL
     {
         //Server=xx.xx.xx.xx;Database=xxdatabase;User ID=root;Password=xxx123
         //static SqlConnection cnn = new SqlConnection(@"Server=NVH2001\VANHAODEV;Database=Artist;User Id=nvh2001;Password=nvh2001;");
-        static SqlConnection cnn = new SqlConnection(@"Server=34.142.169.129;Database=Artist;User ID=sqlserver;Password=nvh2001;");
+        //public static string connectString = @"Server=34.142.169.129;Database=Artist;User ID=sqlserver;Password=nvh2001;";
+        public static string connectString = @"Server=LAPTOP-81LIJIKS\SQLEXPRESS;Database=Artist;Trusted_Connection=True;";
+
+        static SqlConnection cnn = new SqlConnection(connectString);
 
         static SqlCommand com = null;
         static SqlDataAdapter da = null;
@@ -114,16 +117,16 @@ namespace ArtistMNG.Module.SQL
         //        cnn.Close();
         //    }
         //}
-        public static bool Image(DatabaseTable databaseTable ,DatabeExecuteState databeExecuteState, int imageID, string imageURL, string description, int ownerID = 0)
+        public static bool Image(DatabaseTable databaseTable ,DatabaseExecuteState DatabaseExecuteState, int imageID, string imageURL, string description, int ownerID = 0)
         {
             try
             {
                 //khỏi tạo instance của class SqlCommand
                 SqlCommand cmd = new SqlCommand();
                 //sử dụng thuộc tính CommandText để chỉ định tên Proc
-                switch(databeExecuteState)
+                switch(DatabaseExecuteState)
                 {
-                    case DatabeExecuteState.Insert:
+                    case DatabaseExecuteState.Insert:
                         if(databaseTable == DatabaseTable.Artist)
                         {
                             cmd.CommandText = "Artist_InsertImage";
@@ -134,7 +137,7 @@ namespace ArtistMNG.Module.SQL
                         }    
                         
                         break;
-                    case DatabeExecuteState.Update:
+                    case DatabaseExecuteState.Update:
                         if (databaseTable == DatabaseTable.Artist)
                         {
                             cmd.CommandText = "Artist_UpdateImage";
@@ -144,7 +147,7 @@ namespace ArtistMNG.Module.SQL
                             cmd.CommandText = "Group_UpdateImage";
                         }
                         break;
-                    case DatabeExecuteState.Delete:
+                    case DatabaseExecuteState.Delete:
                         if (databaseTable == DatabaseTable.Artist)
                         {
                             cmd.CommandText = "Artist_DeleteImage";
@@ -159,8 +162,8 @@ namespace ArtistMNG.Module.SQL
                 cmd.Connection = cnn;
 
                 //khai báo các thông tin của tham số truyền vào
-                if(databeExecuteState == DatabeExecuteState.Insert
-                    || databeExecuteState == DatabeExecuteState.Delete)
+                if(DatabaseExecuteState == DatabaseExecuteState.Insert
+                    || DatabaseExecuteState == DatabaseExecuteState.Delete)
                 {
                     if(databaseTable == DatabaseTable.Artist)
                     {
@@ -171,12 +174,12 @@ namespace ArtistMNG.Module.SQL
                         cmd.Parameters.Add("@GroupID", SqlDbType.Int).Value = ownerID;
                     }                  
                 }    
-                if(databeExecuteState != DatabeExecuteState.Insert)
+                if(DatabaseExecuteState != DatabaseExecuteState.Insert)
                 {
                     cmd.Parameters.Add("@ImageID", SqlDbType.Int).Value = imageID;
                 }    
 
-                if(databeExecuteState != DatabeExecuteState.Delete)
+                if(DatabaseExecuteState != DatabaseExecuteState.Delete)
                 {
                     cmd.Parameters.Add("@ImageURL", SqlDbType.NVarChar).Value = imageURL;
                     cmd.Parameters.Add("@Description", SqlDbType.NVarChar).Value = description;

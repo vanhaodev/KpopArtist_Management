@@ -9,6 +9,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -43,6 +44,12 @@ namespace ArtistMNG.Subform
             groupBox2.Paint += PaintBorderlessGroupBox;
             groupBox3.Paint += PaintBorderlessGroupBox;
             groupBox6.Paint += PaintBorderlessGroupBox;
+
+            //Label
+            label_Information.MaximumSize = new Size(panel_Description.Width - (panel_Description.Width * 5 / 100), 0);
+            label_Information.AutoSize = true;
+            panel_Description.AutoScroll = true;
+
         }
         void PaintBorderlessGroupBox(object sender, PaintEventArgs e)
         {
@@ -110,6 +117,7 @@ namespace ArtistMNG.Subform
 
             }
 
+            cbxSearchDatabaseGroupType.SelectedIndex = 1;
 
         }
 
@@ -247,6 +255,95 @@ namespace ArtistMNG.Subform
             }
          
             dataGridView_TargetGroup.Rows.RemoveAt(dataGridView_TargetGroup.SelectedRows[0].Index);
+        }
+
+        private void btnSearchDatabaseGroup_Click(object sender, EventArgs e)
+        {
+            if (txValueSearchDatabaseGroup.Text.Length < 1 || cbxSearchDatabaseGroupType.SelectedIndex == 0)
+            {
+                return;
+            }
+            DataTable database = null;
+            switch (cbxSearchDatabaseGroupType.SelectedIndex)
+            {
+                case 1:
+                    if (Regex.IsMatch(txValueSearchDatabaseGroup.Text, @"^\d$")) //Regex only số
+                    {
+                        database = DatabaseManager.ShowDataQuery($"SELECT * FROM [Group] WHERE GroupID = {txValueSearchDatabaseGroup.Text}");
+                    }
+                    else
+                    {
+                        MessageBox.Show("ID chỉ tồn tại số nguyên!");
+                        return;
+                    }
+
+                    break;
+                case 2:
+                    database = DatabaseManager.ShowDataQuery($"SELECT * FROM [Group] WHERE Name LIKE '%{txValueSearchDatabaseGroup.Text}%'");
+                    break;
+                case 3:
+                    database = DatabaseManager.ShowDataQuery($"SELECT * FROM [Group] WHERE Description LIKE '%{txValueSearchDatabaseGroup.Text}%'");
+                    break;
+            }
+            ResultSearch(database);
+        }
+
+        private void cbxSearchDatabaseGroupType_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cbxSearchDatabaseGroupType.SelectedIndex == 0)
+            {
+                ResultSearch(DatabaseManager.ShowDataQuery("SELECT * FROM [Group]"));
+            }
+        }
+        void ResultSearch(DataTable database)
+        {
+            if (database != null)
+            {
+                dataGridView_DatabaseGroup.Rows.Clear();
+                for (int i = 0; i < database.Rows.Count; i++)
+                {
+                    dataGridView_DatabaseGroup.Rows.Add(
+                        database.Rows[i][0],
+                        database.Rows[i][1],
+                        database.Rows[i][2],
+                        database.Rows[i][3],
+                        database.Rows[i][4]);
+                }
+            }
+        }
+
+        private void dataGridView_DatabaseGroup_SelectionChanged(object sender, EventArgs e)
+        {
+            /*
+             * modelGroup.GroupID = (int)dataGridView_TargetGroup.SelectedRows[0].Cells[0].Value;
+                modelGroup.GroupName = dataGridView_TargetGroup.SelectedRows[0].Cells[1].Value.ToString();
+                modelGroup.DebutDay = (DateTime)dataGridView_TargetGroup.SelectedRows[0].Cells[2].Value;
+                modelGroup.Fandom.FandomID = (int)dataGridView_TargetGroup.SelectedRows[0].Cells[3].Value;
+                modelGroup.Description = dataGridView_TargetGroup.SelectedRows[0].Cells[4].Value.ToString();*/
+            if (dataGridView_DatabaseGroup.SelectedRows.Count == 0)
+            {
+                return;
+            }
+            label_Information.Text = $"ID: {dataGridView_DatabaseGroup.SelectedRows[0].Cells[0].Value}\n" +
+                $"Tên: {dataGridView_DatabaseGroup.SelectedRows[0].Cells[1].Value}\n" +
+                $"Ra mắt: {TimerType.VietnamTimeType((DateTime)dataGridView_DatabaseGroup.SelectedRows[0].Cells[2].Value)}\n" +
+                $"Fandom: {(dataGridView_DatabaseGroup.SelectedRows[0].Cells[3].Value.ToString() != "0" ? DatabaseManager.ShowDataQuery($"SELECT Name FROM [Fandom] WHERE FandomID = {dataGridView_DatabaseGroup.SelectedRows[0].Cells[3].Value}").Rows[0].Field<string>(0) : "Không có")} (ID: {dataGridView_DatabaseGroup.SelectedRows[0].Cells[3].Value})\n" +
+                $"{dataGridView_DatabaseGroup.SelectedRows[0].Cells[4].Value}";
+                
+        }
+
+        private void dataGridView_TargetGroup_SelectionChanged(object sender, EventArgs e)
+        {
+            if (dataGridView_TargetGroup.SelectedRows.Count == 0)
+            {
+                return;
+            }
+
+            label_Information.Text = $"ID: {dataGridView_TargetGroup.SelectedRows[0].Cells[0].Value}\n" +
+                $"Tên: {dataGridView_TargetGroup.SelectedRows[0].Cells[1].Value}\n" +
+                $"Ra mắt: {TimerType.VietnamTimeType((DateTime)dataGridView_TargetGroup.SelectedRows[0].Cells[2].Value)}\n" +
+                $"Fandom: {(dataGridView_TargetGroup.SelectedRows[0].Cells[3].Value.ToString() != "0" ? DatabaseManager.ShowDataQuery($"SELECT Name FROM [Fandom] WHERE FandomID = {dataGridView_TargetGroup.SelectedRows[0].Cells[3].Value}").Rows[0].Field<string>(0) : "Không có")} (ID: {dataGridView_TargetGroup.SelectedRows[0].Cells[3].Value})\n" +
+                $"{dataGridView_TargetGroup.SelectedRows[0].Cells[4].Value}";
         }
     }
 }

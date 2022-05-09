@@ -77,26 +77,27 @@ namespace ArtistMNG.Subform
             this.panel_Workspace.Controls.Add(this.groupBox1);
             this.panel_Workspace.Location = new System.Drawing.Point(12, 12);
             this.panel_Workspace.Name = "panel_Workspace";
-            this.panel_Workspace.Size = new System.Drawing.Size(857, 595);
+            this.panel_Workspace.Size = new System.Drawing.Size(1132, 715);
             this.panel_Workspace.TabIndex = 0;
             // 
             // pictureBox_DatabaseImage
             // 
             this.pictureBox_DatabaseImage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox_DatabaseImage.Location = new System.Drawing.Point(452, 343);
+            this.pictureBox_DatabaseImage.Location = new System.Drawing.Point(590, 581);
             this.pictureBox_DatabaseImage.Name = "pictureBox_DatabaseImage";
-            this.pictureBox_DatabaseImage.Size = new System.Drawing.Size(113, 112);
+            this.pictureBox_DatabaseImage.Size = new System.Drawing.Size(131, 131);
             this.pictureBox_DatabaseImage.TabIndex = 1;
             this.pictureBox_DatabaseImage.TabStop = false;
             // 
             // btnAddImageFromDbToArtist
             // 
+            this.btnAddImageFromDbToArtist.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnAddImageFromDbToArtist.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(64)))), ((int)(((byte)(66)))));
             this.btnAddImageFromDbToArtist.FlatAppearance.BorderSize = 0;
             this.btnAddImageFromDbToArtist.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAddImageFromDbToArtist.Font = new System.Drawing.Font("Roboto", 8F, System.Drawing.FontStyle.Bold);
+            this.btnAddImageFromDbToArtist.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold);
             this.btnAddImageFromDbToArtist.ForeColor = System.Drawing.Color.White;
-            this.btnAddImageFromDbToArtist.Location = new System.Drawing.Point(407, 24);
+            this.btnAddImageFromDbToArtist.Location = new System.Drawing.Point(545, 24);
             this.btnAddImageFromDbToArtist.Name = "btnAddImageFromDbToArtist";
             this.btnAddImageFromDbToArtist.Size = new System.Drawing.Size(39, 39);
             this.btnAddImageFromDbToArtist.TabIndex = 8;
@@ -110,9 +111,9 @@ namespace ArtistMNG.Subform
             this.groupBox6.Controls.Add(this.btnSearchDatabaseImage);
             this.groupBox6.Controls.Add(this.txValueSearchDatabaseImage);
             this.groupBox6.Controls.Add(this.cbxSearchDatabaseImageType);
-            this.groupBox6.Font = new System.Drawing.Font("Roboto", 9F, System.Drawing.FontStyle.Bold);
+            this.groupBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
             this.groupBox6.ForeColor = System.Drawing.Color.White;
-            this.groupBox6.Location = new System.Drawing.Point(452, 461);
+            this.groupBox6.Location = new System.Drawing.Point(727, 581);
             this.groupBox6.Name = "groupBox6";
             this.groupBox6.Size = new System.Drawing.Size(402, 131);
             this.groupBox6.TabIndex = 7;
@@ -124,7 +125,7 @@ namespace ArtistMNG.Subform
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(6, 23);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(72, 20);
+            this.label1.Size = new System.Drawing.Size(79, 18);
             this.label1.TabIndex = 24;
             this.label1.Text = "Tìm theo:";
             // 
@@ -134,7 +135,7 @@ namespace ArtistMNG.Subform
             this.btnSearchDatabaseImage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(64)))), ((int)(((byte)(66)))));
             this.btnSearchDatabaseImage.FlatAppearance.BorderSize = 0;
             this.btnSearchDatabaseImage.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSearchDatabaseImage.Font = new System.Drawing.Font("Roboto", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSearchDatabaseImage.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSearchDatabaseImage.ForeColor = System.Drawing.Color.White;
             this.btnSearchDatabaseImage.Location = new System.Drawing.Point(273, 82);
             this.btnSearchDatabaseImage.Name = "btnSearchDatabaseImage";
@@ -143,12 +144,13 @@ namespace ArtistMNG.Subform
             this.btnSearchDatabaseImage.TabStop = false;
             this.btnSearchDatabaseImage.Text = "Tìm";
             this.btnSearchDatabaseImage.UseVisualStyleBackColor = false;
+            this.btnSearchDatabaseImage.Click += new System.EventHandler(this.btnSearchDatabaseImage_Click);
             // 
             // txValueSearchDatabaseImage
             // 
             this.txValueSearchDatabaseImage.Location = new System.Drawing.Point(6, 86);
             this.txValueSearchDatabaseImage.Name = "txValueSearchDatabaseImage";
-            this.txValueSearchDatabaseImage.Size = new System.Drawing.Size(261, 27);
+            this.txValueSearchDatabaseImage.Size = new System.Drawing.Size(261, 24);
             this.txValueSearchDatabaseImage.TabIndex = 1;
             // 
             // cbxSearchDatabaseImageType
@@ -157,31 +159,22 @@ namespace ArtistMNG.Subform
             this.cbxSearchDatabaseImageType.FormattingEnabled = true;
             this.cbxSearchDatabaseImageType.Items.AddRange(new object[] {
             "Tất cả",
-            "Id ảnh",
-            "Mô tả ảnh",
-            "Id nghệ sĩ (ảnh theo nghệ sĩ)",
-            "Tên nghệ sĩ (ảnh theo nghệ sĩ)",
-            "Id nhóm (ảnh theo nhóm)",
-            "Tên nhóm ảnh theo nhóm)",
-            "Id bài hát (ảnh theo bài hát)",
-            "Tên bài hát (ảnh theo bài hát)",
-            "Id album (ảnh theo album)",
-            "Tên album (ảnh theo album)",
-            "Id công ty (ảnh theo công ty)",
-            "Tên công ty (ảnh theo công ty)"});
+            "Id",
+            "Mô tả"});
             this.cbxSearchDatabaseImageType.Location = new System.Drawing.Point(6, 48);
             this.cbxSearchDatabaseImageType.Name = "cbxSearchDatabaseImageType";
-            this.cbxSearchDatabaseImageType.Size = new System.Drawing.Size(390, 28);
+            this.cbxSearchDatabaseImageType.Size = new System.Drawing.Size(390, 26);
             this.cbxSearchDatabaseImageType.TabIndex = 0;
+            this.cbxSearchDatabaseImageType.SelectedIndexChanged += new System.EventHandler(this.cbxSearchDatabaseImageType_SelectedIndexChanged);
             // 
             // groupBox5
             // 
             this.groupBox5.Controls.Add(this.txImageDescription);
-            this.groupBox5.Font = new System.Drawing.Font("Roboto", 9F, System.Drawing.FontStyle.Bold);
+            this.groupBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
             this.groupBox5.ForeColor = System.Drawing.Color.White;
-            this.groupBox5.Location = new System.Drawing.Point(166, 509);
+            this.groupBox5.Location = new System.Drawing.Point(172, 629);
             this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(236, 83);
+            this.groupBox5.Size = new System.Drawing.Size(367, 83);
             this.groupBox5.TabIndex = 6;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Mô tả";
@@ -192,17 +185,17 @@ namespace ArtistMNG.Subform
             this.txImageDescription.Multiline = true;
             this.txImageDescription.Name = "txImageDescription";
             this.txImageDescription.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txImageDescription.Size = new System.Drawing.Size(223, 50);
+            this.txImageDescription.Size = new System.Drawing.Size(354, 50);
             this.txImageDescription.TabIndex = 1;
             // 
             // groupBox4
             // 
             this.groupBox4.Controls.Add(this.tx_ImageURL);
-            this.groupBox4.Font = new System.Drawing.Font("Roboto", 9F, System.Drawing.FontStyle.Bold);
+            this.groupBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
             this.groupBox4.ForeColor = System.Drawing.Color.White;
-            this.groupBox4.Location = new System.Drawing.Point(166, 421);
+            this.groupBox4.Location = new System.Drawing.Point(172, 541);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(236, 83);
+            this.groupBox4.Size = new System.Drawing.Size(367, 83);
             this.groupBox4.TabIndex = 5;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "URL ảnh";
@@ -213,17 +206,17 @@ namespace ArtistMNG.Subform
             this.tx_ImageURL.Multiline = true;
             this.tx_ImageURL.Name = "tx_ImageURL";
             this.tx_ImageURL.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.tx_ImageURL.Size = new System.Drawing.Size(223, 50);
+            this.tx_ImageURL.Size = new System.Drawing.Size(354, 50);
             this.tx_ImageURL.TabIndex = 0;
             // 
             // groupBox3
             // 
             this.groupBox3.Controls.Add(this.dataGridView_TargetImage);
-            this.groupBox3.Font = new System.Drawing.Font("Roboto", 9F, System.Drawing.FontStyle.Bold);
+            this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
             this.groupBox3.ForeColor = System.Drawing.Color.White;
             this.groupBox3.Location = new System.Drawing.Point(4, 3);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(397, 412);
+            this.groupBox3.Size = new System.Drawing.Size(535, 532);
             this.groupBox3.TabIndex = 4;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Ảnh của nghệ sĩ";
@@ -240,18 +233,18 @@ namespace ArtistMNG.Subform
             this.dataGridView_TargetImage.Name = "dataGridView_TargetImage";
             this.dataGridView_TargetImage.RowHeadersWidth = 51;
             this.dataGridView_TargetImage.RowTemplate.Height = 24;
-            this.dataGridView_TargetImage.Size = new System.Drawing.Size(385, 385);
+            this.dataGridView_TargetImage.Size = new System.Drawing.Size(523, 505);
             this.dataGridView_TargetImage.TabIndex = 0;
             this.dataGridView_TargetImage.SelectionChanged += new System.EventHandler(this.dataGridView_TargetImage_SelectionChanged);
             // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.dataGridView_DatabaseImage);
-            this.groupBox2.Font = new System.Drawing.Font("Roboto", 9F, System.Drawing.FontStyle.Bold);
+            this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
             this.groupBox2.ForeColor = System.Drawing.Color.White;
-            this.groupBox2.Location = new System.Drawing.Point(452, 3);
+            this.groupBox2.Location = new System.Drawing.Point(590, 3);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(402, 334);
+            this.groupBox2.Size = new System.Drawing.Size(539, 572);
             this.groupBox2.TabIndex = 3;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Ảnh trong database";
@@ -268,16 +261,16 @@ namespace ArtistMNG.Subform
             this.dataGridView_DatabaseImage.Name = "dataGridView_DatabaseImage";
             this.dataGridView_DatabaseImage.RowHeadersWidth = 51;
             this.dataGridView_DatabaseImage.RowTemplate.Height = 24;
-            this.dataGridView_DatabaseImage.Size = new System.Drawing.Size(390, 307);
+            this.dataGridView_DatabaseImage.Size = new System.Drawing.Size(527, 545);
             this.dataGridView_DatabaseImage.TabIndex = 1;
             this.dataGridView_DatabaseImage.SelectionChanged += new System.EventHandler(this.dataGridView_DatabaseImage_SelectionChanged);
             // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.pictureBox_Image);
-            this.groupBox1.Font = new System.Drawing.Font("Roboto", 9F, System.Drawing.FontStyle.Bold);
+            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
             this.groupBox1.ForeColor = System.Drawing.Color.White;
-            this.groupBox1.Location = new System.Drawing.Point(4, 421);
+            this.groupBox1.Location = new System.Drawing.Point(10, 541);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(156, 171);
             this.groupBox1.TabIndex = 2;
@@ -299,9 +292,9 @@ namespace ArtistMNG.Subform
             this.btnCheckImage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(64)))), ((int)(((byte)(66)))));
             this.btnCheckImage.FlatAppearance.BorderSize = 0;
             this.btnCheckImage.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCheckImage.Font = new System.Drawing.Font("Roboto", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCheckImage.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCheckImage.ForeColor = System.Drawing.Color.White;
-            this.btnCheckImage.Location = new System.Drawing.Point(12, 613);
+            this.btnCheckImage.Location = new System.Drawing.Point(12, 733);
             this.btnCheckImage.Name = "btnCheckImage";
             this.btnCheckImage.Size = new System.Drawing.Size(159, 40);
             this.btnCheckImage.TabIndex = 18;
@@ -316,9 +309,9 @@ namespace ArtistMNG.Subform
             this.btnNewRow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(64)))), ((int)(((byte)(66)))));
             this.btnNewRow.FlatAppearance.BorderSize = 0;
             this.btnNewRow.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnNewRow.Font = new System.Drawing.Font("Roboto", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNewRow.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNewRow.ForeColor = System.Drawing.Color.White;
-            this.btnNewRow.Location = new System.Drawing.Point(359, 613);
+            this.btnNewRow.Location = new System.Drawing.Point(634, 733);
             this.btnNewRow.Name = "btnNewRow";
             this.btnNewRow.Size = new System.Drawing.Size(123, 40);
             this.btnNewRow.TabIndex = 22;
@@ -333,9 +326,9 @@ namespace ArtistMNG.Subform
             this.btnApplyDelete.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(64)))), ((int)(((byte)(66)))));
             this.btnApplyDelete.FlatAppearance.BorderSize = 0;
             this.btnApplyDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnApplyDelete.Font = new System.Drawing.Font("Roboto", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnApplyDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnApplyDelete.ForeColor = System.Drawing.Color.White;
-            this.btnApplyDelete.Location = new System.Drawing.Point(746, 613);
+            this.btnApplyDelete.Location = new System.Drawing.Point(1021, 733);
             this.btnApplyDelete.Name = "btnApplyDelete";
             this.btnApplyDelete.Size = new System.Drawing.Size(123, 40);
             this.btnApplyDelete.TabIndex = 21;
@@ -350,9 +343,9 @@ namespace ArtistMNG.Subform
             this.btnApplyEdit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(64)))), ((int)(((byte)(66)))));
             this.btnApplyEdit.FlatAppearance.BorderSize = 0;
             this.btnApplyEdit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnApplyEdit.Font = new System.Drawing.Font("Roboto", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnApplyEdit.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnApplyEdit.ForeColor = System.Drawing.Color.White;
-            this.btnApplyEdit.Location = new System.Drawing.Point(617, 613);
+            this.btnApplyEdit.Location = new System.Drawing.Point(892, 733);
             this.btnApplyEdit.Name = "btnApplyEdit";
             this.btnApplyEdit.Size = new System.Drawing.Size(123, 40);
             this.btnApplyEdit.TabIndex = 20;
@@ -367,9 +360,9 @@ namespace ArtistMNG.Subform
             this.btnApplyAdd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(64)))), ((int)(((byte)(66)))));
             this.btnApplyAdd.FlatAppearance.BorderSize = 0;
             this.btnApplyAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnApplyAdd.Font = new System.Drawing.Font("Roboto", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnApplyAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnApplyAdd.ForeColor = System.Drawing.Color.White;
-            this.btnApplyAdd.Location = new System.Drawing.Point(488, 613);
+            this.btnApplyAdd.Location = new System.Drawing.Point(763, 733);
             this.btnApplyAdd.Name = "btnApplyAdd";
             this.btnApplyAdd.Size = new System.Drawing.Size(123, 40);
             this.btnApplyAdd.TabIndex = 19;
@@ -383,7 +376,7 @@ namespace ArtistMNG.Subform
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(42)))), ((int)(((byte)(46)))));
-            this.ClientSize = new System.Drawing.Size(881, 659);
+            this.ClientSize = new System.Drawing.Size(1156, 779);
             this.Controls.Add(this.btnCheckImage);
             this.Controls.Add(this.btnNewRow);
             this.Controls.Add(this.btnApplyDelete);

@@ -9,6 +9,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -42,33 +43,16 @@ namespace ArtistMNG.Subform
             DataTable targetFandom = new DataTable();
             //QueryData.Instance.Artist
 
-            if (QueryData.Instance.Artist.ArtistID > 0)
-            {              
-                if(QueryData.Instance.Artist.Fandom.FandomID != 0)
-                {
-                    targetFandom = DatabaseManager.ShowDataQuery($"SELECT * FROM [Fandom] WHERE FandomID = {QueryData.Instance.Artist.Fandom.FandomID}");
-                }    
-                else
-                {
-                    targetFandom = DatabaseManager.ShowDataQuery(
-                    $"SELECT _Fandom.* FROM [Fandom] _Fandom " +
-                    $"LEFT JOIN [Artist] _Artist ON _Artist.FandomID = _Fandom.FandomID " +
-                    $"WHERE _Artist.ArtistID = {QueryData.Instance.Artist.ArtistID}"
-                    );
-                }    
+            if (frmApp.currentTable == DatabaseTable.Artist)
+            {
+                targetFandom = DatabaseManager.ShowDataQuery($"SELECT * FROM [Fandom] WHERE FandomID = {QueryData.Instance.Artist.Fandom.FandomID}");
 
             }
-            else if (QueryData.Instance.Group.GroupID > 0)
+            else if (frmApp.currentTable == DatabaseTable.Group)
             {
-                targetFandom = DatabaseManager.ShowDataStoredProcedure("Group_GetFandom", QueryData.Instance.Group.GroupID.ToString());               
+                targetFandom = DatabaseManager.ShowDataQuery($"SELECT * FROM [Fandom] WHERE FandomID = {QueryData.Instance.Group.Fandom.FandomID}");
             }
-            else if(QueryData.Instance.Artist.ArtistID == 0 && QueryData.Instance.Group.GroupID == 0)
-            {
-                if (QueryData.Instance.Artist.Fandom != null && QueryData.Instance.Artist.Fandom.FandomID != 0)
-                {
-                    targetFandom = DatabaseManager.ShowDataQuery($"SELECT * FROM [Fandom] WHERE FandomID = {QueryData.Instance.Artist.Fandom.FandomID}");
-                }
-            }    
+   
 
             
             if(targetFandom.Rows.Count > 1 || targetFandom.Rows.Count == 0)
@@ -79,14 +63,26 @@ namespace ArtistMNG.Subform
             {
                 label_selectedFandomInfor.Text =
                     $"ID: {targetFandom.Rows[0][0]}\n" +
-                    $"Tên: {targetFandom.Rows[0][1]}\n" +
+                    $"Tên: {targetFandom.Rows[0][1]}\n\n" +
                     $"Mô tả: {targetFandom.Rows[0][2]}";
-                QueryData.Instance.Artist.Fandom.FandomID = (int)targetFandom.Rows[0][0];
-                QueryData.Instance.Artist.Fandom.FandomName = targetFandom.Rows[0][1].ToString();
-                QueryData.Instance.Artist.Fandom.Description = targetFandom.Rows[0][2].ToString();
+                
+                //Dành cho Artist
+                if (frmApp.currentTable == DatabaseTable.Artist)
+                {
+                    QueryData.Instance.Artist.Fandom.FandomID = (int)targetFandom.Rows[0][0];
+                    QueryData.Instance.Artist.Fandom.FandomName = targetFandom.Rows[0][1].ToString();
+                    QueryData.Instance.Artist.Fandom.Description = targetFandom.Rows[0][2].ToString();
+                }
+                //Dành cho Group
+                else if (frmApp.currentTable == DatabaseTable.Group)
+                {
+                    QueryData.Instance.Group.Fandom.FandomID = (int)targetFandom.Rows[0][0];
+                    QueryData.Instance.Group.Fandom.FandomName = targetFandom.Rows[0][1].ToString();
+                    QueryData.Instance.Group.Fandom.Description = targetFandom.Rows[0][2].ToString();
+                }
             }
 
-            
+            cbxSearchDatabaseFandomType.SelectedIndex = 1;
         }
 
         private void btnAddFandomFromDbToArtist_Click(object sender, EventArgs e)
@@ -99,18 +95,38 @@ namespace ArtistMNG.Subform
 
             label_selectedFandomInfor.Text =
                     $"ID: {dataGridView_DatabaseFandom.SelectedRows[0].Cells[0].Value}\n" +
-                    $"Tên: {dataGridView_DatabaseFandom.SelectedRows[0].Cells[1].Value}\n" +
+                    $"Tên: {dataGridView_DatabaseFandom.SelectedRows[0].Cells[1].Value}\n\n" +
                     $"Mô tả: {dataGridView_DatabaseFandom.SelectedRows[0].Cells[2].Value}";
 
-            QueryData.Instance.Artist.Fandom.FandomID = (int)dataGridView_DatabaseFandom.SelectedRows[0].Cells[0].Value;
-            QueryData.Instance.Artist.Fandom.FandomName = dataGridView_DatabaseFandom.SelectedRows[0].Cells[1].Value.ToString();
-            QueryData.Instance.Artist.Fandom.Description = dataGridView_DatabaseFandom.SelectedRows[0].Cells[2].Value.ToString();
+            //Dành cho Artist
+            if(frmApp.currentTable == DatabaseTable.Artist)
+            {
+                QueryData.Instance.Artist.Fandom.FandomID = (int)dataGridView_DatabaseFandom.SelectedRows[0].Cells[0].Value;
+                QueryData.Instance.Artist.Fandom.FandomName = dataGridView_DatabaseFandom.SelectedRows[0].Cells[1].Value.ToString();
+                QueryData.Instance.Artist.Fandom.Description = dataGridView_DatabaseFandom.SelectedRows[0].Cells[2].Value.ToString();
+            }    
+            //Dành cho Group
+            else if(frmApp.currentTable == DatabaseTable.Group)
+            {
+                QueryData.Instance.Group.Fandom.FandomID = (int)dataGridView_DatabaseFandom.SelectedRows[0].Cells[0].Value;
+                QueryData.Instance.Group.Fandom.FandomName = dataGridView_DatabaseFandom.SelectedRows[0].Cells[1].Value.ToString();
+                QueryData.Instance.Group.Fandom.Description = dataGridView_DatabaseFandom.SelectedRows[0].Cells[2].Value.ToString();
+            }
         }
 
         private void btnClearFandom_Click(object sender, EventArgs e)
         {
-            label_selectedFandomInfor.Text = "Không có fandom";
-            QueryData.Instance.Artist.Fandom = new ModelFandom();
+            label_selectedFandomInfor.Text = "Không có fandom";         
+            //Dành cho Artist
+            if (frmApp.currentTable == DatabaseTable.Artist)
+            {
+                QueryData.Instance.Artist.Fandom = new ModelFandom();
+            }
+            //Dành cho Group
+            else if (frmApp.currentTable == DatabaseTable.Group)
+            {
+                QueryData.Instance.Group.Fandom = new ModelFandom();
+            }    
         }
 
         void LoadDesign()
@@ -135,6 +151,7 @@ namespace ArtistMNG.Subform
             label_selectedFandomInfor.AutoSize = true;
             groupBox2.Paint += PaintBorderlessGroupBox;
             groupBox6.Paint += PaintBorderlessGroupBox;
+            groupBox_CurrentFandomInfor.Paint += PaintBorderlessGroupBox;
 
         }
         void PaintBorderlessGroupBox(object sender, PaintEventArgs e)
@@ -142,5 +159,59 @@ namespace ArtistMNG.Subform
             GroupBoxStyle.PaintBorderlessGroupBox(sender, e, this);
         }
 
+        private void btnSearchDatabaseFandom_Click(object sender, EventArgs e)
+        {
+            if (txValueSearchDatabaseFandom.Text.Length < 1 || cbxSearchDatabaseFandomType.SelectedIndex == 0)
+            {
+                return;
+            }
+            DataTable database = null;
+            switch (cbxSearchDatabaseFandomType.SelectedIndex)
+            {
+                case 1:
+                    if (Regex.IsMatch(txValueSearchDatabaseFandom.Text, @"^\d$")) //Regex only số
+                    {
+                        database = DatabaseManager.ShowDataQuery($"SELECT * FROM [Fandom] WHERE FandomID = {txValueSearchDatabaseFandom.Text}");
+                    }
+                    else
+                    {
+                        MessageBox.Show("ID chỉ tồn tại số nguyên!");
+                        return;
+                    }
+
+                    break;
+                case 2:
+                    database = DatabaseManager.ShowDataQuery($"SELECT * FROM [Fandom] WHERE Name LIKE '%{txValueSearchDatabaseFandom.Text}%'");
+                    break;
+                case 3:
+                    database = DatabaseManager.ShowDataQuery($"SELECT * FROM [Fandom] WHERE Description LIKE '%{txValueSearchDatabaseFandom.Text}%'");
+                    break;
+            }
+            ResultSearch(database);
+
+
+        }
+
+        private void cbxSearchDatabaseFandomType_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if(cbxSearchDatabaseFandomType.SelectedIndex == 0)
+            {
+                ResultSearch(DatabaseManager.ShowDataQuery("SELECT * FROM [Fandom]"));
+            }    
+        }
+        void ResultSearch(DataTable database)
+        {
+            if (database != null)
+            {
+                dataGridView_DatabaseFandom.Rows.Clear();
+                for (int i = 0; i < database.Rows.Count; i++)
+                {
+                    dataGridView_DatabaseFandom.Rows.Add(
+                        database.Rows[i][0],
+                        database.Rows[i][1],
+                        database.Rows[i][2]);
+                }
+            }
+        }
     }
 }
