@@ -10,4 +10,11 @@ Table:
 - Label (can not restore - auto UPDATE LabelID of Artist and Group to LabelID = 0) 
 - Image (can not restore - auto DELETE ArtistImage) 
 
+Winform C# Visual Studio 2019 [.NET 4.5]
+The language in the app is Vietnamese, you can change it to another language by changing the label control value
+
+SQL file [Artist.sql] (SqlMng 2018)
+SQL Connect string [ArtistMNG/Module/SQL/DatabaseManager.cs]
+
 ![image](https://user-images.githubusercontent.com/86046654/167543849-d225b28b-3ccc-4825-8460-374f9ae9d0af.png)
+
