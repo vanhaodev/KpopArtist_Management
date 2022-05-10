@@ -77,5 +77,32 @@ namespace ArtistMNG.Module.SQL.CUD
                 return false;
             }
         }
+        public static bool Delete()
+        {
+            SqlConnection con = new SqlConnection(DatabaseManager.connectString);
+            try
+            {
+                using (SqlCommand cmd = new SqlCommand("Song_Delete", con))
+                {
+                    cmd.CommandType = CommandType.StoredProcedure;
+                    cmd.Parameters.Add("@SongID", SqlDbType.Int).Value = QueryData.Instance.Song.SongID;
+                    con.Open();
+
+                    cmd.ExecuteNonQuery();
+                    if (con.State == System.Data.ConnectionState.Open)
+                    {
+                        con.Close();
+                    }
+                }
+                return true;
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine($"=====================SONG DELETE==========================\n" +
+                                    $"{e}" +
+                                    $"\n================================================================");
+                return false;
+            }
+        }
     }
 }

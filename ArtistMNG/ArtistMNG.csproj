@@ -84,6 +84,7 @@
     <Compile Include="Module\FormLoad.cs" />
     <Compile Include="Module\ImageFile\ImageFile.cs" />
     <Compile Include="Module\SaveManager.cs" />
+    <Compile Include="Module\SQL\CUD\AlbumCUD.cs" />
     <Compile Include="Module\SQL\CUD\ArtistCUD.cs" />
     <Compile Include="Module\SQL\CUD\FandomCUD.cs" />
     <Compile Include="Module\SQL\CUD\GroupCUD.cs" />
@@ -132,6 +133,12 @@
     <Compile Include="Subform\Intermediary_Image.Designer.cs">
       <DependentUpon>Intermediary_Image.cs</DependentUpon>
     </Compile>
+    <Compile Include="Subform\TrashTable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Subform\TrashTable.Designer.cs">
+      <DependentUpon>TrashTable.cs</DependentUpon>
+    </Compile>
     <Compile Include="Subform\Trash\TemplateAppbyNVH2001.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -171,6 +178,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Subform\Intermediary_Image.resx">
       <DependentUpon>Intermediary_Image.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Subform\TrashTable.resx">
+      <DependentUpon>TrashTable.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Subform\Trash\TemplateAppbyNVH2001.resx">
       <DependentUpon>TemplateAppbyNVH2001.cs</DependentUpon>

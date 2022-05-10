@@ -22,7 +22,26 @@ namespace ArtistMNG.Module.SQL
         static SqlDataAdapter da = null;
         static DataTable dt = null;
         static string cmd = "";
-        
+
+        public static bool QueryNonReturn(string query)
+        {
+            try
+            {
+                cmd = query;
+                cnn.Open();
+
+                com = new SqlCommand(cmd, cnn);
+                com.CommandType = CommandType.Text;
+                com.ExecuteNonQuery();
+                cnn.Close();
+                return true;
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+                return false;
+            }
+        }
         public static DataTable ShowDataQuery(string query)
         {
             cmd = query;

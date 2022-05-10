@@ -66,11 +66,11 @@ namespace ArtistMNG
             // checkBox_RememberPWD
             // 
             this.checkBox_RememberPWD.AutoSize = true;
-            this.checkBox_RememberPWD.Font = new System.Drawing.Font("Roboto Condensed", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBox_RememberPWD.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBox_RememberPWD.ForeColor = System.Drawing.Color.White;
             this.checkBox_RememberPWD.Location = new System.Drawing.Point(39, 134);
             this.checkBox_RememberPWD.Name = "checkBox_RememberPWD";
-            this.checkBox_RememberPWD.Size = new System.Drawing.Size(124, 27);
+            this.checkBox_RememberPWD.Size = new System.Drawing.Size(134, 24);
             this.checkBox_RememberPWD.TabIndex = 5;
             this.checkBox_RememberPWD.Text = "Nhớ mật khẩu";
             this.checkBox_RememberPWD.UseVisualStyleBackColor = true;
@@ -93,7 +93,7 @@ namespace ArtistMNG
             this.btnShowAndHidePWD.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnShowAndHidePWD.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnShowAndHidePWD.ForeColor = System.Drawing.Color.White;
-            this.btnShowAndHidePWD.Location = new System.Drawing.Point(338, 89);
+            this.btnShowAndHidePWD.Location = new System.Drawing.Point(338, 88);
             this.btnShowAndHidePWD.Name = "btnShowAndHidePWD";
             this.btnShowAndHidePWD.Size = new System.Drawing.Size(41, 32);
             this.btnShowAndHidePWD.TabIndex = 3;
@@ -106,7 +106,7 @@ namespace ArtistMNG
             this.btnLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(64)))), ((int)(((byte)(66)))));
             this.btnLogin.FlatAppearance.BorderSize = 0;
             this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLogin.Font = new System.Drawing.Font("Roboto", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogin.ForeColor = System.Drawing.Color.White;
             this.btnLogin.Location = new System.Drawing.Point(226, 150);
             this.btnLogin.Name = "btnLogin";
@@ -142,7 +142,7 @@ namespace ArtistMNG
             this.btnExit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnExit.FlatAppearance.BorderSize = 0;
             this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnExit.Font = new System.Drawing.Font("Roboto", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExit.ForeColor = System.Drawing.Color.White;
             this.btnExit.Location = new System.Drawing.Point(572, 12);
             this.btnExit.Name = "btnExit";
@@ -155,12 +155,12 @@ namespace ArtistMNG
             // lblTitle
             // 
             this.lblTitle.AutoSize = true;
-            this.lblTitle.Font = new System.Drawing.Font("Roboto", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitle.ForeColor = System.Drawing.Color.White;
             this.lblTitle.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.lblTitle.Location = new System.Drawing.Point(68, 25);
             this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(153, 37);
+            this.lblTitle.Size = new System.Drawing.Size(163, 32);
             this.lblTitle.TabIndex = 1;
             this.lblTitle.Text = "Đăng nhập";
             // 
@@ -206,11 +206,11 @@ namespace ArtistMNG
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(33)))), ((int)(((byte)(36)))));
             this.ClientSize = new System.Drawing.Size(619, 331);
-            this.Controls.Add(this.panel_Loading);
             this.Controls.Add(this.pictureBox_TitleIcon);
             this.Controls.Add(this.lblTitle);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.panel_Login);
+            this.Controls.Add(this.panel_Loading);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximizeBox = false;
             this.Name = "frmLogin";
