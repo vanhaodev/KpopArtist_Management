@@ -1,5 +1,5 @@
 # KpopArtist_Management
-[Add - Edit - Delete] 
+[CREATE - UPDATE - DELETE] 
 Table:
 - Artist (can restore after deleted)
 - Group (can not restore - auto DELETE ArtistGroup, GroupFandom, GroupSong) 
