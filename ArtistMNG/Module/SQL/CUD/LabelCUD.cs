@@ -77,5 +77,32 @@ namespace ArtistMNG.Module.SQL.CUD
                 return false;
             }
         }
+        public static bool Delete()
+        {
+            SqlConnection con = new SqlConnection(DatabaseManager.connectString);
+            try
+            {
+                using (SqlCommand cmd = new SqlCommand("Label_Delete", con))
+                {
+                    cmd.CommandType = CommandType.StoredProcedure;
+                    cmd.Parameters.Add("@LabelID", SqlDbType.Int).Value = QueryData.Instance.Label.LabelID;
+                    con.Open();
+
+                    cmd.ExecuteNonQuery();
+                    if (con.State == System.Data.ConnectionState.Open)
+                    {
+                        con.Close();
+                    }
+                }
+                return true;
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine($"=====================LABEL DELETE==========================\n" +
+                                    $"{e}" +
+                                    $"\n================================================================");
+                return false;
+            }
+        }
     }
 }

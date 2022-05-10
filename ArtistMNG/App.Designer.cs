@@ -30,25 +30,28 @@ namespace ArtistMNG
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle96 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle97 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle98 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle99 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle100 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle101 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle102 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle103 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle104 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle105 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle106 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle107 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle108 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle109 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle110 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle111 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle112 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle113 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle114 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle23 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle24 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle25 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle26 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle27 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle28 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle29 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle30 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle31 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle32 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle33 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle34 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle35 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle36 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle37 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle38 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle39 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle40 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle41 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle42 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle43 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle44 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel_MainWorkSpace = new System.Windows.Forms.Panel();
             this.btnNewRow = new System.Windows.Forms.Button();
             this.panel_DataContent = new System.Windows.Forms.Panel();
@@ -61,6 +64,43 @@ namespace ArtistMNG
             this.btnApplyDelete = new System.Windows.Forms.Button();
             this.btnApplyEdit = new System.Windows.Forms.Button();
             this.btnApplyAdd = new System.Windows.Forms.Button();
+            this.panel_AlbumManager = new System.Windows.Forms.Panel();
+            this.groupBoxAlbum_AlbumSong = new System.Windows.Forms.GroupBox();
+            this.btnAlbum_EditSong = new System.Windows.Forms.Button();
+            this.panel24 = new System.Windows.Forms.Panel();
+            this.dataGridViewAlbum_AlbumSong = new System.Windows.Forms.DataGridView();
+            this.groupBoxAlbum_AlbumReleaseDay = new System.Windows.Forms.GroupBox();
+            this.panel20 = new System.Windows.Forms.Panel();
+            this.dateTimePickerAlbum_AlbumReleaseDay = new System.Windows.Forms.DateTimePicker();
+            this.groupBoxAlbum_AlbumName = new System.Windows.Forms.GroupBox();
+            this.panel21 = new System.Windows.Forms.Panel();
+            this.txAlbum_AlbumName = new System.Windows.Forms.TextBox();
+            this.groupBoxAlbum_AlbumID = new System.Windows.Forms.GroupBox();
+            this.panel22 = new System.Windows.Forms.Panel();
+            this.txAlbum_AlbumID = new System.Windows.Forms.TextBox();
+            this.groupBoxAlbum_AlbumDescription = new System.Windows.Forms.GroupBox();
+            this.panel23 = new System.Windows.Forms.Panel();
+            this.txAlbum_AlbumDescription = new System.Windows.Forms.TextBox();
+            this.panel_SongManager = new System.Windows.Forms.Panel();
+            this.groupBoxSong_Description = new System.Windows.Forms.GroupBox();
+            this.panel16 = new System.Windows.Forms.Panel();
+            this.txSong_SongDescription = new System.Windows.Forms.TextBox();
+            this.panel15 = new System.Windows.Forms.Panel();
+            this.groupBoxSong_Producer = new System.Windows.Forms.GroupBox();
+            this.panel14 = new System.Windows.Forms.Panel();
+            this.txSong_SongProducer = new System.Windows.Forms.TextBox();
+            this.groupBoxSong_Genre = new System.Windows.Forms.GroupBox();
+            this.panel10 = new System.Windows.Forms.Panel();
+            this.txSong_SongGenre = new System.Windows.Forms.TextBox();
+            this.groupBoxSong_ReleaseDay = new System.Windows.Forms.GroupBox();
+            this.panel11 = new System.Windows.Forms.Panel();
+            this.dateTimePickerSong_SongReleaseDay = new System.Windows.Forms.DateTimePicker();
+            this.groupBoxSong_Name = new System.Windows.Forms.GroupBox();
+            this.panel12 = new System.Windows.Forms.Panel();
+            this.txSong_SongName = new System.Windows.Forms.TextBox();
+            this.groupBoxSong_ID = new System.Windows.Forms.GroupBox();
+            this.panel13 = new System.Windows.Forms.Panel();
+            this.txSong_SongID = new System.Windows.Forms.TextBox();
             this.panel_FandomManager = new System.Windows.Forms.Panel();
             this.groupBoxFandom_FandomName = new System.Windows.Forms.GroupBox();
             this.panel17 = new System.Windows.Forms.Panel();
@@ -120,7 +160,6 @@ namespace ArtistMNG
             this.groupBox_GroupID = new System.Windows.Forms.GroupBox();
             this.panel_GroupInforID = new System.Windows.Forms.Panel();
             this.txGroup_ID = new System.Windows.Forms.TextBox();
-            this.labelTest = new System.Windows.Forms.Label();
             this.panel_ArtistManager = new System.Windows.Forms.Panel();
             this.groupBox_ArtistGender = new System.Windows.Forms.GroupBox();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -214,30 +253,6 @@ namespace ArtistMNG
             this.groupBoxLabel_LabelID = new System.Windows.Forms.GroupBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.txLabel_LabelID = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.panel_AlbumManager = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.panel_SongManager = new System.Windows.Forms.Panel();
-            this.groupBoxSong_Description = new System.Windows.Forms.GroupBox();
-            this.panel16 = new System.Windows.Forms.Panel();
-            this.txSong_SongDescription = new System.Windows.Forms.TextBox();
-            this.panel15 = new System.Windows.Forms.Panel();
-            this.groupBoxSong_Producer = new System.Windows.Forms.GroupBox();
-            this.panel14 = new System.Windows.Forms.Panel();
-            this.txSong_SongProducer = new System.Windows.Forms.TextBox();
-            this.groupBoxSong_Genre = new System.Windows.Forms.GroupBox();
-            this.panel10 = new System.Windows.Forms.Panel();
-            this.txSong_SongGenre = new System.Windows.Forms.TextBox();
-            this.groupBoxSong_ReleaseDay = new System.Windows.Forms.GroupBox();
-            this.panel11 = new System.Windows.Forms.Panel();
-            this.dateTimePickerSong_SongReleaseDay = new System.Windows.Forms.DateTimePicker();
-            this.groupBoxSong_Name = new System.Windows.Forms.GroupBox();
-            this.panel12 = new System.Windows.Forms.Panel();
-            this.txSong_SongName = new System.Windows.Forms.TextBox();
-            this.groupBoxSong_ID = new System.Windows.Forms.GroupBox();
-            this.panel13 = new System.Windows.Forms.Panel();
-            this.txSong_SongID = new System.Windows.Forms.TextBox();
-            this.labelTest2 = new System.Windows.Forms.Label();
             this.panel_MenustripMain = new System.Windows.Forms.Panel();
             this.menuStrip_Main = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -261,10 +276,36 @@ namespace ArtistMNG
             this.pictureBox_LoadingGIF = new System.Windows.Forms.PictureBox();
             this.label_AppStatus = new System.Windows.Forms.Label();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            this.MenuStrip_ShowArtistTableTrash = new System.Windows.Forms.ToolStripMenuItem();
             this.panel_MainWorkSpace.SuspendLayout();
             this.panel_DataContent.SuspendLayout();
             this.panel_SizeControl.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_Data)).BeginInit();
+            this.panel_AlbumManager.SuspendLayout();
+            this.groupBoxAlbum_AlbumSong.SuspendLayout();
+            this.panel24.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewAlbum_AlbumSong)).BeginInit();
+            this.groupBoxAlbum_AlbumReleaseDay.SuspendLayout();
+            this.panel20.SuspendLayout();
+            this.groupBoxAlbum_AlbumName.SuspendLayout();
+            this.panel21.SuspendLayout();
+            this.groupBoxAlbum_AlbumID.SuspendLayout();
+            this.panel22.SuspendLayout();
+            this.groupBoxAlbum_AlbumDescription.SuspendLayout();
+            this.panel23.SuspendLayout();
+            this.panel_SongManager.SuspendLayout();
+            this.groupBoxSong_Description.SuspendLayout();
+            this.panel16.SuspendLayout();
+            this.groupBoxSong_Producer.SuspendLayout();
+            this.panel14.SuspendLayout();
+            this.groupBoxSong_Genre.SuspendLayout();
+            this.panel10.SuspendLayout();
+            this.groupBoxSong_ReleaseDay.SuspendLayout();
+            this.panel11.SuspendLayout();
+            this.groupBoxSong_Name.SuspendLayout();
+            this.panel12.SuspendLayout();
+            this.groupBoxSong_ID.SuspendLayout();
+            this.panel13.SuspendLayout();
             this.panel_FandomManager.SuspendLayout();
             this.groupBoxFandom_FandomName.SuspendLayout();
             this.panel17.SuspendLayout();
@@ -358,20 +399,6 @@ namespace ArtistMNG
             this.panel6.SuspendLayout();
             this.groupBoxLabel_LabelID.SuspendLayout();
             this.panel3.SuspendLayout();
-            this.panel_AlbumManager.SuspendLayout();
-            this.panel_SongManager.SuspendLayout();
-            this.groupBoxSong_Description.SuspendLayout();
-            this.panel16.SuspendLayout();
-            this.groupBoxSong_Producer.SuspendLayout();
-            this.panel14.SuspendLayout();
-            this.groupBoxSong_Genre.SuspendLayout();
-            this.panel10.SuspendLayout();
-            this.groupBoxSong_ReleaseDay.SuspendLayout();
-            this.panel11.SuspendLayout();
-            this.groupBoxSong_Name.SuspendLayout();
-            this.panel12.SuspendLayout();
-            this.groupBoxSong_ID.SuspendLayout();
-            this.panel13.SuspendLayout();
             this.panel_MenustripMain.SuspendLayout();
             this.menuStrip_Main.SuspendLayout();
             this.panel_UserInfor.SuspendLayout();
@@ -390,12 +417,12 @@ namespace ArtistMNG
             this.panel_MainWorkSpace.Controls.Add(this.btnApplyDelete);
             this.panel_MainWorkSpace.Controls.Add(this.btnApplyEdit);
             this.panel_MainWorkSpace.Controls.Add(this.btnApplyAdd);
-            this.panel_MainWorkSpace.Controls.Add(this.panel_FandomManager);
-            this.panel_MainWorkSpace.Controls.Add(this.panel_GroupManager);
             this.panel_MainWorkSpace.Controls.Add(this.panel_ArtistManager);
             this.panel_MainWorkSpace.Controls.Add(this.panel_LabelManager);
             this.panel_MainWorkSpace.Controls.Add(this.panel_AlbumManager);
             this.panel_MainWorkSpace.Controls.Add(this.panel_SongManager);
+            this.panel_MainWorkSpace.Controls.Add(this.panel_FandomManager);
+            this.panel_MainWorkSpace.Controls.Add(this.panel_GroupManager);
             this.panel_MainWorkSpace.Location = new System.Drawing.Point(0, 52);
             this.panel_MainWorkSpace.Name = "panel_MainWorkSpace";
             this.panel_MainWorkSpace.Size = new System.Drawing.Size(1098, 582);
@@ -444,7 +471,7 @@ namespace ArtistMNG
             this.panel_SizeControl.Controls.Add(this.btnRatio1p4);
             this.panel_SizeControl.Location = new System.Drawing.Point(540, 3);
             this.panel_SizeControl.Name = "panel_SizeControl";
-            this.panel_SizeControl.Size = new System.Drawing.Size(54, 522);
+            this.panel_SizeControl.Size = new System.Drawing.Size(54, 528);
             this.panel_SizeControl.TabIndex = 8;
             // 
             // btnEditRow
@@ -510,48 +537,48 @@ namespace ArtistMNG
             // 
             // dataGridView_Data
             // 
-            dataGridViewCellStyle96.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            dataGridViewCellStyle96.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            dataGridViewCellStyle96.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.dataGridView_Data.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle96;
+            dataGridViewCellStyle23.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            dataGridViewCellStyle23.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            dataGridViewCellStyle23.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.dataGridView_Data.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle23;
             this.dataGridView_Data.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridView_Data.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView_Data.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(55)))), ((int)(((byte)(59)))));
             this.dataGridView_Data.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            dataGridViewCellStyle97.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle97.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle97.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle97.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle97.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle97.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle97.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView_Data.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle97;
+            dataGridViewCellStyle24.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle24.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle24.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle24.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle24.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle24.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle24.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView_Data.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle24;
             this.dataGridView_Data.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle98.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle98.BackColor = System.Drawing.SystemColors.InfoText;
-            dataGridViewCellStyle98.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle98.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle98.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle98.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle98.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView_Data.DefaultCellStyle = dataGridViewCellStyle98;
+            dataGridViewCellStyle25.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle25.BackColor = System.Drawing.SystemColors.InfoText;
+            dataGridViewCellStyle25.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle25.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle25.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle25.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle25.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView_Data.DefaultCellStyle = dataGridViewCellStyle25;
             this.dataGridView_Data.GridColor = System.Drawing.SystemColors.ControlText;
             this.dataGridView_Data.Location = new System.Drawing.Point(3, 3);
             this.dataGridView_Data.Name = "dataGridView_Data";
             this.dataGridView_Data.ReadOnly = true;
-            dataGridViewCellStyle99.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle99.BackColor = System.Drawing.SystemColors.GrayText;
-            dataGridViewCellStyle99.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle99.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle99.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle99.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle99.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView_Data.RowHeadersDefaultCellStyle = dataGridViewCellStyle99;
+            dataGridViewCellStyle26.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle26.BackColor = System.Drawing.SystemColors.GrayText;
+            dataGridViewCellStyle26.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle26.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle26.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle26.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle26.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView_Data.RowHeadersDefaultCellStyle = dataGridViewCellStyle26;
             this.dataGridView_Data.RowHeadersWidth = 51;
             this.dataGridView_Data.RowTemplate.Height = 24;
-            this.dataGridView_Data.Size = new System.Drawing.Size(531, 522);
+            this.dataGridView_Data.Size = new System.Drawing.Size(531, 528);
             this.dataGridView_Data.TabIndex = 0;
             this.dataGridView_Data.SelectionChanged += new System.EventHandler(this.dataGridView_Data_SelectionChanged);
             // 
@@ -605,6 +632,490 @@ namespace ArtistMNG
             this.btnApplyAdd.Text = "Thêm";
             this.btnApplyAdd.UseVisualStyleBackColor = false;
             this.btnApplyAdd.Click += new System.EventHandler(this.btnApplyAdd_Click);
+            // 
+            // panel_AlbumManager
+            // 
+            this.panel_AlbumManager.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel_AlbumManager.AutoScroll = true;
+            this.panel_AlbumManager.Controls.Add(this.groupBoxAlbum_AlbumSong);
+            this.panel_AlbumManager.Controls.Add(this.groupBoxAlbum_AlbumReleaseDay);
+            this.panel_AlbumManager.Controls.Add(this.groupBoxAlbum_AlbumName);
+            this.panel_AlbumManager.Controls.Add(this.groupBoxAlbum_AlbumID);
+            this.panel_AlbumManager.Controls.Add(this.groupBoxAlbum_AlbumDescription);
+            this.panel_AlbumManager.Location = new System.Drawing.Point(600, 3);
+            this.panel_AlbumManager.Name = "panel_AlbumManager";
+            this.panel_AlbumManager.Size = new System.Drawing.Size(495, 528);
+            this.panel_AlbumManager.TabIndex = 20;
+            // 
+            // groupBoxAlbum_AlbumSong
+            // 
+            this.groupBoxAlbum_AlbumSong.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBoxAlbum_AlbumSong.Controls.Add(this.btnAlbum_EditSong);
+            this.groupBoxAlbum_AlbumSong.Controls.Add(this.panel24);
+            this.groupBoxAlbum_AlbumSong.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBoxAlbum_AlbumSong.ForeColor = System.Drawing.Color.White;
+            this.groupBoxAlbum_AlbumSong.Location = new System.Drawing.Point(10, 219);
+            this.groupBoxAlbum_AlbumSong.Name = "groupBoxAlbum_AlbumSong";
+            this.groupBoxAlbum_AlbumSong.Size = new System.Drawing.Size(461, 352);
+            this.groupBoxAlbum_AlbumSong.TabIndex = 20;
+            this.groupBoxAlbum_AlbumSong.TabStop = false;
+            this.groupBoxAlbum_AlbumSong.Text = "Bài hát thuộc album";
+            // 
+            // btnAlbum_EditSong
+            // 
+            this.btnAlbum_EditSong.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnAlbum_EditSong.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(64)))), ((int)(((byte)(66)))));
+            this.btnAlbum_EditSong.FlatAppearance.BorderSize = 0;
+            this.btnAlbum_EditSong.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAlbum_EditSong.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAlbum_EditSong.ForeColor = System.Drawing.Color.White;
+            this.btnAlbum_EditSong.Location = new System.Drawing.Point(369, 310);
+            this.btnAlbum_EditSong.Name = "btnAlbum_EditSong";
+            this.btnAlbum_EditSong.Size = new System.Drawing.Size(83, 36);
+            this.btnAlbum_EditSong.TabIndex = 17;
+            this.btnAlbum_EditSong.TabStop = false;
+            this.btnAlbum_EditSong.Text = "Sửa";
+            this.btnAlbum_EditSong.UseVisualStyleBackColor = false;
+            this.btnAlbum_EditSong.Click += new System.EventHandler(this.btnAlbum_EditSong_Click);
+            // 
+            // panel24
+            // 
+            this.panel24.AllowDrop = true;
+            this.panel24.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel24.AutoScroll = true;
+            this.panel24.Controls.Add(this.dataGridViewAlbum_AlbumSong);
+            this.panel24.Location = new System.Drawing.Point(3, 26);
+            this.panel24.Name = "panel24";
+            this.panel24.Size = new System.Drawing.Size(452, 278);
+            this.panel24.TabIndex = 3;
+            // 
+            // dataGridViewAlbum_AlbumSong
+            // 
+            dataGridViewCellStyle27.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            dataGridViewCellStyle27.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            dataGridViewCellStyle27.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.dataGridViewAlbum_AlbumSong.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle27;
+            this.dataGridViewAlbum_AlbumSong.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dataGridViewAlbum_AlbumSong.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridViewAlbum_AlbumSong.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(55)))), ((int)(((byte)(59)))));
+            this.dataGridViewAlbum_AlbumSong.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dataGridViewAlbum_AlbumSong.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle28.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle28.BackColor = System.Drawing.SystemColors.InfoText;
+            dataGridViewCellStyle28.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle28.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle28.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle28.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle28.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewAlbum_AlbumSong.DefaultCellStyle = dataGridViewCellStyle28;
+            this.dataGridViewAlbum_AlbumSong.GridColor = System.Drawing.SystemColors.ControlText;
+            this.dataGridViewAlbum_AlbumSong.Location = new System.Drawing.Point(4, 3);
+            this.dataGridViewAlbum_AlbumSong.Name = "dataGridViewAlbum_AlbumSong";
+            this.dataGridViewAlbum_AlbumSong.ReadOnly = true;
+            dataGridViewCellStyle29.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle29.BackColor = System.Drawing.SystemColors.GrayText;
+            dataGridViewCellStyle29.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle29.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle29.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle29.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle29.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewAlbum_AlbumSong.RowHeadersDefaultCellStyle = dataGridViewCellStyle29;
+            this.dataGridViewAlbum_AlbumSong.RowHeadersWidth = 51;
+            this.dataGridViewAlbum_AlbumSong.RowTemplate.Height = 24;
+            this.dataGridViewAlbum_AlbumSong.Size = new System.Drawing.Size(444, 272);
+            this.dataGridViewAlbum_AlbumSong.TabIndex = 2;
+            // 
+            // groupBoxAlbum_AlbumReleaseDay
+            // 
+            this.groupBoxAlbum_AlbumReleaseDay.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBoxAlbum_AlbumReleaseDay.Controls.Add(this.panel20);
+            this.groupBoxAlbum_AlbumReleaseDay.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
+            this.groupBoxAlbum_AlbumReleaseDay.ForeColor = System.Drawing.Color.White;
+            this.groupBoxAlbum_AlbumReleaseDay.Location = new System.Drawing.Point(10, 148);
+            this.groupBoxAlbum_AlbumReleaseDay.Name = "groupBoxAlbum_AlbumReleaseDay";
+            this.groupBoxAlbum_AlbumReleaseDay.Size = new System.Drawing.Size(461, 65);
+            this.groupBoxAlbum_AlbumReleaseDay.TabIndex = 19;
+            this.groupBoxAlbum_AlbumReleaseDay.TabStop = false;
+            this.groupBoxAlbum_AlbumReleaseDay.Text = "Ngày phát hành (dd/mm/yyyy)";
+            // 
+            // panel20
+            // 
+            this.panel20.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel20.AutoScroll = true;
+            this.panel20.Controls.Add(this.dateTimePickerAlbum_AlbumReleaseDay);
+            this.panel20.Location = new System.Drawing.Point(6, 26);
+            this.panel20.Name = "panel20";
+            this.panel20.Size = new System.Drawing.Size(449, 37);
+            this.panel20.TabIndex = 5;
+            // 
+            // dateTimePickerAlbum_AlbumReleaseDay
+            // 
+            this.dateTimePickerAlbum_AlbumReleaseDay.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dateTimePickerAlbum_AlbumReleaseDay.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dateTimePickerAlbum_AlbumReleaseDay.Location = new System.Drawing.Point(4, 3);
+            this.dateTimePickerAlbum_AlbumReleaseDay.Name = "dateTimePickerAlbum_AlbumReleaseDay";
+            this.dateTimePickerAlbum_AlbumReleaseDay.Size = new System.Drawing.Size(440, 24);
+            this.dateTimePickerAlbum_AlbumReleaseDay.TabIndex = 0;
+            // 
+            // groupBoxAlbum_AlbumName
+            // 
+            this.groupBoxAlbum_AlbumName.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBoxAlbum_AlbumName.Controls.Add(this.panel21);
+            this.groupBoxAlbum_AlbumName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
+            this.groupBoxAlbum_AlbumName.ForeColor = System.Drawing.Color.White;
+            this.groupBoxAlbum_AlbumName.Location = new System.Drawing.Point(10, 77);
+            this.groupBoxAlbum_AlbumName.Name = "groupBoxAlbum_AlbumName";
+            this.groupBoxAlbum_AlbumName.Size = new System.Drawing.Size(461, 65);
+            this.groupBoxAlbum_AlbumName.TabIndex = 18;
+            this.groupBoxAlbum_AlbumName.TabStop = false;
+            this.groupBoxAlbum_AlbumName.Text = "Tên album";
+            // 
+            // panel21
+            // 
+            this.panel21.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel21.AutoScroll = true;
+            this.panel21.Controls.Add(this.txAlbum_AlbumName);
+            this.panel21.Location = new System.Drawing.Point(6, 26);
+            this.panel21.Name = "panel21";
+            this.panel21.Size = new System.Drawing.Size(449, 37);
+            this.panel21.TabIndex = 5;
+            // 
+            // txAlbum_AlbumName
+            // 
+            this.txAlbum_AlbumName.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txAlbum_AlbumName.Location = new System.Drawing.Point(3, 3);
+            this.txAlbum_AlbumName.MaxLength = 100;
+            this.txAlbum_AlbumName.Name = "txAlbum_AlbumName";
+            this.txAlbum_AlbumName.Size = new System.Drawing.Size(443, 24);
+            this.txAlbum_AlbumName.TabIndex = 0;
+            // 
+            // groupBoxAlbum_AlbumID
+            // 
+            this.groupBoxAlbum_AlbumID.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBoxAlbum_AlbumID.Controls.Add(this.panel22);
+            this.groupBoxAlbum_AlbumID.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
+            this.groupBoxAlbum_AlbumID.ForeColor = System.Drawing.Color.White;
+            this.groupBoxAlbum_AlbumID.Location = new System.Drawing.Point(10, 6);
+            this.groupBoxAlbum_AlbumID.Name = "groupBoxAlbum_AlbumID";
+            this.groupBoxAlbum_AlbumID.Size = new System.Drawing.Size(461, 65);
+            this.groupBoxAlbum_AlbumID.TabIndex = 17;
+            this.groupBoxAlbum_AlbumID.TabStop = false;
+            this.groupBoxAlbum_AlbumID.Text = "ID";
+            // 
+            // panel22
+            // 
+            this.panel22.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel22.AutoScroll = true;
+            this.panel22.Controls.Add(this.txAlbum_AlbumID);
+            this.panel22.Location = new System.Drawing.Point(6, 26);
+            this.panel22.Name = "panel22";
+            this.panel22.Size = new System.Drawing.Size(449, 37);
+            this.panel22.TabIndex = 5;
+            // 
+            // txAlbum_AlbumID
+            // 
+            this.txAlbum_AlbumID.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txAlbum_AlbumID.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.txAlbum_AlbumID.Location = new System.Drawing.Point(3, 3);
+            this.txAlbum_AlbumID.MaxLength = 100;
+            this.txAlbum_AlbumID.Name = "txAlbum_AlbumID";
+            this.txAlbum_AlbumID.ReadOnly = true;
+            this.txAlbum_AlbumID.Size = new System.Drawing.Size(443, 24);
+            this.txAlbum_AlbumID.TabIndex = 0;
+            this.txAlbum_AlbumID.Text = "0";
+            // 
+            // groupBoxAlbum_AlbumDescription
+            // 
+            this.groupBoxAlbum_AlbumDescription.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBoxAlbum_AlbumDescription.Controls.Add(this.panel23);
+            this.groupBoxAlbum_AlbumDescription.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBoxAlbum_AlbumDescription.ForeColor = System.Drawing.Color.White;
+            this.groupBoxAlbum_AlbumDescription.Location = new System.Drawing.Point(10, 579);
+            this.groupBoxAlbum_AlbumDescription.Name = "groupBoxAlbum_AlbumDescription";
+            this.groupBoxAlbum_AlbumDescription.Size = new System.Drawing.Size(461, 372);
+            this.groupBoxAlbum_AlbumDescription.TabIndex = 16;
+            this.groupBoxAlbum_AlbumDescription.TabStop = false;
+            this.groupBoxAlbum_AlbumDescription.Text = "Mô tả";
+            // 
+            // panel23
+            // 
+            this.panel23.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel23.AutoScroll = true;
+            this.panel23.Controls.Add(this.txAlbum_AlbumDescription);
+            this.panel23.Location = new System.Drawing.Point(6, 26);
+            this.panel23.Name = "panel23";
+            this.panel23.Size = new System.Drawing.Size(449, 340);
+            this.panel23.TabIndex = 4;
+            // 
+            // txAlbum_AlbumDescription
+            // 
+            this.txAlbum_AlbumDescription.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txAlbum_AlbumDescription.Location = new System.Drawing.Point(4, 3);
+            this.txAlbum_AlbumDescription.MaxLength = 5000;
+            this.txAlbum_AlbumDescription.Multiline = true;
+            this.txAlbum_AlbumDescription.Name = "txAlbum_AlbumDescription";
+            this.txAlbum_AlbumDescription.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.txAlbum_AlbumDescription.Size = new System.Drawing.Size(442, 334);
+            this.txAlbum_AlbumDescription.TabIndex = 1;
+            // 
+            // panel_SongManager
+            // 
+            this.panel_SongManager.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel_SongManager.AutoScroll = true;
+            this.panel_SongManager.Controls.Add(this.groupBoxSong_Description);
+            this.panel_SongManager.Controls.Add(this.panel15);
+            this.panel_SongManager.Controls.Add(this.groupBoxSong_Producer);
+            this.panel_SongManager.Controls.Add(this.groupBoxSong_Genre);
+            this.panel_SongManager.Controls.Add(this.groupBoxSong_ReleaseDay);
+            this.panel_SongManager.Controls.Add(this.groupBoxSong_Name);
+            this.panel_SongManager.Controls.Add(this.groupBoxSong_ID);
+            this.panel_SongManager.Location = new System.Drawing.Point(600, 3);
+            this.panel_SongManager.Name = "panel_SongManager";
+            this.panel_SongManager.Size = new System.Drawing.Size(495, 528);
+            this.panel_SongManager.TabIndex = 19;
+            // 
+            // groupBoxSong_Description
+            // 
+            this.groupBoxSong_Description.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBoxSong_Description.Controls.Add(this.panel16);
+            this.groupBoxSong_Description.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBoxSong_Description.ForeColor = System.Drawing.Color.White;
+            this.groupBoxSong_Description.Location = new System.Drawing.Point(10, 359);
+            this.groupBoxSong_Description.Name = "groupBoxSong_Description";
+            this.groupBoxSong_Description.Size = new System.Drawing.Size(461, 443);
+            this.groupBoxSong_Description.TabIndex = 22;
+            this.groupBoxSong_Description.TabStop = false;
+            this.groupBoxSong_Description.Text = "Mô tả";
+            // 
+            // panel16
+            // 
+            this.panel16.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel16.AutoScroll = true;
+            this.panel16.Controls.Add(this.txSong_SongDescription);
+            this.panel16.Location = new System.Drawing.Point(6, 26);
+            this.panel16.Name = "panel16";
+            this.panel16.Size = new System.Drawing.Size(449, 411);
+            this.panel16.TabIndex = 4;
+            // 
+            // txSong_SongDescription
+            // 
+            this.txSong_SongDescription.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txSong_SongDescription.Location = new System.Drawing.Point(4, 3);
+            this.txSong_SongDescription.MaxLength = 5000;
+            this.txSong_SongDescription.Multiline = true;
+            this.txSong_SongDescription.Name = "txSong_SongDescription";
+            this.txSong_SongDescription.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.txSong_SongDescription.Size = new System.Drawing.Size(442, 402);
+            this.txSong_SongDescription.TabIndex = 1;
+            // 
+            // panel15
+            // 
+            this.panel15.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel15.AutoScroll = true;
+            this.panel15.Location = new System.Drawing.Point(61, 808);
+            this.panel15.Name = "panel15";
+            this.panel15.Size = new System.Drawing.Size(25, 15);
+            this.panel15.TabIndex = 21;
+            // 
+            // groupBoxSong_Producer
+            // 
+            this.groupBoxSong_Producer.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBoxSong_Producer.Controls.Add(this.panel14);
+            this.groupBoxSong_Producer.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
+            this.groupBoxSong_Producer.ForeColor = System.Drawing.Color.White;
+            this.groupBoxSong_Producer.Location = new System.Drawing.Point(10, 290);
+            this.groupBoxSong_Producer.Name = "groupBoxSong_Producer";
+            this.groupBoxSong_Producer.Size = new System.Drawing.Size(461, 65);
+            this.groupBoxSong_Producer.TabIndex = 20;
+            this.groupBoxSong_Producer.TabStop = false;
+            this.groupBoxSong_Producer.Text = "Nhà sản xuất";
+            // 
+            // panel14
+            // 
+            this.panel14.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel14.AutoScroll = true;
+            this.panel14.Controls.Add(this.txSong_SongProducer);
+            this.panel14.Location = new System.Drawing.Point(6, 26);
+            this.panel14.Name = "panel14";
+            this.panel14.Size = new System.Drawing.Size(449, 37);
+            this.panel14.TabIndex = 5;
+            // 
+            // txSong_SongProducer
+            // 
+            this.txSong_SongProducer.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txSong_SongProducer.Location = new System.Drawing.Point(3, 3);
+            this.txSong_SongProducer.MaxLength = 100;
+            this.txSong_SongProducer.Name = "txSong_SongProducer";
+            this.txSong_SongProducer.Size = new System.Drawing.Size(443, 24);
+            this.txSong_SongProducer.TabIndex = 0;
+            // 
+            // groupBoxSong_Genre
+            // 
+            this.groupBoxSong_Genre.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBoxSong_Genre.Controls.Add(this.panel10);
+            this.groupBoxSong_Genre.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
+            this.groupBoxSong_Genre.ForeColor = System.Drawing.Color.White;
+            this.groupBoxSong_Genre.Location = new System.Drawing.Point(10, 219);
+            this.groupBoxSong_Genre.Name = "groupBoxSong_Genre";
+            this.groupBoxSong_Genre.Size = new System.Drawing.Size(461, 65);
+            this.groupBoxSong_Genre.TabIndex = 19;
+            this.groupBoxSong_Genre.TabStop = false;
+            this.groupBoxSong_Genre.Text = "Thể loại";
+            // 
+            // panel10
+            // 
+            this.panel10.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel10.AutoScroll = true;
+            this.panel10.Controls.Add(this.txSong_SongGenre);
+            this.panel10.Location = new System.Drawing.Point(6, 26);
+            this.panel10.Name = "panel10";
+            this.panel10.Size = new System.Drawing.Size(449, 37);
+            this.panel10.TabIndex = 5;
+            // 
+            // txSong_SongGenre
+            // 
+            this.txSong_SongGenre.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txSong_SongGenre.Location = new System.Drawing.Point(3, 3);
+            this.txSong_SongGenre.MaxLength = 100;
+            this.txSong_SongGenre.Name = "txSong_SongGenre";
+            this.txSong_SongGenre.Size = new System.Drawing.Size(443, 24);
+            this.txSong_SongGenre.TabIndex = 0;
+            // 
+            // groupBoxSong_ReleaseDay
+            // 
+            this.groupBoxSong_ReleaseDay.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBoxSong_ReleaseDay.Controls.Add(this.panel11);
+            this.groupBoxSong_ReleaseDay.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
+            this.groupBoxSong_ReleaseDay.ForeColor = System.Drawing.Color.White;
+            this.groupBoxSong_ReleaseDay.Location = new System.Drawing.Point(10, 148);
+            this.groupBoxSong_ReleaseDay.Name = "groupBoxSong_ReleaseDay";
+            this.groupBoxSong_ReleaseDay.Size = new System.Drawing.Size(461, 65);
+            this.groupBoxSong_ReleaseDay.TabIndex = 19;
+            this.groupBoxSong_ReleaseDay.TabStop = false;
+            this.groupBoxSong_ReleaseDay.Text = "Ngày phát hành (dd/mm/yyyy)";
+            // 
+            // panel11
+            // 
+            this.panel11.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel11.AutoScroll = true;
+            this.panel11.Controls.Add(this.dateTimePickerSong_SongReleaseDay);
+            this.panel11.Location = new System.Drawing.Point(6, 26);
+            this.panel11.Name = "panel11";
+            this.panel11.Size = new System.Drawing.Size(449, 37);
+            this.panel11.TabIndex = 5;
+            // 
+            // dateTimePickerSong_SongReleaseDay
+            // 
+            this.dateTimePickerSong_SongReleaseDay.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dateTimePickerSong_SongReleaseDay.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dateTimePickerSong_SongReleaseDay.Location = new System.Drawing.Point(4, 3);
+            this.dateTimePickerSong_SongReleaseDay.Name = "dateTimePickerSong_SongReleaseDay";
+            this.dateTimePickerSong_SongReleaseDay.Size = new System.Drawing.Size(440, 24);
+            this.dateTimePickerSong_SongReleaseDay.TabIndex = 0;
+            // 
+            // groupBoxSong_Name
+            // 
+            this.groupBoxSong_Name.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBoxSong_Name.Controls.Add(this.panel12);
+            this.groupBoxSong_Name.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
+            this.groupBoxSong_Name.ForeColor = System.Drawing.Color.White;
+            this.groupBoxSong_Name.Location = new System.Drawing.Point(10, 77);
+            this.groupBoxSong_Name.Name = "groupBoxSong_Name";
+            this.groupBoxSong_Name.Size = new System.Drawing.Size(461, 65);
+            this.groupBoxSong_Name.TabIndex = 18;
+            this.groupBoxSong_Name.TabStop = false;
+            this.groupBoxSong_Name.Text = "Tên bài hát";
+            // 
+            // panel12
+            // 
+            this.panel12.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel12.AutoScroll = true;
+            this.panel12.Controls.Add(this.txSong_SongName);
+            this.panel12.Location = new System.Drawing.Point(6, 26);
+            this.panel12.Name = "panel12";
+            this.panel12.Size = new System.Drawing.Size(449, 37);
+            this.panel12.TabIndex = 5;
+            // 
+            // txSong_SongName
+            // 
+            this.txSong_SongName.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txSong_SongName.Location = new System.Drawing.Point(3, 3);
+            this.txSong_SongName.MaxLength = 100;
+            this.txSong_SongName.Name = "txSong_SongName";
+            this.txSong_SongName.Size = new System.Drawing.Size(443, 24);
+            this.txSong_SongName.TabIndex = 0;
+            // 
+            // groupBoxSong_ID
+            // 
+            this.groupBoxSong_ID.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBoxSong_ID.Controls.Add(this.panel13);
+            this.groupBoxSong_ID.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
+            this.groupBoxSong_ID.ForeColor = System.Drawing.Color.White;
+            this.groupBoxSong_ID.Location = new System.Drawing.Point(10, 6);
+            this.groupBoxSong_ID.Name = "groupBoxSong_ID";
+            this.groupBoxSong_ID.Size = new System.Drawing.Size(461, 65);
+            this.groupBoxSong_ID.TabIndex = 17;
+            this.groupBoxSong_ID.TabStop = false;
+            this.groupBoxSong_ID.Text = "ID";
+            // 
+            // panel13
+            // 
+            this.panel13.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel13.AutoScroll = true;
+            this.panel13.Controls.Add(this.txSong_SongID);
+            this.panel13.Location = new System.Drawing.Point(6, 26);
+            this.panel13.Name = "panel13";
+            this.panel13.Size = new System.Drawing.Size(449, 37);
+            this.panel13.TabIndex = 5;
+            // 
+            // txSong_SongID
+            // 
+            this.txSong_SongID.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txSong_SongID.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.txSong_SongID.Location = new System.Drawing.Point(3, 3);
+            this.txSong_SongID.MaxLength = 100;
+            this.txSong_SongID.Name = "txSong_SongID";
+            this.txSong_SongID.ReadOnly = true;
+            this.txSong_SongID.Size = new System.Drawing.Size(443, 24);
+            this.txSong_SongID.TabIndex = 0;
+            this.txSong_SongID.Text = "0";
             // 
             // panel_FandomManager
             // 
@@ -744,7 +1255,6 @@ namespace ArtistMNG
             this.panel_GroupManager.Controls.Add(this.panel5);
             this.panel_GroupManager.Controls.Add(this.groupBox_GroupName);
             this.panel_GroupManager.Controls.Add(this.groupBox_GroupID);
-            this.panel_GroupManager.Controls.Add(this.labelTest);
             this.panel_GroupManager.Location = new System.Drawing.Point(600, 3);
             this.panel_GroupManager.Name = "panel_GroupManager";
             this.panel_GroupManager.Size = new System.Drawing.Size(495, 528);
@@ -1040,10 +1550,10 @@ namespace ArtistMNG
             // 
             // dataGridViewGroup_Album
             // 
-            dataGridViewCellStyle100.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            dataGridViewCellStyle100.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            dataGridViewCellStyle100.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.dataGridViewGroup_Album.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle100;
+            dataGridViewCellStyle30.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            dataGridViewCellStyle30.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            dataGridViewCellStyle30.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.dataGridViewGroup_Album.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle30;
             this.dataGridViewGroup_Album.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
@@ -1051,26 +1561,26 @@ namespace ArtistMNG
             this.dataGridViewGroup_Album.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(55)))), ((int)(((byte)(59)))));
             this.dataGridViewGroup_Album.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridViewGroup_Album.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle101.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle101.BackColor = System.Drawing.SystemColors.InfoText;
-            dataGridViewCellStyle101.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle101.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle101.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle101.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle101.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridViewGroup_Album.DefaultCellStyle = dataGridViewCellStyle101;
+            dataGridViewCellStyle31.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle31.BackColor = System.Drawing.SystemColors.InfoText;
+            dataGridViewCellStyle31.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle31.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle31.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle31.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle31.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewGroup_Album.DefaultCellStyle = dataGridViewCellStyle31;
             this.dataGridViewGroup_Album.GridColor = System.Drawing.SystemColors.ControlText;
             this.dataGridViewGroup_Album.Location = new System.Drawing.Point(4, 3);
             this.dataGridViewGroup_Album.Name = "dataGridViewGroup_Album";
             this.dataGridViewGroup_Album.ReadOnly = true;
-            dataGridViewCellStyle102.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle102.BackColor = System.Drawing.SystemColors.GrayText;
-            dataGridViewCellStyle102.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle102.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle102.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle102.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle102.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewGroup_Album.RowHeadersDefaultCellStyle = dataGridViewCellStyle102;
+            dataGridViewCellStyle32.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle32.BackColor = System.Drawing.SystemColors.GrayText;
+            dataGridViewCellStyle32.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle32.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle32.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle32.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle32.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewGroup_Album.RowHeadersDefaultCellStyle = dataGridViewCellStyle32;
             this.dataGridViewGroup_Album.RowHeadersWidth = 51;
             this.dataGridViewGroup_Album.RowTemplate.Height = 24;
             this.dataGridViewGroup_Album.Size = new System.Drawing.Size(444, 240);
@@ -1174,10 +1684,10 @@ namespace ArtistMNG
             // 
             // dataGridViewGroup_Song
             // 
-            dataGridViewCellStyle103.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            dataGridViewCellStyle103.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            dataGridViewCellStyle103.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.dataGridViewGroup_Song.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle103;
+            dataGridViewCellStyle33.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            dataGridViewCellStyle33.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            dataGridViewCellStyle33.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.dataGridViewGroup_Song.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle33;
             this.dataGridViewGroup_Song.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
@@ -1185,26 +1695,26 @@ namespace ArtistMNG
             this.dataGridViewGroup_Song.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(55)))), ((int)(((byte)(59)))));
             this.dataGridViewGroup_Song.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridViewGroup_Song.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle104.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle104.BackColor = System.Drawing.SystemColors.InfoText;
-            dataGridViewCellStyle104.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle104.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle104.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle104.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle104.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridViewGroup_Song.DefaultCellStyle = dataGridViewCellStyle104;
+            dataGridViewCellStyle34.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle34.BackColor = System.Drawing.SystemColors.InfoText;
+            dataGridViewCellStyle34.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle34.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle34.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle34.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle34.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewGroup_Song.DefaultCellStyle = dataGridViewCellStyle34;
             this.dataGridViewGroup_Song.GridColor = System.Drawing.SystemColors.ControlText;
             this.dataGridViewGroup_Song.Location = new System.Drawing.Point(4, 3);
             this.dataGridViewGroup_Song.Name = "dataGridViewGroup_Song";
             this.dataGridViewGroup_Song.ReadOnly = true;
-            dataGridViewCellStyle105.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle105.BackColor = System.Drawing.SystemColors.GrayText;
-            dataGridViewCellStyle105.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle105.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle105.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle105.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle105.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewGroup_Song.RowHeadersDefaultCellStyle = dataGridViewCellStyle105;
+            dataGridViewCellStyle35.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle35.BackColor = System.Drawing.SystemColors.GrayText;
+            dataGridViewCellStyle35.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle35.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle35.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle35.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle35.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewGroup_Song.RowHeadersDefaultCellStyle = dataGridViewCellStyle35;
             this.dataGridViewGroup_Song.RowHeadersWidth = 51;
             this.dataGridViewGroup_Song.RowTemplate.Height = 24;
             this.dataGridViewGroup_Song.Size = new System.Drawing.Size(444, 272);
@@ -1254,9 +1764,9 @@ namespace ArtistMNG
             this.groupBox_GroupDebutday.Controls.Add(this.panel_GroupInforDebutday);
             this.groupBox_GroupDebutday.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
             this.groupBox_GroupDebutday.ForeColor = System.Drawing.Color.White;
-            this.groupBox_GroupDebutday.Location = new System.Drawing.Point(184, 146);
+            this.groupBox_GroupDebutday.Location = new System.Drawing.Point(10, 146);
             this.groupBox_GroupDebutday.Name = "groupBox_GroupDebutday";
-            this.groupBox_GroupDebutday.Size = new System.Drawing.Size(287, 65);
+            this.groupBox_GroupDebutday.Size = new System.Drawing.Size(461, 65);
             this.groupBox_GroupDebutday.TabIndex = 16;
             this.groupBox_GroupDebutday.TabStop = false;
             this.groupBox_GroupDebutday.Text = "Ngày ra mắt (dd/mm/yyyy)";
@@ -1269,7 +1779,7 @@ namespace ArtistMNG
             this.panel_GroupInforDebutday.Controls.Add(this.dateTimePickerGroup_Debutday);
             this.panel_GroupInforDebutday.Location = new System.Drawing.Point(6, 26);
             this.panel_GroupInforDebutday.Name = "panel_GroupInforDebutday";
-            this.panel_GroupInforDebutday.Size = new System.Drawing.Size(275, 33);
+            this.panel_GroupInforDebutday.Size = new System.Drawing.Size(449, 33);
             this.panel_GroupInforDebutday.TabIndex = 5;
             // 
             // dateTimePickerGroup_Debutday
@@ -1279,7 +1789,7 @@ namespace ArtistMNG
             this.dateTimePickerGroup_Debutday.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dateTimePickerGroup_Debutday.Location = new System.Drawing.Point(4, 3);
             this.dateTimePickerGroup_Debutday.Name = "dateTimePickerGroup_Debutday";
-            this.dateTimePickerGroup_Debutday.Size = new System.Drawing.Size(266, 24);
+            this.dateTimePickerGroup_Debutday.Size = new System.Drawing.Size(440, 24);
             this.dateTimePickerGroup_Debutday.TabIndex = 0;
             // 
             // panel5
@@ -1299,9 +1809,9 @@ namespace ArtistMNG
             this.groupBox_GroupName.Controls.Add(this.panel_GroupInforName);
             this.groupBox_GroupName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
             this.groupBox_GroupName.ForeColor = System.Drawing.Color.White;
-            this.groupBox_GroupName.Location = new System.Drawing.Point(184, 75);
+            this.groupBox_GroupName.Location = new System.Drawing.Point(10, 75);
             this.groupBox_GroupName.Name = "groupBox_GroupName";
-            this.groupBox_GroupName.Size = new System.Drawing.Size(287, 65);
+            this.groupBox_GroupName.Size = new System.Drawing.Size(461, 65);
             this.groupBox_GroupName.TabIndex = 16;
             this.groupBox_GroupName.TabStop = false;
             this.groupBox_GroupName.Text = "Tên nhóm";
@@ -1314,7 +1824,7 @@ namespace ArtistMNG
             this.panel_GroupInforName.Controls.Add(this.txGroup_Name);
             this.panel_GroupInforName.Location = new System.Drawing.Point(6, 26);
             this.panel_GroupInforName.Name = "panel_GroupInforName";
-            this.panel_GroupInforName.Size = new System.Drawing.Size(275, 37);
+            this.panel_GroupInforName.Size = new System.Drawing.Size(449, 37);
             this.panel_GroupInforName.TabIndex = 5;
             // 
             // txGroup_Name
@@ -1324,7 +1834,7 @@ namespace ArtistMNG
             this.txGroup_Name.Location = new System.Drawing.Point(3, 3);
             this.txGroup_Name.MaxLength = 100;
             this.txGroup_Name.Name = "txGroup_Name";
-            this.txGroup_Name.Size = new System.Drawing.Size(269, 24);
+            this.txGroup_Name.Size = new System.Drawing.Size(443, 24);
             this.txGroup_Name.TabIndex = 0;
             // 
             // groupBox_GroupID
@@ -1334,9 +1844,9 @@ namespace ArtistMNG
             this.groupBox_GroupID.Controls.Add(this.panel_GroupInforID);
             this.groupBox_GroupID.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
             this.groupBox_GroupID.ForeColor = System.Drawing.Color.White;
-            this.groupBox_GroupID.Location = new System.Drawing.Point(184, 6);
+            this.groupBox_GroupID.Location = new System.Drawing.Point(10, 6);
             this.groupBox_GroupID.Name = "groupBox_GroupID";
-            this.groupBox_GroupID.Size = new System.Drawing.Size(287, 65);
+            this.groupBox_GroupID.Size = new System.Drawing.Size(461, 65);
             this.groupBox_GroupID.TabIndex = 15;
             this.groupBox_GroupID.TabStop = false;
             this.groupBox_GroupID.Text = "ID";
@@ -1349,7 +1859,7 @@ namespace ArtistMNG
             this.panel_GroupInforID.Controls.Add(this.txGroup_ID);
             this.panel_GroupInforID.Location = new System.Drawing.Point(6, 26);
             this.panel_GroupInforID.Name = "panel_GroupInforID";
-            this.panel_GroupInforID.Size = new System.Drawing.Size(275, 37);
+            this.panel_GroupInforID.Size = new System.Drawing.Size(449, 37);
             this.panel_GroupInforID.TabIndex = 5;
             // 
             // txGroup_ID
@@ -1361,20 +1871,9 @@ namespace ArtistMNG
             this.txGroup_ID.MaxLength = 100;
             this.txGroup_ID.Name = "txGroup_ID";
             this.txGroup_ID.ReadOnly = true;
-            this.txGroup_ID.Size = new System.Drawing.Size(269, 24);
+            this.txGroup_ID.Size = new System.Drawing.Size(443, 24);
             this.txGroup_ID.TabIndex = 0;
             this.txGroup_ID.Text = "0";
-            // 
-            // labelTest
-            // 
-            this.labelTest.AutoSize = true;
-            this.labelTest.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTest.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.labelTest.Location = new System.Drawing.Point(28, 72);
-            this.labelTest.Name = "labelTest";
-            this.labelTest.Size = new System.Drawing.Size(80, 29);
-            this.labelTest.TabIndex = 0;
-            this.labelTest.Text = "Group";
             // 
             // panel_ArtistManager
             // 
@@ -2053,10 +2552,10 @@ namespace ArtistMNG
             // 
             // dataGridViewArtist_Album
             // 
-            dataGridViewCellStyle106.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            dataGridViewCellStyle106.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            dataGridViewCellStyle106.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.dataGridViewArtist_Album.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle106;
+            dataGridViewCellStyle36.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            dataGridViewCellStyle36.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            dataGridViewCellStyle36.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.dataGridViewArtist_Album.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle36;
             this.dataGridViewArtist_Album.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
@@ -2064,26 +2563,26 @@ namespace ArtistMNG
             this.dataGridViewArtist_Album.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(55)))), ((int)(((byte)(59)))));
             this.dataGridViewArtist_Album.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridViewArtist_Album.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle107.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle107.BackColor = System.Drawing.SystemColors.InfoText;
-            dataGridViewCellStyle107.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle107.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle107.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle107.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle107.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridViewArtist_Album.DefaultCellStyle = dataGridViewCellStyle107;
+            dataGridViewCellStyle37.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle37.BackColor = System.Drawing.SystemColors.InfoText;
+            dataGridViewCellStyle37.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle37.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle37.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle37.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle37.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewArtist_Album.DefaultCellStyle = dataGridViewCellStyle37;
             this.dataGridViewArtist_Album.GridColor = System.Drawing.SystemColors.ControlText;
             this.dataGridViewArtist_Album.Location = new System.Drawing.Point(4, 3);
             this.dataGridViewArtist_Album.Name = "dataGridViewArtist_Album";
             this.dataGridViewArtist_Album.ReadOnly = true;
-            dataGridViewCellStyle108.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle108.BackColor = System.Drawing.SystemColors.GrayText;
-            dataGridViewCellStyle108.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle108.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle108.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle108.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle108.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewArtist_Album.RowHeadersDefaultCellStyle = dataGridViewCellStyle108;
+            dataGridViewCellStyle38.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle38.BackColor = System.Drawing.SystemColors.GrayText;
+            dataGridViewCellStyle38.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle38.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle38.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle38.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle38.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewArtist_Album.RowHeadersDefaultCellStyle = dataGridViewCellStyle38;
             this.dataGridViewArtist_Album.RowHeadersWidth = 51;
             this.dataGridViewArtist_Album.RowTemplate.Height = 24;
             this.dataGridViewArtist_Album.Size = new System.Drawing.Size(444, 240);
@@ -2169,10 +2668,10 @@ namespace ArtistMNG
             // 
             // dataGridViewArtist_Group
             // 
-            dataGridViewCellStyle109.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            dataGridViewCellStyle109.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            dataGridViewCellStyle109.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.dataGridViewArtist_Group.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle109;
+            dataGridViewCellStyle39.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            dataGridViewCellStyle39.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            dataGridViewCellStyle39.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.dataGridViewArtist_Group.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle39;
             this.dataGridViewArtist_Group.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
@@ -2180,26 +2679,26 @@ namespace ArtistMNG
             this.dataGridViewArtist_Group.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(55)))), ((int)(((byte)(59)))));
             this.dataGridViewArtist_Group.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridViewArtist_Group.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle110.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle110.BackColor = System.Drawing.SystemColors.InfoText;
-            dataGridViewCellStyle110.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle110.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle110.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle110.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle110.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridViewArtist_Group.DefaultCellStyle = dataGridViewCellStyle110;
+            dataGridViewCellStyle40.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle40.BackColor = System.Drawing.SystemColors.InfoText;
+            dataGridViewCellStyle40.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle40.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle40.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle40.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle40.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewArtist_Group.DefaultCellStyle = dataGridViewCellStyle40;
             this.dataGridViewArtist_Group.GridColor = System.Drawing.SystemColors.ControlText;
             this.dataGridViewArtist_Group.Location = new System.Drawing.Point(3, 3);
             this.dataGridViewArtist_Group.Name = "dataGridViewArtist_Group";
             this.dataGridViewArtist_Group.ReadOnly = true;
-            dataGridViewCellStyle111.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle111.BackColor = System.Drawing.SystemColors.GrayText;
-            dataGridViewCellStyle111.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle111.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle111.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle111.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle111.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewArtist_Group.RowHeadersDefaultCellStyle = dataGridViewCellStyle111;
+            dataGridViewCellStyle41.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle41.BackColor = System.Drawing.SystemColors.GrayText;
+            dataGridViewCellStyle41.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle41.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle41.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle41.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle41.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewArtist_Group.RowHeadersDefaultCellStyle = dataGridViewCellStyle41;
             this.dataGridViewArtist_Group.RowHeadersWidth = 51;
             this.dataGridViewArtist_Group.RowTemplate.Height = 24;
             this.dataGridViewArtist_Group.Size = new System.Drawing.Size(444, 108);
@@ -2268,10 +2767,10 @@ namespace ArtistMNG
             // 
             // dataGridViewArtist_Song
             // 
-            dataGridViewCellStyle112.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            dataGridViewCellStyle112.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            dataGridViewCellStyle112.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.dataGridViewArtist_Song.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle112;
+            dataGridViewCellStyle42.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            dataGridViewCellStyle42.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            dataGridViewCellStyle42.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.dataGridViewArtist_Song.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle42;
             this.dataGridViewArtist_Song.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
@@ -2279,26 +2778,26 @@ namespace ArtistMNG
             this.dataGridViewArtist_Song.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(55)))), ((int)(((byte)(59)))));
             this.dataGridViewArtist_Song.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridViewArtist_Song.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle113.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle113.BackColor = System.Drawing.SystemColors.InfoText;
-            dataGridViewCellStyle113.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle113.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle113.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle113.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle113.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridViewArtist_Song.DefaultCellStyle = dataGridViewCellStyle113;
+            dataGridViewCellStyle43.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle43.BackColor = System.Drawing.SystemColors.InfoText;
+            dataGridViewCellStyle43.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle43.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle43.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle43.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle43.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewArtist_Song.DefaultCellStyle = dataGridViewCellStyle43;
             this.dataGridViewArtist_Song.GridColor = System.Drawing.SystemColors.ControlText;
             this.dataGridViewArtist_Song.Location = new System.Drawing.Point(4, 3);
             this.dataGridViewArtist_Song.Name = "dataGridViewArtist_Song";
             this.dataGridViewArtist_Song.ReadOnly = true;
-            dataGridViewCellStyle114.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle114.BackColor = System.Drawing.SystemColors.GrayText;
-            dataGridViewCellStyle114.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle114.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle114.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle114.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle114.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewArtist_Song.RowHeadersDefaultCellStyle = dataGridViewCellStyle114;
+            dataGridViewCellStyle44.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle44.BackColor = System.Drawing.SystemColors.GrayText;
+            dataGridViewCellStyle44.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle44.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle44.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle44.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle44.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewArtist_Song.RowHeadersDefaultCellStyle = dataGridViewCellStyle44;
             this.dataGridViewArtist_Song.RowHeadersWidth = 51;
             this.dataGridViewArtist_Song.RowTemplate.Height = 24;
             this.dataGridViewArtist_Song.Size = new System.Drawing.Size(444, 272);
@@ -2353,7 +2852,6 @@ namespace ArtistMNG
             this.panel_LabelManager.Controls.Add(this.groupBoxLabel_Name);
             this.panel_LabelManager.Controls.Add(this.panel4);
             this.panel_LabelManager.Controls.Add(this.groupBoxLabel_LabelID);
-            this.panel_LabelManager.Controls.Add(this.label2);
             this.panel_LabelManager.Location = new System.Drawing.Point(600, 3);
             this.panel_LabelManager.Name = "panel_LabelManager";
             this.panel_LabelManager.Size = new System.Drawing.Size(495, 528);
@@ -2366,7 +2864,7 @@ namespace ArtistMNG
             this.groupBoxLabel_Description.Controls.Add(this.panel_LabelInforDescription);
             this.groupBoxLabel_Description.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBoxLabel_Description.ForeColor = System.Drawing.Color.White;
-            this.groupBoxLabel_Description.Location = new System.Drawing.Point(10, 430);
+            this.groupBoxLabel_Description.Location = new System.Drawing.Point(10, 361);
             this.groupBoxLabel_Description.Name = "groupBoxLabel_Description";
             this.groupBoxLabel_Description.Size = new System.Drawing.Size(461, 372);
             this.groupBoxLabel_Description.TabIndex = 17;
@@ -2403,7 +2901,7 @@ namespace ArtistMNG
             this.groupBoxLabel_Location.Controls.Add(this.panel9);
             this.groupBoxLabel_Location.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
             this.groupBoxLabel_Location.ForeColor = System.Drawing.Color.White;
-            this.groupBoxLabel_Location.Location = new System.Drawing.Point(10, 359);
+            this.groupBoxLabel_Location.Location = new System.Drawing.Point(10, 290);
             this.groupBoxLabel_Location.Name = "groupBoxLabel_Location";
             this.groupBoxLabel_Location.Size = new System.Drawing.Size(461, 65);
             this.groupBoxLabel_Location.TabIndex = 16;
@@ -2439,7 +2937,7 @@ namespace ArtistMNG
             this.groupBoxLabel_Founded.Controls.Add(this.panel8);
             this.groupBoxLabel_Founded.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
             this.groupBoxLabel_Founded.ForeColor = System.Drawing.Color.White;
-            this.groupBoxLabel_Founded.Location = new System.Drawing.Point(10, 288);
+            this.groupBoxLabel_Founded.Location = new System.Drawing.Point(10, 219);
             this.groupBoxLabel_Founded.Name = "groupBoxLabel_Founded";
             this.groupBoxLabel_Founded.Size = new System.Drawing.Size(461, 65);
             this.groupBoxLabel_Founded.TabIndex = 16;
@@ -2474,7 +2972,7 @@ namespace ArtistMNG
             this.groupBoxLabel_Founder.Controls.Add(this.panel7);
             this.groupBoxLabel_Founder.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
             this.groupBoxLabel_Founder.ForeColor = System.Drawing.Color.White;
-            this.groupBoxLabel_Founder.Location = new System.Drawing.Point(10, 217);
+            this.groupBoxLabel_Founder.Location = new System.Drawing.Point(10, 148);
             this.groupBoxLabel_Founder.Name = "groupBoxLabel_Founder";
             this.groupBoxLabel_Founder.Size = new System.Drawing.Size(461, 65);
             this.groupBoxLabel_Founder.TabIndex = 15;
@@ -2510,9 +3008,9 @@ namespace ArtistMNG
             this.groupBoxLabel_Name.Controls.Add(this.panel6);
             this.groupBoxLabel_Name.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
             this.groupBoxLabel_Name.ForeColor = System.Drawing.Color.White;
-            this.groupBoxLabel_Name.Location = new System.Drawing.Point(184, 146);
+            this.groupBoxLabel_Name.Location = new System.Drawing.Point(10, 77);
             this.groupBoxLabel_Name.Name = "groupBoxLabel_Name";
-            this.groupBoxLabel_Name.Size = new System.Drawing.Size(287, 65);
+            this.groupBoxLabel_Name.Size = new System.Drawing.Size(461, 65);
             this.groupBoxLabel_Name.TabIndex = 14;
             this.groupBoxLabel_Name.TabStop = false;
             this.groupBoxLabel_Name.Text = "Tên";
@@ -2525,7 +3023,7 @@ namespace ArtistMNG
             this.panel6.Controls.Add(this.txLabel_LabelName);
             this.panel6.Location = new System.Drawing.Point(6, 26);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(275, 37);
+            this.panel6.Size = new System.Drawing.Size(449, 37);
             this.panel6.TabIndex = 5;
             // 
             // txLabel_LabelName
@@ -2536,7 +3034,7 @@ namespace ArtistMNG
             this.txLabel_LabelName.Location = new System.Drawing.Point(3, 3);
             this.txLabel_LabelName.MaxLength = 500;
             this.txLabel_LabelName.Name = "txLabel_LabelName";
-            this.txLabel_LabelName.Size = new System.Drawing.Size(269, 24);
+            this.txLabel_LabelName.Size = new System.Drawing.Size(443, 24);
             this.txLabel_LabelName.TabIndex = 0;
             // 
             // panel4
@@ -2556,9 +3054,9 @@ namespace ArtistMNG
             this.groupBoxLabel_LabelID.Controls.Add(this.panel3);
             this.groupBoxLabel_LabelID.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
             this.groupBoxLabel_LabelID.ForeColor = System.Drawing.Color.White;
-            this.groupBoxLabel_LabelID.Location = new System.Drawing.Point(184, 75);
+            this.groupBoxLabel_LabelID.Location = new System.Drawing.Point(10, 6);
             this.groupBoxLabel_LabelID.Name = "groupBoxLabel_LabelID";
-            this.groupBoxLabel_LabelID.Size = new System.Drawing.Size(287, 65);
+            this.groupBoxLabel_LabelID.Size = new System.Drawing.Size(461, 65);
             this.groupBoxLabel_LabelID.TabIndex = 13;
             this.groupBoxLabel_LabelID.TabStop = false;
             this.groupBoxLabel_LabelID.Text = "ID";
@@ -2571,7 +3069,7 @@ namespace ArtistMNG
             this.panel3.Controls.Add(this.txLabel_LabelID);
             this.panel3.Location = new System.Drawing.Point(6, 26);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(275, 37);
+            this.panel3.Size = new System.Drawing.Size(449, 37);
             this.panel3.TabIndex = 5;
             // 
             // txLabel_LabelID
@@ -2583,295 +3081,9 @@ namespace ArtistMNG
             this.txLabel_LabelID.MaxLength = 100;
             this.txLabel_LabelID.Name = "txLabel_LabelID";
             this.txLabel_LabelID.ReadOnly = true;
-            this.txLabel_LabelID.Size = new System.Drawing.Size(269, 24);
+            this.txLabel_LabelID.Size = new System.Drawing.Size(443, 24);
             this.txLabel_LabelID.TabIndex = 0;
             this.txLabel_LabelID.Text = "0";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label2.Location = new System.Drawing.Point(8, 6);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(73, 29);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "Label";
-            // 
-            // panel_AlbumManager
-            // 
-            this.panel_AlbumManager.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel_AlbumManager.Controls.Add(this.label1);
-            this.panel_AlbumManager.Location = new System.Drawing.Point(600, 3);
-            this.panel_AlbumManager.Name = "panel_AlbumManager";
-            this.panel_AlbumManager.Size = new System.Drawing.Size(495, 528);
-            this.panel_AlbumManager.TabIndex = 20;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(176, 169);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(81, 29);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Album";
-            // 
-            // panel_SongManager
-            // 
-            this.panel_SongManager.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel_SongManager.AutoScroll = true;
-            this.panel_SongManager.Controls.Add(this.groupBoxSong_Description);
-            this.panel_SongManager.Controls.Add(this.panel15);
-            this.panel_SongManager.Controls.Add(this.groupBoxSong_Producer);
-            this.panel_SongManager.Controls.Add(this.groupBoxSong_Genre);
-            this.panel_SongManager.Controls.Add(this.groupBoxSong_ReleaseDay);
-            this.panel_SongManager.Controls.Add(this.groupBoxSong_Name);
-            this.panel_SongManager.Controls.Add(this.groupBoxSong_ID);
-            this.panel_SongManager.Controls.Add(this.labelTest2);
-            this.panel_SongManager.Location = new System.Drawing.Point(600, 3);
-            this.panel_SongManager.Name = "panel_SongManager";
-            this.panel_SongManager.Size = new System.Drawing.Size(495, 528);
-            this.panel_SongManager.TabIndex = 19;
-            // 
-            // groupBoxSong_Description
-            // 
-            this.groupBoxSong_Description.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.groupBoxSong_Description.Controls.Add(this.panel16);
-            this.groupBoxSong_Description.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBoxSong_Description.ForeColor = System.Drawing.Color.White;
-            this.groupBoxSong_Description.Location = new System.Drawing.Point(10, 428);
-            this.groupBoxSong_Description.Name = "groupBoxSong_Description";
-            this.groupBoxSong_Description.Size = new System.Drawing.Size(461, 443);
-            this.groupBoxSong_Description.TabIndex = 22;
-            this.groupBoxSong_Description.TabStop = false;
-            this.groupBoxSong_Description.Text = "Mô tả";
-            // 
-            // panel16
-            // 
-            this.panel16.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel16.AutoScroll = true;
-            this.panel16.Controls.Add(this.txSong_SongDescription);
-            this.panel16.Location = new System.Drawing.Point(6, 26);
-            this.panel16.Name = "panel16";
-            this.panel16.Size = new System.Drawing.Size(449, 411);
-            this.panel16.TabIndex = 4;
-            // 
-            // txSong_SongDescription
-            // 
-            this.txSong_SongDescription.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txSong_SongDescription.Location = new System.Drawing.Point(4, 3);
-            this.txSong_SongDescription.MaxLength = 5000;
-            this.txSong_SongDescription.Multiline = true;
-            this.txSong_SongDescription.Name = "txSong_SongDescription";
-            this.txSong_SongDescription.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txSong_SongDescription.Size = new System.Drawing.Size(442, 402);
-            this.txSong_SongDescription.TabIndex = 1;
-            // 
-            // panel15
-            // 
-            this.panel15.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel15.AutoScroll = true;
-            this.panel15.Location = new System.Drawing.Point(61, 877);
-            this.panel15.Name = "panel15";
-            this.panel15.Size = new System.Drawing.Size(25, 15);
-            this.panel15.TabIndex = 21;
-            // 
-            // groupBoxSong_Producer
-            // 
-            this.groupBoxSong_Producer.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.groupBoxSong_Producer.Controls.Add(this.panel14);
-            this.groupBoxSong_Producer.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
-            this.groupBoxSong_Producer.ForeColor = System.Drawing.Color.White;
-            this.groupBoxSong_Producer.Location = new System.Drawing.Point(10, 359);
-            this.groupBoxSong_Producer.Name = "groupBoxSong_Producer";
-            this.groupBoxSong_Producer.Size = new System.Drawing.Size(461, 65);
-            this.groupBoxSong_Producer.TabIndex = 20;
-            this.groupBoxSong_Producer.TabStop = false;
-            this.groupBoxSong_Producer.Text = "Nhà sản xuất";
-            // 
-            // panel14
-            // 
-            this.panel14.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel14.AutoScroll = true;
-            this.panel14.Controls.Add(this.txSong_SongProducer);
-            this.panel14.Location = new System.Drawing.Point(6, 26);
-            this.panel14.Name = "panel14";
-            this.panel14.Size = new System.Drawing.Size(449, 37);
-            this.panel14.TabIndex = 5;
-            // 
-            // txSong_SongProducer
-            // 
-            this.txSong_SongProducer.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txSong_SongProducer.Location = new System.Drawing.Point(3, 3);
-            this.txSong_SongProducer.MaxLength = 100;
-            this.txSong_SongProducer.Name = "txSong_SongProducer";
-            this.txSong_SongProducer.Size = new System.Drawing.Size(443, 24);
-            this.txSong_SongProducer.TabIndex = 0;
-            // 
-            // groupBoxSong_Genre
-            // 
-            this.groupBoxSong_Genre.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.groupBoxSong_Genre.Controls.Add(this.panel10);
-            this.groupBoxSong_Genre.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
-            this.groupBoxSong_Genre.ForeColor = System.Drawing.Color.White;
-            this.groupBoxSong_Genre.Location = new System.Drawing.Point(10, 288);
-            this.groupBoxSong_Genre.Name = "groupBoxSong_Genre";
-            this.groupBoxSong_Genre.Size = new System.Drawing.Size(461, 65);
-            this.groupBoxSong_Genre.TabIndex = 19;
-            this.groupBoxSong_Genre.TabStop = false;
-            this.groupBoxSong_Genre.Text = "Thể loại";
-            // 
-            // panel10
-            // 
-            this.panel10.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel10.AutoScroll = true;
-            this.panel10.Controls.Add(this.txSong_SongGenre);
-            this.panel10.Location = new System.Drawing.Point(6, 26);
-            this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(449, 37);
-            this.panel10.TabIndex = 5;
-            // 
-            // txSong_SongGenre
-            // 
-            this.txSong_SongGenre.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txSong_SongGenre.Location = new System.Drawing.Point(3, 3);
-            this.txSong_SongGenre.MaxLength = 100;
-            this.txSong_SongGenre.Name = "txSong_SongGenre";
-            this.txSong_SongGenre.Size = new System.Drawing.Size(443, 24);
-            this.txSong_SongGenre.TabIndex = 0;
-            // 
-            // groupBoxSong_ReleaseDay
-            // 
-            this.groupBoxSong_ReleaseDay.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.groupBoxSong_ReleaseDay.Controls.Add(this.panel11);
-            this.groupBoxSong_ReleaseDay.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
-            this.groupBoxSong_ReleaseDay.ForeColor = System.Drawing.Color.White;
-            this.groupBoxSong_ReleaseDay.Location = new System.Drawing.Point(10, 217);
-            this.groupBoxSong_ReleaseDay.Name = "groupBoxSong_ReleaseDay";
-            this.groupBoxSong_ReleaseDay.Size = new System.Drawing.Size(461, 65);
-            this.groupBoxSong_ReleaseDay.TabIndex = 19;
-            this.groupBoxSong_ReleaseDay.TabStop = false;
-            this.groupBoxSong_ReleaseDay.Text = "Ngày phát hành (dd/mm/yyyy)";
-            // 
-            // panel11
-            // 
-            this.panel11.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel11.AutoScroll = true;
-            this.panel11.Controls.Add(this.dateTimePickerSong_SongReleaseDay);
-            this.panel11.Location = new System.Drawing.Point(6, 26);
-            this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(449, 37);
-            this.panel11.TabIndex = 5;
-            // 
-            // dateTimePickerSong_SongReleaseDay
-            // 
-            this.dateTimePickerSong_SongReleaseDay.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.dateTimePickerSong_SongReleaseDay.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePickerSong_SongReleaseDay.Location = new System.Drawing.Point(4, 3);
-            this.dateTimePickerSong_SongReleaseDay.Name = "dateTimePickerSong_SongReleaseDay";
-            this.dateTimePickerSong_SongReleaseDay.Size = new System.Drawing.Size(440, 24);
-            this.dateTimePickerSong_SongReleaseDay.TabIndex = 0;
-            // 
-            // groupBoxSong_Name
-            // 
-            this.groupBoxSong_Name.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.groupBoxSong_Name.Controls.Add(this.panel12);
-            this.groupBoxSong_Name.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
-            this.groupBoxSong_Name.ForeColor = System.Drawing.Color.White;
-            this.groupBoxSong_Name.Location = new System.Drawing.Point(191, 146);
-            this.groupBoxSong_Name.Name = "groupBoxSong_Name";
-            this.groupBoxSong_Name.Size = new System.Drawing.Size(280, 65);
-            this.groupBoxSong_Name.TabIndex = 18;
-            this.groupBoxSong_Name.TabStop = false;
-            this.groupBoxSong_Name.Text = "Tên bài hát";
-            // 
-            // panel12
-            // 
-            this.panel12.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel12.AutoScroll = true;
-            this.panel12.Controls.Add(this.txSong_SongName);
-            this.panel12.Location = new System.Drawing.Point(6, 26);
-            this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(268, 37);
-            this.panel12.TabIndex = 5;
-            // 
-            // txSong_SongName
-            // 
-            this.txSong_SongName.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txSong_SongName.Location = new System.Drawing.Point(3, 3);
-            this.txSong_SongName.MaxLength = 100;
-            this.txSong_SongName.Name = "txSong_SongName";
-            this.txSong_SongName.Size = new System.Drawing.Size(262, 24);
-            this.txSong_SongName.TabIndex = 0;
-            // 
-            // groupBoxSong_ID
-            // 
-            this.groupBoxSong_ID.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.groupBoxSong_ID.Controls.Add(this.panel13);
-            this.groupBoxSong_ID.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
-            this.groupBoxSong_ID.ForeColor = System.Drawing.Color.White;
-            this.groupBoxSong_ID.Location = new System.Drawing.Point(191, 75);
-            this.groupBoxSong_ID.Name = "groupBoxSong_ID";
-            this.groupBoxSong_ID.Size = new System.Drawing.Size(280, 65);
-            this.groupBoxSong_ID.TabIndex = 17;
-            this.groupBoxSong_ID.TabStop = false;
-            this.groupBoxSong_ID.Text = "ID";
-            // 
-            // panel13
-            // 
-            this.panel13.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel13.AutoScroll = true;
-            this.panel13.Controls.Add(this.txSong_SongID);
-            this.panel13.Location = new System.Drawing.Point(6, 26);
-            this.panel13.Name = "panel13";
-            this.panel13.Size = new System.Drawing.Size(268, 37);
-            this.panel13.TabIndex = 5;
-            // 
-            // txSong_SongID
-            // 
-            this.txSong_SongID.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txSong_SongID.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.txSong_SongID.Location = new System.Drawing.Point(3, 3);
-            this.txSong_SongID.MaxLength = 100;
-            this.txSong_SongID.Name = "txSong_SongID";
-            this.txSong_SongID.ReadOnly = true;
-            this.txSong_SongID.Size = new System.Drawing.Size(262, 24);
-            this.txSong_SongID.TabIndex = 0;
-            this.txSong_SongID.Text = "0";
-            // 
-            // labelTest2
-            // 
-            this.labelTest2.AutoSize = true;
-            this.labelTest2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTest2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.labelTest2.Location = new System.Drawing.Point(5, 16);
-            this.labelTest2.Name = "labelTest2";
-            this.labelTest2.Size = new System.Drawing.Size(70, 29);
-            this.labelTest2.TabIndex = 0;
-            this.labelTest2.Text = "Song";
             // 
             // panel_MenustripMain
             // 
@@ -2917,9 +3129,11 @@ namespace ArtistMNG
             // 
             // MenuStrip_ShowArtistTable
             // 
+            this.MenuStrip_ShowArtistTable.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.MenuStrip_ShowArtistTableTrash});
             this.MenuStrip_ShowArtistTable.ForeColor = System.Drawing.Color.White;
             this.MenuStrip_ShowArtistTable.Name = "MenuStrip_ShowArtistTable";
-            this.MenuStrip_ShowArtistTable.Size = new System.Drawing.Size(152, 26);
+            this.MenuStrip_ShowArtistTable.Size = new System.Drawing.Size(224, 26);
             this.MenuStrip_ShowArtistTable.Text = "Nghệ sĩ";
             this.MenuStrip_ShowArtistTable.Click += new System.EventHandler(this.MenuStrip_ShowArtistTable_Click);
             // 
@@ -2927,7 +3141,7 @@ namespace ArtistMNG
             // 
             this.MenuStrip_ShowGroupTable.ForeColor = System.Drawing.Color.White;
             this.MenuStrip_ShowGroupTable.Name = "MenuStrip_ShowGroupTable";
-            this.MenuStrip_ShowGroupTable.Size = new System.Drawing.Size(152, 26);
+            this.MenuStrip_ShowGroupTable.Size = new System.Drawing.Size(224, 26);
             this.MenuStrip_ShowGroupTable.Text = "Nhóm";
             this.MenuStrip_ShowGroupTable.Click += new System.EventHandler(this.MenuStrip_ShowGroupTable_Click);
             // 
@@ -2935,7 +3149,7 @@ namespace ArtistMNG
             // 
             this.MenuStrip_ShowSongTable.ForeColor = System.Drawing.Color.White;
             this.MenuStrip_ShowSongTable.Name = "MenuStrip_ShowSongTable";
-            this.MenuStrip_ShowSongTable.Size = new System.Drawing.Size(152, 26);
+            this.MenuStrip_ShowSongTable.Size = new System.Drawing.Size(224, 26);
             this.MenuStrip_ShowSongTable.Text = "Bài hát";
             this.MenuStrip_ShowSongTable.Click += new System.EventHandler(this.MenuStrip_ShowSongTable_Click);
             // 
@@ -2943,7 +3157,7 @@ namespace ArtistMNG
             // 
             this.MenuStrip_ShowAlbumTable.ForeColor = System.Drawing.Color.White;
             this.MenuStrip_ShowAlbumTable.Name = "MenuStrip_ShowAlbumTable";
-            this.MenuStrip_ShowAlbumTable.Size = new System.Drawing.Size(152, 26);
+            this.MenuStrip_ShowAlbumTable.Size = new System.Drawing.Size(224, 26);
             this.MenuStrip_ShowAlbumTable.Text = "Album";
             this.MenuStrip_ShowAlbumTable.Click += new System.EventHandler(this.MenuStrip_ShowAlbumTable_Click);
             // 
@@ -2951,7 +3165,7 @@ namespace ArtistMNG
             // 
             this.MenuStrip_ShowLabelTable.ForeColor = System.Drawing.Color.White;
             this.MenuStrip_ShowLabelTable.Name = "MenuStrip_ShowLabelTable";
-            this.MenuStrip_ShowLabelTable.Size = new System.Drawing.Size(152, 26);
+            this.MenuStrip_ShowLabelTable.Size = new System.Drawing.Size(224, 26);
             this.MenuStrip_ShowLabelTable.Text = "Công ty";
             this.MenuStrip_ShowLabelTable.Click += new System.EventHandler(this.MenuStrip_ShowLabelTable_Click);
             // 
@@ -2959,7 +3173,7 @@ namespace ArtistMNG
             // 
             this.MenuStrip_ShowFandomTable.ForeColor = System.Drawing.Color.White;
             this.MenuStrip_ShowFandomTable.Name = "MenuStrip_ShowFandomTable";
-            this.MenuStrip_ShowFandomTable.Size = new System.Drawing.Size(152, 26);
+            this.MenuStrip_ShowFandomTable.Size = new System.Drawing.Size(224, 26);
             this.MenuStrip_ShowFandomTable.Text = "Fandom";
             this.MenuStrip_ShowFandomTable.Click += new System.EventHandler(this.MenuStrip_ShowFandomTable_Click);
             // 
@@ -3092,6 +3306,14 @@ namespace ArtistMNG
             this.backgroundWorker1.DoWork += new System.ComponentModel.DoWorkEventHandler(this.backgroundWorker1_DoWork);
             this.backgroundWorker1.RunWorkerCompleted += new System.ComponentModel.RunWorkerCompletedEventHandler(this.backgroundWorker1_RunWorkerCompleted);
             // 
+            // MenuStrip_ShowArtistTableTrash
+            // 
+            this.MenuStrip_ShowArtistTableTrash.ForeColor = System.Drawing.Color.White;
+            this.MenuStrip_ShowArtistTableTrash.Name = "MenuStrip_ShowArtistTableTrash";
+            this.MenuStrip_ShowArtistTableTrash.Size = new System.Drawing.Size(224, 26);
+            this.MenuStrip_ShowArtistTableTrash.Text = "Thùng rác";
+            this.MenuStrip_ShowArtistTableTrash.Click += new System.EventHandler(this.MenuStrip_ShowArtistTableTrash_Click);
+            // 
             // frmApp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
@@ -3108,10 +3330,44 @@ namespace ArtistMNG
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "App";
             this.Load += new System.EventHandler(this.frmApp_Load);
+            this.Resize += new System.EventHandler(this.frmApp_Resize);
             this.panel_MainWorkSpace.ResumeLayout(false);
             this.panel_DataContent.ResumeLayout(false);
             this.panel_SizeControl.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_Data)).EndInit();
+            this.panel_AlbumManager.ResumeLayout(false);
+            this.groupBoxAlbum_AlbumSong.ResumeLayout(false);
+            this.panel24.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewAlbum_AlbumSong)).EndInit();
+            this.groupBoxAlbum_AlbumReleaseDay.ResumeLayout(false);
+            this.panel20.ResumeLayout(false);
+            this.groupBoxAlbum_AlbumName.ResumeLayout(false);
+            this.panel21.ResumeLayout(false);
+            this.panel21.PerformLayout();
+            this.groupBoxAlbum_AlbumID.ResumeLayout(false);
+            this.panel22.ResumeLayout(false);
+            this.panel22.PerformLayout();
+            this.groupBoxAlbum_AlbumDescription.ResumeLayout(false);
+            this.panel23.ResumeLayout(false);
+            this.panel23.PerformLayout();
+            this.panel_SongManager.ResumeLayout(false);
+            this.groupBoxSong_Description.ResumeLayout(false);
+            this.panel16.ResumeLayout(false);
+            this.panel16.PerformLayout();
+            this.groupBoxSong_Producer.ResumeLayout(false);
+            this.panel14.ResumeLayout(false);
+            this.panel14.PerformLayout();
+            this.groupBoxSong_Genre.ResumeLayout(false);
+            this.panel10.ResumeLayout(false);
+            this.panel10.PerformLayout();
+            this.groupBoxSong_ReleaseDay.ResumeLayout(false);
+            this.panel11.ResumeLayout(false);
+            this.groupBoxSong_Name.ResumeLayout(false);
+            this.panel12.ResumeLayout(false);
+            this.panel12.PerformLayout();
+            this.groupBoxSong_ID.ResumeLayout(false);
+            this.panel13.ResumeLayout(false);
+            this.panel13.PerformLayout();
             this.panel_FandomManager.ResumeLayout(false);
             this.groupBoxFandom_FandomName.ResumeLayout(false);
             this.panel17.ResumeLayout(false);
@@ -3123,7 +3379,6 @@ namespace ArtistMNG
             this.panel19.ResumeLayout(false);
             this.panel19.PerformLayout();
             this.panel_GroupManager.ResumeLayout(false);
-            this.panel_GroupManager.PerformLayout();
             this.groupBox_GroupSNS.ResumeLayout(false);
             this.groupBox_GroupSNS.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Group_Website)).EndInit();
@@ -3212,7 +3467,6 @@ namespace ArtistMNG
             this.panel_ArtistInforDescription.ResumeLayout(false);
             this.panel_ArtistInforDescription.PerformLayout();
             this.panel_LabelManager.ResumeLayout(false);
-            this.panel_LabelManager.PerformLayout();
             this.groupBoxLabel_Description.ResumeLayout(false);
             this.panel_LabelInforDescription.ResumeLayout(false);
             this.panel_LabelInforDescription.PerformLayout();
@@ -3230,27 +3484,6 @@ namespace ArtistMNG
             this.groupBoxLabel_LabelID.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
-            this.panel_AlbumManager.ResumeLayout(false);
-            this.panel_AlbumManager.PerformLayout();
-            this.panel_SongManager.ResumeLayout(false);
-            this.panel_SongManager.PerformLayout();
-            this.groupBoxSong_Description.ResumeLayout(false);
-            this.panel16.ResumeLayout(false);
-            this.panel16.PerformLayout();
-            this.groupBoxSong_Producer.ResumeLayout(false);
-            this.panel14.ResumeLayout(false);
-            this.panel14.PerformLayout();
-            this.groupBoxSong_Genre.ResumeLayout(false);
-            this.panel10.ResumeLayout(false);
-            this.panel10.PerformLayout();
-            this.groupBoxSong_ReleaseDay.ResumeLayout(false);
-            this.panel11.ResumeLayout(false);
-            this.groupBoxSong_Name.ResumeLayout(false);
-            this.panel12.ResumeLayout(false);
-            this.panel12.PerformLayout();
-            this.groupBoxSong_ID.ResumeLayout(false);
-            this.panel13.ResumeLayout(false);
-            this.panel13.PerformLayout();
             this.panel_MenustripMain.ResumeLayout(false);
             this.panel_MenustripMain.PerformLayout();
             this.menuStrip_Main.ResumeLayout(false);
@@ -3350,13 +3583,9 @@ namespace ArtistMNG
         private System.Windows.Forms.Button btnArtist_NextImage;
         private System.Windows.Forms.Button btnNewRow;
         private System.Windows.Forms.Panel panel_GroupManager;
-        private System.Windows.Forms.Label labelTest;
         private System.Windows.Forms.Panel panel_SongManager;
-        private System.Windows.Forms.Label labelTest2;
         private System.Windows.Forms.Panel panel_AlbumManager;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel_LabelManager;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBox_ArtistImageLoadingGIF;
         public System.Windows.Forms.Label labelArtist_Fandom;
         private System.Windows.Forms.DataGridView dataGridViewArtist_Group;
@@ -3478,5 +3707,22 @@ namespace ArtistMNG
         private System.Windows.Forms.GroupBox groupBoxFandom_FandomDescription;
         private System.Windows.Forms.Panel panel19;
         private System.Windows.Forms.TextBox txFandom_FandomDescription;
+        private System.Windows.Forms.GroupBox groupBoxAlbum_AlbumReleaseDay;
+        private System.Windows.Forms.Panel panel20;
+        private System.Windows.Forms.DateTimePicker dateTimePickerAlbum_AlbumReleaseDay;
+        private System.Windows.Forms.GroupBox groupBoxAlbum_AlbumName;
+        private System.Windows.Forms.Panel panel21;
+        private System.Windows.Forms.TextBox txAlbum_AlbumName;
+        private System.Windows.Forms.GroupBox groupBoxAlbum_AlbumID;
+        private System.Windows.Forms.Panel panel22;
+        private System.Windows.Forms.TextBox txAlbum_AlbumID;
+        private System.Windows.Forms.GroupBox groupBoxAlbum_AlbumDescription;
+        private System.Windows.Forms.Panel panel23;
+        private System.Windows.Forms.TextBox txAlbum_AlbumDescription;
+        private System.Windows.Forms.GroupBox groupBoxAlbum_AlbumSong;
+        private System.Windows.Forms.Button btnAlbum_EditSong;
+        private System.Windows.Forms.Panel panel24;
+        private System.Windows.Forms.DataGridView dataGridViewAlbum_AlbumSong;
+        private System.Windows.Forms.ToolStripMenuItem MenuStrip_ShowArtistTableTrash;
     }
 }

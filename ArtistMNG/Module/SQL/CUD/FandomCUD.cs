@@ -71,5 +71,32 @@ namespace ArtistMNG.Module.SQL.CUD
                 return false;
             }
         }
+        public static bool Delete()
+        {
+            SqlConnection con = new SqlConnection(DatabaseManager.connectString);
+            try
+            {
+                using (SqlCommand cmd = new SqlCommand("Fandom_Delete", con))
+                {
+                    cmd.CommandType = CommandType.StoredProcedure;
+                    cmd.Parameters.Add("@FandomID", SqlDbType.Int).Value = QueryData.Instance.Fandom.FandomID;
+                    con.Open();
+
+                    cmd.ExecuteNonQuery();
+                    if (con.State == System.Data.ConnectionState.Open)
+                    {
+                        con.Close();
+                    }
+                }
+                return true;
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine($"=====================FANDOM DELETE==========================\n" +
+                                    $"{e}" +
+                                    $"\n================================================================");
+                return false;
+            }
+        }
     }
 }

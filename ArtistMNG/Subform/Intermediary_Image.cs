@@ -392,7 +392,7 @@ namespace ArtistMNG.Subform
             {
                 MessageBox.Show("Đã tồn tại dữ liệu tương tự!");
             }
-            MessageBox.Show($"QueryData.Instance.Artist.ArtistImage_Add.Count {QueryData.Instance.Artist.ArtistImage_Add.Count}");
+            //MessageBox.Show($"QueryData.Instance.Artist.ArtistImage_Add.Count {QueryData.Instance.Artist.ArtistImage_Add.Count}");
         }
 
         void LoadDesign()

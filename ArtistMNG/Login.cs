@@ -258,6 +258,9 @@ namespace ArtistMNG
         {
             string userName = txInput_User.Text.ToLower();
             string password = txInput_Pwd.Text.ToLower();
+            if (txInput_User.Text == "Tên tài khoản...")
+                return;
+
             if (checkBox_RememberPWD.Checked == true)
             {
                 SaveManager.SaveLoginAccount(userName, password, true);

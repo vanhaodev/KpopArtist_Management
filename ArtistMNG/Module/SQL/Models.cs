@@ -125,10 +125,17 @@ namespace ArtistMNG.Module.SQL
         DateTime releaseDay;
         string description;
 
+        List<ModelSong> albumSong_Add = new List<ModelSong>();
+        List<ModelSong> albumSong_Update = new List<ModelSong>();
+        List<ModelSong> albumSong_Delete = new List<ModelSong>();
+
         public int AlbumID { get => albumID; set => albumID = value; }
         public string AlbumName { get => albumName; set => albumName = value; }
         public DateTime ReleaseDay { get => releaseDay; set => releaseDay = value; }
         public string Description { get => description; set => description = value; }
+        public List<ModelSong> AlbumSong_Add { get => albumSong_Add; set => albumSong_Add = value; }
+        public List<ModelSong> AlbumSong_Update { get => albumSong_Update; set => albumSong_Update = value; }
+        public List<ModelSong> AlbumSong_Delete { get => albumSong_Delete; set => albumSong_Delete = value; }
     }
     public class ModelLabel
     {
