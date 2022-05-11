@@ -112,6 +112,9 @@ namespace ArtistMNG
             string versionName = "1.0";
             this.Text = $"Artist Managenment {versionName}";
 
+
+            SetSearchType();
+            
             btnApplyAdd.Enabled = true;
             btnApplyDelete.Enabled = false;
             btnApplyEdit.Enabled = false;
@@ -341,7 +344,39 @@ namespace ArtistMNG
 
             WorkSpaceSetGrid(24);
         }
+        void SetSearchType()
+        {
+            //SEARCH
+            comboBox_SearchDataType.Items.Clear();
+            comboBox_SearchDataType.Items.Add("Tìm kiếm tất cả");
+            comboBox_SearchDataType.Items.Add("Tìm kiếm theo ID");
+            switch (currentTable)
+            {
+                case DatabaseTable.Artist:                                      
+                    comboBox_SearchDataType.Items.Add("Tìm kiếm theo nghệ danh");
+                    comboBox_SearchDataType.Items.Add("Tìm kiếm theo tên thật");
+                    break;
+                case DatabaseTable.Group:
+                    comboBox_SearchDataType.Items.Add("Tìm kiếm theo tên");
+                    break;
+                case DatabaseTable.Song:
+                    comboBox_SearchDataType.Items.Add("Tìm kiếm theo tên");
+                    break;
+                case DatabaseTable.Album:
+                    comboBox_SearchDataType.Items.Add("Tìm kiếm theo tên");
+                    break;
+                case DatabaseTable.Fandom:
+                    comboBox_SearchDataType.Items.Add("Tìm kiếm theo tên");
+                    break;
+                case DatabaseTable.Label:
+                    comboBox_SearchDataType.Items.Add("Tìm kiếm theo tên");
+                    break;
 
+            }
+            comboBox_SearchDataType.Items.Add("Tìm kiếm theo mô tả");
+            comboBox_SearchDataType.SelectedIndex = 0;
+        }
+     
         void PaintBorderlessGroupBox(object sender, PaintEventArgs e)
         {
             GroupBoxStyle.PaintBorderlessGroupBox(sender, e, this);
@@ -758,8 +793,166 @@ namespace ArtistMNG
             dataGridView_Data.AllowUserToAddRows = false;
             DatagridViewStyle.MinimumWidth(dataGridView_Data, 100);
             SetTooltip();
+            SetSearchType();
         }
 
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+            ClearDataFiled();
+            QueryData.Instance.Clear();
+            if (txSearchValue.Text.Length < 1 && comboBox_SearchDataType.SelectedIndex > 0 )
+            {
+                MessageBox.Show("Hãy nhập giá trị để tìm kiếm!");
+                return;
+            }
+            if (comboBox_SearchDataType.SelectedIndex == 1 && !Regex.IsMatch(txSearchValue.Text, "^[0-9]+$"))
+            {
+                MessageBox.Show("ID chỉ tồn tại số nguyên!");
+                return;
+            }
+            if (comboBox_SearchDataType.SelectedIndex > 1 && txSearchValue.Text.Contains("'"))
+            {
+                MessageBox.Show("Giá trị tìm kiếm không hợp lệ!");
+                return;
+            }
+            switch (currentTable)
+            {
+                case DatabaseTable.Artist:
+                    switch(comboBox_SearchDataType.SelectedIndex)
+                    {
+                        case 0:
+                            ShowData(DatabaseTable.Artist); 
+                            datas[0] = DatabaseManager.ShowDataQuery($"SELECT * FROM [Artist] WHERE IsActivate = 1");
+                            break;
+                        case 1:
+                            Search($"Artist_Search 'ID', {txSearchValue.Text}, '', '', '' ");
+                            datas[0] = DatabaseManager.ShowDataQuery($"SELECT * FROM [Artist] WHERE IsActivate = 1 AND ArtistID = {txSearchValue.Text}");
+                            break;
+                        case 2:
+                            Search($"Artist_Search 'StageName', 0, '{txSearchValue.Text}', '', '' ");
+                            datas[0] = DatabaseManager.ShowDataQuery($"SELECT * FROM [Artist] WHERE IsActivate = 1 AND StageName LIKE '%{txSearchValue.Text}%'");
+                            break;
+                        case 3:
+                            Search($"Artist_Search 'RealName', 0, '', '{txSearchValue.Text}', '' ");
+                            datas[0] = DatabaseManager.ShowDataQuery($"SELECT * FROM [Artist] WHERE IsActivate = 1 AND RealName LIKE '%{txSearchValue.Text}%'");
+                            break;
+                        case 4:
+                            Search($"Artist_Search 'Description', 0, '', '', '{txSearchValue.Text}' ");
+                            datas[0] = DatabaseManager.ShowDataQuery($"SELECT * FROM [Artist] WHERE IsActivate = 1 AND Description LIKE '%{txSearchValue.Text}%'");
+                            break;
+                    }    
+                    break;
+                case DatabaseTable.Group:
+                    switch (comboBox_SearchDataType.SelectedIndex)
+                    {
+                        case 0:
+                            ShowData(DatabaseTable.Group);
+                            datas[1] = DatabaseManager.ShowDataQuery($"SELECT * FROM [Group] WHERE IsActivate = 1");
+                            break;
+                        case 1:
+                            Search($"Group_Search 'ID', {txSearchValue.Text}, '', '' ");
+                            datas[1] = DatabaseManager.ShowDataQuery($"SELECT * FROM [Group] WHERE IsActivate = 1 AND GroupID = {txSearchValue.Text}");
+                            break;
+                        case 2:
+                            Search($"Group_Search 'Name', 0, '{txSearchValue.Text}', '' ");
+                            datas[1] = DatabaseManager.ShowDataQuery($"SELECT * FROM [Group] WHERE IsActivate = 1 AND Name LIKE '%{txSearchValue.Text}%'");
+                            break;
+                        case 3:
+                            Search($"Group_Search 'Description', 0, '', '{txSearchValue.Text}' ");
+                            datas[1] = DatabaseManager.ShowDataQuery($"SELECT * FROM [Group] WHERE IsActivate = 1 AND Description LIKE '%{txSearchValue.Text}%'");
+                            break;
+                    }
+                    break;
+                case DatabaseTable.Song:
+                    switch (comboBox_SearchDataType.SelectedIndex)
+                    {
+                        case 0:
+                            ShowData(DatabaseTable.Song);
+                            datas[2] = DatabaseManager.ShowDataQuery($"SELECT * FROM [Song]");
+                            break;
+                        case 1:
+                            Search($"Song_Search 'ID', {txSearchValue.Text}, '', '' ");
+                            datas[2] = DatabaseManager.ShowDataQuery($"SELECT * FROM [Song] WHERE SongID = {txSearchValue.Text}");
+                            break;
+                        case 2:
+                            Search($"Song_Search 'Name', 0, '{txSearchValue.Text}', '' ");
+                            datas[2] = DatabaseManager.ShowDataQuery($"SELECT * FROM [Song] WHERE Name LIKE '%{txSearchValue.Text}%'");
+                            break;
+                        case 3:
+                            Search($"Song_Search 'Description', 0, '', '{txSearchValue.Text}' ");
+                            datas[2] = DatabaseManager.ShowDataQuery($"SELECT * FROM [Song] WHERE Description LIKE '%{txSearchValue.Text}%'");
+                            break;
+                    }
+                    break;
+                case DatabaseTable.Album:
+                    switch (comboBox_SearchDataType.SelectedIndex)
+                    {
+                        case 0:
+                            ShowData(DatabaseTable.Album);
+                            datas[3] = DatabaseManager.ShowDataQuery($"SELECT * FROM [Album]");
+                            break;
+                        case 1:
+                            Search($"Album_Search 'ID', {txSearchValue.Text}, '', '' ");
+                            datas[3] = DatabaseManager.ShowDataQuery($"SELECT * FROM [Album] WHERE AlbumID = {txSearchValue.Text}");
+                            break;
+                        case 2:
+                            Search($"Album_Search 'Name', 0, '{txSearchValue.Text}', '' ");
+                            datas[3] = DatabaseManager.ShowDataQuery($"SELECT * FROM [Album] Name LIKE '%{txSearchValue.Text}%'");
+                            break;
+                        case 3:
+                            Search($"Album_Search 'Description', 0, '', '{txSearchValue.Text}' ");
+                            datas[3] = DatabaseManager.ShowDataQuery($"SELECT * FROM [Album] WHERE Description LIKE '%{txSearchValue.Text}%'");
+                            break;
+                    }
+                    break;
+                case DatabaseTable.Fandom:
+                    switch (comboBox_SearchDataType.SelectedIndex)
+                    {
+                        case 0:
+                            ShowData(DatabaseTable.Fandom);
+                            datas[4] = DatabaseManager.ShowDataQuery($"SELECT * FROM [Fandom]");
+                            break;
+                        case 1:
+                            Search($"Fandom_Search 'ID', {txSearchValue.Text}, '', '' ");
+                            datas[4] = DatabaseManager.ShowDataQuery($"SELECT * FROM [Fandom] WHERE FandomID = {txSearchValue.Text}");
+                            break;
+                        case 2:
+                            Search($"Fandom_Search 'Name', 0, '{txSearchValue.Text}', '' ");
+                            datas[4] = DatabaseManager.ShowDataQuery($"SELECT * FROM [Fandom] WHERE Name LIKE '%{txSearchValue.Text}%'");
+                            break;
+                        case 3:
+                            Search($"Fandom_Search 'Description', 0, '', '{txSearchValue.Text}' ");
+                            datas[4] = DatabaseManager.ShowDataQuery($"SELECT * FROM [Fandom] WHERE Description LIKE '%{txSearchValue.Text}%'");
+                            break;
+                    }
+                    break;
+                case DatabaseTable.Label:
+                    switch (comboBox_SearchDataType.SelectedIndex)
+                    {
+                        case 0:
+                            ShowData(DatabaseTable.Label);
+                            datas[5] = DatabaseManager.ShowDataQuery($"SELECT * FROM [Label]");
+                            break;
+                        case 1:
+                            Search($"Label_Search 'ID', {txSearchValue.Text}, '', '' ");
+                            datas[5] = DatabaseManager.ShowDataQuery($"SELECT * FROM [Label] WHERE LabelID = {txSearchValue.Text}");
+                            break;
+                        case 2:
+                            Search($"Label_Search 'Name', 0, '{txSearchValue.Text}', '' ");
+                            datas[5] = DatabaseManager.ShowDataQuery($"SELECT * FROM [Label] WHERE Name LIKE '%{txSearchValue.Text}%'");
+                            break;
+                        case 3:
+                            Search($"Label_Search 'Description', 0, '', '{txSearchValue.Text}' ");
+                            datas[5] = DatabaseManager.ShowDataQuery($"SELECT * FROM [Label] WHERE Description LIKE '%{txSearchValue.Text}%'");
+                            break;
+                    }
+                    break;
+            }
+        }
+        void Search(string query)
+        {
+            dataGridView_Data.DataSource = DatabaseManager.ShowDataQuery(query);           
+        }
         /// <summary>
         /// BUTTON NÀY HIỆN KHÔNG DÙNG NỮA
         /// </summary>
@@ -1635,7 +1828,7 @@ namespace ArtistMNG
         void Artist_ChooseRowToEdit()
         {
             //txArtist_ID.Enabled = true;
-            datas[0] = DatabaseManager.ShowDataQuery("SELECT * FROM [Artist] WHERE IsActivate = 1");
+            //datas[0] = DatabaseManager.ShowDataQuery("SELECT * FROM [Artist] WHERE IsActivate = 1");
             artistImage.Clear();
 
             nextImageIndex = 0;
@@ -1923,7 +2116,7 @@ namespace ArtistMNG
         void Group_ChooseRowToEdit()
         {
             //txGroup_ID.Enabled = true;
-            datas[1] = DatabaseManager.ShowDataQuery("SELECT * FROM [Group] WHERE IsActivate = 1");
+            //datas[1] = DatabaseManager.ShowDataQuery("SELECT * FROM [Group] WHERE IsActivate = 1");
 
             txGroup_ID.Text = datas[1].Rows[selectedRowFirstIndex].Field<int>("GroupID").ToString();
             txGroup_Name.Text = datas[1].Rows[selectedRowFirstIndex].Field<string>("Name").ToString();
@@ -2467,7 +2660,7 @@ namespace ArtistMNG
         void Song_ChooseRowToEdit()
         {
             //txSong_SongID.Enabled = true;
-            datas[2] = DatabaseManager.ShowDataQuery("SELECT * FROM [Song] WHERE SongID <> 0");
+            //datas[2] = DatabaseManager.ShowDataQuery("SELECT * FROM [Song] WHERE SongID <> 0");
 
             txSong_SongID.Text = datas[2].Rows[selectedRowFirstIndex].Field<int>("SongID").ToString();
             txSong_SongName.Text = datas[2].Rows[selectedRowFirstIndex].Field<string>("Name");
@@ -2502,7 +2695,7 @@ namespace ArtistMNG
         }
         void Album_ChooseRowToEdit()
         {
-            datas[3] = DatabaseManager.ShowDataQuery("SELECT * FROM [Album] WHERE AlbumID <> 0");
+            //datas[3] = DatabaseManager.ShowDataQuery("SELECT * FROM [Album] WHERE AlbumID <> 0");
             txAlbum_AlbumID.Text = datas[3].Rows[selectedRowFirstIndex].Field<int>("AlbumID").ToString();
             txAlbum_AlbumName.Text = datas[3].Rows[selectedRowFirstIndex].Field<string>("Name");
             dateTimePickerAlbum_AlbumReleaseDay.Value = datas[3].Rows[selectedRowFirstIndex].Field<DateTime>("ReleaseDay");
@@ -2553,7 +2746,7 @@ namespace ArtistMNG
         void Label_ChooseRowToEdit()
         {
             //txLabel_LabelID.Enabled = true;
-            datas[4] = DatabaseManager.ShowDataQuery("SELECT * FROM [Label] WHERE LabelID <> 0");
+            //datas[4] = DatabaseManager.ShowDataQuery("SELECT * FROM [Label] WHERE LabelID <> 0");
 
             txLabel_LabelID.Text = datas[4].Rows[selectedRowFirstIndex].Field<int>("LabelID").ToString();
             txLabel_LabelName.Text = datas[4].Rows[selectedRowFirstIndex].Field<string>("Name");
@@ -2585,10 +2778,11 @@ namespace ArtistMNG
             QueryData.Instance.Label.Location = txLabel_Location.Text;
             QueryData.Instance.Label.Description = txLabel_Description.Text;
         }
+
         void Fandom_ChooseRowToEdit()
         {
             txFandom_FandomID.Enabled = true;
-            datas[5] = DatabaseManager.ShowDataQuery("SELECT * FROM [Fandom] WHERE FandomID <> 0");
+            //datas[5] = DatabaseManager.ShowDataQuery("SELECT * FROM [Fandom] WHERE FandomID <> 0");
 
             txFandom_FandomID.Text = datas[5].Rows[selectedRowFirstIndex].Field<int>("FandomID").ToString();
             txFandom_FandomName.Text = datas[5].Rows[selectedRowFirstIndex].Field<string>("Name");

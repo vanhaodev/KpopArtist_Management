@@ -30,28 +30,28 @@ namespace ArtistMNG
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle23 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle24 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle25 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle26 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle27 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle28 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle29 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle30 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle31 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle32 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle33 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle34 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle35 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle36 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle37 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle38 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle39 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle40 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle41 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle42 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle43 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle44 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle133 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle134 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle135 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle136 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle137 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle138 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle139 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle140 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle141 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle142 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle143 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle144 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle145 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle146 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle147 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle148 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle149 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle150 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle151 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle152 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle153 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle154 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel_MainWorkSpace = new System.Windows.Forms.Panel();
             this.btnNewRow = new System.Windows.Forms.Button();
             this.panel_DataContent = new System.Windows.Forms.Panel();
@@ -64,6 +64,99 @@ namespace ArtistMNG
             this.btnApplyDelete = new System.Windows.Forms.Button();
             this.btnApplyEdit = new System.Windows.Forms.Button();
             this.btnApplyAdd = new System.Windows.Forms.Button();
+            this.panel_ArtistManager = new System.Windows.Forms.Panel();
+            this.groupBox_ArtistGender = new System.Windows.Forms.GroupBox();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.comboBox_ArtistGender = new System.Windows.Forms.ComboBox();
+            this.pictureBox_ArtistImageLoadingGIF = new System.Windows.Forms.PictureBox();
+            this.btnArtist_NextImage = new System.Windows.Forms.Button();
+            this.groupBox14 = new System.Windows.Forms.GroupBox();
+            this.panel_ArtistInforWeight = new System.Windows.Forms.Panel();
+            this.txArtist_BirthPlace = new System.Windows.Forms.TextBox();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.panel_ArtistInforHeightWeight = new System.Windows.Forms.Panel();
+            this.txArtist_Weight = new System.Windows.Forms.TextBox();
+            this.txArtist_Height = new System.Windows.Forms.TextBox();
+            this.groupBox13 = new System.Windows.Forms.GroupBox();
+            this.panel_ArtistInforDebutday = new System.Windows.Forms.Panel();
+            this.dateTimePickerArtist_Debutday = new System.Windows.Forms.DateTimePicker();
+            this.groupBox12 = new System.Windows.Forms.GroupBox();
+            this.panel_ArtistInforBirthday = new System.Windows.Forms.Panel();
+            this.dateTimePickerArtist_Birthday = new System.Windows.Forms.DateTimePicker();
+            this.btnArtist_EditImage = new System.Windows.Forms.Button();
+            this.groupBox11 = new System.Windows.Forms.GroupBox();
+            this.panel_ArtistInforRealName = new System.Windows.Forms.Panel();
+            this.txArtist_RealName = new System.Windows.Forms.TextBox();
+            this.groupBox10 = new System.Windows.Forms.GroupBox();
+            this.panel_ArtistInforStageName = new System.Windows.Forms.Panel();
+            this.txArtist_StageName = new System.Windows.Forms.TextBox();
+            this.groupBox_ArtistID = new System.Windows.Forms.GroupBox();
+            this.panel_ArtistInforID = new System.Windows.Forms.Panel();
+            this.txArtist_ID = new System.Windows.Forms.TextBox();
+            this.groupBox_Artist_SNS = new System.Windows.Forms.GroupBox();
+            this.pictureBox_Artist_Website = new System.Windows.Forms.PictureBox();
+            this.tx_Artist_WebsiteURL = new System.Windows.Forms.TextBox();
+            this.pictureBox_Artist_Spotify = new System.Windows.Forms.PictureBox();
+            this.tx_Artist_SpotifyURL = new System.Windows.Forms.TextBox();
+            this.pictureBox_Artist_AppleMusic = new System.Windows.Forms.PictureBox();
+            this.tx_Artist_AppleMusicURL = new System.Windows.Forms.TextBox();
+            this.pictureBox_Artist_Vlive = new System.Windows.Forms.PictureBox();
+            this.tx_Artist_VliveURL = new System.Windows.Forms.TextBox();
+            this.pictureBox_Artist_Tiktok = new System.Windows.Forms.PictureBox();
+            this.tx_Artist_TiktokURL = new System.Windows.Forms.TextBox();
+            this.pictureBox_Artist_Twitter = new System.Windows.Forms.PictureBox();
+            this.tx_Artist_TwitterURL = new System.Windows.Forms.TextBox();
+            this.pictureBox_Artist_Facebook = new System.Windows.Forms.PictureBox();
+            this.tx_Artist_FacebookURL = new System.Windows.Forms.TextBox();
+            this.pictureBox_Artist_Instagram = new System.Windows.Forms.PictureBox();
+            this.tx_Artist_InstagramURL = new System.Windows.Forms.TextBox();
+            this.pictureBox_Artist_Youtube = new System.Windows.Forms.PictureBox();
+            this.tx_Artist_YoutubeURL = new System.Windows.Forms.TextBox();
+            this.groupBox7 = new System.Windows.Forms.GroupBox();
+            this.buttonArtist_EditLabel = new System.Windows.Forms.Button();
+            this.panel_ArtistInforLabel = new System.Windows.Forms.Panel();
+            this.labelArtist_Label = new System.Windows.Forms.Label();
+            this.pictureBox_ArtistImage = new System.Windows.Forms.PictureBox();
+            this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.buttonArtist_EditAlbum = new System.Windows.Forms.Button();
+            this.panel_ArtistInforAlbum = new System.Windows.Forms.Panel();
+            this.dataGridViewArtist_Album = new System.Windows.Forms.DataGridView();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.buttonArtist_EditFandom = new System.Windows.Forms.Button();
+            this.panel_ArtistInforFandom = new System.Windows.Forms.Panel();
+            this.labelArtist_Fandom = new System.Windows.Forms.Label();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.panel_ArtistInforGroup = new System.Windows.Forms.Panel();
+            this.dataGridViewArtist_Group = new System.Windows.Forms.DataGridView();
+            this.buttonArtist_EditGroup = new System.Windows.Forms.Button();
+            this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.buttonArtist_EditSong = new System.Windows.Forms.Button();
+            this.panel_ArtistInforSong = new System.Windows.Forms.Panel();
+            this.dataGridViewArtist_Song = new System.Windows.Forms.DataGridView();
+            this.groupBox_ArtistDescription = new System.Windows.Forms.GroupBox();
+            this.panel_ArtistInforDescription = new System.Windows.Forms.Panel();
+            this.txArtist_Description = new System.Windows.Forms.TextBox();
+            this.panel_LabelManager = new System.Windows.Forms.Panel();
+            this.groupBoxLabel_Description = new System.Windows.Forms.GroupBox();
+            this.panel_LabelInforDescription = new System.Windows.Forms.Panel();
+            this.txLabel_Description = new System.Windows.Forms.TextBox();
+            this.groupBoxLabel_Location = new System.Windows.Forms.GroupBox();
+            this.panel9 = new System.Windows.Forms.Panel();
+            this.txLabel_Location = new System.Windows.Forms.TextBox();
+            this.groupBoxLabel_Founded = new System.Windows.Forms.GroupBox();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.dateTimePicker_LabelFounded = new System.Windows.Forms.DateTimePicker();
+            this.groupBoxLabel_Founder = new System.Windows.Forms.GroupBox();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.txLabel_Founder = new System.Windows.Forms.TextBox();
+            this.groupBoxLabel_Name = new System.Windows.Forms.GroupBox();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.txLabel_LabelName = new System.Windows.Forms.TextBox();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.groupBoxLabel_LabelID = new System.Windows.Forms.GroupBox();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.txLabel_LabelID = new System.Windows.Forms.TextBox();
             this.panel_AlbumManager = new System.Windows.Forms.Panel();
             this.groupBoxAlbum_AlbumSong = new System.Windows.Forms.GroupBox();
             this.btnAlbum_EditSong = new System.Windows.Forms.Button();
@@ -160,103 +253,11 @@ namespace ArtistMNG
             this.groupBox_GroupID = new System.Windows.Forms.GroupBox();
             this.panel_GroupInforID = new System.Windows.Forms.Panel();
             this.txGroup_ID = new System.Windows.Forms.TextBox();
-            this.panel_ArtistManager = new System.Windows.Forms.Panel();
-            this.groupBox_ArtistGender = new System.Windows.Forms.GroupBox();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.comboBox_ArtistGender = new System.Windows.Forms.ComboBox();
-            this.pictureBox_ArtistImageLoadingGIF = new System.Windows.Forms.PictureBox();
-            this.btnArtist_NextImage = new System.Windows.Forms.Button();
-            this.groupBox14 = new System.Windows.Forms.GroupBox();
-            this.panel_ArtistInforWeight = new System.Windows.Forms.Panel();
-            this.txArtist_BirthPlace = new System.Windows.Forms.TextBox();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.panel_ArtistInforHeightWeight = new System.Windows.Forms.Panel();
-            this.txArtist_Weight = new System.Windows.Forms.TextBox();
-            this.txArtist_Height = new System.Windows.Forms.TextBox();
-            this.groupBox13 = new System.Windows.Forms.GroupBox();
-            this.panel_ArtistInforDebutday = new System.Windows.Forms.Panel();
-            this.dateTimePickerArtist_Debutday = new System.Windows.Forms.DateTimePicker();
-            this.groupBox12 = new System.Windows.Forms.GroupBox();
-            this.panel_ArtistInforBirthday = new System.Windows.Forms.Panel();
-            this.dateTimePickerArtist_Birthday = new System.Windows.Forms.DateTimePicker();
-            this.btnArtist_EditImage = new System.Windows.Forms.Button();
-            this.groupBox11 = new System.Windows.Forms.GroupBox();
-            this.panel_ArtistInforRealName = new System.Windows.Forms.Panel();
-            this.txArtist_RealName = new System.Windows.Forms.TextBox();
-            this.groupBox10 = new System.Windows.Forms.GroupBox();
-            this.panel_ArtistInforStageName = new System.Windows.Forms.Panel();
-            this.txArtist_StageName = new System.Windows.Forms.TextBox();
-            this.groupBox_ArtistID = new System.Windows.Forms.GroupBox();
-            this.panel_ArtistInforID = new System.Windows.Forms.Panel();
-            this.txArtist_ID = new System.Windows.Forms.TextBox();
-            this.groupBox_Artist_SNS = new System.Windows.Forms.GroupBox();
-            this.pictureBox_Artist_Website = new System.Windows.Forms.PictureBox();
-            this.tx_Artist_WebsiteURL = new System.Windows.Forms.TextBox();
-            this.pictureBox_Artist_Spotify = new System.Windows.Forms.PictureBox();
-            this.tx_Artist_SpotifyURL = new System.Windows.Forms.TextBox();
-            this.pictureBox_Artist_AppleMusic = new System.Windows.Forms.PictureBox();
-            this.tx_Artist_AppleMusicURL = new System.Windows.Forms.TextBox();
-            this.pictureBox_Artist_Vlive = new System.Windows.Forms.PictureBox();
-            this.tx_Artist_VliveURL = new System.Windows.Forms.TextBox();
-            this.pictureBox_Artist_Tiktok = new System.Windows.Forms.PictureBox();
-            this.tx_Artist_TiktokURL = new System.Windows.Forms.TextBox();
-            this.pictureBox_Artist_Twitter = new System.Windows.Forms.PictureBox();
-            this.tx_Artist_TwitterURL = new System.Windows.Forms.TextBox();
-            this.pictureBox_Artist_Facebook = new System.Windows.Forms.PictureBox();
-            this.tx_Artist_FacebookURL = new System.Windows.Forms.TextBox();
-            this.pictureBox_Artist_Instagram = new System.Windows.Forms.PictureBox();
-            this.tx_Artist_InstagramURL = new System.Windows.Forms.TextBox();
-            this.pictureBox_Artist_Youtube = new System.Windows.Forms.PictureBox();
-            this.tx_Artist_YoutubeURL = new System.Windows.Forms.TextBox();
-            this.groupBox7 = new System.Windows.Forms.GroupBox();
-            this.buttonArtist_EditLabel = new System.Windows.Forms.Button();
-            this.panel_ArtistInforLabel = new System.Windows.Forms.Panel();
-            this.labelArtist_Label = new System.Windows.Forms.Label();
-            this.pictureBox_ArtistImage = new System.Windows.Forms.PictureBox();
-            this.groupBox6 = new System.Windows.Forms.GroupBox();
-            this.buttonArtist_EditAlbum = new System.Windows.Forms.Button();
-            this.panel_ArtistInforAlbum = new System.Windows.Forms.Panel();
-            this.dataGridViewArtist_Album = new System.Windows.Forms.DataGridView();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.buttonArtist_EditFandom = new System.Windows.Forms.Button();
-            this.panel_ArtistInforFandom = new System.Windows.Forms.Panel();
-            this.labelArtist_Fandom = new System.Windows.Forms.Label();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.panel_ArtistInforGroup = new System.Windows.Forms.Panel();
-            this.dataGridViewArtist_Group = new System.Windows.Forms.DataGridView();
-            this.buttonArtist_EditGroup = new System.Windows.Forms.Button();
-            this.groupBox5 = new System.Windows.Forms.GroupBox();
-            this.buttonArtist_EditSong = new System.Windows.Forms.Button();
-            this.panel_ArtistInforSong = new System.Windows.Forms.Panel();
-            this.dataGridViewArtist_Song = new System.Windows.Forms.DataGridView();
-            this.groupBox_ArtistDescription = new System.Windows.Forms.GroupBox();
-            this.panel_ArtistInforDescription = new System.Windows.Forms.Panel();
-            this.txArtist_Description = new System.Windows.Forms.TextBox();
-            this.panel_LabelManager = new System.Windows.Forms.Panel();
-            this.groupBoxLabel_Description = new System.Windows.Forms.GroupBox();
-            this.panel_LabelInforDescription = new System.Windows.Forms.Panel();
-            this.txLabel_Description = new System.Windows.Forms.TextBox();
-            this.groupBoxLabel_Location = new System.Windows.Forms.GroupBox();
-            this.panel9 = new System.Windows.Forms.Panel();
-            this.txLabel_Location = new System.Windows.Forms.TextBox();
-            this.groupBoxLabel_Founded = new System.Windows.Forms.GroupBox();
-            this.panel8 = new System.Windows.Forms.Panel();
-            this.dateTimePicker_LabelFounded = new System.Windows.Forms.DateTimePicker();
-            this.groupBoxLabel_Founder = new System.Windows.Forms.GroupBox();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.txLabel_Founder = new System.Windows.Forms.TextBox();
-            this.groupBoxLabel_Name = new System.Windows.Forms.GroupBox();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.txLabel_LabelName = new System.Windows.Forms.TextBox();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.groupBoxLabel_LabelID = new System.Windows.Forms.GroupBox();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.txLabel_LabelID = new System.Windows.Forms.TextBox();
             this.panel_MenustripMain = new System.Windows.Forms.Panel();
             this.menuStrip_Main = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.MenuStrip_ShowArtistTable = new System.Windows.Forms.ToolStripMenuItem();
+            this.MenuStrip_ShowArtistTableTrash = new System.Windows.Forms.ToolStripMenuItem();
             this.MenuStrip_ShowGroupTable = new System.Windows.Forms.ToolStripMenuItem();
             this.MenuStrip_ShowSongTable = new System.Windows.Forms.ToolStripMenuItem();
             this.MenuStrip_ShowAlbumTable = new System.Windows.Forms.ToolStripMenuItem();
@@ -276,11 +277,70 @@ namespace ArtistMNG
             this.pictureBox_LoadingGIF = new System.Windows.Forms.PictureBox();
             this.label_AppStatus = new System.Windows.Forms.Label();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            this.MenuStrip_ShowArtistTableTrash = new System.Windows.Forms.ToolStripMenuItem();
+            this.txSearchValue = new System.Windows.Forms.TextBox();
+            this.comboBox_SearchDataType = new System.Windows.Forms.ComboBox();
+            this.btnSearch = new System.Windows.Forms.Button();
             this.panel_MainWorkSpace.SuspendLayout();
             this.panel_DataContent.SuspendLayout();
             this.panel_SizeControl.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_Data)).BeginInit();
+            this.panel_ArtistManager.SuspendLayout();
+            this.groupBox_ArtistGender.SuspendLayout();
+            this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_ArtistImageLoadingGIF)).BeginInit();
+            this.groupBox14.SuspendLayout();
+            this.panel_ArtistInforWeight.SuspendLayout();
+            this.groupBox3.SuspendLayout();
+            this.panel_ArtistInforHeightWeight.SuspendLayout();
+            this.groupBox13.SuspendLayout();
+            this.panel_ArtistInforDebutday.SuspendLayout();
+            this.groupBox12.SuspendLayout();
+            this.panel_ArtistInforBirthday.SuspendLayout();
+            this.groupBox11.SuspendLayout();
+            this.panel_ArtistInforRealName.SuspendLayout();
+            this.groupBox10.SuspendLayout();
+            this.panel_ArtistInforStageName.SuspendLayout();
+            this.groupBox_ArtistID.SuspendLayout();
+            this.panel_ArtistInforID.SuspendLayout();
+            this.groupBox_Artist_SNS.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Artist_Website)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Artist_Spotify)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Artist_AppleMusic)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Artist_Vlive)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Artist_Tiktok)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Artist_Twitter)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Artist_Facebook)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Artist_Instagram)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Artist_Youtube)).BeginInit();
+            this.groupBox7.SuspendLayout();
+            this.panel_ArtistInforLabel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_ArtistImage)).BeginInit();
+            this.groupBox6.SuspendLayout();
+            this.panel_ArtistInforAlbum.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewArtist_Album)).BeginInit();
+            this.groupBox1.SuspendLayout();
+            this.panel_ArtistInforFandom.SuspendLayout();
+            this.groupBox2.SuspendLayout();
+            this.panel_ArtistInforGroup.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewArtist_Group)).BeginInit();
+            this.groupBox5.SuspendLayout();
+            this.panel_ArtistInforSong.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewArtist_Song)).BeginInit();
+            this.groupBox_ArtistDescription.SuspendLayout();
+            this.panel_ArtistInforDescription.SuspendLayout();
+            this.panel_LabelManager.SuspendLayout();
+            this.groupBoxLabel_Description.SuspendLayout();
+            this.panel_LabelInforDescription.SuspendLayout();
+            this.groupBoxLabel_Location.SuspendLayout();
+            this.panel9.SuspendLayout();
+            this.groupBoxLabel_Founded.SuspendLayout();
+            this.panel8.SuspendLayout();
+            this.groupBoxLabel_Founder.SuspendLayout();
+            this.panel7.SuspendLayout();
+            this.groupBoxLabel_Name.SuspendLayout();
+            this.panel6.SuspendLayout();
+            this.groupBoxLabel_LabelID.SuspendLayout();
+            this.panel3.SuspendLayout();
             this.panel_AlbumManager.SuspendLayout();
             this.groupBoxAlbum_AlbumSong.SuspendLayout();
             this.panel24.SuspendLayout();
@@ -342,63 +402,6 @@ namespace ArtistMNG
             this.panel_GroupInforName.SuspendLayout();
             this.groupBox_GroupID.SuspendLayout();
             this.panel_GroupInforID.SuspendLayout();
-            this.panel_ArtistManager.SuspendLayout();
-            this.groupBox_ArtistGender.SuspendLayout();
-            this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_ArtistImageLoadingGIF)).BeginInit();
-            this.groupBox14.SuspendLayout();
-            this.panel_ArtistInforWeight.SuspendLayout();
-            this.groupBox3.SuspendLayout();
-            this.panel_ArtistInforHeightWeight.SuspendLayout();
-            this.groupBox13.SuspendLayout();
-            this.panel_ArtistInforDebutday.SuspendLayout();
-            this.groupBox12.SuspendLayout();
-            this.panel_ArtistInforBirthday.SuspendLayout();
-            this.groupBox11.SuspendLayout();
-            this.panel_ArtistInforRealName.SuspendLayout();
-            this.groupBox10.SuspendLayout();
-            this.panel_ArtistInforStageName.SuspendLayout();
-            this.groupBox_ArtistID.SuspendLayout();
-            this.panel_ArtistInforID.SuspendLayout();
-            this.groupBox_Artist_SNS.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Artist_Website)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Artist_Spotify)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Artist_AppleMusic)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Artist_Vlive)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Artist_Tiktok)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Artist_Twitter)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Artist_Facebook)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Artist_Instagram)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Artist_Youtube)).BeginInit();
-            this.groupBox7.SuspendLayout();
-            this.panel_ArtistInforLabel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_ArtistImage)).BeginInit();
-            this.groupBox6.SuspendLayout();
-            this.panel_ArtistInforAlbum.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewArtist_Album)).BeginInit();
-            this.groupBox1.SuspendLayout();
-            this.panel_ArtistInforFandom.SuspendLayout();
-            this.groupBox2.SuspendLayout();
-            this.panel_ArtistInforGroup.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewArtist_Group)).BeginInit();
-            this.groupBox5.SuspendLayout();
-            this.panel_ArtistInforSong.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewArtist_Song)).BeginInit();
-            this.groupBox_ArtistDescription.SuspendLayout();
-            this.panel_ArtistInforDescription.SuspendLayout();
-            this.panel_LabelManager.SuspendLayout();
-            this.groupBoxLabel_Description.SuspendLayout();
-            this.panel_LabelInforDescription.SuspendLayout();
-            this.groupBoxLabel_Location.SuspendLayout();
-            this.panel9.SuspendLayout();
-            this.groupBoxLabel_Founded.SuspendLayout();
-            this.panel8.SuspendLayout();
-            this.groupBoxLabel_Founder.SuspendLayout();
-            this.panel7.SuspendLayout();
-            this.groupBoxLabel_Name.SuspendLayout();
-            this.panel6.SuspendLayout();
-            this.groupBoxLabel_LabelID.SuspendLayout();
-            this.panel3.SuspendLayout();
             this.panel_MenustripMain.SuspendLayout();
             this.menuStrip_Main.SuspendLayout();
             this.panel_UserInfor.SuspendLayout();
@@ -412,17 +415,20 @@ namespace ArtistMNG
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel_MainWorkSpace.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(33)))), ((int)(((byte)(36)))));
-            this.panel_MainWorkSpace.Controls.Add(this.btnNewRow);
-            this.panel_MainWorkSpace.Controls.Add(this.panel_DataContent);
             this.panel_MainWorkSpace.Controls.Add(this.btnApplyDelete);
-            this.panel_MainWorkSpace.Controls.Add(this.btnApplyEdit);
+            this.panel_MainWorkSpace.Controls.Add(this.btnSearch);
             this.panel_MainWorkSpace.Controls.Add(this.btnApplyAdd);
+            this.panel_MainWorkSpace.Controls.Add(this.btnNewRow);
+            this.panel_MainWorkSpace.Controls.Add(this.comboBox_SearchDataType);
+            this.panel_MainWorkSpace.Controls.Add(this.btnApplyEdit);
+            this.panel_MainWorkSpace.Controls.Add(this.txSearchValue);
+            this.panel_MainWorkSpace.Controls.Add(this.panel_DataContent);
+            this.panel_MainWorkSpace.Controls.Add(this.panel_GroupManager);
             this.panel_MainWorkSpace.Controls.Add(this.panel_ArtistManager);
             this.panel_MainWorkSpace.Controls.Add(this.panel_LabelManager);
             this.panel_MainWorkSpace.Controls.Add(this.panel_AlbumManager);
             this.panel_MainWorkSpace.Controls.Add(this.panel_SongManager);
             this.panel_MainWorkSpace.Controls.Add(this.panel_FandomManager);
-            this.panel_MainWorkSpace.Controls.Add(this.panel_GroupManager);
             this.panel_MainWorkSpace.Location = new System.Drawing.Point(0, 52);
             this.panel_MainWorkSpace.Name = "panel_MainWorkSpace";
             this.panel_MainWorkSpace.Size = new System.Drawing.Size(1098, 582);
@@ -436,7 +442,7 @@ namespace ArtistMNG
             this.btnNewRow.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnNewRow.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNewRow.ForeColor = System.Drawing.Color.White;
-            this.btnNewRow.Location = new System.Drawing.Point(585, 537);
+            this.btnNewRow.Location = new System.Drawing.Point(581, 537);
             this.btnNewRow.Name = "btnNewRow";
             this.btnNewRow.Size = new System.Drawing.Size(123, 40);
             this.btnNewRow.TabIndex = 8;
@@ -537,45 +543,45 @@ namespace ArtistMNG
             // 
             // dataGridView_Data
             // 
-            dataGridViewCellStyle23.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            dataGridViewCellStyle23.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            dataGridViewCellStyle23.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.dataGridView_Data.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle23;
+            dataGridViewCellStyle133.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            dataGridViewCellStyle133.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            dataGridViewCellStyle133.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.dataGridView_Data.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle133;
             this.dataGridView_Data.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridView_Data.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView_Data.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(55)))), ((int)(((byte)(59)))));
             this.dataGridView_Data.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            dataGridViewCellStyle24.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle24.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle24.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle24.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle24.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle24.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle24.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView_Data.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle24;
+            dataGridViewCellStyle134.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle134.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle134.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle134.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle134.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle134.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle134.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView_Data.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle134;
             this.dataGridView_Data.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle25.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle25.BackColor = System.Drawing.SystemColors.InfoText;
-            dataGridViewCellStyle25.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle25.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle25.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle25.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle25.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView_Data.DefaultCellStyle = dataGridViewCellStyle25;
+            dataGridViewCellStyle135.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle135.BackColor = System.Drawing.SystemColors.InfoText;
+            dataGridViewCellStyle135.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle135.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle135.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle135.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle135.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView_Data.DefaultCellStyle = dataGridViewCellStyle135;
             this.dataGridView_Data.GridColor = System.Drawing.SystemColors.ControlText;
             this.dataGridView_Data.Location = new System.Drawing.Point(3, 3);
             this.dataGridView_Data.Name = "dataGridView_Data";
             this.dataGridView_Data.ReadOnly = true;
-            dataGridViewCellStyle26.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle26.BackColor = System.Drawing.SystemColors.GrayText;
-            dataGridViewCellStyle26.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle26.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle26.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle26.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle26.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView_Data.RowHeadersDefaultCellStyle = dataGridViewCellStyle26;
+            dataGridViewCellStyle136.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle136.BackColor = System.Drawing.SystemColors.GrayText;
+            dataGridViewCellStyle136.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle136.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle136.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle136.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle136.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView_Data.RowHeadersDefaultCellStyle = dataGridViewCellStyle136;
             this.dataGridView_Data.RowHeadersWidth = 51;
             this.dataGridView_Data.RowTemplate.Height = 24;
             this.dataGridView_Data.Size = new System.Drawing.Size(531, 528);
@@ -590,7 +596,7 @@ namespace ArtistMNG
             this.btnApplyDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnApplyDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnApplyDelete.ForeColor = System.Drawing.Color.White;
-            this.btnApplyDelete.Location = new System.Drawing.Point(972, 537);
+            this.btnApplyDelete.Location = new System.Drawing.Point(968, 537);
             this.btnApplyDelete.Name = "btnApplyDelete";
             this.btnApplyDelete.Size = new System.Drawing.Size(123, 40);
             this.btnApplyDelete.TabIndex = 5;
@@ -607,7 +613,7 @@ namespace ArtistMNG
             this.btnApplyEdit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnApplyEdit.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnApplyEdit.ForeColor = System.Drawing.Color.White;
-            this.btnApplyEdit.Location = new System.Drawing.Point(843, 537);
+            this.btnApplyEdit.Location = new System.Drawing.Point(839, 537);
             this.btnApplyEdit.Name = "btnApplyEdit";
             this.btnApplyEdit.Size = new System.Drawing.Size(123, 40);
             this.btnApplyEdit.TabIndex = 4;
@@ -624,7 +630,7 @@ namespace ArtistMNG
             this.btnApplyAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnApplyAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnApplyAdd.ForeColor = System.Drawing.Color.White;
-            this.btnApplyAdd.Location = new System.Drawing.Point(714, 537);
+            this.btnApplyAdd.Location = new System.Drawing.Point(710, 537);
             this.btnApplyAdd.Name = "btnApplyAdd";
             this.btnApplyAdd.Size = new System.Drawing.Size(123, 40);
             this.btnApplyAdd.TabIndex = 3;
@@ -632,6 +638,1216 @@ namespace ArtistMNG
             this.btnApplyAdd.Text = "Thêm";
             this.btnApplyAdd.UseVisualStyleBackColor = false;
             this.btnApplyAdd.Click += new System.EventHandler(this.btnApplyAdd_Click);
+            // 
+            // panel_ArtistManager
+            // 
+            this.panel_ArtistManager.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel_ArtistManager.AutoScroll = true;
+            this.panel_ArtistManager.AutoScrollMargin = new System.Drawing.Size(0, 5);
+            this.panel_ArtistManager.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(33)))), ((int)(((byte)(36)))));
+            this.panel_ArtistManager.Controls.Add(this.groupBox_ArtistGender);
+            this.panel_ArtistManager.Controls.Add(this.pictureBox_ArtistImageLoadingGIF);
+            this.panel_ArtistManager.Controls.Add(this.btnArtist_NextImage);
+            this.panel_ArtistManager.Controls.Add(this.groupBox14);
+            this.panel_ArtistManager.Controls.Add(this.panel1);
+            this.panel_ArtistManager.Controls.Add(this.groupBox3);
+            this.panel_ArtistManager.Controls.Add(this.groupBox13);
+            this.panel_ArtistManager.Controls.Add(this.groupBox12);
+            this.panel_ArtistManager.Controls.Add(this.btnArtist_EditImage);
+            this.panel_ArtistManager.Controls.Add(this.groupBox11);
+            this.panel_ArtistManager.Controls.Add(this.groupBox10);
+            this.panel_ArtistManager.Controls.Add(this.groupBox_ArtistID);
+            this.panel_ArtistManager.Controls.Add(this.groupBox_Artist_SNS);
+            this.panel_ArtistManager.Controls.Add(this.groupBox7);
+            this.panel_ArtistManager.Controls.Add(this.pictureBox_ArtistImage);
+            this.panel_ArtistManager.Controls.Add(this.groupBox6);
+            this.panel_ArtistManager.Controls.Add(this.groupBox1);
+            this.panel_ArtistManager.Controls.Add(this.groupBox2);
+            this.panel_ArtistManager.Controls.Add(this.groupBox5);
+            this.panel_ArtistManager.Controls.Add(this.groupBox_ArtistDescription);
+            this.panel_ArtistManager.Location = new System.Drawing.Point(600, 3);
+            this.panel_ArtistManager.Name = "panel_ArtistManager";
+            this.panel_ArtistManager.Size = new System.Drawing.Size(495, 528);
+            this.panel_ArtistManager.TabIndex = 7;
+            // 
+            // groupBox_ArtistGender
+            // 
+            this.groupBox_ArtistGender.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox_ArtistGender.Controls.Add(this.panel2);
+            this.groupBox_ArtistGender.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
+            this.groupBox_ArtistGender.ForeColor = System.Drawing.Color.White;
+            this.groupBox_ArtistGender.Location = new System.Drawing.Point(252, 217);
+            this.groupBox_ArtistGender.Name = "groupBox_ArtistGender";
+            this.groupBox_ArtistGender.Size = new System.Drawing.Size(219, 65);
+            this.groupBox_ArtistGender.TabIndex = 17;
+            this.groupBox_ArtistGender.TabStop = false;
+            this.groupBox_ArtistGender.Text = "Giới tính";
+            // 
+            // panel2
+            // 
+            this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel2.AutoScroll = true;
+            this.panel2.Controls.Add(this.comboBox_ArtistGender);
+            this.panel2.Location = new System.Drawing.Point(6, 23);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(207, 37);
+            this.panel2.TabIndex = 5;
+            // 
+            // comboBox_ArtistGender
+            // 
+            this.comboBox_ArtistGender.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.comboBox_ArtistGender.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox_ArtistGender.FormattingEnabled = true;
+            this.comboBox_ArtistGender.Items.AddRange(new object[] {
+            "Nam",
+            "Nữ"});
+            this.comboBox_ArtistGender.Location = new System.Drawing.Point(3, 6);
+            this.comboBox_ArtistGender.Name = "comboBox_ArtistGender";
+            this.comboBox_ArtistGender.Size = new System.Drawing.Size(199, 26);
+            this.comboBox_ArtistGender.TabIndex = 19;
+            // 
+            // pictureBox_ArtistImageLoadingGIF
+            // 
+            this.pictureBox_ArtistImageLoadingGIF.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.pictureBox_ArtistImageLoadingGIF.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.pictureBox_ArtistImageLoadingGIF.Location = new System.Drawing.Point(73, 32617);
+            this.pictureBox_ArtistImageLoadingGIF.Name = "pictureBox_ArtistImageLoadingGIF";
+            this.pictureBox_ArtistImageLoadingGIF.Size = new System.Drawing.Size(43, 45);
+            this.pictureBox_ArtistImageLoadingGIF.TabIndex = 18;
+            this.pictureBox_ArtistImageLoadingGIF.TabStop = false;
+            // 
+            // btnArtist_NextImage
+            // 
+            this.btnArtist_NextImage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(64)))), ((int)(((byte)(66)))));
+            this.btnArtist_NextImage.FlatAppearance.BorderSize = 0;
+            this.btnArtist_NextImage.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnArtist_NextImage.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnArtist_NextImage.ForeColor = System.Drawing.Color.White;
+            this.btnArtist_NextImage.Location = new System.Drawing.Point(17, 175);
+            this.btnArtist_NextImage.Name = "btnArtist_NextImage";
+            this.btnArtist_NextImage.Size = new System.Drawing.Size(91, 36);
+            this.btnArtist_NextImage.TabIndex = 17;
+            this.btnArtist_NextImage.TabStop = false;
+            this.btnArtist_NextImage.Text = "Ảnh 0/0";
+            this.btnArtist_NextImage.UseVisualStyleBackColor = false;
+            this.btnArtist_NextImage.Click += new System.EventHandler(this.btnArtist_NextImage_Click);
+            // 
+            // groupBox14
+            // 
+            this.groupBox14.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox14.Controls.Add(this.panel_ArtistInforWeight);
+            this.groupBox14.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
+            this.groupBox14.ForeColor = System.Drawing.Color.White;
+            this.groupBox14.Location = new System.Drawing.Point(10, 359);
+            this.groupBox14.Name = "groupBox14";
+            this.groupBox14.Size = new System.Drawing.Size(461, 65);
+            this.groupBox14.TabIndex = 16;
+            this.groupBox14.TabStop = false;
+            this.groupBox14.Text = "Nơi sinh";
+            // 
+            // panel_ArtistInforWeight
+            // 
+            this.panel_ArtistInforWeight.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel_ArtistInforWeight.AutoScroll = true;
+            this.panel_ArtistInforWeight.Controls.Add(this.txArtist_BirthPlace);
+            this.panel_ArtistInforWeight.Location = new System.Drawing.Point(6, 22);
+            this.panel_ArtistInforWeight.Name = "panel_ArtistInforWeight";
+            this.panel_ArtistInforWeight.Size = new System.Drawing.Size(449, 37);
+            this.panel_ArtistInforWeight.TabIndex = 7;
+            // 
+            // txArtist_BirthPlace
+            // 
+            this.txArtist_BirthPlace.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txArtist_BirthPlace.Location = new System.Drawing.Point(3, 7);
+            this.txArtist_BirthPlace.MaxLength = 100;
+            this.txArtist_BirthPlace.Name = "txArtist_BirthPlace";
+            this.txArtist_BirthPlace.Size = new System.Drawing.Size(443, 24);
+            this.txArtist_BirthPlace.TabIndex = 0;
+            // 
+            // panel1
+            // 
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel1.AutoScroll = true;
+            this.panel1.Location = new System.Drawing.Point(52, 2538);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(376, 13);
+            this.panel1.TabIndex = 5;
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox3.Controls.Add(this.panel_ArtistInforHeightWeight);
+            this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox3.ForeColor = System.Drawing.Color.White;
+            this.groupBox3.Location = new System.Drawing.Point(252, 288);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(219, 65);
+            this.groupBox3.TabIndex = 7;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Chiều cao - cân nặng";
+            this.toolTip1.SetToolTip(this.groupBox3, "Chiều cao (M) - Cân nặng (Kg)");
+            // 
+            // panel_ArtistInforHeightWeight
+            // 
+            this.panel_ArtistInforHeightWeight.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel_ArtistInforHeightWeight.AutoScroll = true;
+            this.panel_ArtistInforHeightWeight.Controls.Add(this.txArtist_Weight);
+            this.panel_ArtistInforHeightWeight.Controls.Add(this.txArtist_Height);
+            this.panel_ArtistInforHeightWeight.Location = new System.Drawing.Point(6, 26);
+            this.panel_ArtistInforHeightWeight.Name = "panel_ArtistInforHeightWeight";
+            this.panel_ArtistInforHeightWeight.Size = new System.Drawing.Size(207, 37);
+            this.panel_ArtistInforHeightWeight.TabIndex = 6;
+            // 
+            // txArtist_Weight
+            // 
+            this.txArtist_Weight.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txArtist_Weight.Location = new System.Drawing.Point(105, 3);
+            this.txArtist_Weight.MaxLength = 100;
+            this.txArtist_Weight.Name = "txArtist_Weight";
+            this.txArtist_Weight.Size = new System.Drawing.Size(99, 24);
+            this.txArtist_Weight.TabIndex = 1;
+            // 
+            // txArtist_Height
+            // 
+            this.txArtist_Height.Location = new System.Drawing.Point(3, 3);
+            this.txArtist_Height.MaxLength = 100;
+            this.txArtist_Height.Name = "txArtist_Height";
+            this.txArtist_Height.Size = new System.Drawing.Size(96, 24);
+            this.txArtist_Height.TabIndex = 0;
+            // 
+            // groupBox13
+            // 
+            this.groupBox13.Controls.Add(this.panel_ArtistInforDebutday);
+            this.groupBox13.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
+            this.groupBox13.ForeColor = System.Drawing.Color.White;
+            this.groupBox13.Location = new System.Drawing.Point(10, 288);
+            this.groupBox13.Name = "groupBox13";
+            this.groupBox13.Size = new System.Drawing.Size(236, 65);
+            this.groupBox13.TabIndex = 16;
+            this.groupBox13.TabStop = false;
+            this.groupBox13.Text = "Ngày debut (dd/mm/yyyy)";
+            // 
+            // panel_ArtistInforDebutday
+            // 
+            this.panel_ArtistInforDebutday.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel_ArtistInforDebutday.AutoScroll = true;
+            this.panel_ArtistInforDebutday.Controls.Add(this.dateTimePickerArtist_Debutday);
+            this.panel_ArtistInforDebutday.Location = new System.Drawing.Point(6, 26);
+            this.panel_ArtistInforDebutday.Name = "panel_ArtistInforDebutday";
+            this.panel_ArtistInforDebutday.Size = new System.Drawing.Size(224, 37);
+            this.panel_ArtistInforDebutday.TabIndex = 5;
+            // 
+            // dateTimePickerArtist_Debutday
+            // 
+            this.dateTimePickerArtist_Debutday.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dateTimePickerArtist_Debutday.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dateTimePickerArtist_Debutday.Location = new System.Drawing.Point(4, 3);
+            this.dateTimePickerArtist_Debutday.Name = "dateTimePickerArtist_Debutday";
+            this.dateTimePickerArtist_Debutday.Size = new System.Drawing.Size(215, 24);
+            this.dateTimePickerArtist_Debutday.TabIndex = 0;
+            // 
+            // groupBox12
+            // 
+            this.groupBox12.Controls.Add(this.panel_ArtistInforBirthday);
+            this.groupBox12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
+            this.groupBox12.ForeColor = System.Drawing.Color.White;
+            this.groupBox12.Location = new System.Drawing.Point(10, 217);
+            this.groupBox12.Name = "groupBox12";
+            this.groupBox12.Size = new System.Drawing.Size(236, 65);
+            this.groupBox12.TabIndex = 15;
+            this.groupBox12.TabStop = false;
+            this.groupBox12.Text = "Ngày sinh (dd/mm/yyyy)";
+            // 
+            // panel_ArtistInforBirthday
+            // 
+            this.panel_ArtistInforBirthday.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel_ArtistInforBirthday.AutoScroll = true;
+            this.panel_ArtistInforBirthday.Controls.Add(this.dateTimePickerArtist_Birthday);
+            this.panel_ArtistInforBirthday.Location = new System.Drawing.Point(6, 26);
+            this.panel_ArtistInforBirthday.Name = "panel_ArtistInforBirthday";
+            this.panel_ArtistInforBirthday.Size = new System.Drawing.Size(224, 37);
+            this.panel_ArtistInforBirthday.TabIndex = 5;
+            // 
+            // dateTimePickerArtist_Birthday
+            // 
+            this.dateTimePickerArtist_Birthday.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dateTimePickerArtist_Birthday.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dateTimePickerArtist_Birthday.Location = new System.Drawing.Point(4, 3);
+            this.dateTimePickerArtist_Birthday.Name = "dateTimePickerArtist_Birthday";
+            this.dateTimePickerArtist_Birthday.Size = new System.Drawing.Size(215, 24);
+            this.dateTimePickerArtist_Birthday.TabIndex = 0;
+            // 
+            // btnArtist_EditImage
+            // 
+            this.btnArtist_EditImage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(64)))), ((int)(((byte)(66)))));
+            this.btnArtist_EditImage.FlatAppearance.BorderSize = 0;
+            this.btnArtist_EditImage.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnArtist_EditImage.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnArtist_EditImage.ForeColor = System.Drawing.Color.White;
+            this.btnArtist_EditImage.Location = new System.Drawing.Point(114, 175);
+            this.btnArtist_EditImage.Name = "btnArtist_EditImage";
+            this.btnArtist_EditImage.Size = new System.Drawing.Size(56, 36);
+            this.btnArtist_EditImage.TabIndex = 15;
+            this.btnArtist_EditImage.TabStop = false;
+            this.btnArtist_EditImage.Text = "Sửa";
+            this.btnArtist_EditImage.UseVisualStyleBackColor = false;
+            this.btnArtist_EditImage.Click += new System.EventHandler(this.btnArtist_EditImage_Click);
+            // 
+            // groupBox11
+            // 
+            this.groupBox11.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox11.Controls.Add(this.panel_ArtistInforRealName);
+            this.groupBox11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
+            this.groupBox11.ForeColor = System.Drawing.Color.White;
+            this.groupBox11.Location = new System.Drawing.Point(184, 146);
+            this.groupBox11.Name = "groupBox11";
+            this.groupBox11.Size = new System.Drawing.Size(287, 65);
+            this.groupBox11.TabIndex = 14;
+            this.groupBox11.TabStop = false;
+            this.groupBox11.Text = "Tên thật";
+            // 
+            // panel_ArtistInforRealName
+            // 
+            this.panel_ArtistInforRealName.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel_ArtistInforRealName.AutoScroll = true;
+            this.panel_ArtistInforRealName.Controls.Add(this.txArtist_RealName);
+            this.panel_ArtistInforRealName.Location = new System.Drawing.Point(6, 26);
+            this.panel_ArtistInforRealName.Name = "panel_ArtistInforRealName";
+            this.panel_ArtistInforRealName.Size = new System.Drawing.Size(275, 37);
+            this.panel_ArtistInforRealName.TabIndex = 5;
+            // 
+            // txArtist_RealName
+            // 
+            this.txArtist_RealName.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txArtist_RealName.Location = new System.Drawing.Point(3, 3);
+            this.txArtist_RealName.MaxLength = 100;
+            this.txArtist_RealName.Name = "txArtist_RealName";
+            this.txArtist_RealName.Size = new System.Drawing.Size(269, 24);
+            this.txArtist_RealName.TabIndex = 0;
+            // 
+            // groupBox10
+            // 
+            this.groupBox10.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox10.Controls.Add(this.panel_ArtistInforStageName);
+            this.groupBox10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
+            this.groupBox10.ForeColor = System.Drawing.Color.White;
+            this.groupBox10.Location = new System.Drawing.Point(184, 75);
+            this.groupBox10.Name = "groupBox10";
+            this.groupBox10.Size = new System.Drawing.Size(287, 65);
+            this.groupBox10.TabIndex = 13;
+            this.groupBox10.TabStop = false;
+            this.groupBox10.Text = "Nghệ danh";
+            // 
+            // panel_ArtistInforStageName
+            // 
+            this.panel_ArtistInforStageName.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel_ArtistInforStageName.AutoScroll = true;
+            this.panel_ArtistInforStageName.Controls.Add(this.txArtist_StageName);
+            this.panel_ArtistInforStageName.Location = new System.Drawing.Point(6, 26);
+            this.panel_ArtistInforStageName.Name = "panel_ArtistInforStageName";
+            this.panel_ArtistInforStageName.Size = new System.Drawing.Size(275, 37);
+            this.panel_ArtistInforStageName.TabIndex = 5;
+            // 
+            // txArtist_StageName
+            // 
+            this.txArtist_StageName.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txArtist_StageName.Location = new System.Drawing.Point(3, 3);
+            this.txArtist_StageName.MaxLength = 100;
+            this.txArtist_StageName.Name = "txArtist_StageName";
+            this.txArtist_StageName.Size = new System.Drawing.Size(269, 24);
+            this.txArtist_StageName.TabIndex = 0;
+            // 
+            // groupBox_ArtistID
+            // 
+            this.groupBox_ArtistID.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox_ArtistID.Controls.Add(this.panel_ArtistInforID);
+            this.groupBox_ArtistID.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
+            this.groupBox_ArtistID.ForeColor = System.Drawing.Color.White;
+            this.groupBox_ArtistID.Location = new System.Drawing.Point(184, 6);
+            this.groupBox_ArtistID.Name = "groupBox_ArtistID";
+            this.groupBox_ArtistID.Size = new System.Drawing.Size(287, 65);
+            this.groupBox_ArtistID.TabIndex = 12;
+            this.groupBox_ArtistID.TabStop = false;
+            this.groupBox_ArtistID.Text = "ID";
+            // 
+            // panel_ArtistInforID
+            // 
+            this.panel_ArtistInforID.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel_ArtistInforID.AutoScroll = true;
+            this.panel_ArtistInforID.Controls.Add(this.txArtist_ID);
+            this.panel_ArtistInforID.Location = new System.Drawing.Point(6, 26);
+            this.panel_ArtistInforID.Name = "panel_ArtistInforID";
+            this.panel_ArtistInforID.Size = new System.Drawing.Size(275, 37);
+            this.panel_ArtistInforID.TabIndex = 5;
+            // 
+            // txArtist_ID
+            // 
+            this.txArtist_ID.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txArtist_ID.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.txArtist_ID.Location = new System.Drawing.Point(3, 3);
+            this.txArtist_ID.MaxLength = 100;
+            this.txArtist_ID.Name = "txArtist_ID";
+            this.txArtist_ID.ReadOnly = true;
+            this.txArtist_ID.Size = new System.Drawing.Size(269, 24);
+            this.txArtist_ID.TabIndex = 0;
+            this.txArtist_ID.Text = "0";
+            // 
+            // groupBox_Artist_SNS
+            // 
+            this.groupBox_Artist_SNS.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox_Artist_SNS.Controls.Add(this.pictureBox_Artist_Website);
+            this.groupBox_Artist_SNS.Controls.Add(this.tx_Artist_WebsiteURL);
+            this.groupBox_Artist_SNS.Controls.Add(this.pictureBox_Artist_Spotify);
+            this.groupBox_Artist_SNS.Controls.Add(this.tx_Artist_SpotifyURL);
+            this.groupBox_Artist_SNS.Controls.Add(this.pictureBox_Artist_AppleMusic);
+            this.groupBox_Artist_SNS.Controls.Add(this.tx_Artist_AppleMusicURL);
+            this.groupBox_Artist_SNS.Controls.Add(this.pictureBox_Artist_Vlive);
+            this.groupBox_Artist_SNS.Controls.Add(this.tx_Artist_VliveURL);
+            this.groupBox_Artist_SNS.Controls.Add(this.pictureBox_Artist_Tiktok);
+            this.groupBox_Artist_SNS.Controls.Add(this.tx_Artist_TiktokURL);
+            this.groupBox_Artist_SNS.Controls.Add(this.pictureBox_Artist_Twitter);
+            this.groupBox_Artist_SNS.Controls.Add(this.tx_Artist_TwitterURL);
+            this.groupBox_Artist_SNS.Controls.Add(this.pictureBox_Artist_Facebook);
+            this.groupBox_Artist_SNS.Controls.Add(this.tx_Artist_FacebookURL);
+            this.groupBox_Artist_SNS.Controls.Add(this.pictureBox_Artist_Instagram);
+            this.groupBox_Artist_SNS.Controls.Add(this.tx_Artist_InstagramURL);
+            this.groupBox_Artist_SNS.Controls.Add(this.pictureBox_Artist_Youtube);
+            this.groupBox_Artist_SNS.Controls.Add(this.tx_Artist_YoutubeURL);
+            this.groupBox_Artist_SNS.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox_Artist_SNS.ForeColor = System.Drawing.Color.White;
+            this.groupBox_Artist_SNS.Location = new System.Drawing.Point(10, 2057);
+            this.groupBox_Artist_SNS.Name = "groupBox_Artist_SNS";
+            this.groupBox_Artist_SNS.Size = new System.Drawing.Size(461, 475);
+            this.groupBox_Artist_SNS.TabIndex = 11;
+            this.groupBox_Artist_SNS.TabStop = false;
+            this.groupBox_Artist_SNS.Text = "Mạng xã hội";
+            // 
+            // pictureBox_Artist_Website
+            // 
+            this.pictureBox_Artist_Website.Location = new System.Drawing.Point(10, 429);
+            this.pictureBox_Artist_Website.Name = "pictureBox_Artist_Website";
+            this.pictureBox_Artist_Website.Size = new System.Drawing.Size(35, 35);
+            this.pictureBox_Artist_Website.TabIndex = 17;
+            this.pictureBox_Artist_Website.TabStop = false;
+            this.toolTip1.SetToolTip(this.pictureBox_Artist_Website, "Website");
+            // 
+            // tx_Artist_WebsiteURL
+            // 
+            this.tx_Artist_WebsiteURL.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tx_Artist_WebsiteURL.Location = new System.Drawing.Point(51, 436);
+            this.tx_Artist_WebsiteURL.Name = "tx_Artist_WebsiteURL";
+            this.tx_Artist_WebsiteURL.Size = new System.Drawing.Size(399, 24);
+            this.tx_Artist_WebsiteURL.TabIndex = 16;
+            // 
+            // pictureBox_Artist_Spotify
+            // 
+            this.pictureBox_Artist_Spotify.Location = new System.Drawing.Point(10, 379);
+            this.pictureBox_Artist_Spotify.Name = "pictureBox_Artist_Spotify";
+            this.pictureBox_Artist_Spotify.Size = new System.Drawing.Size(35, 35);
+            this.pictureBox_Artist_Spotify.TabIndex = 15;
+            this.pictureBox_Artist_Spotify.TabStop = false;
+            this.toolTip1.SetToolTip(this.pictureBox_Artist_Spotify, "Spotify");
+            // 
+            // tx_Artist_SpotifyURL
+            // 
+            this.tx_Artist_SpotifyURL.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tx_Artist_SpotifyURL.Location = new System.Drawing.Point(51, 386);
+            this.tx_Artist_SpotifyURL.Name = "tx_Artist_SpotifyURL";
+            this.tx_Artist_SpotifyURL.Size = new System.Drawing.Size(399, 24);
+            this.tx_Artist_SpotifyURL.TabIndex = 14;
+            // 
+            // pictureBox_Artist_AppleMusic
+            // 
+            this.pictureBox_Artist_AppleMusic.Location = new System.Drawing.Point(10, 329);
+            this.pictureBox_Artist_AppleMusic.Name = "pictureBox_Artist_AppleMusic";
+            this.pictureBox_Artist_AppleMusic.Size = new System.Drawing.Size(35, 35);
+            this.pictureBox_Artist_AppleMusic.TabIndex = 13;
+            this.pictureBox_Artist_AppleMusic.TabStop = false;
+            this.toolTip1.SetToolTip(this.pictureBox_Artist_AppleMusic, "Apple Music");
+            // 
+            // tx_Artist_AppleMusicURL
+            // 
+            this.tx_Artist_AppleMusicURL.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tx_Artist_AppleMusicURL.Location = new System.Drawing.Point(51, 336);
+            this.tx_Artist_AppleMusicURL.Name = "tx_Artist_AppleMusicURL";
+            this.tx_Artist_AppleMusicURL.Size = new System.Drawing.Size(399, 24);
+            this.tx_Artist_AppleMusicURL.TabIndex = 12;
+            // 
+            // pictureBox_Artist_Vlive
+            // 
+            this.pictureBox_Artist_Vlive.Location = new System.Drawing.Point(10, 278);
+            this.pictureBox_Artist_Vlive.Name = "pictureBox_Artist_Vlive";
+            this.pictureBox_Artist_Vlive.Size = new System.Drawing.Size(35, 35);
+            this.pictureBox_Artist_Vlive.TabIndex = 11;
+            this.pictureBox_Artist_Vlive.TabStop = false;
+            this.toolTip1.SetToolTip(this.pictureBox_Artist_Vlive, "V-live");
+            // 
+            // tx_Artist_VliveURL
+            // 
+            this.tx_Artist_VliveURL.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tx_Artist_VliveURL.Location = new System.Drawing.Point(51, 285);
+            this.tx_Artist_VliveURL.Name = "tx_Artist_VliveURL";
+            this.tx_Artist_VliveURL.Size = new System.Drawing.Size(399, 24);
+            this.tx_Artist_VliveURL.TabIndex = 10;
+            // 
+            // pictureBox_Artist_Tiktok
+            // 
+            this.pictureBox_Artist_Tiktok.Location = new System.Drawing.Point(10, 228);
+            this.pictureBox_Artist_Tiktok.Name = "pictureBox_Artist_Tiktok";
+            this.pictureBox_Artist_Tiktok.Size = new System.Drawing.Size(35, 35);
+            this.pictureBox_Artist_Tiktok.TabIndex = 9;
+            this.pictureBox_Artist_Tiktok.TabStop = false;
+            this.toolTip1.SetToolTip(this.pictureBox_Artist_Tiktok, "Tiktok");
+            // 
+            // tx_Artist_TiktokURL
+            // 
+            this.tx_Artist_TiktokURL.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tx_Artist_TiktokURL.Location = new System.Drawing.Point(51, 235);
+            this.tx_Artist_TiktokURL.Name = "tx_Artist_TiktokURL";
+            this.tx_Artist_TiktokURL.Size = new System.Drawing.Size(399, 24);
+            this.tx_Artist_TiktokURL.TabIndex = 8;
+            // 
+            // pictureBox_Artist_Twitter
+            // 
+            this.pictureBox_Artist_Twitter.Location = new System.Drawing.Point(10, 178);
+            this.pictureBox_Artist_Twitter.Name = "pictureBox_Artist_Twitter";
+            this.pictureBox_Artist_Twitter.Size = new System.Drawing.Size(35, 35);
+            this.pictureBox_Artist_Twitter.TabIndex = 7;
+            this.pictureBox_Artist_Twitter.TabStop = false;
+            this.toolTip1.SetToolTip(this.pictureBox_Artist_Twitter, "Twitter");
+            // 
+            // tx_Artist_TwitterURL
+            // 
+            this.tx_Artist_TwitterURL.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tx_Artist_TwitterURL.Location = new System.Drawing.Point(51, 185);
+            this.tx_Artist_TwitterURL.Name = "tx_Artist_TwitterURL";
+            this.tx_Artist_TwitterURL.Size = new System.Drawing.Size(399, 24);
+            this.tx_Artist_TwitterURL.TabIndex = 6;
+            // 
+            // pictureBox_Artist_Facebook
+            // 
+            this.pictureBox_Artist_Facebook.Location = new System.Drawing.Point(10, 128);
+            this.pictureBox_Artist_Facebook.Name = "pictureBox_Artist_Facebook";
+            this.pictureBox_Artist_Facebook.Size = new System.Drawing.Size(35, 35);
+            this.pictureBox_Artist_Facebook.TabIndex = 5;
+            this.pictureBox_Artist_Facebook.TabStop = false;
+            this.toolTip1.SetToolTip(this.pictureBox_Artist_Facebook, "Facebook");
+            // 
+            // tx_Artist_FacebookURL
+            // 
+            this.tx_Artist_FacebookURL.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tx_Artist_FacebookURL.Location = new System.Drawing.Point(51, 135);
+            this.tx_Artist_FacebookURL.Name = "tx_Artist_FacebookURL";
+            this.tx_Artist_FacebookURL.Size = new System.Drawing.Size(399, 24);
+            this.tx_Artist_FacebookURL.TabIndex = 4;
+            // 
+            // pictureBox_Artist_Instagram
+            // 
+            this.pictureBox_Artist_Instagram.Location = new System.Drawing.Point(10, 77);
+            this.pictureBox_Artist_Instagram.Name = "pictureBox_Artist_Instagram";
+            this.pictureBox_Artist_Instagram.Size = new System.Drawing.Size(35, 35);
+            this.pictureBox_Artist_Instagram.TabIndex = 3;
+            this.pictureBox_Artist_Instagram.TabStop = false;
+            this.toolTip1.SetToolTip(this.pictureBox_Artist_Instagram, "Instagram");
+            // 
+            // tx_Artist_InstagramURL
+            // 
+            this.tx_Artist_InstagramURL.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tx_Artist_InstagramURL.Location = new System.Drawing.Point(51, 84);
+            this.tx_Artist_InstagramURL.Name = "tx_Artist_InstagramURL";
+            this.tx_Artist_InstagramURL.Size = new System.Drawing.Size(399, 24);
+            this.tx_Artist_InstagramURL.TabIndex = 2;
+            // 
+            // pictureBox_Artist_Youtube
+            // 
+            this.pictureBox_Artist_Youtube.Location = new System.Drawing.Point(10, 27);
+            this.pictureBox_Artist_Youtube.Name = "pictureBox_Artist_Youtube";
+            this.pictureBox_Artist_Youtube.Size = new System.Drawing.Size(35, 35);
+            this.pictureBox_Artist_Youtube.TabIndex = 1;
+            this.pictureBox_Artist_Youtube.TabStop = false;
+            this.toolTip1.SetToolTip(this.pictureBox_Artist_Youtube, "Youtube");
+            // 
+            // tx_Artist_YoutubeURL
+            // 
+            this.tx_Artist_YoutubeURL.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tx_Artist_YoutubeURL.Location = new System.Drawing.Point(51, 34);
+            this.tx_Artist_YoutubeURL.Name = "tx_Artist_YoutubeURL";
+            this.tx_Artist_YoutubeURL.Size = new System.Drawing.Size(399, 24);
+            this.tx_Artist_YoutubeURL.TabIndex = 0;
+            // 
+            // groupBox7
+            // 
+            this.groupBox7.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox7.Controls.Add(this.buttonArtist_EditLabel);
+            this.groupBox7.Controls.Add(this.panel_ArtistInforLabel);
+            this.groupBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox7.ForeColor = System.Drawing.Color.White;
+            this.groupBox7.Location = new System.Drawing.Point(10, 1846);
+            this.groupBox7.Name = "groupBox7";
+            this.groupBox7.Size = new System.Drawing.Size(461, 205);
+            this.groupBox7.TabIndex = 10;
+            this.groupBox7.TabStop = false;
+            this.groupBox7.Text = "Công ty";
+            // 
+            // buttonArtist_EditLabel
+            // 
+            this.buttonArtist_EditLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonArtist_EditLabel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(64)))), ((int)(((byte)(66)))));
+            this.buttonArtist_EditLabel.FlatAppearance.BorderSize = 0;
+            this.buttonArtist_EditLabel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonArtist_EditLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonArtist_EditLabel.ForeColor = System.Drawing.Color.White;
+            this.buttonArtist_EditLabel.Location = new System.Drawing.Point(369, 163);
+            this.buttonArtist_EditLabel.Name = "buttonArtist_EditLabel";
+            this.buttonArtist_EditLabel.Size = new System.Drawing.Size(83, 36);
+            this.buttonArtist_EditLabel.TabIndex = 17;
+            this.buttonArtist_EditLabel.TabStop = false;
+            this.buttonArtist_EditLabel.Text = "Sửa";
+            this.buttonArtist_EditLabel.UseVisualStyleBackColor = false;
+            this.buttonArtist_EditLabel.Click += new System.EventHandler(this.buttonArtist_EditLabel_Click);
+            // 
+            // panel_ArtistInforLabel
+            // 
+            this.panel_ArtistInforLabel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel_ArtistInforLabel.AutoScroll = true;
+            this.panel_ArtistInforLabel.Controls.Add(this.labelArtist_Label);
+            this.panel_ArtistInforLabel.Location = new System.Drawing.Point(3, 23);
+            this.panel_ArtistInforLabel.Name = "panel_ArtistInforLabel";
+            this.panel_ArtistInforLabel.Size = new System.Drawing.Size(452, 134);
+            this.panel_ArtistInforLabel.TabIndex = 1;
+            // 
+            // labelArtist_Label
+            // 
+            this.labelArtist_Label.AutoSize = true;
+            this.labelArtist_Label.Location = new System.Drawing.Point(3, 0);
+            this.labelArtist_Label.Name = "labelArtist_Label";
+            this.labelArtist_Label.Size = new System.Drawing.Size(140, 18);
+            this.labelArtist_Label.TabIndex = 1;
+            this.labelArtist_Label.Text = "Không có công ty";
+            // 
+            // pictureBox_ArtistImage
+            // 
+            this.pictureBox_ArtistImage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox_ArtistImage.Location = new System.Drawing.Point(17, 16);
+            this.pictureBox_ArtistImage.Name = "pictureBox_ArtistImage";
+            this.pictureBox_ArtistImage.Size = new System.Drawing.Size(153, 153);
+            this.pictureBox_ArtistImage.TabIndex = 0;
+            this.pictureBox_ArtistImage.TabStop = false;
+            this.pictureBox_ArtistImage.LoadCompleted += new System.ComponentModel.AsyncCompletedEventHandler(this.pictureBox_ArtistImage_LoadCompleted);
+            // 
+            // groupBox6
+            // 
+            this.groupBox6.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox6.Controls.Add(this.buttonArtist_EditAlbum);
+            this.groupBox6.Controls.Add(this.panel_ArtistInforAlbum);
+            this.groupBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox6.ForeColor = System.Drawing.Color.White;
+            this.groupBox6.Location = new System.Drawing.Point(10, 1530);
+            this.groupBox6.Name = "groupBox6";
+            this.groupBox6.Size = new System.Drawing.Size(461, 310);
+            this.groupBox6.TabIndex = 9;
+            this.groupBox6.TabStop = false;
+            this.groupBox6.Text = "Album";
+            // 
+            // buttonArtist_EditAlbum
+            // 
+            this.buttonArtist_EditAlbum.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonArtist_EditAlbum.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(64)))), ((int)(((byte)(66)))));
+            this.buttonArtist_EditAlbum.FlatAppearance.BorderSize = 0;
+            this.buttonArtist_EditAlbum.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonArtist_EditAlbum.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonArtist_EditAlbum.ForeColor = System.Drawing.Color.White;
+            this.buttonArtist_EditAlbum.Location = new System.Drawing.Point(369, 268);
+            this.buttonArtist_EditAlbum.Name = "buttonArtist_EditAlbum";
+            this.buttonArtist_EditAlbum.Size = new System.Drawing.Size(83, 36);
+            this.buttonArtist_EditAlbum.TabIndex = 17;
+            this.buttonArtist_EditAlbum.TabStop = false;
+            this.buttonArtist_EditAlbum.Text = "Sửa";
+            this.buttonArtist_EditAlbum.UseVisualStyleBackColor = false;
+            this.buttonArtist_EditAlbum.Click += new System.EventHandler(this.buttonArtist_EditAlbum_Click);
+            // 
+            // panel_ArtistInforAlbum
+            // 
+            this.panel_ArtistInforAlbum.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel_ArtistInforAlbum.AutoScroll = true;
+            this.panel_ArtistInforAlbum.Controls.Add(this.dataGridViewArtist_Album);
+            this.panel_ArtistInforAlbum.Location = new System.Drawing.Point(3, 16);
+            this.panel_ArtistInforAlbum.Name = "panel_ArtistInforAlbum";
+            this.panel_ArtistInforAlbum.Size = new System.Drawing.Size(452, 246);
+            this.panel_ArtistInforAlbum.TabIndex = 4;
+            // 
+            // dataGridViewArtist_Album
+            // 
+            dataGridViewCellStyle137.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            dataGridViewCellStyle137.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            dataGridViewCellStyle137.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.dataGridViewArtist_Album.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle137;
+            this.dataGridViewArtist_Album.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dataGridViewArtist_Album.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridViewArtist_Album.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(55)))), ((int)(((byte)(59)))));
+            this.dataGridViewArtist_Album.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dataGridViewArtist_Album.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle138.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle138.BackColor = System.Drawing.SystemColors.InfoText;
+            dataGridViewCellStyle138.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle138.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle138.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle138.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle138.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewArtist_Album.DefaultCellStyle = dataGridViewCellStyle138;
+            this.dataGridViewArtist_Album.GridColor = System.Drawing.SystemColors.ControlText;
+            this.dataGridViewArtist_Album.Location = new System.Drawing.Point(4, 3);
+            this.dataGridViewArtist_Album.Name = "dataGridViewArtist_Album";
+            this.dataGridViewArtist_Album.ReadOnly = true;
+            dataGridViewCellStyle139.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle139.BackColor = System.Drawing.SystemColors.GrayText;
+            dataGridViewCellStyle139.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle139.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle139.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle139.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle139.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewArtist_Album.RowHeadersDefaultCellStyle = dataGridViewCellStyle139;
+            this.dataGridViewArtist_Album.RowHeadersWidth = 51;
+            this.dataGridViewArtist_Album.RowTemplate.Height = 24;
+            this.dataGridViewArtist_Album.Size = new System.Drawing.Size(444, 240);
+            this.dataGridViewArtist_Album.TabIndex = 2;
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox1.Controls.Add(this.buttonArtist_EditFandom);
+            this.groupBox1.Controls.Add(this.panel_ArtistInforFandom);
+            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.ForeColor = System.Drawing.Color.White;
+            this.groupBox1.Location = new System.Drawing.Point(10, 957);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(461, 209);
+            this.groupBox1.TabIndex = 6;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Fandom";
+            // 
+            // buttonArtist_EditFandom
+            // 
+            this.buttonArtist_EditFandom.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonArtist_EditFandom.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(64)))), ((int)(((byte)(66)))));
+            this.buttonArtist_EditFandom.FlatAppearance.BorderSize = 0;
+            this.buttonArtist_EditFandom.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonArtist_EditFandom.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonArtist_EditFandom.ForeColor = System.Drawing.Color.White;
+            this.buttonArtist_EditFandom.Location = new System.Drawing.Point(372, 167);
+            this.buttonArtist_EditFandom.Name = "buttonArtist_EditFandom";
+            this.buttonArtist_EditFandom.Size = new System.Drawing.Size(83, 36);
+            this.buttonArtist_EditFandom.TabIndex = 16;
+            this.buttonArtist_EditFandom.TabStop = false;
+            this.buttonArtist_EditFandom.Text = "Sửa";
+            this.buttonArtist_EditFandom.UseVisualStyleBackColor = false;
+            this.buttonArtist_EditFandom.Click += new System.EventHandler(this.buttonArtist_EditFandom_Click);
+            // 
+            // panel_ArtistInforFandom
+            // 
+            this.panel_ArtistInforFandom.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel_ArtistInforFandom.AutoScroll = true;
+            this.panel_ArtistInforFandom.Controls.Add(this.labelArtist_Fandom);
+            this.panel_ArtistInforFandom.Location = new System.Drawing.Point(3, 23);
+            this.panel_ArtistInforFandom.Name = "panel_ArtistInforFandom";
+            this.panel_ArtistInforFandom.Size = new System.Drawing.Size(452, 138);
+            this.panel_ArtistInforFandom.TabIndex = 2;
+            // 
+            // labelArtist_Fandom
+            // 
+            this.labelArtist_Fandom.AutoSize = true;
+            this.labelArtist_Fandom.Location = new System.Drawing.Point(3, 0);
+            this.labelArtist_Fandom.Name = "labelArtist_Fandom";
+            this.labelArtist_Fandom.Size = new System.Drawing.Size(141, 18);
+            this.labelArtist_Fandom.TabIndex = 0;
+            this.labelArtist_Fandom.Text = "Không có fandom";
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox2.Controls.Add(this.panel_ArtistInforGroup);
+            this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox2.ForeColor = System.Drawing.Color.White;
+            this.groupBox2.Location = new System.Drawing.Point(10, 766);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(461, 185);
+            this.groupBox2.TabIndex = 7;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Nhóm";
+            // 
+            // panel_ArtistInforGroup
+            // 
+            this.panel_ArtistInforGroup.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel_ArtistInforGroup.AutoScroll = true;
+            this.panel_ArtistInforGroup.Controls.Add(this.dataGridViewArtist_Group);
+            this.panel_ArtistInforGroup.Controls.Add(this.buttonArtist_EditGroup);
+            this.panel_ArtistInforGroup.Location = new System.Drawing.Point(3, 23);
+            this.panel_ArtistInforGroup.Name = "panel_ArtistInforGroup";
+            this.panel_ArtistInforGroup.Size = new System.Drawing.Size(452, 156);
+            this.panel_ArtistInforGroup.TabIndex = 2;
+            // 
+            // dataGridViewArtist_Group
+            // 
+            dataGridViewCellStyle140.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            dataGridViewCellStyle140.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            dataGridViewCellStyle140.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.dataGridViewArtist_Group.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle140;
+            this.dataGridViewArtist_Group.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dataGridViewArtist_Group.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridViewArtist_Group.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(55)))), ((int)(((byte)(59)))));
+            this.dataGridViewArtist_Group.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dataGridViewArtist_Group.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle141.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle141.BackColor = System.Drawing.SystemColors.InfoText;
+            dataGridViewCellStyle141.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle141.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle141.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle141.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle141.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewArtist_Group.DefaultCellStyle = dataGridViewCellStyle141;
+            this.dataGridViewArtist_Group.GridColor = System.Drawing.SystemColors.ControlText;
+            this.dataGridViewArtist_Group.Location = new System.Drawing.Point(3, 3);
+            this.dataGridViewArtist_Group.Name = "dataGridViewArtist_Group";
+            this.dataGridViewArtist_Group.ReadOnly = true;
+            dataGridViewCellStyle142.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle142.BackColor = System.Drawing.SystemColors.GrayText;
+            dataGridViewCellStyle142.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle142.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle142.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle142.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle142.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewArtist_Group.RowHeadersDefaultCellStyle = dataGridViewCellStyle142;
+            this.dataGridViewArtist_Group.RowHeadersWidth = 51;
+            this.dataGridViewArtist_Group.RowTemplate.Height = 24;
+            this.dataGridViewArtist_Group.Size = new System.Drawing.Size(444, 108);
+            this.dataGridViewArtist_Group.TabIndex = 3;
+            // 
+            // buttonArtist_EditGroup
+            // 
+            this.buttonArtist_EditGroup.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonArtist_EditGroup.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(64)))), ((int)(((byte)(66)))));
+            this.buttonArtist_EditGroup.FlatAppearance.BorderSize = 0;
+            this.buttonArtist_EditGroup.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonArtist_EditGroup.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonArtist_EditGroup.ForeColor = System.Drawing.Color.White;
+            this.buttonArtist_EditGroup.Location = new System.Drawing.Point(368, 117);
+            this.buttonArtist_EditGroup.Name = "buttonArtist_EditGroup";
+            this.buttonArtist_EditGroup.Size = new System.Drawing.Size(83, 36);
+            this.buttonArtist_EditGroup.TabIndex = 16;
+            this.buttonArtist_EditGroup.TabStop = false;
+            this.buttonArtist_EditGroup.Text = "Sửa";
+            this.buttonArtist_EditGroup.UseVisualStyleBackColor = false;
+            this.buttonArtist_EditGroup.Click += new System.EventHandler(this.buttonArtist_EditGroup_Click);
+            // 
+            // groupBox5
+            // 
+            this.groupBox5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox5.Controls.Add(this.buttonArtist_EditSong);
+            this.groupBox5.Controls.Add(this.panel_ArtistInforSong);
+            this.groupBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox5.ForeColor = System.Drawing.Color.White;
+            this.groupBox5.Location = new System.Drawing.Point(10, 1172);
+            this.groupBox5.Name = "groupBox5";
+            this.groupBox5.Size = new System.Drawing.Size(461, 352);
+            this.groupBox5.TabIndex = 8;
+            this.groupBox5.TabStop = false;
+            this.groupBox5.Text = "Bài hát";
+            // 
+            // buttonArtist_EditSong
+            // 
+            this.buttonArtist_EditSong.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonArtist_EditSong.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(64)))), ((int)(((byte)(66)))));
+            this.buttonArtist_EditSong.FlatAppearance.BorderSize = 0;
+            this.buttonArtist_EditSong.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonArtist_EditSong.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonArtist_EditSong.ForeColor = System.Drawing.Color.White;
+            this.buttonArtist_EditSong.Location = new System.Drawing.Point(369, 310);
+            this.buttonArtist_EditSong.Name = "buttonArtist_EditSong";
+            this.buttonArtist_EditSong.Size = new System.Drawing.Size(83, 36);
+            this.buttonArtist_EditSong.TabIndex = 17;
+            this.buttonArtist_EditSong.TabStop = false;
+            this.buttonArtist_EditSong.Text = "Sửa";
+            this.buttonArtist_EditSong.UseVisualStyleBackColor = false;
+            this.buttonArtist_EditSong.Click += new System.EventHandler(this.buttonArtist_EditSong_Click);
+            // 
+            // panel_ArtistInforSong
+            // 
+            this.panel_ArtistInforSong.AllowDrop = true;
+            this.panel_ArtistInforSong.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel_ArtistInforSong.AutoScroll = true;
+            this.panel_ArtistInforSong.Controls.Add(this.dataGridViewArtist_Song);
+            this.panel_ArtistInforSong.Location = new System.Drawing.Point(3, 26);
+            this.panel_ArtistInforSong.Name = "panel_ArtistInforSong";
+            this.panel_ArtistInforSong.Size = new System.Drawing.Size(452, 278);
+            this.panel_ArtistInforSong.TabIndex = 3;
+            // 
+            // dataGridViewArtist_Song
+            // 
+            dataGridViewCellStyle143.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            dataGridViewCellStyle143.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            dataGridViewCellStyle143.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.dataGridViewArtist_Song.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle143;
+            this.dataGridViewArtist_Song.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dataGridViewArtist_Song.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridViewArtist_Song.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(55)))), ((int)(((byte)(59)))));
+            this.dataGridViewArtist_Song.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dataGridViewArtist_Song.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle144.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle144.BackColor = System.Drawing.SystemColors.InfoText;
+            dataGridViewCellStyle144.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle144.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle144.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle144.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle144.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewArtist_Song.DefaultCellStyle = dataGridViewCellStyle144;
+            this.dataGridViewArtist_Song.GridColor = System.Drawing.SystemColors.ControlText;
+            this.dataGridViewArtist_Song.Location = new System.Drawing.Point(4, 3);
+            this.dataGridViewArtist_Song.Name = "dataGridViewArtist_Song";
+            this.dataGridViewArtist_Song.ReadOnly = true;
+            dataGridViewCellStyle145.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle145.BackColor = System.Drawing.SystemColors.GrayText;
+            dataGridViewCellStyle145.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle145.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle145.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle145.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle145.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewArtist_Song.RowHeadersDefaultCellStyle = dataGridViewCellStyle145;
+            this.dataGridViewArtist_Song.RowHeadersWidth = 51;
+            this.dataGridViewArtist_Song.RowTemplate.Height = 24;
+            this.dataGridViewArtist_Song.Size = new System.Drawing.Size(444, 272);
+            this.dataGridViewArtist_Song.TabIndex = 2;
+            // 
+            // groupBox_ArtistDescription
+            // 
+            this.groupBox_ArtistDescription.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox_ArtistDescription.Controls.Add(this.panel_ArtistInforDescription);
+            this.groupBox_ArtistDescription.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox_ArtistDescription.ForeColor = System.Drawing.Color.White;
+            this.groupBox_ArtistDescription.Location = new System.Drawing.Point(10, 430);
+            this.groupBox_ArtistDescription.Name = "groupBox_ArtistDescription";
+            this.groupBox_ArtistDescription.Size = new System.Drawing.Size(461, 330);
+            this.groupBox_ArtistDescription.TabIndex = 8;
+            this.groupBox_ArtistDescription.TabStop = false;
+            this.groupBox_ArtistDescription.Text = "Mô tả";
+            // 
+            // panel_ArtistInforDescription
+            // 
+            this.panel_ArtistInforDescription.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel_ArtistInforDescription.AutoScroll = true;
+            this.panel_ArtistInforDescription.Controls.Add(this.txArtist_Description);
+            this.panel_ArtistInforDescription.Location = new System.Drawing.Point(6, 26);
+            this.panel_ArtistInforDescription.Name = "panel_ArtistInforDescription";
+            this.panel_ArtistInforDescription.Size = new System.Drawing.Size(449, 298);
+            this.panel_ArtistInforDescription.TabIndex = 4;
+            // 
+            // txArtist_Description
+            // 
+            this.txArtist_Description.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txArtist_Description.Location = new System.Drawing.Point(4, 3);
+            this.txArtist_Description.MaxLength = 5000;
+            this.txArtist_Description.Multiline = true;
+            this.txArtist_Description.Name = "txArtist_Description";
+            this.txArtist_Description.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.txArtist_Description.Size = new System.Drawing.Size(442, 285);
+            this.txArtist_Description.TabIndex = 1;
+            // 
+            // panel_LabelManager
+            // 
+            this.panel_LabelManager.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel_LabelManager.AutoScroll = true;
+            this.panel_LabelManager.Controls.Add(this.groupBoxLabel_Description);
+            this.panel_LabelManager.Controls.Add(this.groupBoxLabel_Location);
+            this.panel_LabelManager.Controls.Add(this.groupBoxLabel_Founded);
+            this.panel_LabelManager.Controls.Add(this.groupBoxLabel_Founder);
+            this.panel_LabelManager.Controls.Add(this.groupBoxLabel_Name);
+            this.panel_LabelManager.Controls.Add(this.panel4);
+            this.panel_LabelManager.Controls.Add(this.groupBoxLabel_LabelID);
+            this.panel_LabelManager.Location = new System.Drawing.Point(600, 3);
+            this.panel_LabelManager.Name = "panel_LabelManager";
+            this.panel_LabelManager.Size = new System.Drawing.Size(495, 528);
+            this.panel_LabelManager.TabIndex = 21;
+            // 
+            // groupBoxLabel_Description
+            // 
+            this.groupBoxLabel_Description.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBoxLabel_Description.Controls.Add(this.panel_LabelInforDescription);
+            this.groupBoxLabel_Description.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBoxLabel_Description.ForeColor = System.Drawing.Color.White;
+            this.groupBoxLabel_Description.Location = new System.Drawing.Point(10, 361);
+            this.groupBoxLabel_Description.Name = "groupBoxLabel_Description";
+            this.groupBoxLabel_Description.Size = new System.Drawing.Size(461, 372);
+            this.groupBoxLabel_Description.TabIndex = 17;
+            this.groupBoxLabel_Description.TabStop = false;
+            this.groupBoxLabel_Description.Text = "Mô tả";
+            // 
+            // panel_LabelInforDescription
+            // 
+            this.panel_LabelInforDescription.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel_LabelInforDescription.AutoScroll = true;
+            this.panel_LabelInforDescription.Controls.Add(this.txLabel_Description);
+            this.panel_LabelInforDescription.Location = new System.Drawing.Point(6, 26);
+            this.panel_LabelInforDescription.Name = "panel_LabelInforDescription";
+            this.panel_LabelInforDescription.Size = new System.Drawing.Size(449, 340);
+            this.panel_LabelInforDescription.TabIndex = 4;
+            // 
+            // txLabel_Description
+            // 
+            this.txLabel_Description.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txLabel_Description.Location = new System.Drawing.Point(4, 3);
+            this.txLabel_Description.MaxLength = 5000;
+            this.txLabel_Description.Multiline = true;
+            this.txLabel_Description.Name = "txLabel_Description";
+            this.txLabel_Description.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.txLabel_Description.Size = new System.Drawing.Size(442, 334);
+            this.txLabel_Description.TabIndex = 1;
+            // 
+            // groupBoxLabel_Location
+            // 
+            this.groupBoxLabel_Location.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBoxLabel_Location.Controls.Add(this.panel9);
+            this.groupBoxLabel_Location.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
+            this.groupBoxLabel_Location.ForeColor = System.Drawing.Color.White;
+            this.groupBoxLabel_Location.Location = new System.Drawing.Point(10, 290);
+            this.groupBoxLabel_Location.Name = "groupBoxLabel_Location";
+            this.groupBoxLabel_Location.Size = new System.Drawing.Size(461, 65);
+            this.groupBoxLabel_Location.TabIndex = 16;
+            this.groupBoxLabel_Location.TabStop = false;
+            this.groupBoxLabel_Location.Text = "Địa điểm";
+            // 
+            // panel9
+            // 
+            this.panel9.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel9.AutoScroll = true;
+            this.panel9.Controls.Add(this.txLabel_Location);
+            this.panel9.Location = new System.Drawing.Point(6, 26);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(449, 37);
+            this.panel9.TabIndex = 5;
+            // 
+            // txLabel_Location
+            // 
+            this.txLabel_Location.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txLabel_Location.BackColor = System.Drawing.SystemColors.Window;
+            this.txLabel_Location.Location = new System.Drawing.Point(3, 3);
+            this.txLabel_Location.MaxLength = 2000;
+            this.txLabel_Location.Name = "txLabel_Location";
+            this.txLabel_Location.Size = new System.Drawing.Size(443, 24);
+            this.txLabel_Location.TabIndex = 0;
+            // 
+            // groupBoxLabel_Founded
+            // 
+            this.groupBoxLabel_Founded.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBoxLabel_Founded.Controls.Add(this.panel8);
+            this.groupBoxLabel_Founded.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
+            this.groupBoxLabel_Founded.ForeColor = System.Drawing.Color.White;
+            this.groupBoxLabel_Founded.Location = new System.Drawing.Point(10, 219);
+            this.groupBoxLabel_Founded.Name = "groupBoxLabel_Founded";
+            this.groupBoxLabel_Founded.Size = new System.Drawing.Size(461, 65);
+            this.groupBoxLabel_Founded.TabIndex = 16;
+            this.groupBoxLabel_Founded.TabStop = false;
+            this.groupBoxLabel_Founded.Text = "Thành lập (dd/mm/yyyy)";
+            // 
+            // panel8
+            // 
+            this.panel8.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel8.AutoScroll = true;
+            this.panel8.Controls.Add(this.dateTimePicker_LabelFounded);
+            this.panel8.Location = new System.Drawing.Point(6, 26);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(449, 37);
+            this.panel8.TabIndex = 5;
+            // 
+            // dateTimePicker_LabelFounded
+            // 
+            this.dateTimePicker_LabelFounded.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dateTimePicker_LabelFounded.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dateTimePicker_LabelFounded.Location = new System.Drawing.Point(3, 7);
+            this.dateTimePicker_LabelFounded.Name = "dateTimePicker_LabelFounded";
+            this.dateTimePicker_LabelFounded.Size = new System.Drawing.Size(446, 24);
+            this.dateTimePicker_LabelFounded.TabIndex = 0;
+            // 
+            // groupBoxLabel_Founder
+            // 
+            this.groupBoxLabel_Founder.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBoxLabel_Founder.Controls.Add(this.panel7);
+            this.groupBoxLabel_Founder.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
+            this.groupBoxLabel_Founder.ForeColor = System.Drawing.Color.White;
+            this.groupBoxLabel_Founder.Location = new System.Drawing.Point(10, 148);
+            this.groupBoxLabel_Founder.Name = "groupBoxLabel_Founder";
+            this.groupBoxLabel_Founder.Size = new System.Drawing.Size(461, 65);
+            this.groupBoxLabel_Founder.TabIndex = 15;
+            this.groupBoxLabel_Founder.TabStop = false;
+            this.groupBoxLabel_Founder.Text = "Người thành lập";
+            // 
+            // panel7
+            // 
+            this.panel7.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel7.AutoScroll = true;
+            this.panel7.Controls.Add(this.txLabel_Founder);
+            this.panel7.Location = new System.Drawing.Point(6, 26);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(449, 37);
+            this.panel7.TabIndex = 5;
+            // 
+            // txLabel_Founder
+            // 
+            this.txLabel_Founder.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txLabel_Founder.BackColor = System.Drawing.SystemColors.Window;
+            this.txLabel_Founder.Location = new System.Drawing.Point(3, 3);
+            this.txLabel_Founder.MaxLength = 500;
+            this.txLabel_Founder.Name = "txLabel_Founder";
+            this.txLabel_Founder.Size = new System.Drawing.Size(443, 24);
+            this.txLabel_Founder.TabIndex = 0;
+            // 
+            // groupBoxLabel_Name
+            // 
+            this.groupBoxLabel_Name.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBoxLabel_Name.Controls.Add(this.panel6);
+            this.groupBoxLabel_Name.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
+            this.groupBoxLabel_Name.ForeColor = System.Drawing.Color.White;
+            this.groupBoxLabel_Name.Location = new System.Drawing.Point(10, 77);
+            this.groupBoxLabel_Name.Name = "groupBoxLabel_Name";
+            this.groupBoxLabel_Name.Size = new System.Drawing.Size(461, 65);
+            this.groupBoxLabel_Name.TabIndex = 14;
+            this.groupBoxLabel_Name.TabStop = false;
+            this.groupBoxLabel_Name.Text = "Tên";
+            // 
+            // panel6
+            // 
+            this.panel6.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel6.AutoScroll = true;
+            this.panel6.Controls.Add(this.txLabel_LabelName);
+            this.panel6.Location = new System.Drawing.Point(6, 26);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(449, 37);
+            this.panel6.TabIndex = 5;
+            // 
+            // txLabel_LabelName
+            // 
+            this.txLabel_LabelName.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txLabel_LabelName.BackColor = System.Drawing.SystemColors.Window;
+            this.txLabel_LabelName.Location = new System.Drawing.Point(3, 3);
+            this.txLabel_LabelName.MaxLength = 500;
+            this.txLabel_LabelName.Name = "txLabel_LabelName";
+            this.txLabel_LabelName.Size = new System.Drawing.Size(443, 24);
+            this.txLabel_LabelName.TabIndex = 0;
+            // 
+            // panel4
+            // 
+            this.panel4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel4.AutoScroll = true;
+            this.panel4.Location = new System.Drawing.Point(74, 808);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(34, 19);
+            this.panel4.TabIndex = 6;
+            // 
+            // groupBoxLabel_LabelID
+            // 
+            this.groupBoxLabel_LabelID.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBoxLabel_LabelID.Controls.Add(this.panel3);
+            this.groupBoxLabel_LabelID.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
+            this.groupBoxLabel_LabelID.ForeColor = System.Drawing.Color.White;
+            this.groupBoxLabel_LabelID.Location = new System.Drawing.Point(10, 6);
+            this.groupBoxLabel_LabelID.Name = "groupBoxLabel_LabelID";
+            this.groupBoxLabel_LabelID.Size = new System.Drawing.Size(461, 65);
+            this.groupBoxLabel_LabelID.TabIndex = 13;
+            this.groupBoxLabel_LabelID.TabStop = false;
+            this.groupBoxLabel_LabelID.Text = "ID";
+            // 
+            // panel3
+            // 
+            this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel3.AutoScroll = true;
+            this.panel3.Controls.Add(this.txLabel_LabelID);
+            this.panel3.Location = new System.Drawing.Point(6, 26);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(449, 37);
+            this.panel3.TabIndex = 5;
+            // 
+            // txLabel_LabelID
+            // 
+            this.txLabel_LabelID.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txLabel_LabelID.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.txLabel_LabelID.Location = new System.Drawing.Point(3, 3);
+            this.txLabel_LabelID.MaxLength = 100;
+            this.txLabel_LabelID.Name = "txLabel_LabelID";
+            this.txLabel_LabelID.ReadOnly = true;
+            this.txLabel_LabelID.Size = new System.Drawing.Size(443, 24);
+            this.txLabel_LabelID.TabIndex = 0;
+            this.txLabel_LabelID.Text = "0";
             // 
             // panel_AlbumManager
             // 
@@ -694,10 +1910,10 @@ namespace ArtistMNG
             // 
             // dataGridViewAlbum_AlbumSong
             // 
-            dataGridViewCellStyle27.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            dataGridViewCellStyle27.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            dataGridViewCellStyle27.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.dataGridViewAlbum_AlbumSong.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle27;
+            dataGridViewCellStyle146.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            dataGridViewCellStyle146.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            dataGridViewCellStyle146.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.dataGridViewAlbum_AlbumSong.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle146;
             this.dataGridViewAlbum_AlbumSong.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
@@ -705,26 +1921,26 @@ namespace ArtistMNG
             this.dataGridViewAlbum_AlbumSong.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(55)))), ((int)(((byte)(59)))));
             this.dataGridViewAlbum_AlbumSong.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridViewAlbum_AlbumSong.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle28.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle28.BackColor = System.Drawing.SystemColors.InfoText;
-            dataGridViewCellStyle28.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle28.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle28.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle28.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle28.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridViewAlbum_AlbumSong.DefaultCellStyle = dataGridViewCellStyle28;
+            dataGridViewCellStyle147.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle147.BackColor = System.Drawing.SystemColors.InfoText;
+            dataGridViewCellStyle147.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle147.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle147.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle147.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle147.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewAlbum_AlbumSong.DefaultCellStyle = dataGridViewCellStyle147;
             this.dataGridViewAlbum_AlbumSong.GridColor = System.Drawing.SystemColors.ControlText;
             this.dataGridViewAlbum_AlbumSong.Location = new System.Drawing.Point(4, 3);
             this.dataGridViewAlbum_AlbumSong.Name = "dataGridViewAlbum_AlbumSong";
             this.dataGridViewAlbum_AlbumSong.ReadOnly = true;
-            dataGridViewCellStyle29.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle29.BackColor = System.Drawing.SystemColors.GrayText;
-            dataGridViewCellStyle29.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle29.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle29.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle29.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle29.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewAlbum_AlbumSong.RowHeadersDefaultCellStyle = dataGridViewCellStyle29;
+            dataGridViewCellStyle148.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle148.BackColor = System.Drawing.SystemColors.GrayText;
+            dataGridViewCellStyle148.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle148.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle148.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle148.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle148.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewAlbum_AlbumSong.RowHeadersDefaultCellStyle = dataGridViewCellStyle148;
             this.dataGridViewAlbum_AlbumSong.RowHeadersWidth = 51;
             this.dataGridViewAlbum_AlbumSong.RowTemplate.Height = 24;
             this.dataGridViewAlbum_AlbumSong.Size = new System.Drawing.Size(444, 272);
@@ -1550,10 +2766,10 @@ namespace ArtistMNG
             // 
             // dataGridViewGroup_Album
             // 
-            dataGridViewCellStyle30.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            dataGridViewCellStyle30.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            dataGridViewCellStyle30.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.dataGridViewGroup_Album.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle30;
+            dataGridViewCellStyle149.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            dataGridViewCellStyle149.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            dataGridViewCellStyle149.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.dataGridViewGroup_Album.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle149;
             this.dataGridViewGroup_Album.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
@@ -1561,26 +2777,26 @@ namespace ArtistMNG
             this.dataGridViewGroup_Album.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(55)))), ((int)(((byte)(59)))));
             this.dataGridViewGroup_Album.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridViewGroup_Album.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle31.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle31.BackColor = System.Drawing.SystemColors.InfoText;
-            dataGridViewCellStyle31.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle31.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle31.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle31.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle31.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridViewGroup_Album.DefaultCellStyle = dataGridViewCellStyle31;
+            dataGridViewCellStyle150.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle150.BackColor = System.Drawing.SystemColors.InfoText;
+            dataGridViewCellStyle150.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle150.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle150.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle150.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle150.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewGroup_Album.DefaultCellStyle = dataGridViewCellStyle150;
             this.dataGridViewGroup_Album.GridColor = System.Drawing.SystemColors.ControlText;
             this.dataGridViewGroup_Album.Location = new System.Drawing.Point(4, 3);
             this.dataGridViewGroup_Album.Name = "dataGridViewGroup_Album";
             this.dataGridViewGroup_Album.ReadOnly = true;
-            dataGridViewCellStyle32.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle32.BackColor = System.Drawing.SystemColors.GrayText;
-            dataGridViewCellStyle32.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle32.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle32.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle32.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle32.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewGroup_Album.RowHeadersDefaultCellStyle = dataGridViewCellStyle32;
+            dataGridViewCellStyle151.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle151.BackColor = System.Drawing.SystemColors.GrayText;
+            dataGridViewCellStyle151.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle151.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle151.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle151.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle151.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewGroup_Album.RowHeadersDefaultCellStyle = dataGridViewCellStyle151;
             this.dataGridViewGroup_Album.RowHeadersWidth = 51;
             this.dataGridViewGroup_Album.RowTemplate.Height = 24;
             this.dataGridViewGroup_Album.Size = new System.Drawing.Size(444, 240);
@@ -1684,10 +2900,10 @@ namespace ArtistMNG
             // 
             // dataGridViewGroup_Song
             // 
-            dataGridViewCellStyle33.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            dataGridViewCellStyle33.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            dataGridViewCellStyle33.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.dataGridViewGroup_Song.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle33;
+            dataGridViewCellStyle152.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            dataGridViewCellStyle152.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            dataGridViewCellStyle152.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.dataGridViewGroup_Song.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle152;
             this.dataGridViewGroup_Song.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
@@ -1695,26 +2911,26 @@ namespace ArtistMNG
             this.dataGridViewGroup_Song.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(55)))), ((int)(((byte)(59)))));
             this.dataGridViewGroup_Song.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridViewGroup_Song.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle34.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle34.BackColor = System.Drawing.SystemColors.InfoText;
-            dataGridViewCellStyle34.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle34.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle34.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle34.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle34.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridViewGroup_Song.DefaultCellStyle = dataGridViewCellStyle34;
+            dataGridViewCellStyle153.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle153.BackColor = System.Drawing.SystemColors.InfoText;
+            dataGridViewCellStyle153.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle153.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle153.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle153.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle153.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewGroup_Song.DefaultCellStyle = dataGridViewCellStyle153;
             this.dataGridViewGroup_Song.GridColor = System.Drawing.SystemColors.ControlText;
             this.dataGridViewGroup_Song.Location = new System.Drawing.Point(4, 3);
             this.dataGridViewGroup_Song.Name = "dataGridViewGroup_Song";
             this.dataGridViewGroup_Song.ReadOnly = true;
-            dataGridViewCellStyle35.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle35.BackColor = System.Drawing.SystemColors.GrayText;
-            dataGridViewCellStyle35.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle35.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle35.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle35.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle35.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewGroup_Song.RowHeadersDefaultCellStyle = dataGridViewCellStyle35;
+            dataGridViewCellStyle154.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle154.BackColor = System.Drawing.SystemColors.GrayText;
+            dataGridViewCellStyle154.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle154.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle154.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle154.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle154.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewGroup_Song.RowHeadersDefaultCellStyle = dataGridViewCellStyle154;
             this.dataGridViewGroup_Song.RowHeadersWidth = 51;
             this.dataGridViewGroup_Song.RowTemplate.Height = 24;
             this.dataGridViewGroup_Song.Size = new System.Drawing.Size(444, 272);
@@ -1875,1216 +3091,6 @@ namespace ArtistMNG
             this.txGroup_ID.TabIndex = 0;
             this.txGroup_ID.Text = "0";
             // 
-            // panel_ArtistManager
-            // 
-            this.panel_ArtistManager.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel_ArtistManager.AutoScroll = true;
-            this.panel_ArtistManager.AutoScrollMargin = new System.Drawing.Size(0, 5);
-            this.panel_ArtistManager.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(33)))), ((int)(((byte)(36)))));
-            this.panel_ArtistManager.Controls.Add(this.groupBox_ArtistGender);
-            this.panel_ArtistManager.Controls.Add(this.pictureBox_ArtistImageLoadingGIF);
-            this.panel_ArtistManager.Controls.Add(this.btnArtist_NextImage);
-            this.panel_ArtistManager.Controls.Add(this.groupBox14);
-            this.panel_ArtistManager.Controls.Add(this.panel1);
-            this.panel_ArtistManager.Controls.Add(this.groupBox3);
-            this.panel_ArtistManager.Controls.Add(this.groupBox13);
-            this.panel_ArtistManager.Controls.Add(this.groupBox12);
-            this.panel_ArtistManager.Controls.Add(this.btnArtist_EditImage);
-            this.panel_ArtistManager.Controls.Add(this.groupBox11);
-            this.panel_ArtistManager.Controls.Add(this.groupBox10);
-            this.panel_ArtistManager.Controls.Add(this.groupBox_ArtistID);
-            this.panel_ArtistManager.Controls.Add(this.groupBox_Artist_SNS);
-            this.panel_ArtistManager.Controls.Add(this.groupBox7);
-            this.panel_ArtistManager.Controls.Add(this.pictureBox_ArtistImage);
-            this.panel_ArtistManager.Controls.Add(this.groupBox6);
-            this.panel_ArtistManager.Controls.Add(this.groupBox1);
-            this.panel_ArtistManager.Controls.Add(this.groupBox2);
-            this.panel_ArtistManager.Controls.Add(this.groupBox5);
-            this.panel_ArtistManager.Controls.Add(this.groupBox_ArtistDescription);
-            this.panel_ArtistManager.Location = new System.Drawing.Point(600, 3);
-            this.panel_ArtistManager.Name = "panel_ArtistManager";
-            this.panel_ArtistManager.Size = new System.Drawing.Size(495, 528);
-            this.panel_ArtistManager.TabIndex = 7;
-            // 
-            // groupBox_ArtistGender
-            // 
-            this.groupBox_ArtistGender.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.groupBox_ArtistGender.Controls.Add(this.panel2);
-            this.groupBox_ArtistGender.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
-            this.groupBox_ArtistGender.ForeColor = System.Drawing.Color.White;
-            this.groupBox_ArtistGender.Location = new System.Drawing.Point(252, 217);
-            this.groupBox_ArtistGender.Name = "groupBox_ArtistGender";
-            this.groupBox_ArtistGender.Size = new System.Drawing.Size(219, 65);
-            this.groupBox_ArtistGender.TabIndex = 17;
-            this.groupBox_ArtistGender.TabStop = false;
-            this.groupBox_ArtistGender.Text = "Giới tính";
-            // 
-            // panel2
-            // 
-            this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel2.AutoScroll = true;
-            this.panel2.Controls.Add(this.comboBox_ArtistGender);
-            this.panel2.Location = new System.Drawing.Point(6, 23);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(207, 37);
-            this.panel2.TabIndex = 5;
-            // 
-            // comboBox_ArtistGender
-            // 
-            this.comboBox_ArtistGender.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.comboBox_ArtistGender.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox_ArtistGender.FormattingEnabled = true;
-            this.comboBox_ArtistGender.Items.AddRange(new object[] {
-            "Nam",
-            "Nữ"});
-            this.comboBox_ArtistGender.Location = new System.Drawing.Point(3, 6);
-            this.comboBox_ArtistGender.Name = "comboBox_ArtistGender";
-            this.comboBox_ArtistGender.Size = new System.Drawing.Size(199, 26);
-            this.comboBox_ArtistGender.TabIndex = 19;
-            // 
-            // pictureBox_ArtistImageLoadingGIF
-            // 
-            this.pictureBox_ArtistImageLoadingGIF.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.pictureBox_ArtistImageLoadingGIF.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.pictureBox_ArtistImageLoadingGIF.Location = new System.Drawing.Point(73, 32617);
-            this.pictureBox_ArtistImageLoadingGIF.Name = "pictureBox_ArtistImageLoadingGIF";
-            this.pictureBox_ArtistImageLoadingGIF.Size = new System.Drawing.Size(43, 45);
-            this.pictureBox_ArtistImageLoadingGIF.TabIndex = 18;
-            this.pictureBox_ArtistImageLoadingGIF.TabStop = false;
-            // 
-            // btnArtist_NextImage
-            // 
-            this.btnArtist_NextImage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(64)))), ((int)(((byte)(66)))));
-            this.btnArtist_NextImage.FlatAppearance.BorderSize = 0;
-            this.btnArtist_NextImage.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnArtist_NextImage.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnArtist_NextImage.ForeColor = System.Drawing.Color.White;
-            this.btnArtist_NextImage.Location = new System.Drawing.Point(17, 175);
-            this.btnArtist_NextImage.Name = "btnArtist_NextImage";
-            this.btnArtist_NextImage.Size = new System.Drawing.Size(91, 36);
-            this.btnArtist_NextImage.TabIndex = 17;
-            this.btnArtist_NextImage.TabStop = false;
-            this.btnArtist_NextImage.Text = "Ảnh 0/0";
-            this.btnArtist_NextImage.UseVisualStyleBackColor = false;
-            this.btnArtist_NextImage.Click += new System.EventHandler(this.btnArtist_NextImage_Click);
-            // 
-            // groupBox14
-            // 
-            this.groupBox14.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.groupBox14.Controls.Add(this.panel_ArtistInforWeight);
-            this.groupBox14.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
-            this.groupBox14.ForeColor = System.Drawing.Color.White;
-            this.groupBox14.Location = new System.Drawing.Point(10, 359);
-            this.groupBox14.Name = "groupBox14";
-            this.groupBox14.Size = new System.Drawing.Size(461, 65);
-            this.groupBox14.TabIndex = 16;
-            this.groupBox14.TabStop = false;
-            this.groupBox14.Text = "Nơi sinh";
-            // 
-            // panel_ArtistInforWeight
-            // 
-            this.panel_ArtistInforWeight.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel_ArtistInforWeight.AutoScroll = true;
-            this.panel_ArtistInforWeight.Controls.Add(this.txArtist_BirthPlace);
-            this.panel_ArtistInforWeight.Location = new System.Drawing.Point(6, 22);
-            this.panel_ArtistInforWeight.Name = "panel_ArtistInforWeight";
-            this.panel_ArtistInforWeight.Size = new System.Drawing.Size(449, 37);
-            this.panel_ArtistInforWeight.TabIndex = 7;
-            // 
-            // txArtist_BirthPlace
-            // 
-            this.txArtist_BirthPlace.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txArtist_BirthPlace.Location = new System.Drawing.Point(3, 7);
-            this.txArtist_BirthPlace.MaxLength = 100;
-            this.txArtist_BirthPlace.Name = "txArtist_BirthPlace";
-            this.txArtist_BirthPlace.Size = new System.Drawing.Size(443, 24);
-            this.txArtist_BirthPlace.TabIndex = 0;
-            // 
-            // panel1
-            // 
-            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel1.AutoScroll = true;
-            this.panel1.Location = new System.Drawing.Point(52, 2538);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(376, 13);
-            this.panel1.TabIndex = 5;
-            // 
-            // groupBox3
-            // 
-            this.groupBox3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.groupBox3.Controls.Add(this.panel_ArtistInforHeightWeight);
-            this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox3.ForeColor = System.Drawing.Color.White;
-            this.groupBox3.Location = new System.Drawing.Point(252, 288);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(219, 65);
-            this.groupBox3.TabIndex = 7;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Chiều cao - cân nặng";
-            this.toolTip1.SetToolTip(this.groupBox3, "Chiều cao (M) - Cân nặng (Kg)");
-            // 
-            // panel_ArtistInforHeightWeight
-            // 
-            this.panel_ArtistInforHeightWeight.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel_ArtistInforHeightWeight.AutoScroll = true;
-            this.panel_ArtistInforHeightWeight.Controls.Add(this.txArtist_Weight);
-            this.panel_ArtistInforHeightWeight.Controls.Add(this.txArtist_Height);
-            this.panel_ArtistInforHeightWeight.Location = new System.Drawing.Point(6, 26);
-            this.panel_ArtistInforHeightWeight.Name = "panel_ArtistInforHeightWeight";
-            this.panel_ArtistInforHeightWeight.Size = new System.Drawing.Size(207, 37);
-            this.panel_ArtistInforHeightWeight.TabIndex = 6;
-            // 
-            // txArtist_Weight
-            // 
-            this.txArtist_Weight.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txArtist_Weight.Location = new System.Drawing.Point(105, 3);
-            this.txArtist_Weight.MaxLength = 100;
-            this.txArtist_Weight.Name = "txArtist_Weight";
-            this.txArtist_Weight.Size = new System.Drawing.Size(99, 24);
-            this.txArtist_Weight.TabIndex = 1;
-            // 
-            // txArtist_Height
-            // 
-            this.txArtist_Height.Location = new System.Drawing.Point(3, 3);
-            this.txArtist_Height.MaxLength = 100;
-            this.txArtist_Height.Name = "txArtist_Height";
-            this.txArtist_Height.Size = new System.Drawing.Size(96, 24);
-            this.txArtist_Height.TabIndex = 0;
-            // 
-            // groupBox13
-            // 
-            this.groupBox13.Controls.Add(this.panel_ArtistInforDebutday);
-            this.groupBox13.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
-            this.groupBox13.ForeColor = System.Drawing.Color.White;
-            this.groupBox13.Location = new System.Drawing.Point(10, 288);
-            this.groupBox13.Name = "groupBox13";
-            this.groupBox13.Size = new System.Drawing.Size(236, 65);
-            this.groupBox13.TabIndex = 16;
-            this.groupBox13.TabStop = false;
-            this.groupBox13.Text = "Ngày debut (dd/mm/yyyy)";
-            // 
-            // panel_ArtistInforDebutday
-            // 
-            this.panel_ArtistInforDebutday.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel_ArtistInforDebutday.AutoScroll = true;
-            this.panel_ArtistInforDebutday.Controls.Add(this.dateTimePickerArtist_Debutday);
-            this.panel_ArtistInforDebutday.Location = new System.Drawing.Point(6, 26);
-            this.panel_ArtistInforDebutday.Name = "panel_ArtistInforDebutday";
-            this.panel_ArtistInforDebutday.Size = new System.Drawing.Size(224, 37);
-            this.panel_ArtistInforDebutday.TabIndex = 5;
-            // 
-            // dateTimePickerArtist_Debutday
-            // 
-            this.dateTimePickerArtist_Debutday.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.dateTimePickerArtist_Debutday.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePickerArtist_Debutday.Location = new System.Drawing.Point(4, 3);
-            this.dateTimePickerArtist_Debutday.Name = "dateTimePickerArtist_Debutday";
-            this.dateTimePickerArtist_Debutday.Size = new System.Drawing.Size(215, 24);
-            this.dateTimePickerArtist_Debutday.TabIndex = 0;
-            // 
-            // groupBox12
-            // 
-            this.groupBox12.Controls.Add(this.panel_ArtistInforBirthday);
-            this.groupBox12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
-            this.groupBox12.ForeColor = System.Drawing.Color.White;
-            this.groupBox12.Location = new System.Drawing.Point(10, 217);
-            this.groupBox12.Name = "groupBox12";
-            this.groupBox12.Size = new System.Drawing.Size(236, 65);
-            this.groupBox12.TabIndex = 15;
-            this.groupBox12.TabStop = false;
-            this.groupBox12.Text = "Ngày sinh (dd/mm/yyyy)";
-            // 
-            // panel_ArtistInforBirthday
-            // 
-            this.panel_ArtistInforBirthday.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel_ArtistInforBirthday.AutoScroll = true;
-            this.panel_ArtistInforBirthday.Controls.Add(this.dateTimePickerArtist_Birthday);
-            this.panel_ArtistInforBirthday.Location = new System.Drawing.Point(6, 26);
-            this.panel_ArtistInforBirthday.Name = "panel_ArtistInforBirthday";
-            this.panel_ArtistInforBirthday.Size = new System.Drawing.Size(224, 37);
-            this.panel_ArtistInforBirthday.TabIndex = 5;
-            // 
-            // dateTimePickerArtist_Birthday
-            // 
-            this.dateTimePickerArtist_Birthday.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.dateTimePickerArtist_Birthday.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePickerArtist_Birthday.Location = new System.Drawing.Point(4, 3);
-            this.dateTimePickerArtist_Birthday.Name = "dateTimePickerArtist_Birthday";
-            this.dateTimePickerArtist_Birthday.Size = new System.Drawing.Size(215, 24);
-            this.dateTimePickerArtist_Birthday.TabIndex = 0;
-            // 
-            // btnArtist_EditImage
-            // 
-            this.btnArtist_EditImage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(64)))), ((int)(((byte)(66)))));
-            this.btnArtist_EditImage.FlatAppearance.BorderSize = 0;
-            this.btnArtist_EditImage.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnArtist_EditImage.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnArtist_EditImage.ForeColor = System.Drawing.Color.White;
-            this.btnArtist_EditImage.Location = new System.Drawing.Point(114, 175);
-            this.btnArtist_EditImage.Name = "btnArtist_EditImage";
-            this.btnArtist_EditImage.Size = new System.Drawing.Size(56, 36);
-            this.btnArtist_EditImage.TabIndex = 15;
-            this.btnArtist_EditImage.TabStop = false;
-            this.btnArtist_EditImage.Text = "Sửa";
-            this.btnArtist_EditImage.UseVisualStyleBackColor = false;
-            this.btnArtist_EditImage.Click += new System.EventHandler(this.btnArtist_EditImage_Click);
-            // 
-            // groupBox11
-            // 
-            this.groupBox11.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.groupBox11.Controls.Add(this.panel_ArtistInforRealName);
-            this.groupBox11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
-            this.groupBox11.ForeColor = System.Drawing.Color.White;
-            this.groupBox11.Location = new System.Drawing.Point(184, 146);
-            this.groupBox11.Name = "groupBox11";
-            this.groupBox11.Size = new System.Drawing.Size(287, 65);
-            this.groupBox11.TabIndex = 14;
-            this.groupBox11.TabStop = false;
-            this.groupBox11.Text = "Tên thật";
-            // 
-            // panel_ArtistInforRealName
-            // 
-            this.panel_ArtistInforRealName.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel_ArtistInforRealName.AutoScroll = true;
-            this.panel_ArtistInforRealName.Controls.Add(this.txArtist_RealName);
-            this.panel_ArtistInforRealName.Location = new System.Drawing.Point(6, 26);
-            this.panel_ArtistInforRealName.Name = "panel_ArtistInforRealName";
-            this.panel_ArtistInforRealName.Size = new System.Drawing.Size(275, 37);
-            this.panel_ArtistInforRealName.TabIndex = 5;
-            // 
-            // txArtist_RealName
-            // 
-            this.txArtist_RealName.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txArtist_RealName.Location = new System.Drawing.Point(3, 3);
-            this.txArtist_RealName.MaxLength = 100;
-            this.txArtist_RealName.Name = "txArtist_RealName";
-            this.txArtist_RealName.Size = new System.Drawing.Size(269, 24);
-            this.txArtist_RealName.TabIndex = 0;
-            // 
-            // groupBox10
-            // 
-            this.groupBox10.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.groupBox10.Controls.Add(this.panel_ArtistInforStageName);
-            this.groupBox10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
-            this.groupBox10.ForeColor = System.Drawing.Color.White;
-            this.groupBox10.Location = new System.Drawing.Point(184, 75);
-            this.groupBox10.Name = "groupBox10";
-            this.groupBox10.Size = new System.Drawing.Size(287, 65);
-            this.groupBox10.TabIndex = 13;
-            this.groupBox10.TabStop = false;
-            this.groupBox10.Text = "Nghệ danh";
-            // 
-            // panel_ArtistInforStageName
-            // 
-            this.panel_ArtistInforStageName.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel_ArtistInforStageName.AutoScroll = true;
-            this.panel_ArtistInforStageName.Controls.Add(this.txArtist_StageName);
-            this.panel_ArtistInforStageName.Location = new System.Drawing.Point(6, 26);
-            this.panel_ArtistInforStageName.Name = "panel_ArtistInforStageName";
-            this.panel_ArtistInforStageName.Size = new System.Drawing.Size(275, 37);
-            this.panel_ArtistInforStageName.TabIndex = 5;
-            // 
-            // txArtist_StageName
-            // 
-            this.txArtist_StageName.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txArtist_StageName.Location = new System.Drawing.Point(3, 3);
-            this.txArtist_StageName.MaxLength = 100;
-            this.txArtist_StageName.Name = "txArtist_StageName";
-            this.txArtist_StageName.Size = new System.Drawing.Size(269, 24);
-            this.txArtist_StageName.TabIndex = 0;
-            // 
-            // groupBox_ArtistID
-            // 
-            this.groupBox_ArtistID.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.groupBox_ArtistID.Controls.Add(this.panel_ArtistInforID);
-            this.groupBox_ArtistID.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
-            this.groupBox_ArtistID.ForeColor = System.Drawing.Color.White;
-            this.groupBox_ArtistID.Location = new System.Drawing.Point(184, 6);
-            this.groupBox_ArtistID.Name = "groupBox_ArtistID";
-            this.groupBox_ArtistID.Size = new System.Drawing.Size(287, 65);
-            this.groupBox_ArtistID.TabIndex = 12;
-            this.groupBox_ArtistID.TabStop = false;
-            this.groupBox_ArtistID.Text = "ID";
-            // 
-            // panel_ArtistInforID
-            // 
-            this.panel_ArtistInforID.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel_ArtistInforID.AutoScroll = true;
-            this.panel_ArtistInforID.Controls.Add(this.txArtist_ID);
-            this.panel_ArtistInforID.Location = new System.Drawing.Point(6, 26);
-            this.panel_ArtistInforID.Name = "panel_ArtistInforID";
-            this.panel_ArtistInforID.Size = new System.Drawing.Size(275, 37);
-            this.panel_ArtistInforID.TabIndex = 5;
-            // 
-            // txArtist_ID
-            // 
-            this.txArtist_ID.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txArtist_ID.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.txArtist_ID.Location = new System.Drawing.Point(3, 3);
-            this.txArtist_ID.MaxLength = 100;
-            this.txArtist_ID.Name = "txArtist_ID";
-            this.txArtist_ID.ReadOnly = true;
-            this.txArtist_ID.Size = new System.Drawing.Size(269, 24);
-            this.txArtist_ID.TabIndex = 0;
-            this.txArtist_ID.Text = "0";
-            // 
-            // groupBox_Artist_SNS
-            // 
-            this.groupBox_Artist_SNS.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.groupBox_Artist_SNS.Controls.Add(this.pictureBox_Artist_Website);
-            this.groupBox_Artist_SNS.Controls.Add(this.tx_Artist_WebsiteURL);
-            this.groupBox_Artist_SNS.Controls.Add(this.pictureBox_Artist_Spotify);
-            this.groupBox_Artist_SNS.Controls.Add(this.tx_Artist_SpotifyURL);
-            this.groupBox_Artist_SNS.Controls.Add(this.pictureBox_Artist_AppleMusic);
-            this.groupBox_Artist_SNS.Controls.Add(this.tx_Artist_AppleMusicURL);
-            this.groupBox_Artist_SNS.Controls.Add(this.pictureBox_Artist_Vlive);
-            this.groupBox_Artist_SNS.Controls.Add(this.tx_Artist_VliveURL);
-            this.groupBox_Artist_SNS.Controls.Add(this.pictureBox_Artist_Tiktok);
-            this.groupBox_Artist_SNS.Controls.Add(this.tx_Artist_TiktokURL);
-            this.groupBox_Artist_SNS.Controls.Add(this.pictureBox_Artist_Twitter);
-            this.groupBox_Artist_SNS.Controls.Add(this.tx_Artist_TwitterURL);
-            this.groupBox_Artist_SNS.Controls.Add(this.pictureBox_Artist_Facebook);
-            this.groupBox_Artist_SNS.Controls.Add(this.tx_Artist_FacebookURL);
-            this.groupBox_Artist_SNS.Controls.Add(this.pictureBox_Artist_Instagram);
-            this.groupBox_Artist_SNS.Controls.Add(this.tx_Artist_InstagramURL);
-            this.groupBox_Artist_SNS.Controls.Add(this.pictureBox_Artist_Youtube);
-            this.groupBox_Artist_SNS.Controls.Add(this.tx_Artist_YoutubeURL);
-            this.groupBox_Artist_SNS.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox_Artist_SNS.ForeColor = System.Drawing.Color.White;
-            this.groupBox_Artist_SNS.Location = new System.Drawing.Point(10, 2057);
-            this.groupBox_Artist_SNS.Name = "groupBox_Artist_SNS";
-            this.groupBox_Artist_SNS.Size = new System.Drawing.Size(461, 475);
-            this.groupBox_Artist_SNS.TabIndex = 11;
-            this.groupBox_Artist_SNS.TabStop = false;
-            this.groupBox_Artist_SNS.Text = "Mạng xã hội";
-            // 
-            // pictureBox_Artist_Website
-            // 
-            this.pictureBox_Artist_Website.Location = new System.Drawing.Point(10, 429);
-            this.pictureBox_Artist_Website.Name = "pictureBox_Artist_Website";
-            this.pictureBox_Artist_Website.Size = new System.Drawing.Size(35, 35);
-            this.pictureBox_Artist_Website.TabIndex = 17;
-            this.pictureBox_Artist_Website.TabStop = false;
-            this.toolTip1.SetToolTip(this.pictureBox_Artist_Website, "Website");
-            // 
-            // tx_Artist_WebsiteURL
-            // 
-            this.tx_Artist_WebsiteURL.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tx_Artist_WebsiteURL.Location = new System.Drawing.Point(51, 436);
-            this.tx_Artist_WebsiteURL.Name = "tx_Artist_WebsiteURL";
-            this.tx_Artist_WebsiteURL.Size = new System.Drawing.Size(399, 24);
-            this.tx_Artist_WebsiteURL.TabIndex = 16;
-            // 
-            // pictureBox_Artist_Spotify
-            // 
-            this.pictureBox_Artist_Spotify.Location = new System.Drawing.Point(10, 379);
-            this.pictureBox_Artist_Spotify.Name = "pictureBox_Artist_Spotify";
-            this.pictureBox_Artist_Spotify.Size = new System.Drawing.Size(35, 35);
-            this.pictureBox_Artist_Spotify.TabIndex = 15;
-            this.pictureBox_Artist_Spotify.TabStop = false;
-            this.toolTip1.SetToolTip(this.pictureBox_Artist_Spotify, "Spotify");
-            // 
-            // tx_Artist_SpotifyURL
-            // 
-            this.tx_Artist_SpotifyURL.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tx_Artist_SpotifyURL.Location = new System.Drawing.Point(51, 386);
-            this.tx_Artist_SpotifyURL.Name = "tx_Artist_SpotifyURL";
-            this.tx_Artist_SpotifyURL.Size = new System.Drawing.Size(399, 24);
-            this.tx_Artist_SpotifyURL.TabIndex = 14;
-            // 
-            // pictureBox_Artist_AppleMusic
-            // 
-            this.pictureBox_Artist_AppleMusic.Location = new System.Drawing.Point(10, 329);
-            this.pictureBox_Artist_AppleMusic.Name = "pictureBox_Artist_AppleMusic";
-            this.pictureBox_Artist_AppleMusic.Size = new System.Drawing.Size(35, 35);
-            this.pictureBox_Artist_AppleMusic.TabIndex = 13;
-            this.pictureBox_Artist_AppleMusic.TabStop = false;
-            this.toolTip1.SetToolTip(this.pictureBox_Artist_AppleMusic, "Apple Music");
-            // 
-            // tx_Artist_AppleMusicURL
-            // 
-            this.tx_Artist_AppleMusicURL.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tx_Artist_AppleMusicURL.Location = new System.Drawing.Point(51, 336);
-            this.tx_Artist_AppleMusicURL.Name = "tx_Artist_AppleMusicURL";
-            this.tx_Artist_AppleMusicURL.Size = new System.Drawing.Size(399, 24);
-            this.tx_Artist_AppleMusicURL.TabIndex = 12;
-            // 
-            // pictureBox_Artist_Vlive
-            // 
-            this.pictureBox_Artist_Vlive.Location = new System.Drawing.Point(10, 278);
-            this.pictureBox_Artist_Vlive.Name = "pictureBox_Artist_Vlive";
-            this.pictureBox_Artist_Vlive.Size = new System.Drawing.Size(35, 35);
-            this.pictureBox_Artist_Vlive.TabIndex = 11;
-            this.pictureBox_Artist_Vlive.TabStop = false;
-            this.toolTip1.SetToolTip(this.pictureBox_Artist_Vlive, "V-live");
-            // 
-            // tx_Artist_VliveURL
-            // 
-            this.tx_Artist_VliveURL.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tx_Artist_VliveURL.Location = new System.Drawing.Point(51, 285);
-            this.tx_Artist_VliveURL.Name = "tx_Artist_VliveURL";
-            this.tx_Artist_VliveURL.Size = new System.Drawing.Size(399, 24);
-            this.tx_Artist_VliveURL.TabIndex = 10;
-            // 
-            // pictureBox_Artist_Tiktok
-            // 
-            this.pictureBox_Artist_Tiktok.Location = new System.Drawing.Point(10, 228);
-            this.pictureBox_Artist_Tiktok.Name = "pictureBox_Artist_Tiktok";
-            this.pictureBox_Artist_Tiktok.Size = new System.Drawing.Size(35, 35);
-            this.pictureBox_Artist_Tiktok.TabIndex = 9;
-            this.pictureBox_Artist_Tiktok.TabStop = false;
-            this.toolTip1.SetToolTip(this.pictureBox_Artist_Tiktok, "Tiktok");
-            // 
-            // tx_Artist_TiktokURL
-            // 
-            this.tx_Artist_TiktokURL.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tx_Artist_TiktokURL.Location = new System.Drawing.Point(51, 235);
-            this.tx_Artist_TiktokURL.Name = "tx_Artist_TiktokURL";
-            this.tx_Artist_TiktokURL.Size = new System.Drawing.Size(399, 24);
-            this.tx_Artist_TiktokURL.TabIndex = 8;
-            // 
-            // pictureBox_Artist_Twitter
-            // 
-            this.pictureBox_Artist_Twitter.Location = new System.Drawing.Point(10, 178);
-            this.pictureBox_Artist_Twitter.Name = "pictureBox_Artist_Twitter";
-            this.pictureBox_Artist_Twitter.Size = new System.Drawing.Size(35, 35);
-            this.pictureBox_Artist_Twitter.TabIndex = 7;
-            this.pictureBox_Artist_Twitter.TabStop = false;
-            this.toolTip1.SetToolTip(this.pictureBox_Artist_Twitter, "Twitter");
-            // 
-            // tx_Artist_TwitterURL
-            // 
-            this.tx_Artist_TwitterURL.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tx_Artist_TwitterURL.Location = new System.Drawing.Point(51, 185);
-            this.tx_Artist_TwitterURL.Name = "tx_Artist_TwitterURL";
-            this.tx_Artist_TwitterURL.Size = new System.Drawing.Size(399, 24);
-            this.tx_Artist_TwitterURL.TabIndex = 6;
-            // 
-            // pictureBox_Artist_Facebook
-            // 
-            this.pictureBox_Artist_Facebook.Location = new System.Drawing.Point(10, 128);
-            this.pictureBox_Artist_Facebook.Name = "pictureBox_Artist_Facebook";
-            this.pictureBox_Artist_Facebook.Size = new System.Drawing.Size(35, 35);
-            this.pictureBox_Artist_Facebook.TabIndex = 5;
-            this.pictureBox_Artist_Facebook.TabStop = false;
-            this.toolTip1.SetToolTip(this.pictureBox_Artist_Facebook, "Facebook");
-            // 
-            // tx_Artist_FacebookURL
-            // 
-            this.tx_Artist_FacebookURL.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tx_Artist_FacebookURL.Location = new System.Drawing.Point(51, 135);
-            this.tx_Artist_FacebookURL.Name = "tx_Artist_FacebookURL";
-            this.tx_Artist_FacebookURL.Size = new System.Drawing.Size(399, 24);
-            this.tx_Artist_FacebookURL.TabIndex = 4;
-            // 
-            // pictureBox_Artist_Instagram
-            // 
-            this.pictureBox_Artist_Instagram.Location = new System.Drawing.Point(10, 77);
-            this.pictureBox_Artist_Instagram.Name = "pictureBox_Artist_Instagram";
-            this.pictureBox_Artist_Instagram.Size = new System.Drawing.Size(35, 35);
-            this.pictureBox_Artist_Instagram.TabIndex = 3;
-            this.pictureBox_Artist_Instagram.TabStop = false;
-            this.toolTip1.SetToolTip(this.pictureBox_Artist_Instagram, "Instagram");
-            // 
-            // tx_Artist_InstagramURL
-            // 
-            this.tx_Artist_InstagramURL.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tx_Artist_InstagramURL.Location = new System.Drawing.Point(51, 84);
-            this.tx_Artist_InstagramURL.Name = "tx_Artist_InstagramURL";
-            this.tx_Artist_InstagramURL.Size = new System.Drawing.Size(399, 24);
-            this.tx_Artist_InstagramURL.TabIndex = 2;
-            // 
-            // pictureBox_Artist_Youtube
-            // 
-            this.pictureBox_Artist_Youtube.Location = new System.Drawing.Point(10, 27);
-            this.pictureBox_Artist_Youtube.Name = "pictureBox_Artist_Youtube";
-            this.pictureBox_Artist_Youtube.Size = new System.Drawing.Size(35, 35);
-            this.pictureBox_Artist_Youtube.TabIndex = 1;
-            this.pictureBox_Artist_Youtube.TabStop = false;
-            this.toolTip1.SetToolTip(this.pictureBox_Artist_Youtube, "Youtube");
-            // 
-            // tx_Artist_YoutubeURL
-            // 
-            this.tx_Artist_YoutubeURL.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tx_Artist_YoutubeURL.Location = new System.Drawing.Point(51, 34);
-            this.tx_Artist_YoutubeURL.Name = "tx_Artist_YoutubeURL";
-            this.tx_Artist_YoutubeURL.Size = new System.Drawing.Size(399, 24);
-            this.tx_Artist_YoutubeURL.TabIndex = 0;
-            // 
-            // groupBox7
-            // 
-            this.groupBox7.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.groupBox7.Controls.Add(this.buttonArtist_EditLabel);
-            this.groupBox7.Controls.Add(this.panel_ArtistInforLabel);
-            this.groupBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox7.ForeColor = System.Drawing.Color.White;
-            this.groupBox7.Location = new System.Drawing.Point(10, 1846);
-            this.groupBox7.Name = "groupBox7";
-            this.groupBox7.Size = new System.Drawing.Size(461, 205);
-            this.groupBox7.TabIndex = 10;
-            this.groupBox7.TabStop = false;
-            this.groupBox7.Text = "Công ty";
-            // 
-            // buttonArtist_EditLabel
-            // 
-            this.buttonArtist_EditLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonArtist_EditLabel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(64)))), ((int)(((byte)(66)))));
-            this.buttonArtist_EditLabel.FlatAppearance.BorderSize = 0;
-            this.buttonArtist_EditLabel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonArtist_EditLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonArtist_EditLabel.ForeColor = System.Drawing.Color.White;
-            this.buttonArtist_EditLabel.Location = new System.Drawing.Point(369, 163);
-            this.buttonArtist_EditLabel.Name = "buttonArtist_EditLabel";
-            this.buttonArtist_EditLabel.Size = new System.Drawing.Size(83, 36);
-            this.buttonArtist_EditLabel.TabIndex = 17;
-            this.buttonArtist_EditLabel.TabStop = false;
-            this.buttonArtist_EditLabel.Text = "Sửa";
-            this.buttonArtist_EditLabel.UseVisualStyleBackColor = false;
-            this.buttonArtist_EditLabel.Click += new System.EventHandler(this.buttonArtist_EditLabel_Click);
-            // 
-            // panel_ArtistInforLabel
-            // 
-            this.panel_ArtistInforLabel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel_ArtistInforLabel.AutoScroll = true;
-            this.panel_ArtistInforLabel.Controls.Add(this.labelArtist_Label);
-            this.panel_ArtistInforLabel.Location = new System.Drawing.Point(3, 23);
-            this.panel_ArtistInforLabel.Name = "panel_ArtistInforLabel";
-            this.panel_ArtistInforLabel.Size = new System.Drawing.Size(452, 134);
-            this.panel_ArtistInforLabel.TabIndex = 1;
-            // 
-            // labelArtist_Label
-            // 
-            this.labelArtist_Label.AutoSize = true;
-            this.labelArtist_Label.Location = new System.Drawing.Point(3, 0);
-            this.labelArtist_Label.Name = "labelArtist_Label";
-            this.labelArtist_Label.Size = new System.Drawing.Size(140, 18);
-            this.labelArtist_Label.TabIndex = 1;
-            this.labelArtist_Label.Text = "Không có công ty";
-            // 
-            // pictureBox_ArtistImage
-            // 
-            this.pictureBox_ArtistImage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox_ArtistImage.Location = new System.Drawing.Point(17, 16);
-            this.pictureBox_ArtistImage.Name = "pictureBox_ArtistImage";
-            this.pictureBox_ArtistImage.Size = new System.Drawing.Size(153, 153);
-            this.pictureBox_ArtistImage.TabIndex = 0;
-            this.pictureBox_ArtistImage.TabStop = false;
-            this.pictureBox_ArtistImage.LoadCompleted += new System.ComponentModel.AsyncCompletedEventHandler(this.pictureBox_ArtistImage_LoadCompleted);
-            // 
-            // groupBox6
-            // 
-            this.groupBox6.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.groupBox6.Controls.Add(this.buttonArtist_EditAlbum);
-            this.groupBox6.Controls.Add(this.panel_ArtistInforAlbum);
-            this.groupBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox6.ForeColor = System.Drawing.Color.White;
-            this.groupBox6.Location = new System.Drawing.Point(10, 1530);
-            this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Size = new System.Drawing.Size(461, 310);
-            this.groupBox6.TabIndex = 9;
-            this.groupBox6.TabStop = false;
-            this.groupBox6.Text = "Album";
-            // 
-            // buttonArtist_EditAlbum
-            // 
-            this.buttonArtist_EditAlbum.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonArtist_EditAlbum.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(64)))), ((int)(((byte)(66)))));
-            this.buttonArtist_EditAlbum.FlatAppearance.BorderSize = 0;
-            this.buttonArtist_EditAlbum.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonArtist_EditAlbum.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonArtist_EditAlbum.ForeColor = System.Drawing.Color.White;
-            this.buttonArtist_EditAlbum.Location = new System.Drawing.Point(369, 268);
-            this.buttonArtist_EditAlbum.Name = "buttonArtist_EditAlbum";
-            this.buttonArtist_EditAlbum.Size = new System.Drawing.Size(83, 36);
-            this.buttonArtist_EditAlbum.TabIndex = 17;
-            this.buttonArtist_EditAlbum.TabStop = false;
-            this.buttonArtist_EditAlbum.Text = "Sửa";
-            this.buttonArtist_EditAlbum.UseVisualStyleBackColor = false;
-            this.buttonArtist_EditAlbum.Click += new System.EventHandler(this.buttonArtist_EditAlbum_Click);
-            // 
-            // panel_ArtistInforAlbum
-            // 
-            this.panel_ArtistInforAlbum.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel_ArtistInforAlbum.AutoScroll = true;
-            this.panel_ArtistInforAlbum.Controls.Add(this.dataGridViewArtist_Album);
-            this.panel_ArtistInforAlbum.Location = new System.Drawing.Point(3, 16);
-            this.panel_ArtistInforAlbum.Name = "panel_ArtistInforAlbum";
-            this.panel_ArtistInforAlbum.Size = new System.Drawing.Size(452, 246);
-            this.panel_ArtistInforAlbum.TabIndex = 4;
-            // 
-            // dataGridViewArtist_Album
-            // 
-            dataGridViewCellStyle36.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            dataGridViewCellStyle36.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            dataGridViewCellStyle36.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.dataGridViewArtist_Album.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle36;
-            this.dataGridViewArtist_Album.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.dataGridViewArtist_Album.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridViewArtist_Album.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(55)))), ((int)(((byte)(59)))));
-            this.dataGridViewArtist_Album.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dataGridViewArtist_Album.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle37.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle37.BackColor = System.Drawing.SystemColors.InfoText;
-            dataGridViewCellStyle37.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle37.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle37.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle37.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle37.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridViewArtist_Album.DefaultCellStyle = dataGridViewCellStyle37;
-            this.dataGridViewArtist_Album.GridColor = System.Drawing.SystemColors.ControlText;
-            this.dataGridViewArtist_Album.Location = new System.Drawing.Point(4, 3);
-            this.dataGridViewArtist_Album.Name = "dataGridViewArtist_Album";
-            this.dataGridViewArtist_Album.ReadOnly = true;
-            dataGridViewCellStyle38.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle38.BackColor = System.Drawing.SystemColors.GrayText;
-            dataGridViewCellStyle38.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle38.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle38.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle38.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle38.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewArtist_Album.RowHeadersDefaultCellStyle = dataGridViewCellStyle38;
-            this.dataGridViewArtist_Album.RowHeadersWidth = 51;
-            this.dataGridViewArtist_Album.RowTemplate.Height = 24;
-            this.dataGridViewArtist_Album.Size = new System.Drawing.Size(444, 240);
-            this.dataGridViewArtist_Album.TabIndex = 2;
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.groupBox1.Controls.Add(this.buttonArtist_EditFandom);
-            this.groupBox1.Controls.Add(this.panel_ArtistInforFandom);
-            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.ForeColor = System.Drawing.Color.White;
-            this.groupBox1.Location = new System.Drawing.Point(10, 957);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(461, 209);
-            this.groupBox1.TabIndex = 6;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Fandom";
-            // 
-            // buttonArtist_EditFandom
-            // 
-            this.buttonArtist_EditFandom.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonArtist_EditFandom.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(64)))), ((int)(((byte)(66)))));
-            this.buttonArtist_EditFandom.FlatAppearance.BorderSize = 0;
-            this.buttonArtist_EditFandom.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonArtist_EditFandom.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonArtist_EditFandom.ForeColor = System.Drawing.Color.White;
-            this.buttonArtist_EditFandom.Location = new System.Drawing.Point(372, 167);
-            this.buttonArtist_EditFandom.Name = "buttonArtist_EditFandom";
-            this.buttonArtist_EditFandom.Size = new System.Drawing.Size(83, 36);
-            this.buttonArtist_EditFandom.TabIndex = 16;
-            this.buttonArtist_EditFandom.TabStop = false;
-            this.buttonArtist_EditFandom.Text = "Sửa";
-            this.buttonArtist_EditFandom.UseVisualStyleBackColor = false;
-            this.buttonArtist_EditFandom.Click += new System.EventHandler(this.buttonArtist_EditFandom_Click);
-            // 
-            // panel_ArtistInforFandom
-            // 
-            this.panel_ArtistInforFandom.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel_ArtistInforFandom.AutoScroll = true;
-            this.panel_ArtistInforFandom.Controls.Add(this.labelArtist_Fandom);
-            this.panel_ArtistInforFandom.Location = new System.Drawing.Point(3, 23);
-            this.panel_ArtistInforFandom.Name = "panel_ArtistInforFandom";
-            this.panel_ArtistInforFandom.Size = new System.Drawing.Size(452, 138);
-            this.panel_ArtistInforFandom.TabIndex = 2;
-            // 
-            // labelArtist_Fandom
-            // 
-            this.labelArtist_Fandom.AutoSize = true;
-            this.labelArtist_Fandom.Location = new System.Drawing.Point(3, 0);
-            this.labelArtist_Fandom.Name = "labelArtist_Fandom";
-            this.labelArtist_Fandom.Size = new System.Drawing.Size(141, 18);
-            this.labelArtist_Fandom.TabIndex = 0;
-            this.labelArtist_Fandom.Text = "Không có fandom";
-            // 
-            // groupBox2
-            // 
-            this.groupBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.groupBox2.Controls.Add(this.panel_ArtistInforGroup);
-            this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.ForeColor = System.Drawing.Color.White;
-            this.groupBox2.Location = new System.Drawing.Point(10, 766);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(461, 185);
-            this.groupBox2.TabIndex = 7;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Nhóm";
-            // 
-            // panel_ArtistInforGroup
-            // 
-            this.panel_ArtistInforGroup.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel_ArtistInforGroup.AutoScroll = true;
-            this.panel_ArtistInforGroup.Controls.Add(this.dataGridViewArtist_Group);
-            this.panel_ArtistInforGroup.Controls.Add(this.buttonArtist_EditGroup);
-            this.panel_ArtistInforGroup.Location = new System.Drawing.Point(3, 23);
-            this.panel_ArtistInforGroup.Name = "panel_ArtistInforGroup";
-            this.panel_ArtistInforGroup.Size = new System.Drawing.Size(452, 156);
-            this.panel_ArtistInforGroup.TabIndex = 2;
-            // 
-            // dataGridViewArtist_Group
-            // 
-            dataGridViewCellStyle39.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            dataGridViewCellStyle39.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            dataGridViewCellStyle39.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.dataGridViewArtist_Group.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle39;
-            this.dataGridViewArtist_Group.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.dataGridViewArtist_Group.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridViewArtist_Group.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(55)))), ((int)(((byte)(59)))));
-            this.dataGridViewArtist_Group.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dataGridViewArtist_Group.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle40.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle40.BackColor = System.Drawing.SystemColors.InfoText;
-            dataGridViewCellStyle40.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle40.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle40.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle40.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle40.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridViewArtist_Group.DefaultCellStyle = dataGridViewCellStyle40;
-            this.dataGridViewArtist_Group.GridColor = System.Drawing.SystemColors.ControlText;
-            this.dataGridViewArtist_Group.Location = new System.Drawing.Point(3, 3);
-            this.dataGridViewArtist_Group.Name = "dataGridViewArtist_Group";
-            this.dataGridViewArtist_Group.ReadOnly = true;
-            dataGridViewCellStyle41.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle41.BackColor = System.Drawing.SystemColors.GrayText;
-            dataGridViewCellStyle41.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle41.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle41.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle41.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle41.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewArtist_Group.RowHeadersDefaultCellStyle = dataGridViewCellStyle41;
-            this.dataGridViewArtist_Group.RowHeadersWidth = 51;
-            this.dataGridViewArtist_Group.RowTemplate.Height = 24;
-            this.dataGridViewArtist_Group.Size = new System.Drawing.Size(444, 108);
-            this.dataGridViewArtist_Group.TabIndex = 3;
-            // 
-            // buttonArtist_EditGroup
-            // 
-            this.buttonArtist_EditGroup.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonArtist_EditGroup.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(64)))), ((int)(((byte)(66)))));
-            this.buttonArtist_EditGroup.FlatAppearance.BorderSize = 0;
-            this.buttonArtist_EditGroup.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonArtist_EditGroup.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonArtist_EditGroup.ForeColor = System.Drawing.Color.White;
-            this.buttonArtist_EditGroup.Location = new System.Drawing.Point(368, 117);
-            this.buttonArtist_EditGroup.Name = "buttonArtist_EditGroup";
-            this.buttonArtist_EditGroup.Size = new System.Drawing.Size(83, 36);
-            this.buttonArtist_EditGroup.TabIndex = 16;
-            this.buttonArtist_EditGroup.TabStop = false;
-            this.buttonArtist_EditGroup.Text = "Sửa";
-            this.buttonArtist_EditGroup.UseVisualStyleBackColor = false;
-            this.buttonArtist_EditGroup.Click += new System.EventHandler(this.buttonArtist_EditGroup_Click);
-            // 
-            // groupBox5
-            // 
-            this.groupBox5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.groupBox5.Controls.Add(this.buttonArtist_EditSong);
-            this.groupBox5.Controls.Add(this.panel_ArtistInforSong);
-            this.groupBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox5.ForeColor = System.Drawing.Color.White;
-            this.groupBox5.Location = new System.Drawing.Point(10, 1172);
-            this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(461, 352);
-            this.groupBox5.TabIndex = 8;
-            this.groupBox5.TabStop = false;
-            this.groupBox5.Text = "Bài hát";
-            // 
-            // buttonArtist_EditSong
-            // 
-            this.buttonArtist_EditSong.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonArtist_EditSong.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(64)))), ((int)(((byte)(66)))));
-            this.buttonArtist_EditSong.FlatAppearance.BorderSize = 0;
-            this.buttonArtist_EditSong.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonArtist_EditSong.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonArtist_EditSong.ForeColor = System.Drawing.Color.White;
-            this.buttonArtist_EditSong.Location = new System.Drawing.Point(369, 310);
-            this.buttonArtist_EditSong.Name = "buttonArtist_EditSong";
-            this.buttonArtist_EditSong.Size = new System.Drawing.Size(83, 36);
-            this.buttonArtist_EditSong.TabIndex = 17;
-            this.buttonArtist_EditSong.TabStop = false;
-            this.buttonArtist_EditSong.Text = "Sửa";
-            this.buttonArtist_EditSong.UseVisualStyleBackColor = false;
-            this.buttonArtist_EditSong.Click += new System.EventHandler(this.buttonArtist_EditSong_Click);
-            // 
-            // panel_ArtistInforSong
-            // 
-            this.panel_ArtistInforSong.AllowDrop = true;
-            this.panel_ArtistInforSong.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel_ArtistInforSong.AutoScroll = true;
-            this.panel_ArtistInforSong.Controls.Add(this.dataGridViewArtist_Song);
-            this.panel_ArtistInforSong.Location = new System.Drawing.Point(3, 26);
-            this.panel_ArtistInforSong.Name = "panel_ArtistInforSong";
-            this.panel_ArtistInforSong.Size = new System.Drawing.Size(452, 278);
-            this.panel_ArtistInforSong.TabIndex = 3;
-            // 
-            // dataGridViewArtist_Song
-            // 
-            dataGridViewCellStyle42.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            dataGridViewCellStyle42.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            dataGridViewCellStyle42.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.dataGridViewArtist_Song.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle42;
-            this.dataGridViewArtist_Song.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.dataGridViewArtist_Song.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridViewArtist_Song.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(55)))), ((int)(((byte)(59)))));
-            this.dataGridViewArtist_Song.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dataGridViewArtist_Song.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle43.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle43.BackColor = System.Drawing.SystemColors.InfoText;
-            dataGridViewCellStyle43.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle43.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle43.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle43.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle43.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridViewArtist_Song.DefaultCellStyle = dataGridViewCellStyle43;
-            this.dataGridViewArtist_Song.GridColor = System.Drawing.SystemColors.ControlText;
-            this.dataGridViewArtist_Song.Location = new System.Drawing.Point(4, 3);
-            this.dataGridViewArtist_Song.Name = "dataGridViewArtist_Song";
-            this.dataGridViewArtist_Song.ReadOnly = true;
-            dataGridViewCellStyle44.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle44.BackColor = System.Drawing.SystemColors.GrayText;
-            dataGridViewCellStyle44.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle44.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle44.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle44.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle44.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewArtist_Song.RowHeadersDefaultCellStyle = dataGridViewCellStyle44;
-            this.dataGridViewArtist_Song.RowHeadersWidth = 51;
-            this.dataGridViewArtist_Song.RowTemplate.Height = 24;
-            this.dataGridViewArtist_Song.Size = new System.Drawing.Size(444, 272);
-            this.dataGridViewArtist_Song.TabIndex = 2;
-            // 
-            // groupBox_ArtistDescription
-            // 
-            this.groupBox_ArtistDescription.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.groupBox_ArtistDescription.Controls.Add(this.panel_ArtistInforDescription);
-            this.groupBox_ArtistDescription.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox_ArtistDescription.ForeColor = System.Drawing.Color.White;
-            this.groupBox_ArtistDescription.Location = new System.Drawing.Point(10, 430);
-            this.groupBox_ArtistDescription.Name = "groupBox_ArtistDescription";
-            this.groupBox_ArtistDescription.Size = new System.Drawing.Size(461, 330);
-            this.groupBox_ArtistDescription.TabIndex = 8;
-            this.groupBox_ArtistDescription.TabStop = false;
-            this.groupBox_ArtistDescription.Text = "Mô tả";
-            // 
-            // panel_ArtistInforDescription
-            // 
-            this.panel_ArtistInforDescription.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel_ArtistInforDescription.AutoScroll = true;
-            this.panel_ArtistInforDescription.Controls.Add(this.txArtist_Description);
-            this.panel_ArtistInforDescription.Location = new System.Drawing.Point(6, 26);
-            this.panel_ArtistInforDescription.Name = "panel_ArtistInforDescription";
-            this.panel_ArtistInforDescription.Size = new System.Drawing.Size(449, 340);
-            this.panel_ArtistInforDescription.TabIndex = 4;
-            // 
-            // txArtist_Description
-            // 
-            this.txArtist_Description.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txArtist_Description.Location = new System.Drawing.Point(4, 3);
-            this.txArtist_Description.MaxLength = 5000;
-            this.txArtist_Description.Multiline = true;
-            this.txArtist_Description.Name = "txArtist_Description";
-            this.txArtist_Description.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txArtist_Description.Size = new System.Drawing.Size(442, 334);
-            this.txArtist_Description.TabIndex = 1;
-            // 
-            // panel_LabelManager
-            // 
-            this.panel_LabelManager.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel_LabelManager.AutoScroll = true;
-            this.panel_LabelManager.Controls.Add(this.groupBoxLabel_Description);
-            this.panel_LabelManager.Controls.Add(this.groupBoxLabel_Location);
-            this.panel_LabelManager.Controls.Add(this.groupBoxLabel_Founded);
-            this.panel_LabelManager.Controls.Add(this.groupBoxLabel_Founder);
-            this.panel_LabelManager.Controls.Add(this.groupBoxLabel_Name);
-            this.panel_LabelManager.Controls.Add(this.panel4);
-            this.panel_LabelManager.Controls.Add(this.groupBoxLabel_LabelID);
-            this.panel_LabelManager.Location = new System.Drawing.Point(600, 3);
-            this.panel_LabelManager.Name = "panel_LabelManager";
-            this.panel_LabelManager.Size = new System.Drawing.Size(495, 528);
-            this.panel_LabelManager.TabIndex = 21;
-            // 
-            // groupBoxLabel_Description
-            // 
-            this.groupBoxLabel_Description.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.groupBoxLabel_Description.Controls.Add(this.panel_LabelInforDescription);
-            this.groupBoxLabel_Description.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBoxLabel_Description.ForeColor = System.Drawing.Color.White;
-            this.groupBoxLabel_Description.Location = new System.Drawing.Point(10, 361);
-            this.groupBoxLabel_Description.Name = "groupBoxLabel_Description";
-            this.groupBoxLabel_Description.Size = new System.Drawing.Size(461, 372);
-            this.groupBoxLabel_Description.TabIndex = 17;
-            this.groupBoxLabel_Description.TabStop = false;
-            this.groupBoxLabel_Description.Text = "Mô tả";
-            // 
-            // panel_LabelInforDescription
-            // 
-            this.panel_LabelInforDescription.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel_LabelInforDescription.AutoScroll = true;
-            this.panel_LabelInforDescription.Controls.Add(this.txLabel_Description);
-            this.panel_LabelInforDescription.Location = new System.Drawing.Point(6, 26);
-            this.panel_LabelInforDescription.Name = "panel_LabelInforDescription";
-            this.panel_LabelInforDescription.Size = new System.Drawing.Size(449, 340);
-            this.panel_LabelInforDescription.TabIndex = 4;
-            // 
-            // txLabel_Description
-            // 
-            this.txLabel_Description.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txLabel_Description.Location = new System.Drawing.Point(4, 3);
-            this.txLabel_Description.MaxLength = 5000;
-            this.txLabel_Description.Multiline = true;
-            this.txLabel_Description.Name = "txLabel_Description";
-            this.txLabel_Description.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txLabel_Description.Size = new System.Drawing.Size(442, 334);
-            this.txLabel_Description.TabIndex = 1;
-            // 
-            // groupBoxLabel_Location
-            // 
-            this.groupBoxLabel_Location.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.groupBoxLabel_Location.Controls.Add(this.panel9);
-            this.groupBoxLabel_Location.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
-            this.groupBoxLabel_Location.ForeColor = System.Drawing.Color.White;
-            this.groupBoxLabel_Location.Location = new System.Drawing.Point(10, 290);
-            this.groupBoxLabel_Location.Name = "groupBoxLabel_Location";
-            this.groupBoxLabel_Location.Size = new System.Drawing.Size(461, 65);
-            this.groupBoxLabel_Location.TabIndex = 16;
-            this.groupBoxLabel_Location.TabStop = false;
-            this.groupBoxLabel_Location.Text = "Địa điểm";
-            // 
-            // panel9
-            // 
-            this.panel9.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel9.AutoScroll = true;
-            this.panel9.Controls.Add(this.txLabel_Location);
-            this.panel9.Location = new System.Drawing.Point(6, 26);
-            this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(449, 37);
-            this.panel9.TabIndex = 5;
-            // 
-            // txLabel_Location
-            // 
-            this.txLabel_Location.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txLabel_Location.BackColor = System.Drawing.SystemColors.Window;
-            this.txLabel_Location.Location = new System.Drawing.Point(3, 3);
-            this.txLabel_Location.MaxLength = 2000;
-            this.txLabel_Location.Name = "txLabel_Location";
-            this.txLabel_Location.Size = new System.Drawing.Size(443, 24);
-            this.txLabel_Location.TabIndex = 0;
-            // 
-            // groupBoxLabel_Founded
-            // 
-            this.groupBoxLabel_Founded.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.groupBoxLabel_Founded.Controls.Add(this.panel8);
-            this.groupBoxLabel_Founded.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
-            this.groupBoxLabel_Founded.ForeColor = System.Drawing.Color.White;
-            this.groupBoxLabel_Founded.Location = new System.Drawing.Point(10, 219);
-            this.groupBoxLabel_Founded.Name = "groupBoxLabel_Founded";
-            this.groupBoxLabel_Founded.Size = new System.Drawing.Size(461, 65);
-            this.groupBoxLabel_Founded.TabIndex = 16;
-            this.groupBoxLabel_Founded.TabStop = false;
-            this.groupBoxLabel_Founded.Text = "Thành lập (dd/mm/yyyy)";
-            // 
-            // panel8
-            // 
-            this.panel8.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel8.AutoScroll = true;
-            this.panel8.Controls.Add(this.dateTimePicker_LabelFounded);
-            this.panel8.Location = new System.Drawing.Point(6, 26);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(449, 37);
-            this.panel8.TabIndex = 5;
-            // 
-            // dateTimePicker_LabelFounded
-            // 
-            this.dateTimePicker_LabelFounded.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.dateTimePicker_LabelFounded.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker_LabelFounded.Location = new System.Drawing.Point(3, 7);
-            this.dateTimePicker_LabelFounded.Name = "dateTimePicker_LabelFounded";
-            this.dateTimePicker_LabelFounded.Size = new System.Drawing.Size(446, 24);
-            this.dateTimePicker_LabelFounded.TabIndex = 0;
-            // 
-            // groupBoxLabel_Founder
-            // 
-            this.groupBoxLabel_Founder.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.groupBoxLabel_Founder.Controls.Add(this.panel7);
-            this.groupBoxLabel_Founder.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
-            this.groupBoxLabel_Founder.ForeColor = System.Drawing.Color.White;
-            this.groupBoxLabel_Founder.Location = new System.Drawing.Point(10, 148);
-            this.groupBoxLabel_Founder.Name = "groupBoxLabel_Founder";
-            this.groupBoxLabel_Founder.Size = new System.Drawing.Size(461, 65);
-            this.groupBoxLabel_Founder.TabIndex = 15;
-            this.groupBoxLabel_Founder.TabStop = false;
-            this.groupBoxLabel_Founder.Text = "Người thành lập";
-            // 
-            // panel7
-            // 
-            this.panel7.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel7.AutoScroll = true;
-            this.panel7.Controls.Add(this.txLabel_Founder);
-            this.panel7.Location = new System.Drawing.Point(6, 26);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(449, 37);
-            this.panel7.TabIndex = 5;
-            // 
-            // txLabel_Founder
-            // 
-            this.txLabel_Founder.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txLabel_Founder.BackColor = System.Drawing.SystemColors.Window;
-            this.txLabel_Founder.Location = new System.Drawing.Point(3, 3);
-            this.txLabel_Founder.MaxLength = 500;
-            this.txLabel_Founder.Name = "txLabel_Founder";
-            this.txLabel_Founder.Size = new System.Drawing.Size(443, 24);
-            this.txLabel_Founder.TabIndex = 0;
-            // 
-            // groupBoxLabel_Name
-            // 
-            this.groupBoxLabel_Name.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.groupBoxLabel_Name.Controls.Add(this.panel6);
-            this.groupBoxLabel_Name.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
-            this.groupBoxLabel_Name.ForeColor = System.Drawing.Color.White;
-            this.groupBoxLabel_Name.Location = new System.Drawing.Point(10, 77);
-            this.groupBoxLabel_Name.Name = "groupBoxLabel_Name";
-            this.groupBoxLabel_Name.Size = new System.Drawing.Size(461, 65);
-            this.groupBoxLabel_Name.TabIndex = 14;
-            this.groupBoxLabel_Name.TabStop = false;
-            this.groupBoxLabel_Name.Text = "Tên";
-            // 
-            // panel6
-            // 
-            this.panel6.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel6.AutoScroll = true;
-            this.panel6.Controls.Add(this.txLabel_LabelName);
-            this.panel6.Location = new System.Drawing.Point(6, 26);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(449, 37);
-            this.panel6.TabIndex = 5;
-            // 
-            // txLabel_LabelName
-            // 
-            this.txLabel_LabelName.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txLabel_LabelName.BackColor = System.Drawing.SystemColors.Window;
-            this.txLabel_LabelName.Location = new System.Drawing.Point(3, 3);
-            this.txLabel_LabelName.MaxLength = 500;
-            this.txLabel_LabelName.Name = "txLabel_LabelName";
-            this.txLabel_LabelName.Size = new System.Drawing.Size(443, 24);
-            this.txLabel_LabelName.TabIndex = 0;
-            // 
-            // panel4
-            // 
-            this.panel4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel4.AutoScroll = true;
-            this.panel4.Location = new System.Drawing.Point(74, 808);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(34, 19);
-            this.panel4.TabIndex = 6;
-            // 
-            // groupBoxLabel_LabelID
-            // 
-            this.groupBoxLabel_LabelID.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.groupBoxLabel_LabelID.Controls.Add(this.panel3);
-            this.groupBoxLabel_LabelID.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
-            this.groupBoxLabel_LabelID.ForeColor = System.Drawing.Color.White;
-            this.groupBoxLabel_LabelID.Location = new System.Drawing.Point(10, 6);
-            this.groupBoxLabel_LabelID.Name = "groupBoxLabel_LabelID";
-            this.groupBoxLabel_LabelID.Size = new System.Drawing.Size(461, 65);
-            this.groupBoxLabel_LabelID.TabIndex = 13;
-            this.groupBoxLabel_LabelID.TabStop = false;
-            this.groupBoxLabel_LabelID.Text = "ID";
-            // 
-            // panel3
-            // 
-            this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel3.AutoScroll = true;
-            this.panel3.Controls.Add(this.txLabel_LabelID);
-            this.panel3.Location = new System.Drawing.Point(6, 26);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(449, 37);
-            this.panel3.TabIndex = 5;
-            // 
-            // txLabel_LabelID
-            // 
-            this.txLabel_LabelID.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txLabel_LabelID.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.txLabel_LabelID.Location = new System.Drawing.Point(3, 3);
-            this.txLabel_LabelID.MaxLength = 100;
-            this.txLabel_LabelID.Name = "txLabel_LabelID";
-            this.txLabel_LabelID.ReadOnly = true;
-            this.txLabel_LabelID.Size = new System.Drawing.Size(443, 24);
-            this.txLabel_LabelID.TabIndex = 0;
-            this.txLabel_LabelID.Text = "0";
-            // 
             // panel_MenustripMain
             // 
             this.panel_MenustripMain.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
@@ -3133,15 +3139,23 @@ namespace ArtistMNG
             this.MenuStrip_ShowArtistTableTrash});
             this.MenuStrip_ShowArtistTable.ForeColor = System.Drawing.Color.White;
             this.MenuStrip_ShowArtistTable.Name = "MenuStrip_ShowArtistTable";
-            this.MenuStrip_ShowArtistTable.Size = new System.Drawing.Size(224, 26);
+            this.MenuStrip_ShowArtistTable.Size = new System.Drawing.Size(152, 26);
             this.MenuStrip_ShowArtistTable.Text = "Nghệ sĩ";
             this.MenuStrip_ShowArtistTable.Click += new System.EventHandler(this.MenuStrip_ShowArtistTable_Click);
+            // 
+            // MenuStrip_ShowArtistTableTrash
+            // 
+            this.MenuStrip_ShowArtistTableTrash.ForeColor = System.Drawing.Color.White;
+            this.MenuStrip_ShowArtistTableTrash.Name = "MenuStrip_ShowArtistTableTrash";
+            this.MenuStrip_ShowArtistTableTrash.Size = new System.Drawing.Size(167, 26);
+            this.MenuStrip_ShowArtistTableTrash.Text = "Thùng rác";
+            this.MenuStrip_ShowArtistTableTrash.Click += new System.EventHandler(this.MenuStrip_ShowArtistTableTrash_Click);
             // 
             // MenuStrip_ShowGroupTable
             // 
             this.MenuStrip_ShowGroupTable.ForeColor = System.Drawing.Color.White;
             this.MenuStrip_ShowGroupTable.Name = "MenuStrip_ShowGroupTable";
-            this.MenuStrip_ShowGroupTable.Size = new System.Drawing.Size(224, 26);
+            this.MenuStrip_ShowGroupTable.Size = new System.Drawing.Size(152, 26);
             this.MenuStrip_ShowGroupTable.Text = "Nhóm";
             this.MenuStrip_ShowGroupTable.Click += new System.EventHandler(this.MenuStrip_ShowGroupTable_Click);
             // 
@@ -3149,7 +3163,7 @@ namespace ArtistMNG
             // 
             this.MenuStrip_ShowSongTable.ForeColor = System.Drawing.Color.White;
             this.MenuStrip_ShowSongTable.Name = "MenuStrip_ShowSongTable";
-            this.MenuStrip_ShowSongTable.Size = new System.Drawing.Size(224, 26);
+            this.MenuStrip_ShowSongTable.Size = new System.Drawing.Size(152, 26);
             this.MenuStrip_ShowSongTable.Text = "Bài hát";
             this.MenuStrip_ShowSongTable.Click += new System.EventHandler(this.MenuStrip_ShowSongTable_Click);
             // 
@@ -3157,7 +3171,7 @@ namespace ArtistMNG
             // 
             this.MenuStrip_ShowAlbumTable.ForeColor = System.Drawing.Color.White;
             this.MenuStrip_ShowAlbumTable.Name = "MenuStrip_ShowAlbumTable";
-            this.MenuStrip_ShowAlbumTable.Size = new System.Drawing.Size(224, 26);
+            this.MenuStrip_ShowAlbumTable.Size = new System.Drawing.Size(152, 26);
             this.MenuStrip_ShowAlbumTable.Text = "Album";
             this.MenuStrip_ShowAlbumTable.Click += new System.EventHandler(this.MenuStrip_ShowAlbumTable_Click);
             // 
@@ -3165,7 +3179,7 @@ namespace ArtistMNG
             // 
             this.MenuStrip_ShowLabelTable.ForeColor = System.Drawing.Color.White;
             this.MenuStrip_ShowLabelTable.Name = "MenuStrip_ShowLabelTable";
-            this.MenuStrip_ShowLabelTable.Size = new System.Drawing.Size(224, 26);
+            this.MenuStrip_ShowLabelTable.Size = new System.Drawing.Size(152, 26);
             this.MenuStrip_ShowLabelTable.Text = "Công ty";
             this.MenuStrip_ShowLabelTable.Click += new System.EventHandler(this.MenuStrip_ShowLabelTable_Click);
             // 
@@ -3173,7 +3187,7 @@ namespace ArtistMNG
             // 
             this.MenuStrip_ShowFandomTable.ForeColor = System.Drawing.Color.White;
             this.MenuStrip_ShowFandomTable.Name = "MenuStrip_ShowFandomTable";
-            this.MenuStrip_ShowFandomTable.Size = new System.Drawing.Size(224, 26);
+            this.MenuStrip_ShowFandomTable.Size = new System.Drawing.Size(152, 26);
             this.MenuStrip_ShowFandomTable.Text = "Fandom";
             this.MenuStrip_ShowFandomTable.Click += new System.EventHandler(this.MenuStrip_ShowFandomTable_Click);
             // 
@@ -3306,13 +3320,46 @@ namespace ArtistMNG
             this.backgroundWorker1.DoWork += new System.ComponentModel.DoWorkEventHandler(this.backgroundWorker1_DoWork);
             this.backgroundWorker1.RunWorkerCompleted += new System.ComponentModel.RunWorkerCompletedEventHandler(this.backgroundWorker1_RunWorkerCompleted);
             // 
-            // MenuStrip_ShowArtistTableTrash
+            // txSearchValue
             // 
-            this.MenuStrip_ShowArtistTableTrash.ForeColor = System.Drawing.Color.White;
-            this.MenuStrip_ShowArtistTableTrash.Name = "MenuStrip_ShowArtistTableTrash";
-            this.MenuStrip_ShowArtistTableTrash.Size = new System.Drawing.Size(224, 26);
-            this.MenuStrip_ShowArtistTableTrash.Text = "Thùng rác";
-            this.MenuStrip_ShowArtistTableTrash.Click += new System.EventHandler(this.MenuStrip_ShowArtistTableTrash_Click);
+            this.txSearchValue.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.txSearchValue.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
+            this.txSearchValue.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.txSearchValue.Location = new System.Drawing.Point(3, 559);
+            this.txSearchValue.Name = "txSearchValue";
+            this.txSearchValue.Size = new System.Drawing.Size(274, 24);
+            this.txSearchValue.TabIndex = 22;
+            // 
+            // comboBox_SearchDataType
+            // 
+            this.comboBox_SearchDataType.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.comboBox_SearchDataType.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.comboBox_SearchDataType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox_SearchDataType.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
+            this.comboBox_SearchDataType.FormattingEnabled = true;
+            this.comboBox_SearchDataType.Items.AddRange(new object[] {
+            "Tìm kiếm theo..."});
+            this.comboBox_SearchDataType.Location = new System.Drawing.Point(3, 532);
+            this.comboBox_SearchDataType.Name = "comboBox_SearchDataType";
+            this.comboBox_SearchDataType.Size = new System.Drawing.Size(274, 26);
+            this.comboBox_SearchDataType.TabIndex = 23;
+            // 
+            // btnSearch
+            // 
+            this.btnSearch.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.btnSearch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(64)))), ((int)(((byte)(66)))));
+            this.btnSearch.FlatAppearance.BorderSize = 0;
+            this.btnSearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSearch.ForeColor = System.Drawing.Color.White;
+            this.btnSearch.Location = new System.Drawing.Point(283, 537);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.Size = new System.Drawing.Size(146, 40);
+            this.btnSearch.TabIndex = 24;
+            this.btnSearch.TabStop = false;
+            this.btnSearch.Text = "Tìm kiếm";
+            this.btnSearch.UseVisualStyleBackColor = false;
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
             // frmApp
             // 
@@ -3332,9 +3379,81 @@ namespace ArtistMNG
             this.Load += new System.EventHandler(this.frmApp_Load);
             this.Resize += new System.EventHandler(this.frmApp_Resize);
             this.panel_MainWorkSpace.ResumeLayout(false);
+            this.panel_MainWorkSpace.PerformLayout();
             this.panel_DataContent.ResumeLayout(false);
             this.panel_SizeControl.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_Data)).EndInit();
+            this.panel_ArtistManager.ResumeLayout(false);
+            this.groupBox_ArtistGender.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_ArtistImageLoadingGIF)).EndInit();
+            this.groupBox14.ResumeLayout(false);
+            this.panel_ArtistInforWeight.ResumeLayout(false);
+            this.panel_ArtistInforWeight.PerformLayout();
+            this.groupBox3.ResumeLayout(false);
+            this.panel_ArtistInforHeightWeight.ResumeLayout(false);
+            this.panel_ArtistInforHeightWeight.PerformLayout();
+            this.groupBox13.ResumeLayout(false);
+            this.panel_ArtistInforDebutday.ResumeLayout(false);
+            this.groupBox12.ResumeLayout(false);
+            this.panel_ArtistInforBirthday.ResumeLayout(false);
+            this.groupBox11.ResumeLayout(false);
+            this.panel_ArtistInforRealName.ResumeLayout(false);
+            this.panel_ArtistInforRealName.PerformLayout();
+            this.groupBox10.ResumeLayout(false);
+            this.panel_ArtistInforStageName.ResumeLayout(false);
+            this.panel_ArtistInforStageName.PerformLayout();
+            this.groupBox_ArtistID.ResumeLayout(false);
+            this.panel_ArtistInforID.ResumeLayout(false);
+            this.panel_ArtistInforID.PerformLayout();
+            this.groupBox_Artist_SNS.ResumeLayout(false);
+            this.groupBox_Artist_SNS.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Artist_Website)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Artist_Spotify)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Artist_AppleMusic)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Artist_Vlive)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Artist_Tiktok)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Artist_Twitter)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Artist_Facebook)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Artist_Instagram)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Artist_Youtube)).EndInit();
+            this.groupBox7.ResumeLayout(false);
+            this.panel_ArtistInforLabel.ResumeLayout(false);
+            this.panel_ArtistInforLabel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_ArtistImage)).EndInit();
+            this.groupBox6.ResumeLayout(false);
+            this.panel_ArtistInforAlbum.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewArtist_Album)).EndInit();
+            this.groupBox1.ResumeLayout(false);
+            this.panel_ArtistInforFandom.ResumeLayout(false);
+            this.panel_ArtistInforFandom.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
+            this.panel_ArtistInforGroup.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewArtist_Group)).EndInit();
+            this.groupBox5.ResumeLayout(false);
+            this.panel_ArtistInforSong.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewArtist_Song)).EndInit();
+            this.groupBox_ArtistDescription.ResumeLayout(false);
+            this.panel_ArtistInforDescription.ResumeLayout(false);
+            this.panel_ArtistInforDescription.PerformLayout();
+            this.panel_LabelManager.ResumeLayout(false);
+            this.groupBoxLabel_Description.ResumeLayout(false);
+            this.panel_LabelInforDescription.ResumeLayout(false);
+            this.panel_LabelInforDescription.PerformLayout();
+            this.groupBoxLabel_Location.ResumeLayout(false);
+            this.panel9.ResumeLayout(false);
+            this.panel9.PerformLayout();
+            this.groupBoxLabel_Founded.ResumeLayout(false);
+            this.panel8.ResumeLayout(false);
+            this.groupBoxLabel_Founder.ResumeLayout(false);
+            this.panel7.ResumeLayout(false);
+            this.panel7.PerformLayout();
+            this.groupBoxLabel_Name.ResumeLayout(false);
+            this.panel6.ResumeLayout(false);
+            this.panel6.PerformLayout();
+            this.groupBoxLabel_LabelID.ResumeLayout(false);
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
             this.panel_AlbumManager.ResumeLayout(false);
             this.groupBoxAlbum_AlbumSong.ResumeLayout(false);
             this.panel24.ResumeLayout(false);
@@ -3413,77 +3532,6 @@ namespace ArtistMNG
             this.groupBox_GroupID.ResumeLayout(false);
             this.panel_GroupInforID.ResumeLayout(false);
             this.panel_GroupInforID.PerformLayout();
-            this.panel_ArtistManager.ResumeLayout(false);
-            this.groupBox_ArtistGender.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_ArtistImageLoadingGIF)).EndInit();
-            this.groupBox14.ResumeLayout(false);
-            this.panel_ArtistInforWeight.ResumeLayout(false);
-            this.panel_ArtistInforWeight.PerformLayout();
-            this.groupBox3.ResumeLayout(false);
-            this.panel_ArtistInforHeightWeight.ResumeLayout(false);
-            this.panel_ArtistInforHeightWeight.PerformLayout();
-            this.groupBox13.ResumeLayout(false);
-            this.panel_ArtistInforDebutday.ResumeLayout(false);
-            this.groupBox12.ResumeLayout(false);
-            this.panel_ArtistInforBirthday.ResumeLayout(false);
-            this.groupBox11.ResumeLayout(false);
-            this.panel_ArtistInforRealName.ResumeLayout(false);
-            this.panel_ArtistInforRealName.PerformLayout();
-            this.groupBox10.ResumeLayout(false);
-            this.panel_ArtistInforStageName.ResumeLayout(false);
-            this.panel_ArtistInforStageName.PerformLayout();
-            this.groupBox_ArtistID.ResumeLayout(false);
-            this.panel_ArtistInforID.ResumeLayout(false);
-            this.panel_ArtistInforID.PerformLayout();
-            this.groupBox_Artist_SNS.ResumeLayout(false);
-            this.groupBox_Artist_SNS.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Artist_Website)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Artist_Spotify)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Artist_AppleMusic)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Artist_Vlive)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Artist_Tiktok)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Artist_Twitter)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Artist_Facebook)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Artist_Instagram)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Artist_Youtube)).EndInit();
-            this.groupBox7.ResumeLayout(false);
-            this.panel_ArtistInforLabel.ResumeLayout(false);
-            this.panel_ArtistInforLabel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_ArtistImage)).EndInit();
-            this.groupBox6.ResumeLayout(false);
-            this.panel_ArtistInforAlbum.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewArtist_Album)).EndInit();
-            this.groupBox1.ResumeLayout(false);
-            this.panel_ArtistInforFandom.ResumeLayout(false);
-            this.panel_ArtistInforFandom.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
-            this.panel_ArtistInforGroup.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewArtist_Group)).EndInit();
-            this.groupBox5.ResumeLayout(false);
-            this.panel_ArtistInforSong.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewArtist_Song)).EndInit();
-            this.groupBox_ArtistDescription.ResumeLayout(false);
-            this.panel_ArtistInforDescription.ResumeLayout(false);
-            this.panel_ArtistInforDescription.PerformLayout();
-            this.panel_LabelManager.ResumeLayout(false);
-            this.groupBoxLabel_Description.ResumeLayout(false);
-            this.panel_LabelInforDescription.ResumeLayout(false);
-            this.panel_LabelInforDescription.PerformLayout();
-            this.groupBoxLabel_Location.ResumeLayout(false);
-            this.panel9.ResumeLayout(false);
-            this.panel9.PerformLayout();
-            this.groupBoxLabel_Founded.ResumeLayout(false);
-            this.panel8.ResumeLayout(false);
-            this.groupBoxLabel_Founder.ResumeLayout(false);
-            this.panel7.ResumeLayout(false);
-            this.panel7.PerformLayout();
-            this.groupBoxLabel_Name.ResumeLayout(false);
-            this.panel6.ResumeLayout(false);
-            this.panel6.PerformLayout();
-            this.groupBoxLabel_LabelID.ResumeLayout(false);
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
             this.panel_MenustripMain.ResumeLayout(false);
             this.panel_MenustripMain.PerformLayout();
             this.menuStrip_Main.ResumeLayout(false);
@@ -3724,5 +3772,8 @@ namespace ArtistMNG
         private System.Windows.Forms.Panel panel24;
         private System.Windows.Forms.DataGridView dataGridViewAlbum_AlbumSong;
         private System.Windows.Forms.ToolStripMenuItem MenuStrip_ShowArtistTableTrash;
+        private System.Windows.Forms.TextBox txSearchValue;
+        private System.Windows.Forms.ComboBox comboBox_SearchDataType;
+        private System.Windows.Forms.Button btnSearch;
     }
 }
