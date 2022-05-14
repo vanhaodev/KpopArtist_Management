@@ -12,7 +12,7 @@ namespace ArtistMNG.Module
 {
     public static class SaveManager
     {
-        static string accountSavePath = "/App.itzy";
+        static string accountSavePath = "/App.vanhaodev";
         static IFormatter formatter;
         static Stream stream;
         public static void SaveLoginAccount(string user, string pass, bool rememberPwd = false)

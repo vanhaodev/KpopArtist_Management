@@ -451,6 +451,11 @@ namespace ArtistMNG.Subform
             {
                 return;
             }
+            if (txValueSearchDatabaseImage.Text.Contains("'"))
+            {
+                MessageBox.Show("Giá trị tìm kiếm không hợp lệ!");
+                return;
+            }
             DataTable database = null;
             switch (cbxSearchDatabaseImageType.SelectedIndex)
             {

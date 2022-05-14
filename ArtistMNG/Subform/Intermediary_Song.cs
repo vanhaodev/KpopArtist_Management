@@ -576,6 +576,11 @@ namespace ArtistMNG.Subform
             {
                 return;
             }
+            if(txValueSearchDatabaseSong.Text.Contains("'"))
+            {
+                MessageBox.Show("Giá trị tìm kiếm không hợp lệ!");
+                return;
+            }    
             DataTable database = null;
             switch (cbxSearchDatabaseSongType.SelectedIndex)
             {

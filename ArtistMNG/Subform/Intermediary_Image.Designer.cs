@@ -386,7 +386,7 @@ namespace ArtistMNG.Subform
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
             this.Name = "Intermediary_Image";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Intermediary_Image";
+            this.Text = "Hình ảnh";
             this.Load += new System.EventHandler(this.Intermediary_Image_Load);
             this.panel_Workspace.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_DatabaseImage)).EndInit();

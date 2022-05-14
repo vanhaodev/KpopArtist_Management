@@ -2822,6 +2822,11 @@ namespace ArtistMNG
                 $"Hình ảnh: {imageCount}");
         }
 
+        private void MenuStrip_ShowDev_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://www.facebook.com/nvh25102001/");
+        }
+
         void Fandom_ChooseRowToEdit()
         {
             txFandom_FandomID.Enabled = true;

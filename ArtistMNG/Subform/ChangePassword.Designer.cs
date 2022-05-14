@@ -30,23 +30,23 @@ namespace ArtistMNG.Subform
         private void InitializeComponent()
         {
             this.panel_Workspace = new System.Windows.Forms.Panel();
-            this.groupBox11 = new System.Windows.Forms.GroupBox();
-            this.panel_ArtistInforRealName = new System.Windows.Forms.Panel();
-            this.txOldPass = new System.Windows.Forms.TextBox();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.txNewPass = new System.Windows.Forms.TextBox();
+            this.btnApplyChangePass = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.txNewRePass = new System.Windows.Forms.TextBox();
-            this.btnApplyChangePass = new System.Windows.Forms.Button();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.txNewPass = new System.Windows.Forms.TextBox();
+            this.groupBox11 = new System.Windows.Forms.GroupBox();
+            this.panel_ArtistInforRealName = new System.Windows.Forms.Panel();
+            this.txOldPass = new System.Windows.Forms.TextBox();
             this.panel_Workspace.SuspendLayout();
-            this.groupBox11.SuspendLayout();
-            this.panel_ArtistInforRealName.SuspendLayout();
-            this.groupBox1.SuspendLayout();
-            this.panel1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.panel2.SuspendLayout();
+            this.groupBox1.SuspendLayout();
+            this.panel1.SuspendLayout();
+            this.groupBox11.SuspendLayout();
+            this.panel_ArtistInforRealName.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel_Workspace
@@ -60,75 +60,22 @@ namespace ArtistMNG.Subform
             this.panel_Workspace.Size = new System.Drawing.Size(510, 356);
             this.panel_Workspace.TabIndex = 0;
             // 
-            // groupBox11
+            // btnApplyChangePass
             // 
-            this.groupBox11.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.groupBox11.Controls.Add(this.panel_ArtistInforRealName);
-            this.groupBox11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
-            this.groupBox11.ForeColor = System.Drawing.Color.White;
-            this.groupBox11.Location = new System.Drawing.Point(17, 19);
-            this.groupBox11.Name = "groupBox11";
-            this.groupBox11.Size = new System.Drawing.Size(471, 65);
-            this.groupBox11.TabIndex = 15;
-            this.groupBox11.TabStop = false;
-            this.groupBox11.Text = "Mật khẩu cũ";
-            // 
-            // panel_ArtistInforRealName
-            // 
-            this.panel_ArtistInforRealName.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel_ArtistInforRealName.AutoScroll = true;
-            this.panel_ArtistInforRealName.Controls.Add(this.txOldPass);
-            this.panel_ArtistInforRealName.Location = new System.Drawing.Point(6, 26);
-            this.panel_ArtistInforRealName.Name = "panel_ArtistInforRealName";
-            this.panel_ArtistInforRealName.Size = new System.Drawing.Size(459, 37);
-            this.panel_ArtistInforRealName.TabIndex = 5;
-            // 
-            // txOldPass
-            // 
-            this.txOldPass.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txOldPass.Location = new System.Drawing.Point(3, 3);
-            this.txOldPass.MaxLength = 100;
-            this.txOldPass.Name = "txOldPass";
-            this.txOldPass.Size = new System.Drawing.Size(453, 24);
-            this.txOldPass.TabIndex = 0;
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.groupBox1.Controls.Add(this.panel1);
-            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
-            this.groupBox1.ForeColor = System.Drawing.Color.White;
-            this.groupBox1.Location = new System.Drawing.Point(17, 90);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(471, 65);
-            this.groupBox1.TabIndex = 16;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Mật khẩu mới";
-            // 
-            // panel1
-            // 
-            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel1.AutoScroll = true;
-            this.panel1.Controls.Add(this.txNewPass);
-            this.panel1.Location = new System.Drawing.Point(6, 26);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(459, 37);
-            this.panel1.TabIndex = 5;
-            // 
-            // txNewPass
-            // 
-            this.txNewPass.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txNewPass.Location = new System.Drawing.Point(3, 3);
-            this.txNewPass.MaxLength = 100;
-            this.txNewPass.Name = "txNewPass";
-            this.txNewPass.Size = new System.Drawing.Size(453, 24);
-            this.txNewPass.TabIndex = 0;
+            this.btnApplyChangePass.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnApplyChangePass.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(64)))), ((int)(((byte)(66)))));
+            this.btnApplyChangePass.FlatAppearance.BorderSize = 0;
+            this.btnApplyChangePass.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnApplyChangePass.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnApplyChangePass.ForeColor = System.Drawing.Color.White;
+            this.btnApplyChangePass.Location = new System.Drawing.Point(312, 232);
+            this.btnApplyChangePass.Name = "btnApplyChangePass";
+            this.btnApplyChangePass.Size = new System.Drawing.Size(167, 40);
+            this.btnApplyChangePass.TabIndex = 17;
+            this.btnApplyChangePass.TabStop = false;
+            this.btnApplyChangePass.Text = "Đổi mật khẩu";
+            this.btnApplyChangePass.UseVisualStyleBackColor = false;
+            this.btnApplyChangePass.Click += new System.EventHandler(this.btnApplyChangePass_Click);
             // 
             // groupBox2
             // 
@@ -165,22 +112,75 @@ namespace ArtistMNG.Subform
             this.txNewRePass.Size = new System.Drawing.Size(453, 24);
             this.txNewRePass.TabIndex = 0;
             // 
-            // btnApplyChangePass
+            // groupBox1
             // 
-            this.btnApplyChangePass.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnApplyChangePass.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(64)))), ((int)(((byte)(66)))));
-            this.btnApplyChangePass.FlatAppearance.BorderSize = 0;
-            this.btnApplyChangePass.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnApplyChangePass.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnApplyChangePass.ForeColor = System.Drawing.Color.White;
-            this.btnApplyChangePass.Location = new System.Drawing.Point(312, 232);
-            this.btnApplyChangePass.Name = "btnApplyChangePass";
-            this.btnApplyChangePass.Size = new System.Drawing.Size(167, 40);
-            this.btnApplyChangePass.TabIndex = 17;
-            this.btnApplyChangePass.TabStop = false;
-            this.btnApplyChangePass.Text = "Đổi mật khẩu";
-            this.btnApplyChangePass.UseVisualStyleBackColor = false;
-            this.btnApplyChangePass.Click += new System.EventHandler(this.btnApplyChangePass_Click);
+            this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox1.Controls.Add(this.panel1);
+            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
+            this.groupBox1.ForeColor = System.Drawing.Color.White;
+            this.groupBox1.Location = new System.Drawing.Point(17, 90);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(471, 65);
+            this.groupBox1.TabIndex = 16;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Mật khẩu mới";
+            // 
+            // panel1
+            // 
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel1.AutoScroll = true;
+            this.panel1.Controls.Add(this.txNewPass);
+            this.panel1.Location = new System.Drawing.Point(6, 26);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(459, 37);
+            this.panel1.TabIndex = 5;
+            // 
+            // txNewPass
+            // 
+            this.txNewPass.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txNewPass.Location = new System.Drawing.Point(3, 3);
+            this.txNewPass.MaxLength = 100;
+            this.txNewPass.Name = "txNewPass";
+            this.txNewPass.Size = new System.Drawing.Size(453, 24);
+            this.txNewPass.TabIndex = 0;
+            // 
+            // groupBox11
+            // 
+            this.groupBox11.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox11.Controls.Add(this.panel_ArtistInforRealName);
+            this.groupBox11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
+            this.groupBox11.ForeColor = System.Drawing.Color.White;
+            this.groupBox11.Location = new System.Drawing.Point(17, 19);
+            this.groupBox11.Name = "groupBox11";
+            this.groupBox11.Size = new System.Drawing.Size(471, 65);
+            this.groupBox11.TabIndex = 15;
+            this.groupBox11.TabStop = false;
+            this.groupBox11.Text = "Mật khẩu cũ";
+            // 
+            // panel_ArtistInforRealName
+            // 
+            this.panel_ArtistInforRealName.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel_ArtistInforRealName.AutoScroll = true;
+            this.panel_ArtistInforRealName.Controls.Add(this.txOldPass);
+            this.panel_ArtistInforRealName.Location = new System.Drawing.Point(6, 26);
+            this.panel_ArtistInforRealName.Name = "panel_ArtistInforRealName";
+            this.panel_ArtistInforRealName.Size = new System.Drawing.Size(459, 37);
+            this.panel_ArtistInforRealName.TabIndex = 5;
+            // 
+            // txOldPass
+            // 
+            this.txOldPass.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txOldPass.Location = new System.Drawing.Point(3, 3);
+            this.txOldPass.MaxLength = 100;
+            this.txOldPass.Name = "txOldPass";
+            this.txOldPass.Size = new System.Drawing.Size(453, 24);
+            this.txOldPass.TabIndex = 0;
             // 
             // ChangePassword
             // 
@@ -192,17 +192,17 @@ namespace ArtistMNG.Subform
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
             this.Name = "ChangePassword";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Intermediary_Changepass";
+            this.Text = "Đổi mật khẩu";
             this.panel_Workspace.ResumeLayout(false);
-            this.groupBox11.ResumeLayout(false);
-            this.panel_ArtistInforRealName.ResumeLayout(false);
-            this.panel_ArtistInforRealName.PerformLayout();
-            this.groupBox1.ResumeLayout(false);
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            this.groupBox11.ResumeLayout(false);
+            this.panel_ArtistInforRealName.ResumeLayout(false);
+            this.panel_ArtistInforRealName.PerformLayout();
             this.ResumeLayout(false);
 
         }

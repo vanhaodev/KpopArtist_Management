@@ -10,6 +10,10 @@ namespace ArtistMNG.Module
 {
     public static class DatagridViewStyle
     {
+        /// <summary>
+        /// Chuyển đổi màu sắc của datagird về màu Dark (Design by NVH2001 - Vanhaodev)
+        /// </summary>
+        /// <param name="dataGridView"></param>
         public static void DarkStyle(DataGridView dataGridView)
         {
             dataGridView.DefaultCellStyle.BackColor = Color.FromArgb(73, 73, 77);

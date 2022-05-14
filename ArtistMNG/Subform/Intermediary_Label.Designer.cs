@@ -217,7 +217,7 @@ namespace ArtistMNG.Subform
             this.MinimumSize = new System.Drawing.Size(1174, 826);
             this.Name = "Intermediary_Label";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Intermediary_Label";
+            this.Text = "Công ty";
             this.Load += new System.EventHandler(this.Intermediary_Fandom_Load);
             this.panel_Workspace.ResumeLayout(false);
             this.groupBox6.ResumeLayout(false);

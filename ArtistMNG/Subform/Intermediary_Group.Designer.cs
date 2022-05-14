@@ -30,6 +30,8 @@ namespace ArtistMNG.Subform
         private void InitializeComponent()
         {
             this.panel_Workspace = new System.Windows.Forms.Panel();
+            this.panel_Description = new System.Windows.Forms.Panel();
+            this.label_Information = new System.Windows.Forms.Label();
             this.pictureBox_GroupImage = new System.Windows.Forms.PictureBox();
             this.btnAddGroupFromDbToArtist = new System.Windows.Forms.Button();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
@@ -42,16 +44,14 @@ namespace ArtistMNG.Subform
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.dataGridView_DatabaseGroup = new System.Windows.Forms.DataGridView();
             this.btnApplyDelete = new System.Windows.Forms.Button();
-            this.panel_Description = new System.Windows.Forms.Panel();
-            this.label_Information = new System.Windows.Forms.Label();
             this.panel_Workspace.SuspendLayout();
+            this.panel_Description.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_GroupImage)).BeginInit();
             this.groupBox6.SuspendLayout();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_TargetGroup)).BeginInit();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_DatabaseGroup)).BeginInit();
-            this.panel_Description.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel_Workspace
@@ -66,6 +66,25 @@ namespace ArtistMNG.Subform
             this.panel_Workspace.Name = "panel_Workspace";
             this.panel_Workspace.Size = new System.Drawing.Size(1132, 714);
             this.panel_Workspace.TabIndex = 0;
+            // 
+            // panel_Description
+            // 
+            this.panel_Description.Controls.Add(this.label_Information);
+            this.panel_Description.Location = new System.Drawing.Point(590, 546);
+            this.panel_Description.Name = "panel_Description";
+            this.panel_Description.Size = new System.Drawing.Size(539, 165);
+            this.panel_Description.TabIndex = 9;
+            // 
+            // label_Information
+            // 
+            this.label_Information.AutoSize = true;
+            this.label_Information.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
+            this.label_Information.ForeColor = System.Drawing.Color.White;
+            this.label_Information.Location = new System.Drawing.Point(3, 9);
+            this.label_Information.Name = "label_Information";
+            this.label_Information.Size = new System.Drawing.Size(51, 18);
+            this.label_Information.TabIndex = 0;
+            this.label_Information.Text = "Mô tả";
             // 
             // pictureBox_GroupImage
             // 
@@ -225,25 +244,6 @@ namespace ArtistMNG.Subform
             this.btnApplyDelete.UseVisualStyleBackColor = false;
             this.btnApplyDelete.Click += new System.EventHandler(this.btnApplyDelete_Click);
             // 
-            // panel_Description
-            // 
-            this.panel_Description.Controls.Add(this.label_Information);
-            this.panel_Description.Location = new System.Drawing.Point(590, 546);
-            this.panel_Description.Name = "panel_Description";
-            this.panel_Description.Size = new System.Drawing.Size(539, 165);
-            this.panel_Description.TabIndex = 9;
-            // 
-            // label_Information
-            // 
-            this.label_Information.AutoSize = true;
-            this.label_Information.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
-            this.label_Information.ForeColor = System.Drawing.Color.White;
-            this.label_Information.Location = new System.Drawing.Point(3, 9);
-            this.label_Information.Name = "label_Information";
-            this.label_Information.Size = new System.Drawing.Size(51, 18);
-            this.label_Information.TabIndex = 0;
-            this.label_Information.Text = "Mô tả";
-            // 
             // Intermediary_Group
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -255,9 +255,11 @@ namespace ArtistMNG.Subform
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
             this.Name = "Intermediary_Group";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Intermediary_Group";
+            this.Text = "Nhóm";
             this.Load += new System.EventHandler(this.Intermediary_Group_Load);
             this.panel_Workspace.ResumeLayout(false);
+            this.panel_Description.ResumeLayout(false);
+            this.panel_Description.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_GroupImage)).EndInit();
             this.groupBox6.ResumeLayout(false);
             this.groupBox6.PerformLayout();
@@ -265,8 +267,6 @@ namespace ArtistMNG.Subform
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_TargetGroup)).EndInit();
             this.groupBox2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_DatabaseGroup)).EndInit();
-            this.panel_Description.ResumeLayout(false);
-            this.panel_Description.PerformLayout();
             this.ResumeLayout(false);
 
         }
