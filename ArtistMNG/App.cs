@@ -118,6 +118,21 @@ namespace ArtistMNG
             btnApplyAdd.Enabled = true;
             btnApplyDelete.Enabled = false;
             btnApplyEdit.Enabled = false;
+           
+            btnNewRow.Image = (Image)(new Bitmap(ImageFile.SetIconFromFolder("new.png"), new Size(32, 32)));
+            btnNewRow.ImageAlign = ContentAlignment.MiddleLeft;
+
+            btnApplyAdd.Image = (Image)(new Bitmap(ImageFile.SetIconFromFolder("add.png"), new Size(32, 32)));
+            btnApplyAdd.ImageAlign = ContentAlignment.MiddleLeft;
+
+            btnApplyEdit.Image = (Image)(new Bitmap(ImageFile.SetIconFromFolder("pencil.png"), new Size(32, 32)));
+            btnApplyEdit.ImageAlign = ContentAlignment.MiddleLeft;
+
+            btnApplyDelete.Image = (Image)(new Bitmap(ImageFile.SetIconFromFolder("delete.png"), new Size(32, 32)));
+            btnApplyDelete.ImageAlign = ContentAlignment.MiddleLeft;
+
+            btnSearch.Image = (Image)(new Bitmap(ImageFile.SetIconFromFolder("search.png"), new Size(32, 32)));
+            btnSearch.ImageAlign = ContentAlignment.MiddleLeft;
 
             pictureBox_LoadingGIF.Image = ImageFile.SetIconFromFolder("ajax_loadding.gif");
             pictureBox_LoadingGIF.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -674,7 +689,9 @@ namespace ArtistMNG
        
         private void userInfor_Click(object sender, EventArgs e)
         {
-            MessageBox.Show(fullName);
+            //MessageBox.Show(fullName);
+            ChangePassword changePassword = new ChangePassword();
+            changePassword.ShowDialog();
         }
 
         void SetTooltip()
@@ -794,6 +811,7 @@ namespace ArtistMNG
             DatagridViewStyle.MinimumWidth(dataGridView_Data, 100);
             SetTooltip();
             SetSearchType();
+
         }
 
         private void btnSearch_Click(object sender, EventArgs e)
@@ -815,13 +833,17 @@ namespace ArtistMNG
                 MessageBox.Show("Giá trị tìm kiếm không hợp lệ!");
                 return;
             }
+            FillData();
+        }
+        void FillData()
+        {
             switch (currentTable)
             {
                 case DatabaseTable.Artist:
-                    switch(comboBox_SearchDataType.SelectedIndex)
+                    switch (comboBox_SearchDataType.SelectedIndex)
                     {
                         case 0:
-                            ShowData(DatabaseTable.Artist); 
+                            ShowData(DatabaseTable.Artist);
                             datas[0] = DatabaseManager.ShowDataQuery($"SELECT * FROM [Artist] WHERE IsActivate = 1");
                             break;
                         case 1:
@@ -840,7 +862,7 @@ namespace ArtistMNG
                             Search($"Artist_Search 'Description', 0, '', '', '{txSearchValue.Text}' ");
                             datas[0] = DatabaseManager.ShowDataQuery($"SELECT * FROM [Artist] WHERE IsActivate = 1 AND Description LIKE '%{txSearchValue.Text}%'");
                             break;
-                    }    
+                    }
                     break;
                 case DatabaseTable.Group:
                     switch (comboBox_SearchDataType.SelectedIndex)
@@ -1039,7 +1061,7 @@ namespace ArtistMNG
                         return;
                     }
 
-                    ShowData(DatabaseTable.Artist);
+                    FillData();
                     for (int i = 0; i < dataGridView_Data.Rows.Count; i++)
                     {
                         if ((int)dataGridView_Data.Rows[i].Cells[0].Value == insertDetail.Item2)
@@ -1068,7 +1090,7 @@ namespace ArtistMNG
                         return;
                     }
 
-                    ShowData(DatabaseTable.Group);
+                    FillData();
                     for (int i = 0; i < dataGridView_Data.Rows.Count; i++)
                     {
                         if ((int)dataGridView_Data.Rows[i].Cells[0].Value == gInsertDetail.Item2)
@@ -1097,7 +1119,7 @@ namespace ArtistMNG
                         return;
                     }
 
-                    ShowData(DatabaseTable.Song);
+                    FillData();
                     for (int i = 0; i < dataGridView_Data.Rows.Count; i++)
                     {
                         if ((int)dataGridView_Data.Rows[i].Cells[0].Value == songInsertDetail.Item2)
@@ -1126,7 +1148,7 @@ namespace ArtistMNG
                         return;
                     }
 
-                    ShowData(DatabaseTable.Album);
+                    FillData();
                     for (int i = 0; i < dataGridView_Data.Rows.Count; i++)
                     {
                         if ((int)dataGridView_Data.Rows[i].Cells[0].Value == albumInsertDetail.Item2)
@@ -1155,7 +1177,7 @@ namespace ArtistMNG
                         return;
                     }
 
-                    ShowData(DatabaseTable.Fandom);
+                    FillData();
                     for (int i = 0; i < dataGridView_Data.Rows.Count; i++)
                     {
                         if ((int)dataGridView_Data.Rows[i].Cells[0].Value == fandomInsertDetail.Item2)
@@ -1184,7 +1206,7 @@ namespace ArtistMNG
                         return;
                     }
 
-                    ShowData(DatabaseTable.Label);
+                    FillData();
                     for (int i = 0; i < dataGridView_Data.Rows.Count; i++)
                     {
                         if ((int)dataGridView_Data.Rows[i].Cells[0].Value == labelInsertDetail.Item2)
@@ -1225,7 +1247,8 @@ namespace ArtistMNG
                         MessageBox.Show($"Cập nhật thất bại!\nlỗi đến từ việc giao tiếp với database");
                         return;
                     }
-                    ShowData(DatabaseTable.Artist);
+                    FillData();
+
                     for (int i = 0; i < dataGridView_Data.Rows.Count; i++)
                     {
                         if ((int)dataGridView_Data.Rows[i].Cells[0].Value == artistID)
@@ -1254,7 +1277,7 @@ namespace ArtistMNG
                         MessageBox.Show($"Cập nhật thất bại!\nlỗi đến từ việc giao tiếp với database");
                         return;
                     }
-                    ShowData(DatabaseTable.Group);
+                    FillData();
                     for (int i = 0; i < dataGridView_Data.Rows.Count; i++)
                     {
                         if ((int)dataGridView_Data.Rows[i].Cells[0].Value == groupID)
@@ -1283,7 +1306,7 @@ namespace ArtistMNG
                         MessageBox.Show($"Cập nhật thất bại!\nlỗi đến từ việc giao tiếp với database");
                         return;
                     }
-                    ShowData(DatabaseTable.Song);
+                    FillData();
                     for (int i = 0; i < dataGridView_Data.Rows.Count; i++)
                     {
                         if ((int)dataGridView_Data.Rows[i].Cells[0].Value == songID)
@@ -1312,7 +1335,7 @@ namespace ArtistMNG
                         MessageBox.Show($"Cập nhật thất bại!\nlỗi đến từ việc giao tiếp với database");
                         return;
                     }
-                    ShowData(DatabaseTable.Album);
+                    FillData();
                     for (int i = 0; i < dataGridView_Data.Rows.Count; i++)
                     {
                         if ((int)dataGridView_Data.Rows[i].Cells[0].Value == albumID)
@@ -1341,7 +1364,7 @@ namespace ArtistMNG
                         MessageBox.Show($"Cập nhật thất bại!\nlỗi đến từ việc giao tiếp với database");
                         return;
                     }
-                    ShowData(DatabaseTable.Fandom);
+                    FillData();
                     for (int i = 0; i < dataGridView_Data.Rows.Count; i++)
                     {
                         if ((int)dataGridView_Data.Rows[i].Cells[0].Value == fandomID)
@@ -1370,7 +1393,7 @@ namespace ArtistMNG
                         MessageBox.Show($"Cập nhật thất bại!\nlỗi đến từ việc giao tiếp với database");
                         return;
                     }
-                    ShowData(DatabaseTable.Label);
+                    FillData();
                     for (int i = 0; i < dataGridView_Data.Rows.Count; i++)
                     {
                         if ((int)dataGridView_Data.Rows[i].Cells[0].Value == labelID)
@@ -1384,6 +1407,7 @@ namespace ArtistMNG
                     showChooseRowToEdit_Warning = true;
                     break;
             }
+            
         }
         private void btnApplyDelete_Click(object sender, EventArgs e)
         {
@@ -1419,7 +1443,7 @@ namespace ArtistMNG
                         return;
                     }
                     ClearDataFiled();
-                    ShowData(DatabaseTable.Artist);
+                    FillData();
                     break;
                 case DatabaseTable.Group:
                     try
@@ -1443,7 +1467,7 @@ namespace ArtistMNG
                         return;
                     }
                     ClearDataFiled();
-                    ShowData(DatabaseTable.Group);
+                    FillData();
                     break;
                 case DatabaseTable.Song:
                     try
@@ -1467,7 +1491,7 @@ namespace ArtistMNG
                         return;
                     }
                     ClearDataFiled();
-                    ShowData(DatabaseTable.Song);
+                    FillData();
                     break;
                 case DatabaseTable.Album:
                     try
@@ -1491,7 +1515,7 @@ namespace ArtistMNG
                         return;
                     }
                     ClearDataFiled();
-                    ShowData(DatabaseTable.Album);
+                    FillData();
                     break;
                 case DatabaseTable.Fandom:
                     try
@@ -1515,7 +1539,7 @@ namespace ArtistMNG
                         return;
                     }
                     ClearDataFiled();
-                    ShowData(DatabaseTable.Fandom);
+                    FillData();
                     break;
                 case DatabaseTable.Label:
                     try
@@ -1539,7 +1563,7 @@ namespace ArtistMNG
                         return;
                     }
                     ClearDataFiled();
-                    ShowData(DatabaseTable.Label);
+                    FillData();
                     break;
             }                 
         }
@@ -2777,6 +2801,30 @@ namespace ArtistMNG
             QueryData.Instance.Label.Founded = dateTimePicker_LabelFounded.Value;
             QueryData.Instance.Label.Location = txLabel_Location.Text;
             QueryData.Instance.Label.Description = txLabel_Description.Text;
+        }
+
+        private void MenuStrip_ShowDatabaseDetail_Click(object sender, EventArgs e)
+        {
+            int artistCount = DatabaseManager.ShowDataQuery("SELECT COUNT(*) FROM [Artist] WHERE IsActivate = 1").Rows[0].Field<int>(0);
+            int groupCount = DatabaseManager.ShowDataQuery("SELECT COUNT(*) FROM [Group]").Rows[0].Field<int>(0);
+            int songCount = DatabaseManager.ShowDataQuery("SELECT COUNT(*) FROM [Song]").Rows[0].Field<int>(0);
+            int albumCount = DatabaseManager.ShowDataQuery("SELECT COUNT(*) FROM [Album]").Rows[0].Field<int>(0);
+            int fandomCount = DatabaseManager.ShowDataQuery("SELECT COUNT(*) FROM [Fandom]").Rows[0].Field<int>(0);
+            int labelCount = DatabaseManager.ShowDataQuery("SELECT COUNT(*) FROM [Label]").Rows[0].Field<int>(0);
+            int imageCount = DatabaseManager.ShowDataQuery("SELECT COUNT(*) FROM [Image]").Rows[0].Field<int>(0);
+
+            MessageBox.Show($"Nghệ sĩ: {artistCount}\n" + 
+                $"Nhóm: {groupCount}\n" + 
+                $"Bài hát: {songCount}\n" + 
+                $"Album: {albumCount}\n" + 
+                $"Fandom: {fandomCount}\n" +
+                $"Công ty: {labelCount}\n" +
+                $"Hình ảnh: {imageCount}");
+        }
+
+        private void MenuStrip_ShowDev_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://www.facebook.com/nvh25102001/");
         }
 
         void Fandom_ChooseRowToEdit()

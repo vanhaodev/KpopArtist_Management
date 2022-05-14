@@ -166,6 +166,8 @@ namespace ArtistMNG.Subform
             DatagridViewStyle.DarkStyle(dataGridView_DatabaseLabel);
             DatagridViewStyle.MinimumWidth(dataGridView_DatabaseLabel, 100);
 
+            btnSearchDatabaseLabel.Image = (Image)(new Bitmap(ImageFile.SetIconFromFolder("search.png"), new Size(32, 32)));
+            btnSearchDatabaseLabel.ImageAlign = ContentAlignment.MiddleLeft;
             //Label set size
             label_selectedLabelInfor.MaximumSize = new Size(groupBox_CurrentLabelInfor.Width - (groupBox_CurrentLabelInfor.Width * 10 / 100), 0);
             label_selectedLabelInfor.AutoSize = true;
@@ -183,6 +185,11 @@ namespace ArtistMNG.Subform
         {
             if (txValueSearchDatabaseLabel.Text.Length < 1 || cbxSearchDatabaseLabelType.SelectedIndex == 0)
             {
+                return;
+            }
+            if (txValueSearchDatabaseLabel.Text.Contains("'"))
+            {
+                MessageBox.Show("Giá trị tìm kiếm không hợp lệ!");
                 return;
             }
             DataTable database = null;

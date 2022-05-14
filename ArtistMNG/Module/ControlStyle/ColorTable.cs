@@ -10,7 +10,9 @@ namespace ArtistMNG.Module
 {
     public class ColorTable : ProfessionalColorTable
     {
-
+        /// <summary>
+        /// Chuyển đổi màu sắc của Toolstrip về màu Dark (Design by NVH2001 - Vanhaodev)
+        /// </summary>
         public override Color MenuItemSelectedGradientBegin
         {
             get { return Color.FromArgb(53, 55, 59); }

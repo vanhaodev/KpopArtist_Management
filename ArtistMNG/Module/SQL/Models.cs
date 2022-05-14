@@ -6,6 +6,10 @@ using System.Threading.Tasks;
 
 namespace ArtistMNG.Module.SQL
 {
+    public class User
+    {
+        public static string userName;
+    }
     public class ModelArtist
     {
         int artistID = 0;

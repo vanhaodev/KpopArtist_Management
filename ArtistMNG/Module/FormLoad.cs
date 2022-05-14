@@ -10,6 +10,7 @@ namespace ArtistMNG.Module
     /// Ý tưởng là khi hành động mở form 2 ở form 1
     /// gọi isLoaded = false và chạy while đến khi form 2 load xong sẽ 
     /// set isLoaded thành true và điều kiện để đóng form load
+    /// THỬ NGHIỆM 
     /// </summary>
     public static class FormLoad
     {

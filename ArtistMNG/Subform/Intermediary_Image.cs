@@ -420,6 +420,8 @@ namespace ArtistMNG.Subform
             btnApplyDelete.Enabled = false;
             btnApplyEdit.Enabled = false;
 
+            btnSearchDatabaseImage.Image = (Image)(new Bitmap(ImageFile.SetIconFromFolder("search.png"), new Size(32, 32)));
+            btnSearchDatabaseImage.ImageAlign = ContentAlignment.MiddleLeft;
             //Target image
             DatagridViewStyle.DarkStyle(dataGridView_TargetImage);
             DatagridViewStyle.MinimumWidth(dataGridView_TargetImage, 100);
@@ -447,6 +449,11 @@ namespace ArtistMNG.Subform
         {
             if (txValueSearchDatabaseImage.Text.Length < 1 || cbxSearchDatabaseImageType.SelectedIndex == 0)
             {
+                return;
+            }
+            if (txValueSearchDatabaseImage.Text.Contains("'"))
+            {
+                MessageBox.Show("Giá trị tìm kiếm không hợp lệ!");
                 return;
             }
             DataTable database = null;

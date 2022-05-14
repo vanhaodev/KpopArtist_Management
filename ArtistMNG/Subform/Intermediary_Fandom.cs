@@ -141,7 +141,8 @@ namespace ArtistMNG.Subform
                     this.Text = "Nhóm (Fandom)";
                     break;
             }
-            
+            btnSearchDatabaseFandom.Image = (Image)(new Bitmap(ImageFile.SetIconFromFolder("search.png"), new Size(32, 32)));
+            btnSearchDatabaseFandom.ImageAlign = ContentAlignment.MiddleLeft;
             //database
             DatagridViewStyle.DarkStyle(dataGridView_DatabaseFandom);
             DatagridViewStyle.MinimumWidth(dataGridView_DatabaseFandom, 100);
@@ -163,6 +164,11 @@ namespace ArtistMNG.Subform
         {
             if (txValueSearchDatabaseFandom.Text.Length < 1 || cbxSearchDatabaseFandomType.SelectedIndex == 0)
             {
+                return;
+            }
+            if (txValueSearchDatabaseFandom.Text.Contains("'"))
+            {
+                MessageBox.Show("Giá trị tìm kiếm không hợp lệ!");
                 return;
             }
             DataTable database = null;

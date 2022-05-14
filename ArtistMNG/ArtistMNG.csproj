@@ -121,6 +121,12 @@
     <Compile Include="Subform\Intermediary_Group.Designer.cs">
       <DependentUpon>Intermediary_Group.cs</DependentUpon>
     </Compile>
+    <Compile Include="Subform\ChangePassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Subform\ChangePassword.Designer.cs">
+      <DependentUpon>ChangePassword.cs</DependentUpon>
+    </Compile>
     <Compile Include="Subform\Template.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -172,6 +178,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Subform\Intermediary_Group.resx">
       <DependentUpon>Intermediary_Group.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Subform\ChangePassword.resx">
+      <DependentUpon>ChangePassword.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Subform\Template.resx">
       <DependentUpon>Template.cs</DependentUpon>

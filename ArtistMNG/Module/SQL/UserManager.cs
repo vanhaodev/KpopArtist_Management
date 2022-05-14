@@ -66,5 +66,57 @@ namespace ArtistMNG.Module.SQL
                 con.Close();
             }      
         }
+        public static bool ChangePassword(string username, string oldpwd, string newpwd)
+        {
+            //sử dụng lớp SqlConnection để tạo chuỗi kết nối
+            SqlConnection con = new SqlConnection();
+            //gọi chuỗi kết nối ở file App.config bằng thuộc tính ConnectionString
+            //con.ConnectionString = @"Server=NVH2001\VANHAODEV;Database=Artist;User Id=nvh2001;Password=nvh2001;";
+            con.ConnectionString = DatabaseManager.connectString;
+            try
+            {
+                //khỏi tạo instance của class SqlCommand
+                SqlCommand cmd = new SqlCommand();
+                //sử dụng thuộc tính CommandText để chỉ định tên Proc
+                cmd.CommandText = "[User_ChangePassword]";
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Connection = con;
+
+                //khai báo các thông tin của tham số truyền vào
+                cmd.Parameters.Add("@username", SqlDbType.VarChar).Value = username;
+                cmd.Parameters.Add("@OldPwd", SqlDbType.VarChar).Value = oldpwd;
+                cmd.Parameters.Add("@NewPwd", SqlDbType.VarChar).Value = newpwd;
+
+                //mở chuỗi kết nối
+                con.Open();
+
+                //sử dụng ExecuteNonQuery để thực thi
+                //cmd.ExecuteNonQuery();
+
+                DataTable dt = new DataTable();
+                using (SqlDataAdapter a = new SqlDataAdapter(cmd))
+                {
+                    a.Fill(dt);
+                }
+
+                if (dt.Rows[0].Field<int>(0) == 0)
+                {
+                    return false;
+                }
+                else
+                {
+                    return true;
+                }
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+                return false;
+            }
+            finally
+            {
+                con.Close();
+            }
+        }
     }
 }
