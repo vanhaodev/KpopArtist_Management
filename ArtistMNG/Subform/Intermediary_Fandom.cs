@@ -141,7 +141,8 @@ namespace ArtistMNG.Subform
                     this.Text = "Nhóm (Fandom)";
                     break;
             }
-            
+            btnSearchDatabaseFandom.Image = (Image)(new Bitmap(ImageFile.SetIconFromFolder("search.png"), new Size(32, 32)));
+            btnSearchDatabaseFandom.ImageAlign = ContentAlignment.MiddleLeft;
             //database
             DatagridViewStyle.DarkStyle(dataGridView_DatabaseFandom);
             DatagridViewStyle.MinimumWidth(dataGridView_DatabaseFandom, 100);

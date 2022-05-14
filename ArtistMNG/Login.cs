@@ -200,6 +200,7 @@ namespace ArtistMNG
             }
             userName = user.Item2;
             fullName = user.Item3;
+            User.userName = txInput_User.Text;
             panel_Loading.Visible = true;
             panel_Login.Visible = false;
 

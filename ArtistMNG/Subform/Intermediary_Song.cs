@@ -38,6 +38,8 @@ namespace ArtistMNG.Subform
             //btnApplyAdd.Enabled = true;
             //btnApplyDelete.Enabled = false;
             //btnApplyEdit.Enabled = false;
+            btnSearchDatabaseSong.Image = (Image)(new Bitmap(ImageFile.SetIconFromFolder("search.png"), new Size(32, 32)));
+            btnSearchDatabaseSong.ImageAlign = ContentAlignment.MiddleLeft;
 
             //Target image
             DatagridViewStyle.DarkStyle(dataGridView_TargetSong);

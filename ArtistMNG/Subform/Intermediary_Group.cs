@@ -26,11 +26,12 @@ namespace ArtistMNG.Subform
         void LoadDesign()
         {
             this.Icon = ImageFile.SetWindowIcon("AMlogo.ico");
-            this.Text = "Nghệ sĩ (Nhóm)";    
+            this.Text = "Nghệ sĩ (Nhóm)";
             //btnApplyAdd.Enabled = true;
             //btnApplyDelete.Enabled = false;
             //btnApplyEdit.Enabled = false;
-
+            btnSearchDatabaseGroup.Image = (Image)(new Bitmap(ImageFile.SetIconFromFolder("search.png"), new Size(32, 32)));
+            btnSearchDatabaseGroup.ImageAlign = ContentAlignment.MiddleLeft;
             //Target image
             DatagridViewStyle.DarkStyle(dataGridView_TargetGroup);
             DatagridViewStyle.MinimumWidth(dataGridView_TargetGroup, 100);

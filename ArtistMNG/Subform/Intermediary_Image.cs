@@ -420,6 +420,8 @@ namespace ArtistMNG.Subform
             btnApplyDelete.Enabled = false;
             btnApplyEdit.Enabled = false;
 
+            btnSearchDatabaseImage.Image = (Image)(new Bitmap(ImageFile.SetIconFromFolder("search.png"), new Size(32, 32)));
+            btnSearchDatabaseImage.ImageAlign = ContentAlignment.MiddleLeft;
             //Target image
             DatagridViewStyle.DarkStyle(dataGridView_TargetImage);
             DatagridViewStyle.MinimumWidth(dataGridView_TargetImage, 100);
